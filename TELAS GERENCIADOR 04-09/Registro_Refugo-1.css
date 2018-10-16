@@ -1,0 +1,148 @@
+div#container
+{
+   width: 994px;
+   position: relative;
+   margin: 0 auto 0 auto;
+   text-align: left;
+}
+body
+{
+   background-color: #FFFFFF;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   text-align: center;
+}
+#Camada_Fundo
+{
+   background-color: #D0D0D0;
+   background-image: none;
+   border: 1px #006400 solid;
+}
+#wb_Menu_Iniciar_turno
+{
+   border: 0px #C0C0C0 solid;
+   background-color: transparent;
+}
+#wb_Menu_Iniciar_turno ul
+{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   position: relative;
+   display: inline-block;
+}
+#wb_Menu_Iniciar_turno li
+{
+   float: left;
+   margin: 0;
+   padding: 0px 4px 0px 0px;
+}
+#wb_Menu_Iniciar_turno a
+{
+   display: block;
+   float: left;
+   color: #333333;
+   border: 1px #CCCCCC solid;
+   background-color: #3CB371;
+   background-image: none;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 21px;
+   font-style: normal;
+   text-decoration: none;
+   height: 58px;
+   line-height: 58px;
+   padding: 0px 5px 0px 5px;
+   vertical-align: middle;
+   text-align: center;
+}
+#wb_Menu_Iniciar_turno li:hover a, #wb_Menu_Iniciar_turno a:hover
+{
+   color: #FFFFFF;
+   background-color: #337AB7;
+   background-image: none;
+   border: 1px #2E6DA4 solid;
+}
+#wb_Menu_Iniciar_turno li.firstmain
+{
+   padding-left: 0px;
+}
+#wb_Menu_Iniciar_turno li.lastmain
+{
+   padding-right: 0px;
+}
+#wb_Menu_Iniciar_turno br
+{
+   clear: both;
+   font-size: 1px;
+   height: 0;
+   line-height: 0;
+}
+#wb_quantidade 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_quantidade div
+{
+   text-align: left;
+}
+#quantidade_Refugo_Produção
+{
+   border-width: 0;
+}
+#Image-Teclado
+{
+   border: 0px #000000 solid;
+   padding: 0px 0px 0px 0px;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_Text-Refugo_Produção 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text-Refugo_Produção div
+{
+   text-align: left;
+}
+#qtde_Refugo_Fundição
+{
+   border-width: 0;
+}
+#wb_Text-Refugo_Fundição 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text-Refugo_Fundição div
+{
+   text-align: left;
+}
+#Registro_Ocorrencia1
+{
+   border-width: 0;
+}
+#Contador_peças
+{
+   border-width: 0;
+}

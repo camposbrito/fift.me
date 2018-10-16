@@ -1,0 +1,30 @@
+html body .container-fluid {
+  position:absolute;
+  top:65px;
+  bottom:65px;
+  right:0;
+  left:0;
+  overflow-y:auto;
+  /*background:red;*/
+}
+
+header {
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  /*background-color:#4C4;*/
+  height:65px;
+  border-bottom:1px solid silver;
+}
+
+footer {
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  /*background-color:blue;*/
+  height:65px;
+  border-top:1px solid silver;
+}
+

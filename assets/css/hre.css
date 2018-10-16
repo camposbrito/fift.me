@@ -1,0 +1,9 @@
+
+div#messages {
+    margin: 10px;
+    position: absolute;
+    z-index: 99;
+    top: 60px;
+    right: 0;
+    opacity: 0.7;
+}

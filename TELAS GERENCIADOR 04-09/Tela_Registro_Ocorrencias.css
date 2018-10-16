@@ -1,0 +1,448 @@
+div#container
+{
+   width: 994px;
+   position: relative;
+   margin: 0 auto 0 auto;
+   text-align: left;
+}
+body
+{
+   background-color: #FFFFFF;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   text-align: center;
+}
+#Camada_Fundo
+{
+   background-color: #D0D0D0;
+   background-image: none;
+   border: 1px #006400 solid;
+}
+#Registro_Ocorrencia1
+{
+   border-width: 0;
+}
+#Tabela_Ocorrencias-1
+{
+   border: 3px #000000 solid;
+   background-color: #DCDCDC;
+   background-image: none;
+   border-collapse: separate;
+   border-spacing: 3px;
+}
+#Tabela_Ocorrencias-1 td
+{
+   padding: 0px 0px 0px 0px;
+}
+#Tabela_Ocorrencias-1 .cell0
+{
+   background-color: transparent;
+   background-image: none;
+   border-top-width: 1px;
+   border-right-width: 1px;
+   border-bottom-width: 1px;
+   border-left-width: 1px;
+   border-top-style: solid;
+   border-right-style: solid;
+   border-bottom-style: solid;
+   border-left-style: solid;
+   border-top-color: #F0F0F0;
+   border-right-color: #A0A0A0;
+   border-bottom-color: #A0A0A0;
+   border-left-color: #F0F0F0;
+   text-align: left;
+   vertical-align: top;
+   width: 110px;
+   height: 48px;
+   font-size: 0;
+}
+#Tabela_Ocorrencias-1 .cell1
+{
+   background-color: transparent;
+   background-image: none;
+   border-top-width: 1px;
+   border-right-width: 1px;
+   border-bottom-width: 1px;
+   border-left-width: 1px;
+   border-top-style: solid;
+   border-right-style: solid;
+   border-bottom-style: solid;
+   border-left-style: solid;
+   border-top-color: #F0F0F0;
+   border-right-color: #A0A0A0;
+   border-bottom-color: #A0A0A0;
+   border-left-color: #F0F0F0;
+   text-align: left;
+   vertical-align: top;
+   width: 332px;
+   height: 48px;
+}
+#Tabela_Ocorrencias-1 .cell2
+{
+   background-color: #F0E68C;
+   background-image: none;
+   border-top-width: 1px;
+   border-right-width: 1px;
+   border-bottom-width: 1px;
+   border-left-width: 1px;
+   border-top-style: solid;
+   border-right-style: solid;
+   border-bottom-style: solid;
+   border-left-style: solid;
+   border-top-color: #F0F0F0;
+   border-right-color: #A0A0A0;
+   border-bottom-color: #A0A0A0;
+   border-left-color: #F0F0F0;
+   text-align: center;
+   vertical-align: top;
+   width: 88px;
+   height: 48px;
+}
+#Tabela_Ocorrencias-1 .cell3
+{
+   background-color: transparent;
+   background-image: none;
+   border-top-width: 1px;
+   border-right-width: 1px;
+   border-bottom-width: 1px;
+   border-left-width: 1px;
+   border-top-style: solid;
+   border-right-style: solid;
+   border-bottom-style: solid;
+   border-left-style: solid;
+   border-top-color: #F0F0F0;
+   border-right-color: #A0A0A0;
+   border-bottom-color: #A0A0A0;
+   border-left-color: #F0F0F0;
+   text-align: left;
+   vertical-align: top;
+   height: 48px;
+}
+#Tabela_Ocorrencias-1 .cell4
+{
+   background-color: #F0E68C;
+   background-image: none;
+   border-top-width: 1px;
+   border-right-width: 1px;
+   border-bottom-width: 1px;
+   border-left-width: 1px;
+   border-top-style: solid;
+   border-right-style: solid;
+   border-bottom-style: solid;
+   border-left-style: solid;
+   border-top-color: #F0F0F0;
+   border-right-color: #A0A0A0;
+   border-bottom-color: #A0A0A0;
+   border-left-color: #F0F0F0;
+   text-align: center;
+   vertical-align: top;
+   width: 110px;
+   height: 48px;
+}
+#Tabela_Ocorrencias-1 .cell5
+{
+   background-color: #F0E68C;
+   background-image: none;
+   border-top-width: 1px;
+   border-right-width: 1px;
+   border-bottom-width: 1px;
+   border-left-width: 1px;
+   border-top-style: solid;
+   border-right-style: solid;
+   border-bottom-style: solid;
+   border-left-style: solid;
+   border-top-color: #F0F0F0;
+   border-right-color: #A0A0A0;
+   border-bottom-color: #A0A0A0;
+   border-left-color: #F0F0F0;
+   text-align: center;
+   vertical-align: top;
+   width: 110px;
+   height: 52px;
+}
+#Tabela_Ocorrencias-1 .cell6
+{
+   background-color: transparent;
+   background-image: none;
+   border-top-width: 1px;
+   border-right-width: 1px;
+   border-bottom-width: 1px;
+   border-left-width: 1px;
+   border-top-style: solid;
+   border-right-style: solid;
+   border-bottom-style: solid;
+   border-left-style: solid;
+   border-top-color: #F0F0F0;
+   border-right-color: #A0A0A0;
+   border-bottom-color: #A0A0A0;
+   border-left-color: #F0F0F0;
+   text-align: left;
+   vertical-align: top;
+   width: 332px;
+   height: 52px;
+}
+#Tabela_Ocorrencias-1 .cell7
+{
+   background-color: #F0E68C;
+   background-image: none;
+   border-top-width: 1px;
+   border-right-width: 1px;
+   border-bottom-width: 1px;
+   border-left-width: 1px;
+   border-top-style: solid;
+   border-right-style: solid;
+   border-bottom-style: solid;
+   border-left-style: solid;
+   border-top-color: #F0F0F0;
+   border-right-color: #A0A0A0;
+   border-bottom-color: #A0A0A0;
+   border-left-color: #F0F0F0;
+   text-align: center;
+   vertical-align: top;
+   width: 88px;
+   height: 52px;
+}
+#Tabela_Ocorrencias-1 .cell8
+{
+   background-color: transparent;
+   background-image: none;
+   border-top-width: 1px;
+   border-right-width: 1px;
+   border-bottom-width: 1px;
+   border-left-width: 1px;
+   border-top-style: solid;
+   border-right-style: solid;
+   border-bottom-style: solid;
+   border-left-style: solid;
+   border-top-color: #F0F0F0;
+   border-right-color: #A0A0A0;
+   border-bottom-color: #A0A0A0;
+   border-left-color: #F0F0F0;
+   text-align: left;
+   vertical-align: top;
+   height: 52px;
+}
+#Tabela_Ocorrencias-1 .cell9
+{
+   background-color: #F0E68C;
+   background-image: none;
+   border-top-width: 1px;
+   border-right-width: 1px;
+   border-bottom-width: 1px;
+   border-left-width: 1px;
+   border-top-style: solid;
+   border-right-style: solid;
+   border-bottom-style: solid;
+   border-left-style: solid;
+   border-top-color: #F0F0F0;
+   border-right-color: #A0A0A0;
+   border-bottom-color: #A0A0A0;
+   border-left-color: #F0F0F0;
+   text-align: center;
+   vertical-align: top;
+   width: 110px;
+   height: 50px;
+}
+#Tabela_Ocorrencias-1 .cell10
+{
+   background-color: transparent;
+   background-image: none;
+   border-top-width: 1px;
+   border-right-width: 1px;
+   border-bottom-width: 1px;
+   border-left-width: 1px;
+   border-top-style: solid;
+   border-right-style: solid;
+   border-bottom-style: solid;
+   border-left-style: solid;
+   border-top-color: #F0F0F0;
+   border-right-color: #A0A0A0;
+   border-bottom-color: #A0A0A0;
+   border-left-color: #F0F0F0;
+   text-align: left;
+   vertical-align: top;
+   width: 332px;
+   height: 50px;
+}
+#Tabela_Ocorrencias-1 .cell11
+{
+   background-color: #F0E68C;
+   background-image: none;
+   border-top-width: 1px;
+   border-right-width: 1px;
+   border-bottom-width: 1px;
+   border-left-width: 1px;
+   border-top-style: solid;
+   border-right-style: solid;
+   border-bottom-style: solid;
+   border-left-style: solid;
+   border-top-color: #F0F0F0;
+   border-right-color: #A0A0A0;
+   border-bottom-color: #A0A0A0;
+   border-left-color: #F0F0F0;
+   text-align: center;
+   vertical-align: top;
+   width: 88px;
+   height: 50px;
+}
+#Tabela_Ocorrencias-1 .cell12
+{
+   background-color: transparent;
+   background-image: none;
+   border-top-width: 1px;
+   border-right-width: 1px;
+   border-bottom-width: 1px;
+   border-left-width: 1px;
+   border-top-style: solid;
+   border-right-style: solid;
+   border-bottom-style: solid;
+   border-left-style: solid;
+   border-top-color: #F0F0F0;
+   border-right-color: #A0A0A0;
+   border-bottom-color: #A0A0A0;
+   border-left-color: #F0F0F0;
+   text-align: left;
+   vertical-align: top;
+   height: 50px;
+}
+#Tabela_Ocorrencias-1 .cell13
+{
+   background-color: #F0E68C;
+   background-image: none;
+   border-top-width: 1px;
+   border-right-width: 1px;
+   border-bottom-width: 1px;
+   border-left-width: 1px;
+   border-top-style: solid;
+   border-right-style: solid;
+   border-bottom-style: solid;
+   border-left-style: solid;
+   border-top-color: #F0F0F0;
+   border-right-color: #A0A0A0;
+   border-bottom-color: #A0A0A0;
+   border-left-color: #F0F0F0;
+   text-align: center;
+   vertical-align: top;
+   width: 110px;
+   height: 44px;
+}
+#Tabela_Ocorrencias-1 .cell14
+{
+   background-color: transparent;
+   background-image: none;
+   border-top-width: 1px;
+   border-right-width: 1px;
+   border-bottom-width: 1px;
+   border-left-width: 1px;
+   border-top-style: solid;
+   border-right-style: solid;
+   border-bottom-style: solid;
+   border-left-style: solid;
+   border-top-color: #F0F0F0;
+   border-right-color: #A0A0A0;
+   border-bottom-color: #A0A0A0;
+   border-left-color: #F0F0F0;
+   text-align: left;
+   vertical-align: top;
+   width: 332px;
+   height: 44px;
+}
+#Tabela_Ocorrencias-1 .cell15
+{
+   background-color: #F0E68C;
+   background-image: none;
+   border-top-width: 1px;
+   border-right-width: 1px;
+   border-bottom-width: 1px;
+   border-left-width: 1px;
+   border-top-style: solid;
+   border-right-style: solid;
+   border-bottom-style: solid;
+   border-left-style: solid;
+   border-top-color: #F0F0F0;
+   border-right-color: #A0A0A0;
+   border-bottom-color: #A0A0A0;
+   border-left-color: #F0F0F0;
+   text-align: center;
+   vertical-align: top;
+   width: 88px;
+   height: 44px;
+}
+#Tabela_Ocorrencias-1 .cell16
+{
+   background-color: transparent;
+   background-image: none;
+   border-top-width: 1px;
+   border-right-width: 1px;
+   border-bottom-width: 1px;
+   border-left-width: 1px;
+   border-top-style: solid;
+   border-right-style: solid;
+   border-bottom-style: solid;
+   border-left-style: solid;
+   border-top-color: #F0F0F0;
+   border-right-color: #A0A0A0;
+   border-bottom-color: #A0A0A0;
+   border-left-color: #F0F0F0;
+   text-align: left;
+   vertical-align: top;
+   height: 44px;
+}
+#Tabela_Ocorrencias-1 .cell17
+{
+   background-color: transparent;
+   background-image: none;
+   border-top-width: 1px;
+   border-right-width: 1px;
+   border-bottom-width: 1px;
+   border-left-width: 1px;
+   border-top-style: solid;
+   border-right-style: solid;
+   border-bottom-style: solid;
+   border-left-style: solid;
+   border-top-color: #F0F0F0;
+   border-right-color: #A0A0A0;
+   border-bottom-color: #A0A0A0;
+   border-left-color: #F0F0F0;
+   text-align: left;
+   vertical-align: top;
+   width: 88px;
+   height: 44px;
+}
+#wb_Text1 
+{
+   background-color: #F0E68C;
+   background-image: none;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_Text1 div
+{
+   text-align: center;
+}
+#Shape1
+{
+   border-width: 0;
+}
+#Shape2
+{
+   border-width: 0;
+}
+#Shape5
+{
+   border-width: 0;
+}
+#Shape6
+{
+   border-width: 0;
+}
+#Shape3
+{
+   border-width: 0;
+}
