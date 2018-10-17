@@ -24,6 +24,11 @@ class Sessao_Model extends CI_Model {
     $this->db->from('sessao');
     return $this->db->get()->result();
   }
+  public function getResultado() {
+    $this->db->select('4 as producao, 1 as refugos, 3 as realizado, 4 as previsto, 1 as diferenca, 90 as oee ');
+    $this->db->from('sessao');
+    return $this->db->get()->result();
+  }
 
 //  public function post($itens){
 //    $res = $this->db->insert('items', $itens);

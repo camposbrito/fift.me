@@ -14,6 +14,10 @@ myApp.config(function($routeProvider) {
       templateUrl: "templates/terminoturno.html",
       controller: "TerminoController"
     })
+    .when("/resultado", {
+      templateUrl: "templates/resultado.html",
+      controller: "ResultadoController"
+    })
     .otherwise({
       redirectTo: "/"
   })  
@@ -96,6 +100,48 @@ myApp.controller("TerminoController", [
           $log.error(status);
         });
     };      
+  }
+]);
+
+myApp.controller("ResultadoController", [
+  "$scope",
+  "$location",
+  "$log",
+  "$http",
+  function($scope, $location, $log, $http) {
+    console.debug('ResultadoController');
+    $http
+      .get("sessao/get")
+      .success(function(data) {        
+        $scope.session = data;
+
+      })
+      .error(function(data, status) {
+        $log.error(status);
+      });
+
+      $scope.getResultado = function() {
+        $http
+          .get("sessao/getResultado")
+          .success(function(data) {
+            console.debug(data);
+            $scope.quantidade = data;
+          })
+          .error(function(data, status) {
+            $log.error(status);
+          });
+      };  
+      $scope.getTermino = function() {
+        $http
+          .get("sessao/getResultado")
+          .success(function(data) {
+            console.debug(data);
+            $scope.quantidade = data;
+          })
+          .error(function(data, status) {
+            $log.error(status);
+          });
+      };      
   }
 ]);
 

@@ -59,6 +59,10 @@ socket.on('connect', function () {
         console.debug('#finalizaturno');
         window.location.href = './#/finaliza';
     });
+    $('#ConcluirTurno').click(function() {
+        console.debug('#resultado');
+        window.location.href = './#/resultado';
+    });
     socket.on('disconnect', function () {
         resetMensagem(); 
         $('#messages').append('<font color="red"><b>'+ getDataTime()  +'  - disconnected</b></font><br>');

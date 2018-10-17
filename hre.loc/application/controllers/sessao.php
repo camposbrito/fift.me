@@ -25,6 +25,10 @@ public function getTermino() {
 	$res = $this->sessao_model->getTermino()[0];
 	echo json_encode($res);
 } 
+public function getResultado() {
+	$res = $this->sessao_model->getResultado()[0];
+	echo json_encode($res);
+} 
 public function getOperador() {
 	$res = $this->sessao_model->getOperador()[0];
 	echo json_encode($res);
