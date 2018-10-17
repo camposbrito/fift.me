@@ -32,11 +32,13 @@ socket.on('connect', function () {
         setTimeout(esconder, 4000);
     });
     socket.on('SetCartao', function(data) {  
-        console.debug(data);              
+        console.debug(data);   
+        socket.disconnect(true);           
         window.location.href = './#/dashboard';
     });
     socket.on('SetOcorrencia', function(data) {  
-        console.debug(data);   
+        console.debug(data);  
+        console.debug('SetOcorrencia'); 
         angular.element('#DashboardController').scope().setQuantidade(data);           
         angular.element('#DashboardController').scope().$apply();
         // window.location.href = './#/dashboard';
@@ -57,10 +59,12 @@ socket.on('connect', function () {
     
     $('#finalizaturno').click(function() {
         console.debug('#finalizaturno');
+        socket.disconnect(true);
         window.location.href = './#/finaliza';
     });
     $('#ConcluirTurno').click(function() {
         console.debug('#resultado');
+        socket.disconnect(true);
         window.location.href = './#/resultado';
     });
     socket.on('disconnect', function () {

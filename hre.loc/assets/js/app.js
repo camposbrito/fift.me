@@ -54,6 +54,7 @@ myApp.controller("DashboardController", [
     };
     $scope.setQuantidade = function(data) {
         var obj = JSON.parse(data);
+        console.debug($scope.Quantidade);
         if (obj == '{start:  false}')
           $scope.Quantidade.qtde = parseInt($scope.Quantidade.qtde) + 1;
     };

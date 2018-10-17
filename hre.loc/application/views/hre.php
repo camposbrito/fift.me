@@ -21,11 +21,8 @@
 </head>	
 <body ng-app="myApp">
 <div id="messages" class=" alert alert-secondary" role="alert" style="display:none;"> </div>
-    <!-- Hello World! -->
-    <ng-view>   
-    
-    </ng-view>
-    <div ng-include="'./templates/partial.html'"></div>     
+    <ng-view></ng-view>     
+       
 </body>       
 
 </html>
