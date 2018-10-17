@@ -19,8 +19,8 @@
       <br>
       <button id="operador" type="button" class="btn btn-default" value="02150E0">02150E0</button>
 
-        <!-- <button id="supervisor" type="button" class="btn btn-default" value="019643A">019643A</button>
-        <button id="administrador" type="button" class="btn btn-default" value="01A013D">01A013D</button> -->
+        <button id="supervisor" type="button" class="btn btn-default" value="019643A">019643A</button>
+        <button id="administrador" type="button" class="btn btn-default" value="01A013D">01A013D</button>
 
     </div>
   </div>
@@ -88,7 +88,7 @@
   }
 </style>
 <script>
-var socket = io.connect('http://localhost:1337');
+var socket = io.connect('http://127.0.0.1:1337');
 socket.on('connect', function () {
   console.log('connected');
   $('#operador').click(function() {

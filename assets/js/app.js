@@ -13,7 +13,10 @@ myApp.config(function($routeProvider) {
       templateUrl: "templates/dashboard.html",
 
       controller: "dashboardController"
-    }) /*
+    })
+    .otherwise({
+      redirectTo: "/"
+  }); /*
 
         .when("/hre", {
             templateUrl: "templates/hre.html",
