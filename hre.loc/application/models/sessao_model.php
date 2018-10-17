@@ -19,6 +19,11 @@ class Sessao_Model extends CI_Model {
     $this->db->from('sessao');
     return $this->db->get()->result();
   }
+  public function getTermino() {
+    $this->db->select('4 as atual');
+    $this->db->from('sessao');
+    return $this->db->get()->result();
+  }
 
 //  public function post($itens){
 //    $res = $this->db->insert('items', $itens);

@@ -21,6 +21,10 @@ public function getQuantidade() {
 	$res = $this->sessao_model->getQuantidade()[0];
 	echo json_encode($res);
 } 
+public function getTermino() {
+	$res = $this->sessao_model->getTermino()[0];
+	echo json_encode($res);
+} 
 public function getOperador() {
 	$res = $this->sessao_model->getOperador()[0];
 	echo json_encode($res);

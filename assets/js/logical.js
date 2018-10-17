@@ -4,7 +4,7 @@ function esconder() {
 }
 function resetMensagem() {
     $('#messages').show();
- 
+
     $('#messages').empty(); 
 }
 function getDataTime(){
@@ -45,7 +45,6 @@ socket.on('connect', function () {
 
     $('#IniciarTurno').click(function() {
         resetMensagem(); 
-        console.debug('#IniciarTurno');
         $('#div-AproxCartao').show();
         $('#div-AproxCartao').addClass("d-flex");
         $('#div-IniciarTurno').hide();
@@ -55,9 +54,11 @@ socket.on('connect', function () {
         setTimeout(esconder, 4000);
     });
     
-    $('#finalizaturno').click(function() {
-        console.debug('#finalizaturno');
-        window.location.href = './#/finaliza';
+    $('#replayButton').click(function() {
+        resetMensagem(); 
+        var sMessage = $('#message').val();
+        socket.emit('reset',  {'message' : sMessage});     
+        setTimeout(esconder, 4000);
     });
     socket.on('disconnect', function () {
         resetMensagem(); 

@@ -17,8 +17,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | environments.
 |
 */
-$config['base_url'] = "http://".$_SERVER['HTTP_HOST']."/hre.loc/";
-
+// $config['base_url'] = "http://".$_SERVER['HTTP_HOST']."/hre.loc/";
+$config['base_url'] = '';
 /*
 |--------------------------------------------------------------------------
 | Index File
