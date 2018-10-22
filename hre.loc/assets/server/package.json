@@ -6,7 +6,8 @@
         "start": "supervisor --debug server.js"
     },
     "dependencies": {
-        "socket.io": "~1",
+        "eslint": "^5.7.0",
+        "socket.io": "^2.1.1",
         "winston": "*"
     }
 }

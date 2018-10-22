@@ -95,7 +95,7 @@ socket.on('connect', function () {
       var valor = $('#operador').val();
       socket.emit('SetCartao', JSON.stringify('{tag: '+ valor +'}'));
   });
-
+ 
   $('#supervisor').click(function() {
     var valor = $(this).val();
     socket.emit('SetCartao', JSON.stringify('{tag:  '+ valor +'}'));
