@@ -18,17 +18,14 @@
         </thead>
         <tbody>
             <% contatos.forEach(function(contato, index) { %>
-            <tr>
+                <tr>
+                <td><%- contato.nome %></td>
+                <td><%- contato.email %></td>
                 <td>
-                    <%- contato.nome %>
+                <a href="/contato/<%- index %>">Detalhes</a>
+                <a href="/chat/<%- contato.email %>">Conversar</a>
                 </td>
-                <td>
-                    <%- contato.email %>
-                </td>
-                <td>
-                    <a href="/contato/<%- index %>">Detalhes</a>
-                </td>
-            </tr>
+                </tr>
             <% }) %>
         </tbody>
     </table>
