@@ -1,0 +1,11 @@
+[{
+    "name":"mondrian",
+    "host": "ftp.mondrianhomestudio.com",
+    "username": "mondrianhomestudio",
+    "password": "brito252",
+    "port": 21, 
+   
+    "remotePath": "/www/lavanderia/",
+    "localPath": "d:/Projetos/lavanderia",
+    "disable": false 
+} ] 

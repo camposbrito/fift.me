@@ -1,0 +1,618 @@
+{
+  "ftp://ftp.mondrianhomestudio.com:21@mondrianhomestudio": {
+    "www": {
+      "lavanderia": {
+        ".gitignore": {
+          "type": "-",
+          "size": 489,
+          "lmtime": 0,
+          "modified": false
+        },
+        ".htaccess": {
+          "type": "-",
+          "size": 124,
+          "lmtime": 0,
+          "modified": false
+        },
+        ".vscode": {},
+        "application": {
+          ".htaccess": {
+            "type": "-",
+            "size": 123,
+            "lmtime": 0,
+            "modified": false
+          },
+          "cache": {},
+          "config": {
+            "autoload.php": {
+              "type": "-",
+              "size": 4397,
+              "lmtime": 0,
+              "modified": false
+            },
+            "config.php": {
+              "type": "-",
+              "size": 18160,
+              "lmtime": 0,
+              "modified": false
+            },
+            "constants.php": {
+              "type": "-",
+              "size": 4322,
+              "lmtime": 0,
+              "modified": false
+            },
+            "database.php": {
+              "type": "-",
+              "size": 9096,
+              "lmtime": 1539143446156,
+              "modified": false
+            },
+            "doctypes.php": {
+              "type": "-",
+              "size": 2441,
+              "lmtime": 0,
+              "modified": false
+            },
+            "foreign_chars.php": {
+              "type": "-",
+              "size": 2993,
+              "lmtime": 0,
+              "modified": false
+            },
+            "hooks.php": {
+              "type": "-",
+              "size": 417,
+              "lmtime": 0,
+              "modified": false
+            },
+            "index.html": {
+              "type": "-",
+              "size": 131,
+              "lmtime": 0,
+              "modified": false
+            },
+            "memcached.php": {
+              "type": "-",
+              "size": 498,
+              "lmtime": 0,
+              "modified": false
+            },
+            "migration.php": {
+              "type": "-",
+              "size": 3032,
+              "lmtime": 0,
+              "modified": false
+            },
+            "mimes.php": {
+              "type": "-",
+              "size": 9087,
+              "lmtime": 0,
+              "modified": false
+            },
+            "profiler.php": {
+              "type": "-",
+              "size": 477,
+              "lmtime": 0,
+              "modified": false
+            },
+            "recaptcha.php": {
+              "type": "-",
+              "size": 1052,
+              "lmtime": 0,
+              "modified": false
+            },
+            "routes.php": {
+              "type": "-",
+              "size": 2853,
+              "lmtime": 1537073818924,
+              "modified": false
+            },
+            "smileys.php": {
+              "type": "-",
+              "size": 3181,
+              "lmtime": 0,
+              "modified": false
+            },
+            "user_agents.php": {
+              "type": "-",
+              "size": 6132,
+              "lmtime": 0,
+              "modified": false
+            }
+          },
+          "controllers": {
+            "Apartamentos.php": {
+              "type": "-",
+              "size": 956,
+              "lmtime": 1539144462835,
+              "modified": false
+            },
+            "Balanco.php": {
+              "type": "-",
+              "size": 2178,
+              "lmtime": 1537074334392,
+              "modified": false
+            },
+            "Contato.php": {
+              "type": "-",
+              "size": 2187,
+              "lmtime": 0,
+              "modified": false
+            },
+            "Dashboard.php": {
+              "type": "-",
+              "size": 2849,
+              "lmtime": 0,
+              "modified": false
+            },
+            "Fechamentos - Copia.php": {
+              "type": "-",
+              "size": 70,
+              "lmtime": 1526926272646,
+              "modified": true
+            },
+            "Fechamentos.php": {
+              "type": "-",
+              "size": 2212,
+              "lmtime": 1537075028114,
+              "modified": false
+            },
+            "Generic_Controller.php": {
+              "type": "-",
+              "size": 430,
+              "lmtime": 0,
+              "modified": false
+            },
+            "Log.php": {
+              "type": "-",
+              "size": 2408,
+              "lmtime": 0,
+              "modified": false
+            },
+            "Login.php": {
+              "type": "-",
+              "size": 3067,
+              "lmtime": 0,
+              "modified": false
+            },
+            "Maquinas.php": {
+              "type": "-",
+              "size": 984,
+              "lmtime": 0,
+              "modified": false
+            },
+            "Metodos.php": {
+              "type": "-",
+              "size": 759,
+              "lmtime": 0,
+              "modified": false
+            },
+            "Parametros.php": {
+              "type": "-",
+              "size": 1050,
+              "lmtime": 0,
+              "modified": false
+            },
+            "Permissoes.php": {
+              "type": "-",
+              "size": 910,
+              "lmtime": 0,
+              "modified": false
+            },
+            "Regras.php": {
+              "type": "-",
+              "size": 527,
+              "lmtime": 0,
+              "modified": false
+            },
+            "Relatorios.php": {
+              "type": "-",
+              "size": 5982,
+              "lmtime": 1539142850007,
+              "modified": false
+            },
+            "Tags.php": {
+              "type": "-",
+              "size": 1377,
+              "lmtime": 0,
+              "modified": false
+            },
+            "Usuarios.php": {
+              "type": "-",
+              "size": 1110,
+              "lmtime": 0,
+              "modified": false
+            },
+            "Utilizacao.php": {
+              "type": "-",
+              "size": 8142,
+              "lmtime": 0,
+              "modified": false
+            },
+            "Welcome.php": {
+              "type": "-",
+              "size": 1131,
+              "lmtime": 1539141347552,
+              "modified": false
+            },
+            "index.html": {
+              "type": "-",
+              "size": 131,
+              "lmtime": 0,
+              "modified": false
+            },
+            "maquina.php": {
+              "type": "-",
+              "size": 837,
+              "lmtime": 0,
+              "modified": false
+            },
+            "relatorio.php": {
+              "type": "-",
+              "size": 837,
+              "lmtime": 0,
+              "modified": false
+            },
+            "tags.php": {
+              "type": "-",
+              "size": 837,
+              "lmtime": 0,
+              "modified": false
+            },
+            "utilizacao.php": {
+              "type": "-",
+              "size": 837,
+              "lmtime": 0,
+              "modified": false
+            }
+          },
+          "core": {},
+          "helpers": {
+            "common_helper.php": {
+              "type": "-",
+              "size": 4126,
+              "lmtime": 1537123249335,
+              "modified": false
+            },
+            "index.html": {
+              "type": "-",
+              "size": 131,
+              "lmtime": 0,
+              "modified": false
+            }
+          },
+          "hooks": {},
+          "index.html": {
+            "type": "-",
+            "size": 131,
+            "lmtime": 0,
+            "modified": false
+          },
+          "language": {},
+          "libraries": {},
+          "logs": {},
+          "models": {
+            "Apartamento_model.php": {
+              "type": "-",
+              "size": 2094,
+              "lmtime": 1539144460170,
+              "modified": false
+            },
+            "Balanco_model.php": {
+              "type": "-",
+              "size": 2202,
+              "lmtime": 1494463558039,
+              "modified": false
+            },
+            "Contato_model.php": {
+              "type": "-",
+              "size": 1036,
+              "lmtime": 0,
+              "modified": false
+            },
+            "Fechamento_model.php": {
+              "type": "-",
+              "size": 2202,
+              "lmtime": 0,
+              "modified": false
+            },
+            "Generic_model.php": {
+              "type": "-",
+              "size": 1457,
+              "lmtime": 1537126065815,
+              "modified": false
+            },
+            "Log_model.php": {
+              "type": "-",
+              "size": 10199,
+              "lmtime": 0,
+              "modified": false
+            },
+            "Login_model.php": {
+              "type": "-",
+              "size": 1123,
+              "lmtime": 0,
+              "modified": false
+            },
+            "Maquina_model.php": {
+              "type": "-",
+              "size": 8206,
+              "lmtime": 1537122844774,
+              "modified": false
+            },
+            "Metodos_model.php": {
+              "type": "-",
+              "size": 2159,
+              "lmtime": 0,
+              "modified": false
+            },
+            "Parametros_model.php": {
+              "type": "-",
+              "size": 1375,
+              "lmtime": 1539142843249,
+              "modified": false
+            },
+            "Permissoes_model.php": {
+              "type": "-",
+              "size": 1656,
+              "lmtime": 0,
+              "modified": false
+            },
+            "Relatorio_model.php": {
+              "type": "-",
+              "size": 4179,
+              "lmtime": 1539143422979,
+              "modified": false
+            },
+            "Rfid_model.php": {
+              "type": "-",
+              "size": 6174,
+              "lmtime": 0,
+              "modified": false
+            },
+            "Usuarios_model.php": {
+              "type": "-",
+              "size": 3102,
+              "lmtime": 0,
+              "modified": false
+            },
+            "Utilizacao_model.php": {
+              "type": "-",
+              "size": 6755,
+              "lmtime": 0,
+              "modified": false
+            },
+            "index.html": {
+              "type": "-",
+              "size": 131,
+              "lmtime": 0,
+              "modified": false
+            }
+          },
+          "third_party": {},
+          "views": {
+            "Dashboard.php": {
+              "type": "-",
+              "size": 16243,
+              "lmtime": 0,
+              "modified": false
+            },
+            "Login.php": {
+              "type": "-",
+              "size": 1014,
+              "lmtime": 0,
+              "modified": false
+            },
+            "Usuarios.php": {
+              "type": "-",
+              "size": 4106,
+              "lmtime": 0,
+              "modified": false
+            },
+            "apartamentos.php": {
+              "type": "-",
+              "size": 6576,
+              "lmtime": 0,
+              "modified": false
+            },
+            "balanco.php": {
+              "type": "-",
+              "size": 5240,
+              "lmtime": 1484010250822,
+              "modified": false
+            },
+            "balanco_inserir.php": {
+              "type": "-",
+              "size": 4051,
+              "lmtime": 1479524946261,
+              "modified": false
+            },
+            "contato.php": {
+              "type": "-",
+              "size": 3037,
+              "lmtime": 0,
+              "modified": false
+            },
+            "contato_livro.php": {
+              "type": "-",
+              "size": 4343,
+              "lmtime": 0,
+              "modified": false
+            },
+            "dashboard.php": {
+              "type": "-",
+              "size": 21838,
+              "lmtime": 0,
+              "modified": false
+            },
+            "errors": {},
+            "fechamento.php": {
+              "type": "-",
+              "size": 5255,
+              "lmtime": 1537075093181,
+              "modified": false
+            },
+            "fechamento_inserir.php": {
+              "type": "-",
+              "size": 4051,
+              "lmtime": 0,
+              "modified": false
+            },
+            "includes": {
+              "footer.php": {
+                "type": "-",
+                "size": 16121,
+                "lmtime": 1537125702630,
+                "modified": false
+              },
+              "header.php": {
+                "type": "-",
+                "size": 1999,
+                "lmtime": 0,
+                "modified": false
+              },
+              "menu.php": {
+                "type": "-",
+                "size": 7286,
+                "lmtime": 1537068720707,
+                "modified": false
+              }
+            },
+            "index.html": {
+              "type": "-",
+              "size": 131,
+              "lmtime": 0,
+              "modified": false
+            },
+            "log.php": {
+              "type": "-",
+              "size": 3406,
+              "lmtime": 0,
+              "modified": false
+            },
+            "login.php": {
+              "type": "-",
+              "size": 1005,
+              "lmtime": 0,
+              "modified": false
+            },
+            "maquinas.php": {
+              "type": "-",
+              "size": 5740,
+              "lmtime": 1537125615474,
+              "modified": false
+            },
+            "metodos.php": {
+              "type": "-",
+              "size": 4266,
+              "lmtime": 0,
+              "modified": false
+            },
+            "parametros.php": {
+              "type": "-",
+              "size": 14206,
+              "lmtime": 0,
+              "modified": false
+            },
+            "permissoes.php": {
+              "type": "-",
+              "size": 4388,
+              "lmtime": 0,
+              "modified": false
+            },
+            "regras.php": {
+              "type": "-",
+              "size": 4393,
+              "lmtime": 0,
+              "modified": false
+            },
+            "relatorios.php": {
+              "type": "-",
+              "size": 9340,
+              "lmtime": 0,
+              "modified": false
+            },
+            "tags.php": {
+              "type": "-",
+              "size": 6690,
+              "lmtime": 0,
+              "modified": false
+            },
+            "tags_inserir.php": {
+              "type": "-",
+              "size": 3625,
+              "lmtime": 0,
+              "modified": false
+            },
+            "usuarios.php": {
+              "type": "-",
+              "size": 4777,
+              "lmtime": 0,
+              "modified": false
+            },
+            "usuarios_inserir.php": {
+              "type": "-",
+              "size": 3810,
+              "lmtime": 0,
+              "modified": false
+            },
+            "utilizacao.php": {
+              "type": "-",
+              "size": 11086,
+              "lmtime": 0,
+              "modified": false
+            },
+            "welcome_message.php": {
+              "type": "-",
+              "size": 1882,
+              "lmtime": 1537117243349,
+              "modified": false
+            }
+          }
+        },
+        "assets": {},
+        "contributing.md": {
+          "type": "-",
+          "size": 6504,
+          "lmtime": 0,
+          "modified": false
+        },
+        "erros": {
+          "type": "l",
+          "size": 34,
+          "lmtime": 0,
+          "modified": false
+        },
+        "index.php": {
+          "type": "-",
+          "size": 10295,
+          "lmtime": 1539143451437,
+          "modified": false
+        },
+        "license.txt": {
+          "type": "-",
+          "size": 1114,
+          "lmtime": 0,
+          "modified": false
+        },
+        "readme.rst": {
+          "type": "-",
+          "size": 2353,
+          "lmtime": 0,
+          "modified": false
+        },
+        "relic.php": {
+          "type": "-",
+          "size": 7324,
+          "lmtime": 0,
+          "modified": false
+        },
+        "scripts": {},
+        "system": {},
+        "user_guide": {}
+      }
+    }
+  },
+  "$version": 1
+}

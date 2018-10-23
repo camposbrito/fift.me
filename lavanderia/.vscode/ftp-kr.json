@@ -1,0 +1,16 @@
+{
+    "host": "ftp.mondrianhomestudio.com",
+    "username": "mondrianhomestudio",
+    "password": "brito252",
+    "port": 21,
+    "remotePath": "/www/lavanderia/",
+    "protocol": "ftp",
+    "fileNameEncoding": "utf8",
+    "autoUpload": true,
+    "autoDelete": false,
+    "autoDownload": false,
+    "ignore": [
+        ".git",
+        "/.vscode"
+    ]
+}

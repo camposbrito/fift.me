@@ -1,0 +1,18 @@
+ {
+    "local": {
+      "files": [
+        "*"
+      ],
+      "root": "d:/Projetos/lavanderia",
+      "syncOnSave": true
+    },
+    "remotes": [
+      {
+        "host": "ftp.mondrianhomestudio.com",
+        "username": "mondrianhomestudio",
+        "password": "brito252",
+        "port": 21,
+        "root": "/www/lavanderia/"
+      }
+    ]
+  }

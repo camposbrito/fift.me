@@ -1,0 +1,45 @@
+select:disabled {
+    background-color: rgb(235, 235, 228);
+}
+.input-rodrigo{
+    width: 46px;
+    margin: 3px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 33px;
+    padding: 2px;
+}
+.check-rodrigo{
+    float: right;
+    margin-top: 13px;
+    position: relative;
+    top: 8px;
+
+}
+th label{
+    display: block;
+    text-align: right;
+    padding-right: 13px;
+}
+
+.legend-rodrigo {
+     display: inherit !important; 
+     width: inherit !important; 
+     padding: inherit !important;  
+     margin-bottom: inherit !important; 
+     font-size: inherit !important; 
+     line-height: inherit; 
+     color: inherit !important; 
+     border: none !important; 
+     border-bottom: none !important; 
+}
+
+.fieldset-rodrigo{
+/*     min-width: inherit !important; 
+     padding: inherit !important; 
+     margin: inherit !important; 
+     border: inherit !important; */
+padding: .35em .625em .75em !important; 
+    margin: 0 2px !important; 
+    border: 1px solid silver !important; 
+}
