@@ -50,6 +50,7 @@ io.on('connection', function (socket){
     });
     socket.on('reset', function (message) {
         ++nb;
+        
         logger.info('ElephantIO broadcast > reset >' + JSON.stringify(message));
 
         // send to all connected clients
