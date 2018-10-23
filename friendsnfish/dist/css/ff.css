@@ -1,0 +1,374 @@
+div {
+    /* border: 1px dashed red; */
+}
+
+body,
+html {
+    background: url(../img/bg.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: progid: DXImageTransform.Microsoft.AlphaImageLoader(src='.bg.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='bg.jpg', sizingMethod='scale')";
+    font-family: big_noodle_titling;
+}
+
+@font-face {
+    font-family: big_noodle_titling;
+    src: url('../fonts/big_noodle_titling.ttf');
+}
+
+@font-face {
+    font-family: big_noodle_titling_oblique;
+    src: url('../fonts/big_noodle_titling_oblique.ttf');
+}
+
+.container {
+    /*position: relative;
+    height: 14rem;
+    border: 1px solid;*/
+}
+
+.logo img {
+    margin: 0 auto;
+    width: 456px;
+    height: 280px;
+}
+
+.logo {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    /*margin-left: 30px;*/
+    /*margin-top: 5px;*/
+    /*position: fixed;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+    /*border: 1px dashed deeppink;*/
+}
+
+@keyframes floating {
+    from {
+        transform: translate(0, 0px);
+    }
+    65% {
+        transform: translate(0, 15px);
+    }
+    to {
+        transform: translate(0, -0px);
+    }
+}
+
+#friendelivery {
+    font-family: big_noodle_titling;
+    font-size: 63.22px;
+    color: #fff;
+    background: url(../img/friendelivery.png) transparent no-repeat center center;
+    /*background-size: 118% 50%;*/
+    /*width: 478px;*/
+    height: 47px;
+    line-height: 47px;
+}
+
+#cardapio a .small {
+    font-size: 34.01px;
+    letter-spacing: 6px;
+}
+
+#cardapio a:hover {
+    text-shadow: 5px 5px 5px #679f8c;
+}
+
+#cardapio a div {
+    position: relative;
+    top: 10px;
+    left: 3px;
+}
+
+#cardapio a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 82.44px;
+    line-height: 48px;
+    position: relative;
+    top: 15px;
+    left: 2px;
+}
+
+
+/*Firefox*/
+
+@-moz-document url-prefix() {
+    #cardapio a div {
+        position: relative;
+        top: 16px;
+        left: 3px;
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    #cardapio a div:not(*:root) {
+        position: relative;
+        top: 14px;
+        left: 3px;
+    }
+}
+@media and (-webkit-min-device-pixel-ratio:0) {
+ #cardapio a div {/*border: 1px solid green;*/}
+}
+
+/* Chrome 29+ */
+@media screen and (-webkit-min-device-pixel-ratio:0)
+  and (min-resolution:.001dpcm) {
+    #cardapio a div {/*border: 1px solid blue;*/}
+}
+
+/* Chrome 22-28 */
+@media screen and(-webkit-min-device-pixel-ratio:0) {
+  #cardapio a div {-chrome-:only(; 
+    /* border: 1px solid green;*/
+  );}
+
+}
+
+noindex:-o-prefocus, . #cardapio a div {/*border: 1px solid green;*/}
+/* Safari 3.0 and Chrome only */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+     #cardapio a div {/*border: 1px solid orange;*/}
+}
+
+/* Chrome browser 
+body:nth-of-type(1)  #cardapio a div {border: 1px solid pink;}
+
+ */
+
+@media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0) {       
+	#cardapio a div {
+		position: relative;
+		top: 15px;
+		left: 3px;
+	}
+ }
+ 
+ @media screen and (-webkit-min-device-pixel-ratio:0) { 
+    /* Safari and Chrome, if Chrome rule needed */
+     #cardapio a div {
+	/*	 border: 1px solid yellow;*/
+	}
+
+    /* Safari 5+ ONLY */
+    ::i-block-chrome, #cardapio a div {/*border: 1px solid black;*/}
+}
+
+
+html > body #cardapio a div {
+    position: relative;
+    top: 15px;
+    left: 3px;
+}
+
+.selector {
+    (position: relative;
+    top: 15px;
+    left: 3px;
+    );
+}
+
+#cardapio {
+    background: url(../img/cardapio.png) transparent no-repeat center center;
+    /*padding: 50px 0 11px 0;*/
+    /*background-size: 64% 84%;*/
+    /*background-position-y: -1px;*/
+    /*background-position-x: 95px;*/
+    width: 262px;
+    height: 121px;
+    line-height: 74px;
+    /* position: relative; */
+    /* top: 50%; */
+    /* right: 50%; */
+    /* transform: translate(50%, 50%); */
+    padding: 0;
+    /*margin: 0;*/
+}
+
+.android a:before {
+    /*content: url('../img/android.png');*/
+    /* position: relative; */
+    /* z-index: 100000; */
+    /* left: -150px; */
+    /* top: 81px; */
+    /* float: left; */
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.ios img,
+.android img {
+    float: left;
+    padding: 0 0 0px 18px;
+}
+
+.ios,
+.android {
+    /* position: relative; */
+    /* top: -81px; */
+    /* left: 27px; */
+    line-height: 21px;
+    /*margin: 0;*/
+    padding: 0;
+    text-align: left;
+}
+
+.ios a:before {
+    /*content: url('../img/ios.png');*/
+    /* position: relative; */
+    /* z-index: 100000; */
+    /* left: -150px; */
+    /* top: 81px; */
+    /* float: left; */
+}
+
+#pecapeloapp legend {
+    border: 0;
+    color: #fff;
+    font-size: 35.15px;
+    line-height: 28px;
+    text-align: center;
+}
+
+#pecapeloapp a {
+    /* line-height: 0; */
+    text-decoration: none;
+    color: #fff;
+    /* padding: 0 0 0 72px; */
+}
+
+#pecapeloapp a:hover {
+    text-shadow: 5px 5px 5px #679f8c;
+}
+
+#pecapeloapp {
+    background: url(../img/pecapeloapp.png) transparent no-repeat center center;
+    /*background-size: 100% 77%;*/
+    /*background-position-y: 10px;*/
+    /*background-position-x: 0px;*/
+    width: 452px;
+    height: 132px;
+    line-height: 29px;
+    /*margin: 0;*/
+    padding: 0;
+}
+
+#pecapeloapp fieldset {
+    /* width: 452px; */
+    /* height: 132px; */
+    line-height: 27px;
+}
+
+#android,
+#ios {
+    /* text-align: left; */
+    /* float: left; */
+    /* line-height: 27px; */
+    /* padding: 0 0 0 36px; */
+}
+
+#baixa {
+    font-size: 18px;
+    /* text-align: left; */
+    /* top: -2px; */
+    /* position: relative; */
+}
+
+#store {
+    font-size: 40px;
+}
+
+#plataforma {
+    font-size: 16px;
+    position: relative;
+    top: -7px;
+}
+
+#contato {
+    color: #fff;
+    text-align: left;
+    width: 452px;
+    height: 63px;
+    line-height: 30px;
+    /*margin: 0;*/
+    padding: 0;
+}
+
+#peca {
+    font-size: 24px;
+}
+
+#fixo {
+    font-size: 52px;
+    /*width: 100%;*/
+    /*margin: 0;*/
+    padding: 0;
+    text-align: left;
+}
+
+#whats {
+    font-size: 49px;
+    /* display: block; */
+    /* width: 120%; */
+    /* position: relative; */
+    /* left: 15px; */
+    /* top: -64px; */
+    /*margin: 0;*/
+    padding: 0;
+    margin-left: 0px;
+    /* text-align: right; */
+}
+
+#whats img {
+    margin-left: 2px !important;
+}
+
+#fixo img,
+#whats img {
+    text-align: left;
+    float: left;
+    /* padding-left: 18px; */
+    /* position: relative; */
+    /* top: -64px; */
+    padding-top: 12px;
+    margin-left: -15px;
+}
+
+#fixo:before {
+    /*content: url(../img/telefone.png);*/
+    /* margin-right: 25px; */
+    /* position: relative; */
+    /* z-index: 100000; */
+    /* left: -56px; */
+    /* top: 74px; */
+    /* text-align: left; */
+    /* width: 149px; */
+    /* height: 150px !important; */
+}
+
+span.espacamento {
+    height: 43px;
+    display: block;
+}
+
+#whats:before {
+    /*content: url(../img/whatsapp.png);*/
+    /* position: relative; */
+    /* z-index: 100000; */
+    /* left: -70px; */
+    /* top: 74px; */
+    /* text-align: left; */
+    /* width: 100px; */
+}
