@@ -1,0 +1,286 @@
+/******************************************************************************************* 
+ 
+ 2.  Grid 1200px
+ 
+ *********************************************************************************************/
+  
+/* .clientes . */
+.clientes:before {
+  content: '';
+  position: absolute;
+  background: url(../img/ClientesCornerLeft.png) bottom;
+  background-size: 100% 100%;
+  background-position-x: -45px;
+  background-repeat: no-repeat;
+  width: 593px;
+  height: 482px;
+  top: 0;
+  display: block;
+  display: block;
+	color: #f37027;
+	line-height: 55pt; 
+	font-size: 55pt;
+	padding: 1%;
+  font-family: 'Khand', Arial, sans-serif;
+	font-weight: 700;
+  white-space: pre !important;
+}
+.clientes:after {
+    content: '';
+    position: absolute;
+    background: url(../img/ClientesCornerRight.png) bottom;
+    background-size: 100% 100%;
+    right: 0;
+    bottom: 0;
+    width: 175px;
+    height:184px;
+    display: block;
+  }
+  
+
+  .nossos-clientes .frase1{
+    color:#a1a1a1;
+    font-family: 'Khand', Arial, sans-serif;  
+    line-height: 20pt; 
+    font-size: 20pt;
+    font-weight: 450;
+    text-align: left;
+  }  
+  
+  .nossos-clientes .frase2{
+    color:#f37027;
+    font-family: 'Khand', Arial, sans-serif;  
+    line-height: 55pt; 
+    font-size: 55pt;
+    text-align: left;
+    font-weight: 450;
+  }
+   
+  .nossos-clientes .Caterpillar img,
+  .nossos-clientes .incepa img,
+  .nossos-clientes .pernambucanas img,
+  .nossos-clientes .pmcl img,
+  .nossos-clientes .pr img,
+  .nossos-clientes .pmbn img,
+  .nossos-clientes .senai img,
+  .nossos-clientes .arq_curitiba img,
+  .nossos-clientes .colatusso img,
+  .nossos-clientes .aabb img,
+  .nossos-clientes .inc img
+  {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .nossos-clientes .Caterpillar     ,
+  .nossos-clientes .incepa,
+  .nossos-clientes .pernambucanas,
+  .nossos-clientes .pmcl ,
+  .nossos-clientes .pr ,
+  .nossos-clientes .pmbn ,
+  .nossos-clientes .senai ,
+  .nossos-clientes .arq_curitiba ,
+  .nossos-clientes .colatusso ,
+  .nossos-clientes .aabb ,
+  .nossos-clientes .inc 
+
+
+  {
+    color: #fffefe;
+    font-size: 55px;
+    width: 164px;
+    height: 92px;
+    /* border: 1px solid rosybrown; */
+    text-align: center;
+    white-space: nowrap;
+    z-index: 10;
+  }
+
+ /********************************************************************************************* 
+ 
+ 3.  Grid 960px (mediaqueries)
+ 
+ *********************************************************************************************/
+ 
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+  .clientes::before{
+    background-position-x: -90px !important;
+    background-repeat: no-repeat; 
+  }
+  .clientes{
+    /* border: 1px solid blue; */
+  }
+  .nossos-clientes  .pos3{
+    left: 12% !important;
+    position: relative;
+  }
+  .nossos-clientes  .pos2{
+    left: 20% !important;
+    position: relative;
+  }
+  .nossos-clientes .pos1{
+    left: 30% !important;
+    position: relative;
+  }
+  .nossos-clientes .Caterpillar img,
+  .nossos-clientes .incepa img,
+  .nossos-clientes .pernambucanas img,
+  .nossos-clientes .pmcl img,
+  .nossos-clientes .pr img,
+  .nossos-clientes .pmbn img,
+  .nossos-clientes .senai img,
+  .nossos-clientes .arq_curitiba img,
+  .nossos-clientes .colatusso img,
+  .nossos-clientes .aabb img,
+  .nossos-clientes .inc img
+  {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .nossos-clientes .img-responsive{
+    position: relative;
+    height: 42px;
+    width: auto;
+    top: 44px;
+   }
+   .nossos-clientes .img-responsive.img1{
+    left: 13%;
+  }
+   .nossos-clientes .img-responsive.img2{
+    left: 10%;
+  }
+   .nossos-clientes .img-responsive.img3{
+    left: 05%;
+  }
+   .nossos-clientes .img-responsive.img4{
+    left: 0%;
+  }
+  .cliente{
+    /* border: 1px solid black; */
+  }
+}
+  
+/********************************************************************************************* 
+
+4.  Grid 720px (mediaqueries)
+
+*********************************************************************************************/
+
+@media only screen and (min-width: 720px) and (max-width: 959px) {
+  .clientes::before{
+    background: none ;
+  }
+  
+  .clientes .pos1 
+  { 
+    text-align: left;
+    position: relative !important;
+    left: inherit !important;
+    top: 20px !important;
+  } 
+  .clientes .pos2 
+  { 
+    text-align: left;
+    position: relative !important;
+    left: 4px !important;
+    top: 0px !important;
+  } 
+  .clientes .pos3
+  { 
+    text-align: left;
+    position: relative !important;
+    left: 210px !important;
+    top: -82px !important;
+  }
+  .nossos-clientes .Caterpillar ,
+  .nossos-clientes .incepa ,
+  .nossos-clientes .pernambucanas{
+    top: 25% !important;
+  }
+
+  .nossos-clientes .pmcl ,
+  .nossos-clientes .pr ,
+  .nossos-clientes .pmbn 
+  {
+    top: 40% !important;        
+  }
+  .nossos-clientes .senai,
+  .nossos-clientes .arq_curitiba ,
+  .nossos-clientes .colatusso   {
+    top: 60% !important;        
+  }
+  .nossos-clientes .inc, 
+  .nossos-clientes .aabb
+  {
+    top: 75% !important;   
+  }
+  .nossos-clientes .Caterpillar ,
+  .nossos-clientes .pmcl ,
+  .nossos-clientes .senai {
+    left: 10% !important;    
+  }
+  .nossos-clientes .incepa ,
+  .nossos-clientes .pr ,
+  .nossos-clientes .arq_curitiba
+  {
+    left: 45%!important;
+  }
+  .nossos-clientes .pernambucanas ,  
+  .nossos-clientes .pmbn ,
+  .nossos-clientes .colatusso 
+  {
+    left: 75%!important;
+  }
+ 
+  .nossos-clientes .aabb  {
+    left: 60%!important;
+
+  }
+  .nossos-clientes .inc 
+  {
+
+    left: 25%!important;
+  }
+
+}
+  
+
+/********************************************************************************************* 
+
+5.  Grid lt 720px / Mobile (mediaqueries)
+
+*********************************************************************************************/
+  
+@media only screen and (max-width: 719px) {
+ .clientes 
+  {
+    /* display: none; */
+}
+.nossos-clientes .Caterpillar     ,
+  .nossos-clientes .incepa,
+  .nossos-clientes .pernambucanas,
+  .nossos-clientes .pmcl ,
+  .nossos-clientes .pr ,
+  .nossos-clientes .pmbn ,
+  .nossos-clientes .senai ,
+  .nossos-clientes .arq_curitiba ,
+  .nossos-clientes .colatusso ,
+  .nossos-clientes .aabb ,
+  .nossos-clientes .inc 
+
+
+  {
+ 
+    width: 126px !important;
+    /* border: 1px solid #f37027; */
+    
+  }
+  .clientes:before{
+    background: none;
+    width: 100% !important; 
+    height: 100% !important;
+  }
+  .clientes{
+    /* border: 1px solid blue; */
+  }
+}
+

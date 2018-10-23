@@ -1,0 +1,170 @@
+  /******************************************************************************************* 
+ 
+ 2.  Grid 1200px
+ 
+ *********************************************************************************************/
+  
+body
+{
+    padding: 0;
+    margin: 0;    
+}
+li.logo-secondary::after 
+{
+    content: '';
+    border: 1px solid #f7f8fb;
+    background: #f7f8fb;
+    width: 84px;
+    height: 74px;
+    background-size: 100% 100%;
+    position: absolute;
+    z-index: 0;
+    top: -32px;
+    left: -11px;
+}
+li.logo-secondary img
+{
+    z-index: 999;
+    /* border: 0px solid pink; */
+    position: relative;
+}
+li.logo-secondary::before 
+{
+    content: '';
+    /* border: 1px solid #f7f8fb; */
+    /* background: url('.\img\sonoreo_sticky.png'); */
+    width: 84px;
+    height: 74px;
+    background-size: 100% 100%;
+    position: absolute;
+    z-index: 0;
+    top: -34px;
+    left: -11px;
+}
+
+li.logo-secondary {
+    width: 72px;
+    height: 72px;
+    border-left: 4px solid #f7f8fb;
+    border-right: 4px solid #f7f8fb;
+    border-top: 4px solid #f7f8fb;
+    border-bottom: 4px solid #f7f8fb;
+    background: #f7f8fb;
+    color: #f7f8fb;
+    /* text-shadow: 1px 1px 0 rgba(0,0,0,0.3); */
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 2em;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    top: -0px!important;
+    box-shadow: 0px 4px 4px #aaaaaa;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+}
+nav.secondary
+{  
+    width: 100%;
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+    text-align: center;
+    float: none;
+    padding: 9px 0;
+    background: #f7f8fb;
+}
+nav.secondary ul li 
+{
+    display: inline-block;
+    margin-left: 35px;
+    line-height: 1.5;
+    position: relative;
+    top: -16px;
+}
+nav.secondary ul li:first-child 
+{
+    margin-left: 0px;
+}
+nav.secondary ul
+{
+    padding-left: 0px;
+}
+nav.secondary ul a 
+{
+    color: #888888;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    color: #d8540a;
+    text-decoration: none;
+}
+.navbar-nav-secondary {
+    position: fixed;
+    top: 0px;
+    height: 46px;
+    z-index: 999;
+    width: 100%;
+    /* padding: 17px 0; */
+    background: none;
+    /* overflow: hidden; */
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    top: 0px;
+    font-family: "Khand", sans-serif;
+    background-color: #f7f8fb;
+    -webkit-transition: padding 0.3s;
+    -moz-transition: padding 0.3s;
+    transition: padding 0.3s;
+    border: none;
+    box-shadow: 0px 4px 4px #aaaaaa;
+}
+/********************************************************************************************* 
+ 
+ 3.  Grid 960px (mediaqueries)
+ 
+ *********************************************************************************************/
+ 
+ @media only screen and (min-width: 960px) and (max-width: 1199px) {
+   .navbar-nav-secondary{
+      /* border: 1px solid red; */
+    }
+  }
+    
+  /********************************************************************************************* 
+  
+  4.  Grid 720px (mediaqueries)
+  
+  *********************************************************************************************/
+  
+  @media only screen and (min-width: 720px) and (max-width: 959px) {
+   .navbar-nav-secondary{
+      /* border: 1px solid green; */
+    }
+    nav.secondary ul a{
+        font-size: 16px;
+        padding: 10px;
+      }
+      nav.secondary .logo img{
+        width: 70%;
+      }
+      nav.secondary{
+        height: 100% !important;
+      }
+
+  }
+    
+  
+  /********************************************************************************************* 
+  
+  5.  Grid lt 720px / Mobile (mediaqueries)
+  
+  *********************************************************************************************/
+    
+  @media only screen and (max-width: 719px) {
+    .navbar-nav-secondary{
+      /* border: 1px solid blue; */
+    }
+  }
+  

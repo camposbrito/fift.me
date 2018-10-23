@@ -1,0 +1,357 @@
+
+/******************************************************************************************* 
+ 
+ 2.  Grid 1200px
+ 
+ *********************************************************************************************/
+ 
+ .formulario {
+    left: 10%;
+    position: relative;
+    float: left;
+    padding: 15px 0 0;
+}
+
+.skew-fix {
+    display: inline-block;
+    transform: skew(45deg);
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.parallelogram {
+    transform: skew(-45deg);
+}
+
+.sonoreo_contato {
+    float: right;
+    display: block;
+    position: relative;
+    padding: 100px 0 0;
+    /* right: 30%;
+    top: 25%; */
+}
+
+.area, .textbox {
+    /* background: yellow; */
+    /* box-shadow: 10px 10px 0 rgba(0,0,0,.5); */
+    display: inline-block;
+    font-size: 2em;
+    /* padding: 0 115px; */
+    margin: 0;
+    width: 312px;
+    text-decoration: none;
+    border: 3px solid #c1c1c1;
+    height: 36px;
+    padding: 0 16px;
+    margin: 16px 0;
+}
+
+.area {
+    height: 176px !important;
+    width: 615px;
+}
+
+input:active, select:active, textarea:active, input:focus, select:focus, textarea:focus {
+    border: none !important;
+    /*border-radius: 0 !important;*/
+    border-style: none !important;
+    border-color: transparent !important;
+    box-shadow: 0px 0px !important;
+}
+
+input, select, textarea {
+    height: 30px;
+    border: none !important;
+    background: transparent !important;
+    /*border-radius:0px;*/
+    width: 89%;
+    display: block;
+    padding: 0 10px;
+    margin: 0;
+    border: none !important;
+    /*  border-radius: 0 !important;*/
+    border-style: none !important;
+    border-color: transparent !important;
+    box-shadow: 0px 0px !important;
+}
+
+select {
+    select::-ms-expand {
+        display: none;
+    }
+    text-indent:0.01px;   
+    text-overflow:"";
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url(http://www.stackoverflow.com/favicon.ico) right / 90% no-repeat #fff;
+}
+
+select::-ms-expand {
+    display: none;
+} 
+
+textarea {
+    height: 100% !important;
+    border: none !important;
+    padding: 4px 65px !important;
+    background: transparent !important;
+}
+
+.contato:before {
+    content: '';
+    position: absolute;
+    background: url(../img/ContatoCornerLeft.png) bottom;
+    background-size: 100% 100%;
+    width: 515px;
+    height: 561px;
+    top: 0;
+    display: block;
+    display: block;
+    color: #f37027;
+    line-height: 55pt;
+    font-size: 55pt;
+    padding: 1%;
+    font-family: 'Khand', Arial, sans-serif;
+    font-weight: 600;
+    white-space: pre !important;
+    z-index: -1;
+}
+
+.contato:after {
+    content: '';
+    position: absolute;
+    background: url(../img/ContatoCornerRight.png) bottom;
+    background-size: 100% 100%;
+    right: 0;
+    bottom: 0;
+    width: 401px;
+    height: 451px;
+    display: block;
+    z-index: -1;
+}
+
+.mensagem, .assunto, .mail, .nome, .enviar {
+    position: relative;
+}
+.enviar {
+    left: 57%; 
+    width: 150px;
+    top: -24px;
+    background: #dff0d8;
+}
+.enviar:hover{
+    background: #c1c1c1;
+    /* cursor: hand; */
+}
+.nome {
+    left: 44%;
+}
+
+.mail {
+    left: 33%;
+}
+
+.assunto {
+    left: 22%;
+}
+
+.mensagem {
+    left: 0%;
+}
+h5.frase2{
+    color: white;
+    font-family: 'khand', Arial, sans-serif !important;
+    font-size: 18px;
+}
+/*FOOTER*/
+
+/* .contato  */
+.footer {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -12%;
+    width: 100%;
+}
+
+.social {
+    float: right;
+    text-align: center;
+    padding-left: 20% !important;
+    color: white;
+    font-size: 30px;
+}
+
+i.fa.fa-twitter, i.fa.fa-linkedin, i.fa.fa-facebook {
+    color: f37027;
+    font-size: 40px;
+    background: white;
+    border-radius: 10px;
+    width: 46px;
+    height: 46px;
+    padding: 2px;
+}
+
+ul.list-inline.social-buttons {
+    position: relative;
+    right: 0%;
+    /* float: left; */
+}
+
+/* .contato  */
+.footer .copyright .ddd {
+    font-size: 18px;
+}
+
+/* .contato  */
+.footer .copyright {
+    color: #f36f29;
+    font-size: 30px;
+    font-family: 'khand', Arial, sans-serif !important;
+    font-weight: 300;
+    text-align: left !important;
+    /* float: left; */
+    margin-left: 8%;
+}
+/********************************************************************************************* 
+ 
+ 3.  Grid 960px (mediaqueries)
+ 
+ *********************************************************************************************/
+ 
+ @media only screen and (min-width: 960px) and (max-width: 1199px) {
+  
+    .formulario {
+    
+        padding: 0px 0 0;
+    }
+    .contato:before {
+        left: -6%;
+    }
+    .contato:after {
+        bottom:  -6%;
+    }
+    .social{
+        padding-left: 15% !important;
+    }
+  }
+    
+  /********************************************************************************************* 
+  
+  4.  Grid 720px (mediaqueries)
+  
+  *********************************************************************************************/
+  
+  @media only screen and (min-width: 720px) and (max-width: 959px) 
+  {
+        .contato::before{
+            background-position-x: -80px !important;
+            background-repeat: no-repeat;
+        }   
+        .contato::after{
+            background-position-x: 80px !important;
+            background-repeat: no-repeat;
+        }
+        .contato .area {
+            height: 120px !important;
+            width: 399px;
+            left: 9%;
+        }
+        .contato .nome {
+            left: 65%;
+        }
+        .contato .mail {
+            left: 49%;
+        }
+        .contato .assunto {
+            left: 32%;
+        }
+        img.sonoreo_contato {
+            top: -77px !important;
+            right: -60px !important;
+            position: absolute;
+            margin-right: 25px;
+        }
+    }
+    
+  
+  /********************************************************************************************* 
+  
+  5.  Grid lt 720px / Mobile (mediaqueries)
+  
+  *********************************************************************************************/
+    
+  @media only screen and (max-width: 719px) {
+      .contato{
+          /* padding: 0; */
+      }
+    .contato-slide .inner.devrama-slider .projector {
+        height: 650px !important;
+    }
+    .Contato-slide 
+    {  
+        height: 700px !important;
+    }
+    input:active, select:active, textarea:active, input:focus, select:focus, textarea:focus {
+        background-color: #fff !important;
+        background-image: none !important;
+        border: 1px solid #ccc !important;
+        box-shadow: 1px 2px !important;
+    }
+    .contato:after{
+        background:  none;
+    }
+    input, select, textarea {
+        height: 30px;
+        /* border: none !important; */
+        /* background: transparent !important; */
+        /* border-radius: 0px; */
+        /* width: 89%; */
+        display: block;
+        padding: 0 10px;
+        margin: 0;
+        background-color: #fff !important;
+        background-image: none !important;
+        border: 1px solid #ccc !important;
+        border-radius: 4px;
+        /* border: none !important; */
+        /* border-radius: 0 !important; */
+        /* border-style: none !important; */
+        /* border-color: transparent !important; */
+        /* box-shadow: 0px 0px !important; */
+    }
+    .contato:before{
+        background: none;
+        
+    width: 100% !important; 
+    height: 100% !important;
+    }
+    h2.titulo2-solucoes {
+        color: #cd5512;
+        /* text-align: center !important; */
+    }
+    .contato{
+      /* border: 1px solid blue; */
+    }
+    /* .contato  */
+    .footer .copyright{
+      font-size:18px 
+    }
+    textarea{
+        padding: 0;
+    }
+    .social{display: none}
+    i.fa.fa-twitter, i.fa.fa-linkedin, i.fa.fa-facebook {
+        color: f37027;
+        /* font-size: 40px; */
+        /* background: white; */
+        border-radius: 0;
+        width: 46px;
+        height: 46px;
+        padding: 2px;
+        border: none !important;
+    }
+  }
+  

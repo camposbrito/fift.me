@@ -1,0 +1,421 @@
+<html>
+	<head>
+        <meta charset="utf-8">
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+        <!-- <meta name="viewport" content="initial-scale=1">  -->
+        <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1, maximum-scale=1, user-scalable=no">
+        <!-- <meta name="viewport" content="width=device-width"> -->
+        <!-- <meta name="viewport" content="">  -->
+        <!-- <meta name="description" content=""-->
+        <meta name="author" content="Rodrigo de Campos Brito"> 
+
+		<title>SONOREO - Sistemas Inteligentes de Som e Imagem.</title>
+        <link href="https://fonts.googleapis.com/css?family=Khand:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+        <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link rel="shortcut icon" href="./img/sonoreo_sticky.png">
+        <link type="text/css" rel='stylesheet' type='text/css' href='css/pageload.css'>
+        <link type="text/css" rel='stylesheet' type='text/css' href='css/sonoreo.css'>
+		<link type="text/css" rel='stylesheet' type='text/css' href='css/quemsomos.css'>
+        <link type="text/css" rel='stylesheet' type='text/css' href='css/diferenciais.css'>
+        <link type="text/css" rel='stylesheet' type='text/css' href='css/solucoes.css'>
+        <link type="text/css" rel='stylesheet' type='text/css' href='css/clientes.css'>
+        <link type="text/css" rel='stylesheet' type='text/css' href='css/contato.css'>
+		<link type="text/css" rel='stylesheet' type='text/css' href='css/menu-initial.css'>
+		<link type="text/css" rel='stylesheet' type='text/css' href='css/menu-secondary.css'>
+		<link type="text/css" rel='stylesheet' type='text/css' href="css/bootstrap/css/bootstrap.css" >
+        <link type="text/css" rel='stylesheet' type='text/css' href="css/responsive-icon-grid.css"> 
+        <!-- Responsive
+        <link type="text/css" rel='stylesheet' type='text/css' href='css/Desktops.css'>
+        <link type="text/css" rel='stylesheet' type='text/css' href='css/Laptops_Desktops.css'>
+        <link type="text/css" rel='stylesheet' type='text/css' href='css/Tablets_Ipads_portrait_.css'>
+        <link type="text/css" rel='stylesheet' type='text/css' href='css/Tablets_Ipads_landscape.css'>
+        <link type="text/css" rel='stylesheet' type='text/css' href='css/Low_Resolutio_ Tablets_Mobiles_Landscape.css'>
+        <link type="text/css" rel='stylesheet' type='text/css' href='css/Most_of_the_Smartphones_Mobiles_Portrait.css'> -->
+        <!-- Responsive -->
+        <!-- <script> -->
+        <!-- <script> -->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.js"></script>
+        <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script> -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+        <!-- <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
+		<!-- slideshow  -->
+		<!-- <link href="css/fractionslider.css" rel="stylesheet" /> -->
+		<!--script type="text/javascript" src="js/jquery.fractionslider.js"></script-->
+        <script type="text/javascript" src="js/jquery.devrama.slider.js"></script>
+        <script type="text/javascript" src="js/dots.js"></script>		
+	</head>
+	<body>            
+        <div class="se-pre-con">
+            <div id="loader-wrapper">
+                <div id="loader"></div>
+            </div>
+        </div>
+        <header class="main_h esconder">
+            <div class="row">    
+                <div class="mobile-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav class='initial'> <!--collapse navbar-collapse -->
+                    <ul class="nav navbar-nav  ">
+                        <!-- <li class="hidden"><a href="#1"></a></li> -->
+                        <li><a class="page-scroll" href=".home-slide" >HOME</a></li>
+                        <li><a class="page-scroll" href=".QuemSomos-slide">QUEM SOMOS</a></li>
+                        <li><a class="page-scroll" href=".Diferenciais">DIFERENCIAIS</a></li>
+                        <li class="logo"><img  src=".\img\sonoreo.png"></li>
+                        <li><a class="page-scroll" href=".solucoes-slide">SOLUÇÕES</a></li>
+                        <li><a class="page-scroll" href=".Clientes">CLIENTES</a></li>
+                        <li><a class="page-scroll" href=".Contato">CONTATO</a></li>
+                    </ul>
+                </nav>
+                <nav class="secondary" > <!--collapse navbar-collapse -->
+                        <ul class="nav navbar-nav-secondary  ">
+                            <!-- <li class="hidden"><a href="#1"></a></li> -->
+                            <li><a class="page-scroll" href=".home-slide" >HOME</a></li>
+                            <li><a class="page-scroll" href=".QuemSomos-slide">QUEM SOMOS</a></li>
+                            <li><a class="page-scroll" href=".Diferenciais">DIFERENCIAIS</a></li>
+                            <li class="logo-secondary"><img src=".\img\sonoreo_sticky.png"></li>
+                            <li><a class="page-scroll" href=".solucoes-slide">SOLUÇÕES</a></li>
+                            <li><a class="page-scroll" href=".Clientes">CLIENTES</a></li>
+                            <li><a class="page-scroll" href=".Contato">CONTATO</a></li>
+                        </ul>
+                    </nav>
+            </div> <!-- / row -->
+        </header>   
+        <div id="home-slide" class="home-slide esconder" style="width: 100%; height: 100%;"></div>   
+        <script type="text/javascript">
+            var w = window.screen.availWidth ;
+            console.debug(w);
+            var div = document.getElementById("home-slide");
+            if (w > 719)
+            {
+            div.innerHTML  = 
+            " <div> "+                                   
+                " <img class=\"logo-central\" data-pos=\"['23%', '110%', '30%', '35%']\" data-duration=\"10\" data-effect=\"move\" data-lazy-src=\"./img/bg_central.png\"/>  "+
+                " <h4  data-pos=\"['20%', '110%', '24%', '3%']\"  data-duration=\"500\" data-effect=\"move\" class=\"frase1\">//IMAGEM</h4> "+
+                " <p   data-pos=\"['-30%', '25%', '34%', '3%']\"  data-duration=\"500\" data-effect=\"move\" class=\"frase2\" style=\"text-align: right\">Tecnologia à serviço! <br>Instalações de projetores, telas, TV,s <br>e sistema de comunicação Indoor.</p> "+
+                " <h4  data-pos=\"['56%', '-40%', '56%', '74%']\" data-duration=\"500\" data-effect=\"move\" class=\"frase1\">//SOM</h4> "+
+                "  <p   data-pos=\"['-56%', '40%', '68%', '74%']\" data-duration=\"500\" data-effect=\"move\" class=\"frase2\" style=\"text-align: left\">Flexibilidade e tecnologia!<br>Sistemas completos de som ambiente<br>com integração</p> "+
+            " </div> "
+            }
+            else
+            {
+            div.innerHTML  = 
+                " <div> "+                                   
+                    " <img data-pos=\"['23%', '110%', '30%', '25%']\" data-duration=\"10\" data-effect=\"move\"  class=\"logo-central\"  data-lazy-src=\"./img/bg_central.png\"/>  "+
+                    " <h4  data-pos=\"['20%', '110%', '08%', '21%']\" data-duration=\"500\" data-effect=\"move\" class=\"frase1 center\">//IMAGEM</h4> "+
+                    " <p   data-pos=\"['-30%', '25%', '14%', '21%']\" data-duration=\"500\" data-effect=\"move\" class=\"frase2 center\" style=\"text-align: right\">Tecnologia à serviço! <br>Instalações de projetores, telas, TV,s <br>e sistema de comunicação Indoor.</p> "+
+                    " <h4  data-pos=\"['56%', '-40%', '56%', '21%']\" data-duration=\"500\" data-effect=\"move\" class=\"frase1 center\">//SOM</h4> "+
+                    " <p   data-pos=\"['-56%', '40%', '63%', '26%']\" data-duration=\"500\" data-effect=\"move\" class=\"frase2 center\" style=\"text-align: left\">Flexibilidade e tecnologia!<br>Sistemas completos de som ambiente<br>com integração</p> "+
+                " </div> "
+            }
+              
+                                      
+        </script>
+    </div>    
+    <section id="QuemSomos-slide"  class="QuemSomos-slide parallax parallax-3 skew-top-cw skew-bottom-cw QuemSomos esconder" >
+    </section>    
+    <script type="text/javascript">
+        var w = window.screen.availWidth ;
+        console.debug(w);
+        var QuemSomos = document.getElementById("QuemSomos-slide");
+        if (w > 719)
+        {
+            QuemSomos.innerHTML  = 
+                                    "<div class=\"\"> "+
+                                    "<span data-pos=\"['23%', '110%', '20%', '0%']\"data-duration=\"10\"data-effect=\"move\"class=\"form-group col-md-12\"> "+
+                                    " <span class=\"col-md-2 col-xs-12 col-sm-12 col-lg-12\"><label class=\"col-md-12 control-label titulo destaque\"></span></label> "+
+                                    " <span class=\"col-md-8 col-xs-12 col-sm-12 col-lg-12\"> "+
+                                    " <label class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 control-label titulo\">+20 ANOS <span class=\"cinza\">DE MERCADO</span></label> "+
+                                    " <span>&nbsp;</span> "+
+                                    " <label class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 control-label subtitulo\">Somos especialistas em sistemas e instalações de sonorização e imagem, prezando pela máxima qualidade <br /> "+
+                                    " e dispondo de atenção para cada detalhe, chegando em altos níveis de personalização de acordo com as <br /> "+
+                                    " necessidades de cada projeto. Atuante há mais de 20 anos no mercado. </label> "+
+                                    " </span> "+
+                                    " <span class=\"col-md-2\"></span> "+
+                                    " </span> "+
+                                    " <span data-pos=\"['23%', '110%', '50%', '0%']\"data-duration=\"10\"data-effect=\"move\"class=\"form-group col-md-12\"> "+
+                                    " <span class=\"space col-md-12 col-xs-12 col-sm-12 col-lg-1\"></span> "+
+                                    " <span class=\"col-md-12 col-xs-12 col-sm-12 col-lg-10\"style=\"padding:0!important\"> "+
+                                    " <ul class=\"col-md-12 col-xs-12 col-sm-12 col-lg-12\"> "+
+                                    " <li class=\"col-md-4 col-xs-4 col-sm-4 col-lg-4\"> "+
+                                    " <h3 class=\"cbp-ig-title\"><span class=\"M\">&nbsp;&nbsp;&nbsp;</span>issão</h3> "+
+                                    " <h2 class=\"Texto\"> Oferecer excelência em sistemas e projetos de sonorização e imagem através da vasta experiência "+
+                                    " e conhecimento adquirido durante os anos de atuação, prezando pelo cuidado máximo com "+
+                                    " os detalhes e visando a implantação de bens duráveis, obtendo a plena satisfação pelos "+
+                                    " clientes.</h2> "+
+                                    " </li> "+
+                                    " <li class=\"col-md-4 col-xs-4 col-sm-4 col-lg-4\"> "+
+                                    " <h3 class=\"cbp-ig-title\"><span class=\"V\">&nbsp;&nbsp;&nbsp;</span>isão</h3> "+
+                                    " <h2 h2 class=\"Texto\">Ser referência na área, fortalecer a marca e buscar constante crescimento atingindo os pólos "+
+                                    " da grande Curitiba e buscando expansão gradativa.</h2> "+
+                                    " </li> "+
+                                    " <li class=\"col-md-4 col-xs-4 col-sm-4 col-lg-4\"> "+
+                                    " <h3 class=\"cbp-ig-title\"><span class=\"V\">&nbsp;&nbsp;&nbsp;</span>alores</h3> "+
+                                    " <h2 class=\"Texto\">Prezamos pela seriedade de nosso trabalho, respeito mútuo, responsabilidade, cooperação e "+
+                                    " acima de tudo, honestidade sob todos os aspectos.</h2> "+
+                                    " "+
+                                    " </li> "+
+                                    " "+
+                                    " </ul> "+
+                                    " </span> "+
+                                    " <span class=\"col-md-12 col-xs-12 col-sm-12 col-lg-1\"></span> "+
+                                    " "+
+                                    " </span> "+
+                                    "</div> "
+        }	
+        else{
+            QuemSomos.innerHTML  = 
+                                    "<div class=\"\"> "+
+                                    " "+
+                                    " <span class=\"col-md-2 col-xs-12 col-sm-12 col-lg-12 titulo destaque control\">Quem Somos</span> "+
+                                    " <span class=\"col-md-8 col-xs-12 col-sm-12 col-lg-12\"> "+
+                                    " <label class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 control-label titulo\">+20 ANOS <br><span class=\"cinza\">DE MERCADO</span></label> "+
+                                    " <span>&nbsp;</span> "+
+                                    " <span class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12  subtitulo\">Somos especialistas em sistemas e instalações de sonorização e imagem, prezando pela máxima qualidade   "+
+                                    " e dispondo de atenção para cada detalhe, chegando em altos níveis de personalização de acordo com as  "+
+                                    " necessidades de cada projeto. Atuante há mais de 20 anos no mercado. </span> "+
+                                    " </span> "+
+                                    " <span class=\"col-md-2\"></span> "+
+                                    "   "+
+                                    " <span  class=\"form-group col-md-12 col-xs-12 col-sm-12 \"> "+
+                                     " <span class=\"col-md-12 col-xs-12 col-sm-12 col-lg-10\"style=\"padding:0!important\"> "+
+                                    " <ul class=\"col-md-12 col-xs-12 col-sm-12 col-lg-12\"> "+
+                                    " <li class=\"col-md-4 col-xs-12 col-sm-12 col-lg-4\"> "+
+                                    " <h3 class=\"cbp-ig-title\"><span class=\"M\">&nbsp;&nbsp;&nbsp;</span>issão</h3> "+
+                                    " <h2 class=\"Texto\"> Oferecer excelência em sistemas e projetos de sonorização e imagem através da vasta experiência "+
+                                    " e conhecimento adquirido durante os anos de atuação, prezando pelo cuidado máximo com "+
+                                    " os detalhes e visando a implantação de bens duráveis, obtendo a plena satisfação pelos "+
+                                    " clientes.</h2> "+
+                                    " </li> "+
+                                    " <li class=\"col-md-4 col-xs-12 col-sm-12 col-lg-4\"> "+
+                                    " <h3 class=\"cbp-ig-title\"><span class=\"V\">&nbsp;&nbsp;&nbsp;</span>isão</h3> "+
+                                    " <h2 h2 class=\"Texto\">Ser referência na área, fortalecer a marca e buscar constante crescimento atingindo os pólos "+
+                                    " da grande Curitiba e buscando expansão gradativa.</h2> "+
+                                    " </li> "+
+                                    " <li class=\"col-md-4 col-xs-12 col-sm-12col-lg-4\"> "+
+                                    " <h3 class=\"cbp-ig-title\"><span class=\"V\">&nbsp;&nbsp;&nbsp;</span>alores</h3> "+
+                                    " <h2 class=\"Texto\">Prezamos pela seriedade de nosso trabalho, respeito mútuo, responsabilidade, cooperação e "+
+                                    " acima de tudo, honestidade sob todos os aspectos.</h2> "+
+                                    " "+
+                                    " </li> "+
+                                    " "+
+                                    " </ul> "+
+                                    " </span> "+
+                                    " <span class=\"col-md-12 col-xs-12 col-sm-12 col-lg-1\"></span> "+
+                                    " "+
+                                    " </span> "+
+                                    "</div> "
+        }																																																		
+        </script>
+        
+                                      
+        <section class="Diferenciais-slide module parallax parallax-3 skew-top-cw skew-bottom-cw esconder" >
+            <div class="row Diferenciais">  
+                <div class="container col-md-12" > 
+                    <div class="left col-md-2 titulo">DIFERENCIAIS</div>
+                    <div class="col-md-8">        
+                    </div>
+                    <div class="right col-md-2"></div>
+                </div>
+                <div class="container col-md-12 col-sm-12  lista">
+                    <div class="col-md-8  col-sm-12 ">
+                        <ul>
+                            <li class="projetos">
+                                <div class="col-md-10 col-sm-9 content">
+                                    <h3 class="cbp-ig-title">PROJETOS PERSONALIZADOS | </h3>
+                                    <h2>Os sistemas são projetados para total
+                                        <br>adequação às necessidades de
+                                        <br>cada ambiente</h2>
+                                </div>
+                                <div class="col-md-2 col-sm-3  imagem">
+                                    <img src="./img/png/icone-projetos-personalizados.png">
+                                </div>
+        
+                            </li>
+                            <li class="space">&nbsp;</li>
+                            <li class="assistencia">
+                                <div class="col-md-10 col-sm-9  content">
+                                    <h3 class="cbp-ig-title">ASSISTÊNCIA TÉCNICA PERMANENTE |</h3>
+                                    <h2>Fornecemos assistência técnica e manutenção durante o
+                                        <br>período total de uso de nosso sistema, oferecendo
+                                        <br>conforto, comodidade e segurança</h2>
+                                </div>
+                                <div class="col-md-2 col-sm-3 imagem">
+                                    <img src="./img/png/icone-assistencia-permanente.png">
+                                </div>
+                            </li>
+                            <li>&nbsp;</li>
+                            <li class="experiencia">
+                                <div class="col-md-10 col-sm-9 content">
+                                    <h3 class="cbp-ig-title">EXPERIÊNCIA CONSOLIDADA |</h3>
+                                    <h2  >Os mais de 20 anos de experiência oferecem segurança, qualidade<br> 
+                                        garantida e rapidez na execução e adaptação dos projetos </h2>
+                                </div>
+                                <div class="col-md-2 col-sm-3 imagem">
+                                    <img src="./img/png/icone-experiencia-consolidada.png">
+                                </div>
+                            </li>
+        
+                        </ul>
+                    </div>
+                    <div class="right col-md-2 col-sm-0"></div>
+                </div>
+            </div>
+        </section>
+       
+        <section class="solucoes-slide module parallax parallax-3 esconder" style="padding: 0; margin: 0">               
+                <div class="row Solucoes"  style="background:url('./img/png/solucoes-residencial.png') #f37027 no-repeat 0 0"  >                   
+                    <h2 data-pos="['-30%', '25%',  '0%', '-5%']" data-duration="100" data-effect="move" class="titulo1-solucoes">//SOLUÇÕES</h2>
+                    <h2 data-pos="['-30%', '25%',  '8%', '-5%']" data-duration="100" data-effect="move" class="titulo2-solucoes">RESIDENCIAL</h2>
+                    <p  data-pos="['-30%', '25%', '22%', '-5%']" data-duration="100" data-effect="move" class="subtitulo">Aproveite os melhores momentos com a família!</p>
+                    <p  data-pos="['-30%', '25%', '26%', '-5%']" data-duration="100" data-effect="move" class="frase1-titulo-solucoes negrito">HOME CINEMA |&nbsp;</p>
+                    <p  data-pos="['-30%', '25%', '33%', '-5%']" data-duration="100" data-effect="move" class="frase1-solucoes ">Que tal um cinema em casa? Fazemos projetos de instalação<br> para sistema de aúdio embutido, telas e instalação de projetores.</p>
+                    <p  data-pos="['-30%', '25%', '40%', '-5%']" data-duration="100" data-effect="move" class="frase1-titulo-solucoes negrito">SISTEMA DE SOM ROOM BY ROOM |</p>
+                    <p  data-pos="['-30%', '25%', '47%', '-5%']" data-duration="100" data-effect="move" class="frase1-solucoes ">Som por toda casa. Churrasqueira, quartos, sala de estar, hall de entrada. Com<BR> possibilidade de adaptação onde quiser tocar a sua música ou reproduzir sua TV.</p>
+                    <p  data-pos="['-30%', '25%', '56%', '-5%']" data-duration="100" data-effect="move" class="frase1-titulo-solucoes negrito">INSTALAÇÃO INAPARENTE | </p>
+                    <p  data-pos="['-30%', '25%', '63%', '-5%']" data-duration="100" data-effect="move" class="frase1-solucoes "> Transforme seu ambiente sem modificar a arquitetura e decoração!<BR> Telas retráteis, projetores com lifts embutidos no teto, caixas de som na cor da parede/móvel<BR> ou com arandelas no teto, além de sistema de cabeamento inaparente
+                    </p>  
+                </div>   
+                <div class="row Solucoes" data-lazy-background="./img/png/solucoes-igrejas.png" style="background:url('./img/png/solucoes-igrejas.png') #f37027 no-repeat 0 0"  >
+                    <h2 data-pos="['-30%', '25%',  '0%', '-5%']" data-duration="100" data-effect="move" class="titulo1-solucoes">//SOLUÇÕES</h2>
+                    <h2 data-pos="['-30%', '25%',  '8%', '-5%']" data-duration="100" data-effect="move" class="titulo2-solucoes">IGREJAS</h2>
+                    <p  data-pos="['-30%', '25%', '22%', '-5%']" data-duration="100" data-effect="move" class="subtitulo">Audibilidade, nitidez e recursos para <br>melhorar a qualidade das celebrações</p>
+                    <p  data-pos="['-30%', '25%', '30%', '-5%']" data-duration="100" data-effect="move" class="frase1-titulo-solucoes negrito">ESTRUTURA PARA ALTAR E MÚSICOS |</p>
+                    <p  data-pos="['-30%', '25%', '37%', '-5%']" data-duration="100" data-effect="move" class="frase1-solucoes negrito">Sistema integrado oferecendo flexibilidade para músicos e equipamentos de<br>uso contínuo. Equipamentos utilizados focados para acústica de igrejas e templos. </p>
+                    <p  data-pos="['-30%', '25%', '43%', '-5%']" data-duration="100" data-effect="move" class="frase1-titulo-solucoes negrito">PROJETORES / TV'S |</p>
+                    <p  data-pos="['-30%', '25%', '50%', '-5%']" data-duration="100" data-effect="move" class="frase1-solucoes negrito">Instalação de data shows, telas com retração automática e TV’s. Sistemas para<br>funcionamento em sincronia para acompanhamento de cantos, leituras, etc.</p>
+                    <p  data-pos="['-30%', '25%', '57%', '-5%']" data-duration="100" data-effect="move" class="frase1-titulo-solucoes negrito">ACABAMENTO PERSONALIZADO | </p>
+                    <p  data-pos="['-30%', '25%', '64%', '-5%']" data-duration="100" data-effect="move" class="frase1-solucoes negrito"> Caixas discretas personalizadas na cor do acabamento amadeirado ou da pintura da parede<br>criando harmonia na decoração e arquitetura.</p>
+                    <p  data-pos="['-30%', '25%', '71%', '-5%']" data-duration="100" data-effect="move" class="frase1-titulo-solucoes negrito">CURSO PRÁTICO | </p>
+                    <p  data-pos="['-30%', '25%', '78%', '-5%']" data-duration="100" data-effect="move" class="frase1-solucoes negrito"> Oferecemos curso pós-instalação para ensinamento técnico sobre equipamentos e equalizações pertinentes ao<br> local, para melhor aproveitamento por meio dos músicos, funcionários e presidentes.</p>
+                </div>
+                <div class="row Solucoes" data-lazy-background="./img/png/solucoes-empresas.png"  style="background:url('./img/png/solucoes-empresas.png') #f37027 no-repeat 0 0"  >
+                    <h2 data-pos="['-30%', '25%',  '0%', '-5%']" data-duration="100" data-effect="move" class="titulo1-solucoes">//SOLUÇÕES</h2>
+                    <h2 data-pos="['-30%', '25%',  '8%', '-5%']" data-duration="100" data-effect="move" class="titulo2-solucoes">EMPRESAS</h2>
+                    <p  data-pos="['-30%', '25%', '22%', '-5%']" data-duration="100" data-effect="move" class="subtitulo">Comodidade para facilitar o dia a dia.</p>
+                    <p  data-pos="['-30%', '25%', '28%', '-5%']" data-duration="100" data-effect="move" class="frase1-titulo-solucoes negrito">SALAS DE REUNIÕES MULTIMíDIA | </p>
+                    <p  data-pos="['-30%', '25%', '35%', '-5%']" data-duration="100" data-effect="move" class="frase1-solucoes negrito">Oferecemos sistemas completos ou básicos para sala de reuniões<br>com possibilidade de telas, televisões, microfones, sonorização, com recursos<br> chamada viva-voz e vídeo-conferência. </p>
+                    <p  data-pos="['-30%', '25%', '46%', '-5%']" data-duration="100" data-effect="move" class="frase1-titulo-solucoes negrito">SISTEMA DE COMUNICAÇÃO ROOM BY ROOM | </p>
+                    <p  data-pos="['-30%', '25%', '53%', '-5%']" data-duration="100" data-effect="move" class="frase1-solucoes negrito">Distribuições otimizadas por salas ou setores independentes..</p>
+                    <p  data-pos="['-30%', '25%', '58%', '-5%']" data-duration="100" data-effect="move" class="frase1-titulo-solucoes negrito">SOM AMBIENTE / RÁDIO INDOOR | </p>
+                    <p  data-pos="['-30%', '25%', '65%', '-5%']" data-duration="100" data-effect="move" class="frase1-solucoes negrito"> Possibilidade de sistema integrado por meio de softwares onlines, conexão via USB,<br>SD card, notebook, celular e bluetooth.</p>
+                    <p  data-pos="['-30%', '25%', '72%', '-5%']" data-duration="100" data-effect="move" class="frase1-titulo-solucoes negrito">SALA DE PALESTRAS | </p>
+                    <p  data-pos="['-30%', '25%', '79%', '-5%']" data-duration="100" data-effect="move" class="frase1-solucoes negrito"> Sistemas inteligentes integrados com sonorização, projetor e microfone para uma perfeita apresentação.</p>
+                </div>
+                <div class="row Solucoes" data-lazy-background="./img/png/solucoes-lojas.png"  style="padding:10px; background:url('./img/png/solucoes-lojas.png') #f37027 no-repeat 0 0"  >
+                    <h2 data-pos="['-30%', '25%',  '0%', '-5%']" data-duration="100" data-effect="move" class="titulo1-solucoes">//SOLUÇÕES</h2>
+                    <h2 data-pos="['-30%', '25%',  '8%', '-5%']" data-duration="100" data-effect="move" class="titulo2-solucoes">LOJAS</h2>
+                    <p  data-pos="['-30%', '25%', '22%', '-5%']" data-duration="100" data-effect="move" class="subtitulo">Oferecemos eficiência para facilitar a comunicação e o ensino no cotidiano</p>
+                    <p  data-pos="['-30%', '25%', '28%', '-5%']" data-duration="100" data-effect="move" class="frase1-titulo-solucoes negrito">SISTEMA DE COMUNICAÇÃO ROOM BY ROOM | </p>
+                    <p  data-pos="['-30%', '25%', '35%', '-5%']" data-duration="100" data-effect="move" class="frase1-solucoes negrito">Distribuições otimizadas por salas setorizadas independentes.</p>
+                    <p  data-pos="['-30%', '25%', '42%', '-5%']" data-duration="100" data-effect="move" class="frase1-titulo-solucoes negrito">COMUNICAÇÃO EXTERNA INTEGRADA |</p>
+                    <p  data-pos="['-30%', '25%', '49%', '-5%']" data-duration="100" data-effect="move" class="frase1-solucoes negrito">Sistema integrado para áreas externas como pátio, refeitório, cancha, playground, etc.</p>
+                    <p  data-pos="['-30%', '25%', '56%', '-5%']" data-duration="100" data-effect="move" class="frase1-titulo-solucoes negrito">SALAS DE AULA MULTIMÍDIA |</p>
+                    <p  data-pos="['-30%', '25%', '63%', '-5%']" data-duration="100" data-effect="move" class="frase1-solucoes negrito"> Projetores, telas interativas, TV’s e sons integrados para uso dentro da sala de aula.</p>
+                    <p  data-pos="['-30%', '25%', '70%', '-5%']" data-duration="100" data-effect="move" class="frase1-titulo-solucoes negrito">RÁDIO ESCOLA | </p>
+                    <p  data-pos="['-30%', '25%', '77%', '-5%']" data-duration="100" data-effect="move" class="frase1-solucoes negrito"> Possibilidade para dar notícias, informações e envolver os alunos dentro do ambiente escolar.</p>
+                </div>
+                <div class="row Solucoes" data-lazy-background="./img/png/solucoes-escolas.png"  style="padding:10px; background:url('./img/png/solucoes-escolas.png') #f37027 no-repeat 0 0"  >
+                    <h2 data-pos="['-30%', '25%',  '0%', '-5%']" data-duration="100" data-effect="move" class="titulo1-solucoes">//SOLUÇÕES</h2>
+                    <h2 data-pos="['-30%', '25%',  '8%', '-5%']" data-duration="100" data-effect="move" class="titulo2-solucoes">ESCOLAS</h2>
+                    <p  data-pos="['-30%', '25%', '20%', '-5%']" data-duration="100" data-effect="move" class="subtitulo">Oferecemos eficiência para facilitar a comunicação e o ensino no cotidiano</p>
+                    <p  data-pos="['-30%', '25%', '30%', '-5%']" data-duration="100" data-effect="move" class="frase1-titulo-solucoes negrito">SISTEMA DE COMUNICAÇÃO ROOM BY ROOM | </p>
+                    <p  data-pos="['-30%', '25%', '37%', '-5%']" data-duration="100" data-effect="move" class="frase1-solucoes negrito">Distribuições otimizadas por salas setorizadas independentes.</p>
+                    <p  data-pos="['-30%', '25%', '44%', '-5%']" data-duration="100" data-effect="move" class="frase1-titulo-solucoes negrito">COMUNICAÇÃO EXTERNA INTEGRADA |</p>
+                    <p  data-pos="['-30%', '25%', '51%', '-5%']" data-duration="100" data-effect="move" class="frase1-solucoes negrito">Sistema integrado para áreas externas como pátio, refeitório, cancha, playground, etc.</p>
+                    <p  data-pos="['-30%', '25%', '58%', '-5%']" data-duration="100" data-effect="move" class="frase1-titulo-solucoes negrito">SALAS DE AULA MULTIMÍDIA |</p>
+                    <p  data-pos="['-30%', '25%', '67%', '-5%']" data-duration="100" data-effect="move" class="frase1-solucoes negrito"> Projetores, telas interativas, TV’s e sons integrados para uso dentro da sala de aula.</p>
+                    <p  data-pos="['-30%', '25%', '74%', '-5%']" data-duration="100" data-effect="move" class="frase1-titulo-solucoes negrito">RÁDIO ESCOLA | </p>
+                    <p  data-pos="['-30%', '25%', '81%', '-5%']" data-duration="100" data-effect="move" class="frase1-solucoes negrito"> Possibilidade para dar notícias, informações e envolver os alunos dentro do ambiente escolar.</p>
+                </div>  
+                                        
+        </section>
+     
+        <section class="module parallax parallax-3 skew-top-cw skew-bottom-cw Clientes esconder"  >  
+                <div class="clientes-slide">                     
+                    <div class="col-lg-7 nossos-clientes" data-pos="['-30%', '30%',    '0%', '0%']" data-duration="0" data-effect="move">
+                        <p data-pos="['-30%', '30%',    '6%', '20%']" data-duration="0" data-effect="move" class="frase1 pos1">Alguns de</p>
+                        <p data-pos="['-30%', '30%',    '9%', '14%']" data-duration="0" data-effect="move" class="frase2 pos2">Nossos</p>
+                        <p data-pos="['-30%', '30%',   '20%', '10%']" data-duration="0" data-effect="move" class="frase2 pos3">Clientes</p>
+                        
+                        <p class="Caterpillar "   data-pos="['-30%', '25%',   12%', '44%']" data-duration="100" data-effect="move"><img class="img-responsive img1" src="./img/png/clientes/_caterpillar.png"    alt="Caterpillar"></p> 
+                        <p class="incepa"         data-pos="['-30%', '25%',   12%', '64%']" data-duration="100" data-effect="move"><img class="img-responsive img1" src="./img/png/clientes/_incepa.png"         alt="incepa"></p> 
+                        <p class="pernambucanas"  data-pos="['-30%', '25%',   12%', '84%']" data-duration="100" data-effect="move"><img class="img-responsive img1" src="./img/png/clientes/_pernambucanas.png"  alt="pernambucanas"></p> 
+                        <p class="pmcl "          data-pos="['-30%', '25%',  '30%', '39%']" data-duration="100" data-effect="move"><img class="img-responsive img2" src="./img/png/clientes/_pmcl.png"           alt="pmcl"></p> 
+                        <p class="pr "            data-pos="['-30%', '25%',  '30%', '59%']" data-duration="100" data-effect="move"><img class="img-responsive img2" src="./img/png/clientes/_pr.png"             alt="pr"></p> 
+                        <p class="pmbn "          data-pos="['-30%', '25%',  '30%', '79%']" data-duration="100" data-effect="move"><img class="img-responsive img2" src="./img/png/clientes/_pmbn.png"           alt="pmbn"></p> 
+                        <p class="senai "         data-pos="['-30%', '25%',  '50%', '29%']" data-duration="100" data-effect="move"><img class="img-responsive img3" src="./img/png/clientes/_senai.png"          alt="senai"></p> 
+                        <p class="arq_curitiba "  data-pos="['-30%', '25%',  '50%', '49%']" data-duration="100" data-effect="move"><img class="img-responsive img3" src="./img/png/clientes/_arq_curitiba.png"   alt="arq_curitiba"></p> 
+                        <p class="colatusso "     data-pos="['-30%', '25%',  '50%', '69%']" data-duration="100" data-effect="move"><img class="img-responsive img3" src="./img/png/clientes/_colatusso.png"      alt="colatusso"></p> 
+                        <p class="aabb "          data-pos="['-30%', '25%',  '70%', '39%']" data-duration="100" data-effect="move"><img class="img-responsive img4" src="./img/png/clientes/_aabb.png"           alt="aabb"></p> 
+                        <p class="inc "           data-pos="['-30%', '25%',  '70%', '59%']" data-duration="100" data-effect="move"><img class="img-responsive img4" src="./img/png/clientes/_inc.png"            alt="inc"></p> 
+                    </div>    
+                </div>
+        </section>
+        
+        <section class="Contato-slide module parallax parallax-3 skew-top-cw skew-bottom-cw Contato esconder">
+                <div class=" contato">         
+                    <span data-pos="['-30%', '7%',   '0%', '8%']" data-duration="0" data-effect="move"  >
+                            <h2 data-pos="['-30%', '25%',  '8%', '-5%']" data-duration="100" data-effect="move" class="titulo2-solucoes">CONTATO</h2>   
+                            <h5 class="frase2">Estamos a disposição para atendê-lo.<br>
+                            Faça um orçamento conosco!
+                        </h5>
+                    </span>
+
+                    <form  data-pos="['-30%', '7%',   '6%', '10%']" data-duration="0" data-effect="move"  autocomplete="off" method="POST" >                        
+                        <span class="formulario">                        
+                            <span class="textbox parallelogram nome">
+                                <span class="skew-fix">
+                                    <input id="nome" name="nome" type="text" placeholder="Nome" class="form-control input-md">
+                                </span>
+                            </span>
+                            <br/>
+                            <span class="textbox parallelogram mail">
+                                <span class="skew-fix">
+                                        <input id="mail" name="mail" type="text" placeholder="E-mail" class="form-control input-md">
+                                </span>
+                            </span>
+                            <br/>
+                            <span class="textbox parallelogram assunto">
+                                <span class="skew-fix">
+                                        <select id="assunto" name="assunto" class="form-control"><option>Assunto</option><option value="1">Option one</option><option value="2">Option two</option></select>
+                                </span>
+                            </span>     
+                            <br/>
+                            <span class="area parallelogram mensagem">
+                                    <span class="skew-fix">
+                                            <textarea class="form-control" rows="10" id="mensagem" name="mensagem" placeholder="Mensagem"></textarea>
+                                    </span>
+                                </span>     
+                                        
+                        </span>                        
+                    </form>
+                    <img data-pos="['-30%', '7%',   '6%', '80%']" data-duration="0" data-effect="move"  style="width:150px" class="sonoreo_contato" src="./img/sonoreo_contato.png"/>
+                    <span data-pos="['-30%', '7%',   '78%', '0%']" data-duration="0" data-effect="move"  class=" footer">
+                        <span class=" footer-slide">                           
+                            <span class="copyright">|<span class="ddd">(41)</span> 3032.3577</span><br>
+                            <span class="copyright">| contato@sonoreo.com.br</span><br>
+                            <span class="copyright">| Rua Centenário, 2877 - 83601-000 - Campo Largo-PR</span>                                   
+                        </span>               	
+                    </span> 
+                    <span data-pos="['-30%', '7%',   '80%', '65%']" data-duration="0" data-effect="move"   class=" social">
+                            Acesse:
+                            <ul class="list-inline social-buttons">
+                                <li><a href="#"><i class="fa fa-twitter"></i></a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                                </li>
+                            </ul>
+                        </span>
+            </div>            
+             
+        </section>             
+        <script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>
