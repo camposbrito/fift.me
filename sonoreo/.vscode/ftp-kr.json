@@ -1,0 +1,21 @@
+{
+    "host": "ftp.camposbrito.com.br",
+    "username": "camposbrito",
+    "password": "campos25",
+    "remotePath": "/www/sonoreo/4/",
+    "protocol": "ftp",
+    "port": 21,
+    "fileNameEncoding": "utf8",
+    "autoUpload": true,
+    "autoDelete": false,
+    "autoDownload": false,
+    
+    "ignore": [
+        ".git",
+        "/.vscode",
+        "/example",
+        "/PageLoadingEffects",
+        "/Site_Sonoreo_02",
+        "/src"
+    ]
+}

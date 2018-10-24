@@ -1,0 +1,321 @@
+{
+  "ftp://ftp.camposbrito.com.br:21@camposbrito": {
+    "www": {
+      "sonoreo": {
+        "4": {
+          "css": {
+            "1024.css": {
+              "type": "-",
+              "size": 177,
+              "lmtime": 0,
+              "modified": false
+            },
+            "Desktops.css": {
+              "type": "-",
+              "size": 164,
+              "lmtime": 0,
+              "modified": false
+            },
+            "Laptops_Desktops.css": {
+              "type": "-",
+              "size": 196,
+              "lmtime": 0,
+              "modified": false
+            },
+            "Low_Resolutio_ Tablets_Mobiles_Landscape.css": {
+              "type": "-",
+              "size": 222,
+              "lmtime": 0,
+              "modified": false
+            },
+            "Most_of_the_Smartphones_Mobiles_Portrait.css": {
+              "type": "-",
+              "size": 214,
+              "lmtime": 0,
+              "modified": false
+            },
+            "Tablets_Ipads_landscape.css": {
+              "type": "-",
+              "size": 224,
+              "lmtime": 0,
+              "modified": false
+            },
+            "Tablets_Ipads_portrait_.css": {
+              "type": "-",
+              "size": 193,
+              "lmtime": 0,
+              "modified": false
+            },
+            "Untitled-1.js": {
+              "type": "-",
+              "size": 25260,
+              "lmtime": 0,
+              "modified": false
+            },
+            "bootstrap": {},
+            "clientes.css": {
+              "type": "-",
+              "size": 6376,
+              "lmtime": 0,
+              "modified": false
+            },
+            "contato.css": {
+              "type": "-",
+              "size": 8243,
+              "lmtime": 1540352426245,
+              "modified": false
+            },
+            "diferenciais.css": {
+              "type": "-",
+              "size": 5297,
+              "lmtime": 0,
+              "modified": false
+            },
+            "diferenciais.css.bak": {
+              "type": "-",
+              "size": 4300,
+              "lmtime": 0,
+              "modified": false
+            },
+            "font-awesome": {},
+            "fractionslider.css": {
+              "type": "-",
+              "size": 1877,
+              "lmtime": 0,
+              "modified": false
+            },
+            "menu-initial.css": {
+              "type": "-",
+              "size": 6832,
+              "lmtime": 0,
+              "modified": false
+            },
+            "menu-secondary.css": {
+              "type": "-",
+              "size": 3924,
+              "lmtime": 0,
+              "modified": false
+            },
+            "pageload.css": {
+              "type": "-",
+              "size": 2775,
+              "lmtime": 1540350231179,
+              "modified": false
+            },
+            "quemsomos.css": {
+              "type": "-",
+              "size": 6968,
+              "lmtime": 1540351409154,
+              "modified": false
+            },
+            "responsive-icon-grid.css": {
+              "type": "-",
+              "size": 4281,
+              "lmtime": 0,
+              "modified": false
+            },
+            "solucoes.css": {
+              "type": "-",
+              "size": 9671,
+              "lmtime": 1540352296358,
+              "modified": false
+            },
+            "solucoes.css.bak": {
+              "type": "-",
+              "size": 8841,
+              "lmtime": 0,
+              "modified": false
+            },
+            "sonoreo.css": {
+              "type": "-",
+              "size": 22313,
+              "lmtime": 0,
+              "modified": false
+            },
+            "style.css": {
+              "type": "-",
+              "size": 20956,
+              "lmtime": 0,
+              "modified": false
+            }
+          },
+          "img": {
+            "6460826-wallpaper-full-hd.jpg": {
+              "type": "-",
+              "size": 932221,
+              "lmtime": 0,
+              "modified": false
+            },
+            "ClientesCornerLeft.png": {
+              "type": "-",
+              "size": 6911,
+              "lmtime": 0,
+              "modified": false
+            },
+            "ClientesCornerRight.png": {
+              "type": "-",
+              "size": 765,
+              "lmtime": 0,
+              "modified": false
+            },
+            "ContatoCornerLeft.png": {
+              "type": "-",
+              "size": 9144,
+              "lmtime": 0,
+              "modified": false
+            },
+            "ContatoCornerRight.png": {
+              "type": "-",
+              "size": 7837,
+              "lmtime": 0,
+              "modified": false
+            },
+            "M.png": {
+              "type": "-",
+              "size": 3285,
+              "lmtime": 0,
+              "modified": false
+            },
+            "Nubank_2018-02-10.pdf": {
+              "type": "-",
+              "size": 169983,
+              "lmtime": 0,
+              "modified": false
+            },
+            "QuemSomosCorner.png": {
+              "type": "-",
+              "size": 11662,
+              "lmtime": 0,
+              "modified": false
+            },
+            "QuemSomosCorner.psd": {
+              "type": "-",
+              "size": 263897,
+              "lmtime": 0,
+              "modified": false
+            },
+            "QuemSomosCornerLeft.png": {
+              "type": "-",
+              "size": 4839,
+              "lmtime": 0,
+              "modified": false
+            },
+            "QuemSomosCornerRight.png": {
+              "type": "-",
+              "size": 3268,
+              "lmtime": 0,
+              "modified": false
+            },
+            "V.png": {
+              "type": "-",
+              "size": 3288,
+              "lmtime": 0,
+              "modified": false
+            },
+            "banner-center.png": {
+              "type": "-",
+              "size": 179533,
+              "lmtime": 0,
+              "modified": false
+            },
+            "bg_central.png": {
+              "type": "-",
+              "size": 198443,
+              "lmtime": 0,
+              "modified": false
+            },
+            "diferenciais.png": {
+              "type": "-",
+              "size": 531703,
+              "lmtime": 0,
+              "modified": false
+            },
+            "png": {},
+            "sonoreo.png": {
+              "type": "-",
+              "size": 9387,
+              "lmtime": 0,
+              "modified": false
+            },
+            "sonoreo_contato.png": {
+              "type": "-",
+              "size": 5702,
+              "lmtime": 0,
+              "modified": false
+            },
+            "sonoreo_sticky.png": {
+              "type": "-",
+              "size": 6162,
+              "lmtime": 0,
+              "modified": false
+            }
+          },
+          "index.php": {
+            "type": "-",
+            "size": 69586,
+            "lmtime": 1540352172880,
+            "modified": false
+          },
+          "js": {
+            "classie.js": {
+              "type": "-",
+              "size": 1835,
+              "lmtime": 1528127802000,
+              "modified": false
+            },
+            "dots.js": {
+              "type": "-",
+              "size": 1399,
+              "lmtime": 1532284652912,
+              "modified": true
+            },
+            "jquery.devrama.slider.js": {
+              "type": "-",
+              "size": 221714,
+              "lmtime": 1532285195840,
+              "modified": true
+            },
+            "jquery.fractionslider.js": {
+              "type": "-",
+              "size": 31979,
+              "lmtime": 1453769898000,
+              "modified": false
+            },
+            "script.js": {
+              "type": "-",
+              "size": 11306,
+              "lmtime": 1535680444300,
+              "modified": false
+            },
+            "script.js.bak": {
+              "type": "-",
+              "size": 11484,
+              "lmtime": 1534736866260,
+              "modified": false
+            },
+            "snap.svg-min.js": {
+              "type": "-",
+              "size": 66994,
+              "lmtime": 1528127802000,
+              "modified": false
+            },
+            "svgLoader.js": {
+              "type": "-",
+              "size": 2989,
+              "lmtime": 1528127802000,
+              "modified": false
+            }
+          },
+          "some_script.php": {
+            "type": "-",
+            "size": 462,
+            "lmtime": 1540350590216,
+            "modified": false
+          },
+          "src": {}
+        }
+      }
+    }
+  },
+  "$version": 1
+}

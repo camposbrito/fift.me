@@ -1,5 +1,5 @@
 <?php
-// For instance, you can do something like this:
+ // For instance, you can do something like this:
 session_start();
 if(isset($_POST['width']) && isset($_POST['height'])) {
     $_SESSION['screen_width'] = $_POST['width'];
@@ -8,4 +8,4 @@ if(isset($_POST['width']) && isset($_POST['height'])) {
 } else {
     echo json_encode(array('outcome'=>'error','error'=>"Couldn't save dimension info"));
 }
-?> 
+?>  
