@@ -1,4 +1,6 @@
-
+#DashboardController h5.text-right {
+    padding-top: 55px;
+}
 div#messages {
     margin: 10px;
     position: absolute;

@@ -94,7 +94,7 @@ function routesClient(socket) {
     $("#div-IniciarTurno").removeClass("d-flex");
     var sMessage = "Iniciar Turno";
     socket.emit("GetCartao", { message: sMessage });
-    setTimeout(esconder, 4000);
+    // setTimeout(esconder, 4000);
   });
 
   $("#finalizaturno").click(function() {
