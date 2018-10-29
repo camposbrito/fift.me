@@ -2,14 +2,20 @@ var myApp = angular.module("myApp", ["ngRoute"]);
 
 myApp.config(function($routeProvider) {
   $routeProvider
-
     .when("/", {
       templateUrl: "templates/hre.html" 
+    })
+    .when("/ocorrencia", {
+      redirectTo: "/ocorrencia/1"
+    })
+    .when("/ocorrencia/:num", {
+      templateUrl: "templates/ocorrencia.html",
+      controller: "OcorrenciaController"
     })
     .when("/dashboard", {
       templateUrl: "templates/dashboard.html",
       controller: "DashboardController"
-    })
+    })    
     .when("/finaliza", {
       templateUrl: "templates/terminoturno.html",
       controller: "TerminoController"
@@ -71,7 +77,6 @@ myApp.controller("DashboardController", [
       };     
   }
 ]);
-
 
 myApp.controller("TerminoController", [
   "$scope",
@@ -146,6 +151,47 @@ myApp.controller("ResultadoController", [
   }
 ]);
 
+myApp.controller("OcorrenciaController", [
+  "$scope",
+  "$location",
+  "$log",
+  "$http",
+  function($scope, $location, $log, $http) {
+    console.debug('OcorrenciaController');
+    $http
+      .get("sessao/get")
+      .success(function(data) {        
+        $scope.session = data;
+
+      })
+      .error(function(data, status) {
+        $log.error(status);
+      });
+
+      $scope.getResultado = function() {
+        $http
+          .get("sessao/getResultado")
+          .success(function(data) {
+            console.debug(data);
+            $scope.quantidade = data;
+          })
+          .error(function(data, status) {
+            $log.error(status);
+          });
+      };  
+      $scope.getTermino = function() {
+        $http
+          .get("sessao/getResultado")
+          .success(function(data) {
+            console.debug(data);
+            $scope.quantidade = data;
+          })
+          .error(function(data, status) {
+            $log.error(status);
+          });
+      };      
+  }
+]);
 
 myApp.controller("SessionController", [
   "$scope",
@@ -163,4 +209,54 @@ myApp.controller("SessionController", [
         $log.error(status);
       });
   }
+]);
+
+/* CONTROLLERS OFICIAIS */
+
+myApp.controller("TurnoController", [
+  "$scope",
+  "$location",
+  "$log",
+  "$http",
+  function($scope, $location, $log, $http) {
+    console.debug('TurnoController');
+    $http
+      .get("turno/getAtual")
+      .success(function(data) {
+        $scope.turno = data;
+      })
+      .error(function(data, status) {
+        $log.error(status);
+      });
+  }
+]);
+
+myApp.controller("TipoOcorrenciaController", [
+  "$scope",
+  "$location",
+  "$log",
+  "$http",
+  function($scope, $location, $log, $http) {
+    console.debug('TipoOcorrenciaController');
+    // $http
+    //   .get("tipo_ocorrencia/getAll")
+    //   .success(function(data) {
+    //     $scope.turno = data;
+    //   })
+    //   .error(function(data, status) {
+    //     $log.error(status);
+    //   });
+
+    $scope.getAll = function() {
+      $http
+        .get("tipo_ocorrencia/getAll")
+        .success(function(data) {
+          console.debug(data);
+          $scope.TipoOcorrencia = data;
+        })
+        .error(function(data, status) {
+          $log.error(status);
+        });
+    };
+  }  
 ]);

@@ -107,6 +107,11 @@ function routesClient(socket) {
     socket.disconnect(true);
     window.location.href = "./#/resultado";
   });
+  $("#Ocorrencia").click(function() {
+    console.debug("#resultado");
+    socket.disconnect(true);
+    window.location.href = "./#/ocorrencia";
+  });
   socket.on("disconnect", function() {
     resetMensagem();
     $("#messages").append(

@@ -1,0 +1,23 @@
+
+       <div class="container"  ng-controller="TurnoController" ng-init="getAtual()">
+        <div class="row" >
+            <div class="col-xs-4 col-sm-4  col-md-4 col-lg-4 col-xl-4 offset-lg-0 text-center"  >
+                <div>
+                    <span>Equipamento</span>
+                    <div class="card"><span>{{turno.Equipamento.Descricao}}<br></span></div>
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 text-center" >
+                <div>
+                    <span>Produto</span>
+                    <div class="card"><span>{{turno.Produto.Descricao}}<br></span></div>
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 text-center" >
+                <div>
+                    <span>Operação</span>
+                    <div class="card"><span>{{turno.Operacao.Descricao}}<br></span></div>
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,306 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #f7f7f7;
+}
+
+/* .container {
+	width: 80%;
+	margin: 100px auto;
+	padding: 20px;
+	box-sizing: border-box;
+	text-align: center;
+} */
+
+.container h1 {
+  font-size: 48px;
+  text-transform: uppercase;
+}
+
+.container ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container ul li {
+  list-style: none;
+  float: left;
+  width: calc(100% / 2);
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.container ul li a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.container ul li a .fa {
+  font-size: 40px;
+  transition: .5s;
+}
+
+.container ul li a:hover .fa {
+  transform: rotateY(360deg);
+}
+
+.container ul li:nth-child(1) a {
+  background: #3b5999;
+}
+
+.container ul li:nth-child(2) a {
+  background: #55acee;
+}
+
+.container ul li:nth-child(3) a {
+  background: #dd4b39;
+}
+
+.container ul li:nth-child(4) a {
+  background: #007785;
+}
+
+.container ul li:nth-child(5) a {
+  background: #00aff0;
+}
+
+.container ul li:nth-child(6) a {
+  background: #e4405f;
+}
+
+.container ul li:nth-child(7) a {
+  background: #cd201f;
+}
+
+.container ul li:nth-child(8) a {
+  background: #bd081c;
+}
+
+/*
+@media (max-width: 992px) {
+	.container h1 {font-size: 30px;}
+	.container ul li {width: calc(100% / 4);}
+}
+
+@media (max-width: 768px) {
+	.container {width: 100%;}
+}
+
+@media (max-width: 480px) {
+	.container {margin: 20px auto;}
+	.container ul li {width: calc(100% / 2);}
+}
+@media (max-width: 360px) {
+	.container {margin: 0 auto;}
+	.container ul li {width: calc(100% / 1);}
+} */
+
+/* @import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'); */
+
+.funkyradio div {
+  clear: both;
+  overflow: hidden;
+}
+
+.funkyradio label {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #D1D3D4;
+  font-weight: normal;
+}
+
+.funkyradio input[type="radio"]:empty, .funkyradio input[type="checkbox"]:empty {
+  display: none;
+}
+
+.funkyradio input[type="radio"]:empty~label, .funkyradio input[type="checkbox"]:empty~label {
+  position: relative;
+  line-height: 2.5em;
+  text-indent: 3.25em;
+  /* margin-top: 2em; */
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.funkyradio input[type="radio"]:empty~label:before, .funkyradio input[type="checkbox"]:empty~label:before {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 2.5em;
+  background: #D1D3D4;
+  border-radius: 3px 0 0 3px;
+}
+
+.funkyradio input[type="radio"]:hover:not(:checked)~label, .funkyradio input[type="checkbox"]:hover:not(:checked)~label {
+  color: #888;
+}
+
+.funkyradio input[type="radio"]:hover:not(:checked)~label:before, .funkyradio input[type="checkbox"]:hover:not(:checked)~label:before {
+  content: '\2714';
+  text-indent: .9em;
+  color: #C2C2C2;
+}
+
+.funkyradio input[type="radio"]:checked~label, .funkyradio input[type="checkbox"]:checked~label {
+  color: #777;
+}
+
+.funkyradio input[type="radio"]:checked~label:before, .funkyradio input[type="checkbox"]:checked~label:before {
+  content: '\2714';
+  text-indent: .9em;
+  color: #333;
+  background-color: #ccc;
+}
+
+.funkyradio input[type="radio"]:focus~label:before, .funkyradio input[type="checkbox"]:focus~label:before {
+  box-shadow: 0 0 0 3px #999;
+}
+
+.funkyradio-default input[type="radio"]:checked~label:before, .funkyradio-default input[type="checkbox"]:checked~label:before {
+  color: #333;
+  background-color: #ccc;
+}
+
+.funkyradio-primary input[type="radio"]:checked~label:before, .funkyradio-primary input[type="checkbox"]:checked~label:before {
+  color: #fff;
+  background-color: #337ab7;
+}
+
+.funkyradio-success input[type="radio"]:checked~label:before, .funkyradio-success input[type="checkbox"]:checked~label:before {
+  color: #fff;
+  background-color: #5cb85c;
+}
+
+.funkyradio-danger input[type="radio"]:checked~label:before, .funkyradio-danger input[type="checkbox"]:checked~label:before {
+  color: #fff;
+  background-color: #d9534f;
+}
+
+.funkyradio-warning input[type="radio"]:checked~label:before, .funkyradio-warning input[type="checkbox"]:checked~label:before {
+  color: #fff;
+  background-color: #f0ad4e;
+}
+
+.funkyradio-info input[type="radio"]:checked~label:before, .funkyradio-info input[type="checkbox"]:checked~label:before {
+  color: #fff;
+  background-color: #5bc0de;
+}
+
+/* MATRIX */
+
+/* .btn-matrix > .funkyradio-default:nth-child(3n+4) {
+    clear: left;
+    margin-left: 0;
+    border:1px solid black;
+  }
+  .btn-matrix > .funkyradio-default:nth-child(n+4) {
+    margin-top: -1px;
+    border:1px solid pink;
+  }
+  .btn-matrix > .funkyradio-default:first-child {
+    border-bottom-left-radius: 0;
+    border:1px solid red;
+  }
+  .btn-matrix > .funkyradio-default:nth-child(3) {
+    border-top-right-radius: 4px !important;
+    border:1px solid green;
+  }
+  .btn-matrix > .funkyradio-default:nth-last-child(3) {
+    border-bottom-left-radius: 4px !important;
+    border:1px solid blue;
+  }
+  .btn-matrix > .funkyradio-default:last-child {
+    border-top-right-radius: 0;
+    border:1px solid yellow;
+  } */
+
+/* Decorations */
+
+/* .btn-matrix {
+    margin: 20px;
+  } */
+
+/* The code depends only on X: */
+
+/* .btn-matrix > .funkyradio-default:nth-child(Xn+X+1) {
+  clear: left;
+  margin-left: 0;
+}
+.btn-matrix > .funkyradio-default:nth-child(n+X+1) {
+  margin-top: -1px;
+}
+.btn-matrix > .funkyradio-default:first-child {
+  border-bottom-left-radius: 0;
+}
+.btn-matrix > .funkyradio-default:nth-child(X) {
+  border-top-right-radius: 4px !important;
+}
+.btn-matrix > .funkyradio-default:nth-last-child(X) {
+  border-bottom-left-radius: 4px !important;
+}
+.btn-matrix > .funkyradio-default:last-child {
+  border-top-right-radius: 0;
+} */
+
+/* The heart of the matter
+.btn-matrix > .btn:nth-child(3n+4) {
+    clear: left;
+    margin-left: 0;
+  }
+  .btn-matrix > .btn:nth-child(n+4) {
+    margin-top: -1px;
+  }
+  .btn-matrix > .btn:first-child {
+    border-bottom-left-radius: 0;
+  }
+  .btn-matrix > .btn:nth-child(3) {
+    border-top-right-radius: 4px !important;
+  }
+  .btn-matrix > .btn:nth-last-child(3) {
+    border-bottom-left-radius: 4px !important;
+  }
+  .btn-matrix > .btn:last-child {
+    border-top-right-radius: 0;
+  }
+  
+  /* Decorations */
+
+.btn-matrix {
+  margin: 20px;
+}
+
+.btn-matrix>.btn:nth-child(Xn+X+1) {
+  clear: left;
+  margin-left: 0;
+}
+
+.btn-matrix>.btn:nth-child(n+X+1) {
+  margin-top: -1px;
+}
+
+.btn-matrix>.btn:first-child {
+  border-bottom-left-radius: 0;
+}
+
+.btn-matrix>.btn:nth-child(X) {
+  border-top-right-radius: 4px !important;
+}
+
+.btn-matrix>.btn:nth-last-child(X) {
+  border-bottom-left-radius: 4px !important;
+}
+
+.btn-matrix>.btn:last-child {
+  border-top-right-radius: 0;
+}
+
+*/

@@ -1,0 +1,23 @@
+
+    <header ng-include="'./templates/header.html'"></header>
+    <div class="container-fluid d-flex flex-column body-content justify-content-center">
+        <div class="row">
+            <div class="col" >
+                    <h4  ><span>{{turno.Produto.Descricao}}<br></span></h4>
+                    <div class="container" ng-controller="TipoOcorrenciaController" ng-init="getAll()">
+                     
+                    <ul class="funkyradio radio-group btn-matrix" ng-repeat="tipo in TipoOcorrencia" >
+                        <li>
+                            <div class="funkyradio-default">
+                                <input type="radio" name="radio" id="radio{{tipo.id}}" />
+                                <label for="radio{{tipo.id}}">{{tipo.id}} - {{tipo.Descricao}}</label>
+                            </div>
+                        </li>                                               
+                    </ul>
+                    <div style="clear: both;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer ng-include="'./templates/footerOcorrencia.html'"></footer>
+    <div ng-include="'./templates/partial.html'"></div>  

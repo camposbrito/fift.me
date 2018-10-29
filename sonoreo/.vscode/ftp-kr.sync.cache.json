@@ -252,9 +252,9 @@
           },
           "index.php": {
             "type": "-",
-            "size": 69586,
+            "size": 67046,
             "lmtime": 1540352172880,
-            "modified": false
+            "modified": true
           },
           "js": {
             "classie.js": {

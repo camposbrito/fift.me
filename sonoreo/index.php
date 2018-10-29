@@ -287,7 +287,7 @@
         <?php 
             session_start();
             if ($_SESSION['screen_width'] < 719)
-            {
+            {       
         ?>
             <div class="row Solucoes"  style="border:1px solid red; background:url('./img/png/solucoes-residencial.png') #f37027 no-repeat 0 0"  >                   
                 <h2  class="titulo1-solucoes">//SOLUÇÕES</h2>
@@ -315,43 +315,43 @@
                 <p   class="frase1-solucoes negrito"> Oferecemos curso pós-instalação para ensinamento técnico sobre equipamentos e equalizações pertinentes ao local, para melhor aproveitamento por meio dos músicos, funcionários e presidentes.</p>
             </div>
             <div class="row Solucoes"   style="background:url('./img/png/solucoes-empresas.png') #f37027 no-repeat 0 0"  >
-                <h2 data-pos="['-30%', '25%',  '0%', '-5%']" data-duration="0" data-effect="move" class="titulo1-solucoes">//SOLUÇÕES</h2>
-                <h2 data-pos="['-30%', '25%',  '8%', '-5%']" data-duration="0" data-effect="move" class="titulo2-solucoes">EMPRESAS</h2>
-                <p  data-pos="['-30%', '25%', '22%', '-5%']" data-duration="0" data-effect="move" class="subtitulo">Comodidade para facilitar o dia a dia.</p>
-                <p  data-pos="['-30%', '25%', '28%', '-5%']" data-duration="0" data-effect="move" class="frase1-titulo-solucoes negrito">SALAS DE REUNIÕES MULTIMíDIA | </p>
-                <p  data-pos="['-30%', '25%', '35%', '-5%']" data-duration="0" data-effect="move" class="frase1-solucoes negrito">Oferecemos sistemas completos ou básicos para sala de reuniõescom possibilidade de telas, televisões, microfones, sonorização, com recursos chamada viva-voz e vídeo-conferência. </p>
-                <p  data-pos="['-30%', '25%', '46%', '-5%']" data-duration="0" data-effect="move" class="frase1-titulo-solucoes negrito">SISTEMA DE COMUNICAÇÃO ROOM BY ROOM | </p>
-                <p  data-pos="['-30%', '25%', '53%', '-5%']" data-duration="0" data-effect="move" class="frase1-solucoes negrito">Distribuições otimizadas por salas ou setores independentes..</p>
-                <p  data-pos="['-30%', '25%', '58%', '-5%']" data-duration="0" data-effect="move" class="frase1-titulo-solucoes negrito">SOM AMBIENTE / RÁDIO INDOOR | </p>
-                <p  data-pos="['-30%', '25%', '65%', '-5%']" data-duration="0" data-effect="move" class="frase1-solucoes negrito"> Possibilidade de sistema integrado por meio de softwares onlines, conexão via USB,SD card, notebook, celular e bluetooth.</p>
-                <p  data-pos="['-30%', '25%', '72%', '-5%']" data-duration="0" data-effect="move" class="frase1-titulo-solucoes negrito">SALA DE PALESTRAS | </p>
-                <p  data-pos="['-30%', '25%', '79%', '-5%']" data-duration="0" data-effect="move" class="frase1-solucoes negrito"> Sistemas inteligentes integrados com sonorização, projetor e microfone para uma perfeita apresentação.</p>
+                <h2  class="titulo1-solucoes">//SOLUÇÕES</h2>
+                <h2  class="titulo2-solucoes">EMPRESAS</h2>
+                <p   class="subtitulo">Comodidade para facilitar o dia a dia.</p>
+                <p   class="frase1-titulo-solucoes negrito">SALAS DE REUNIÕES MULTIMíDIA | </p>
+                <p   class="frase1-solucoes negrito">Oferecemos sistemas completos ou básicos para sala de reuniõescom possibilidade de telas, televisões, microfones, sonorização, com recursos chamada viva-voz e vídeo-conferência. </p>
+                <p   class="frase1-titulo-solucoes negrito">SISTEMA DE COMUNICAÇÃO ROOM BY ROOM | </p>
+                <p   class="frase1-solucoes negrito">Distribuições otimizadas por salas ou setores independentes..</p>
+                <p   class="frase1-titulo-solucoes negrito">SOM AMBIENTE / RÁDIO INDOOR | </p>
+                <p   class="frase1-solucoes negrito"> Possibilidade de sistema integrado por meio de softwares onlines, conexão via USB,SD card, notebook, celular e bluetooth.</p>
+                <p   class="frase1-titulo-solucoes negrito">SALA DE PALESTRAS | </p>
+                <p   class="frase1-solucoes negrito"> Sistemas inteligentes integrados com sonorização, projetor e microfone para uma perfeita apresentação.</p>
             </div>
             <div class="row Solucoes"    style="padding:10px; background:url('./img/png/solucoes-lojas.png') #f37027 no-repeat 0 0"  >
-                <h2 data-pos="['-30%', '25%',  '0%', '-5%']" data-duration="0" data-effect="move" class="titulo1-solucoes">//SOLUÇÕES</h2> 
-                <h2 data-pos="['-30%', '25%',  '8%', '-5%']" data-duration="0" data-effect="move" class="titulo2-solucoes">LOJAS</h2>
-                <p  data-pos="['-30%', '25%', '22%', '-5%']" data-duration="0" data-effect="move" class="subtitulo">Oferecemos eficiência para facilitar a comunicação e o ensino no cotidiano</p>
-                <p  data-pos="['-30%', '25%', '28%', '-5%']" data-duration="0" data-effect="move" class="frase1-titulo-solucoes negrito">SISTEMA DE COMUNICAÇÃO ROOM BY ROOM | </p>
-                <p  data-pos="['-30%', '25%', '35%', '-5%']" data-duration="0" data-effect="move" class="frase1-solucoes negrito">Distribuições otimizadas por salas setorizadas independentes.</p>
-                <p  data-pos="['-30%', '25%', '42%', '-5%']" data-duration="0" data-effect="move" class="frase1-titulo-solucoes negrito">COMUNICAÇÃO EXTERNA INTEGRADA |</p>
-                <p  data-pos="['-30%', '25%', '49%', '-5%']" data-duration="0" data-effect="move" class="frase1-solucoes negrito">Sistema integrado para áreas externas como pátio, refeitório, cancha, playground, etc.</p>
-                <p  data-pos="['-30%', '25%', '56%', '-5%']" data-duration="0" data-effect="move" class="frase1-titulo-solucoes negrito">SALAS DE AULA MULTIMÍDIA |</p>
-                <p  data-pos="['-30%', '25%', '63%', '-5%']" data-duration="0" data-effect="move" class="frase1-solucoes negrito"> Projetores, telas interativas, TV’s e sons integrados para uso dentro da sala de aula.</p>
-                <p  data-pos="['-30%', '25%', '70%', '-5%']" data-duration="0" data-effect="move" class="frase1-titulo-solucoes negrito">RÁDIO ESCOLA | </p>
-                <p  data-pos="['-30%', '25%', '77%', '-5%']" data-duration="0" data-effect="move" class="frase1-solucoes negrito"> Possibilidade para dar notícias, informações e envolver os alunos dentro do ambiente escolar.</p>
+                <h2  class="titulo1-solucoes">//SOLUÇÕES</h2> 
+                <h2  class="titulo2-solucoes">LOJAS</h2>
+                <p   class="subtitulo">Oferecemos eficiência para facilitar a comunicação e o ensino no cotidiano</p>
+                <p   class="frase1-titulo-solucoes negrito">SISTEMA DE COMUNICAÇÃO ROOM BY ROOM | </p>
+                <p   class="frase1-solucoes negrito">Distribuições otimizadas por salas setorizadas independentes.</p>
+                <p   class="frase1-titulo-solucoes negrito">COMUNICAÇÃO EXTERNA INTEGRADA |</p>
+                <p   class="frase1-solucoes negrito">Sistema integrado para áreas externas como pátio, refeitório, cancha, playground, etc.</p>
+                <p   class="frase1-titulo-solucoes negrito">SALAS DE AULA MULTIMÍDIA |</p>
+                <p   class="frase1-solucoes negrito"> Projetores, telas interativas, TV’s e sons integrados para uso dentro da sala de aula.</p>
+                <p   class="frase1-titulo-solucoes negrito">RÁDIO ESCOLA | </p>
+                <p   class="frase1-solucoes negrito"> Possibilidade para dar notícias, informações e envolver os alunos dentro do ambiente escolar.</p>
             </div>
             <div class="row Solucoes" style="padding:10px; background:url('./img/png/solucoes-escolas.png') #f37027 no-repeat 0 0"  >
-                <h2 data-pos="['-30%', '25%',  '0%', '-5%']" data-duration="0" data-effect="move" class="titulo1-solucoes">//SOLUÇÕES</h2>
-                <h2 data-pos="['-30%', '25%',  '8%', '-5%']" data-duration="0" data-effect="move" class="titulo2-solucoes">ESCOLAS</h2>
-                <p  data-pos="['-30%', '25%', '20%', '-5%']" data-duration="0" data-effect="move" class="subtitulo">Oferecemos eficiência para facilitar a comunicação e o ensino no cotidiano</p>
-                <p  data-pos="['-30%', '25%', '30%', '-5%']" data-duration="0" data-effect="move" class="frase1-titulo-solucoes negrito">SISTEMA DE COMUNICAÇÃO ROOM BY ROOM | </p>
-                <p  data-pos="['-30%', '25%', '37%', '-5%']" data-duration="0" data-effect="move" class="frase1-solucoes negrito">Distribuições otimizadas por salas setorizadas independentes.</p>
-                <p  data-pos="['-30%', '25%', '44%', '-5%']" data-duration="0" data-effect="move" class="frase1-titulo-solucoes negrito">COMUNICAÇÃO EXTERNA INTEGRADA |</p>
-                <p  data-pos="['-30%', '25%', '51%', '-5%']" data-duration="0" data-effect="move" class="frase1-solucoes negrito">Sistema integrado para áreas externas como pátio, refeitório, cancha, playground, etc.</p>
-                <p  data-pos="['-30%', '25%', '58%', '-5%']" data-duration="0" data-effect="move" class="frase1-titulo-solucoes negrito">SALAS DE AULA MULTIMÍDIA |</p>
-                <p  data-pos="['-30%', '25%', '67%', '-5%']" data-duration="0" data-effect="move" class="frase1-solucoes negrito"> Projetores, telas interativas, TV’s e sons integrados para uso dentro da sala de aula.</p>
-                <p  data-pos="['-30%', '25%', '74%', '-5%']" data-duration="0" data-effect="move" class="frase1-titulo-solucoes negrito">RÁDIO ESCOLA | </p>
-                <p  data-pos="['-30%', '25%', '81%', '-5%']" data-duration="0" data-effect="move" class="frase1-solucoes negrito"> Possibilidade para dar notícias, informações e envolver os alunos dentro do ambiente escolar.</p>
+                <h2  class="titulo1-solucoes">//SOLUÇÕES</h2>
+                <h2  class="titulo2-solucoes">ESCOLAS</h2>
+                <p   class="subtitulo">Oferecemos eficiência para facilitar a comunicação e o ensino no cotidiano</p>
+                <p   class="frase1-titulo-solucoes negrito">SISTEMA DE COMUNICAÇÃO ROOM BY ROOM | </p>
+                <p   class="frase1-solucoes negrito">Distribuições otimizadas por salas setorizadas independentes.</p>
+                <p   class="frase1-titulo-solucoes negrito">COMUNICAÇÃO EXTERNA INTEGRADA |</p>
+                <p   class="frase1-solucoes negrito">Sistema integrado para áreas externas como pátio, refeitório, cancha, playground, etc.</p>
+                <p   class="frase1-titulo-solucoes negrito">SALAS DE AULA MULTIMÍDIA |</p>
+                <p   class="frase1-solucoes negrito"> Projetores, telas interativas, TV’s e sons integrados para uso dentro da sala de aula.</p>
+                <p   class="frase1-titulo-solucoes negrito">RÁDIO ESCOLA | </p>
+                <p   class="frase1-solucoes negrito"> Possibilidade para dar notícias, informações e envolver os alunos dentro do ambiente escolar.</p>
             </div>  
         <?php
             }

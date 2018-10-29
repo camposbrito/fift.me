@@ -42,15 +42,13 @@ class Post extends CI_Controller {
 	function getPosts()
 	{
 		$posts = $this->post_model->getPosts();	
-		echo json_encode(array('posts'=>$posts));
-		//$this->output->enable_profiler(true);
+		echo json_encode(array('posts'=>$posts)); 
 	}
 
 	function getSessao()
 	{
 		$sessao = $this->post_model->getSessao();	
-		echo json_encode(array('sessao'=>$sessao));	
-		// $this->output->enable_profiler(true);
+		echo json_encode(array('sessao'=>$sessao));	 
 	}
 	
 }
