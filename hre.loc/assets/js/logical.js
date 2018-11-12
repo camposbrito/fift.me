@@ -68,8 +68,15 @@ function routesClient(socket) {
   });
   socket.on("SetCartao", function(data) {
     console.debug(data);
-    socket.disconnect(true);
-    window.location.href = "./#/dashboard";
+    // alert(data);
+    var TAG = $.parseJSON(data);    
+    $.post("./turno/save", {TAG});
+    
+    // socket.disconnect(true);
+    // //window.location.href = "./#/dashboard";
+    $('#your-modal-id').modal('hide');
+    $('body').removeClass('modal-open');
+    $('.modal-backdrop').remove();
   });
   socket.on("SetOcorrencia", function(data) {
     console.debug(data);
@@ -88,10 +95,10 @@ function routesClient(socket) {
   $("#IniciarTurno").click(function() {
     resetMensagem();
     console.debug("#IniciarTurno");
-    $("#div-AproxCartao").show();
-    $("#div-AproxCartao").addClass("d-flex");
-    $("#div-IniciarTurno").hide();
-    $("#div-IniciarTurno").removeClass("d-flex");
+    // $("#div-AproxCartao").show();
+    // $("#div-AproxCartao").addClass("d-flex");
+    // $("#div-IniciarTurno").hide();
+    // $("#div-IniciarTurno").removeClass("d-flex");
     var sMessage = "Iniciar Turno";
     socket.emit("GetCartao", { message: sMessage });
     // setTimeout(esconder, 4000);

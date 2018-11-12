@@ -34,7 +34,7 @@ io.on('connection', function (socket){
     });
     socket.on('SetCartao', function (message) {
         ++nb;
-        logger.info('ElephantIO broadcast > SetCartao >' + JSON.stringify(message));
+        logger.info('ElephantIO broadcast > SetCartao >' + JSON.stringify(message)); 
 
         // send to all connected clients
         io.sockets.emit("SetCartao",  message);

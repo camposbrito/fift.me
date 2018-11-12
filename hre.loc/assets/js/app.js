@@ -228,6 +228,37 @@ myApp.controller("TurnoController", [
       .error(function(data, status) {
         $log.error(status);
       });
+      $scope.inProgress = function() {
+        $http
+          .get("turno/inProgress")
+          .success(function(data) {            
+            $scope.Current = data;
+            console.debug($scope.Current);
+            if (data.progress == true)
+            window.location.href = "./#/dashboard";
+          })
+          .error(function(data, status) {
+            $log.error(status);
+          });
+      }; 
+  }
+]);
+
+myApp.controller("ParametrosController", [
+  "$scope",
+  "$location",
+  "$log",
+  "$http",
+  function($scope, $location, $log, $http) {
+    console.debug('TurnoController');
+    $http
+      .get("parametros/get")
+      .success(function(data) {
+        $scope.parametros = data;
+      })
+      .error(function(data, status) {
+        $log.error(status);
+      });
   }
 ]);
 

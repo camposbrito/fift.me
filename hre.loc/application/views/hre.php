@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/Funky.css">   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://code.angularjs.org/1.3.0-rc.1/angular.min.js"></script>
     <script src="https://code.angularjs.org/1.5.0-rc.1/angular-route.min.js"></script>
@@ -21,9 +21,8 @@
    
 </head>	
 <body ng-app="myApp">
-<div id="messages" class=" alert alert-secondary" role="alert" style="display:none;"> </div>
-    <ng-view></ng-view>     
-       
+    <div id="messages" class=" alert alert-secondary" role="alert" style="display:none;"> </div>
+    <ng-view></ng-view>            
 </body>       
 
 </html>
