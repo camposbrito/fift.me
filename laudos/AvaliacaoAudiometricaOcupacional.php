@@ -70,15 +70,15 @@
                     <div class="sublinhado w100">  
                     <?php 
                       switch ( substr(@$rsC[0]['EstadoCivil'],0,1)) {
-                        case 's':echo 'Solteiro(a)';
+                        case 'S':echo 'Solteiro(a)';
                             break;
-                        case 'c':echo 'Casado(a)';
-                            break;
-                        
-                        case 'd':echo 'Divorciado(a)';
+                        case 'C':echo 'Casado(a)';
                             break;
                         
-                        case 'v':echo 'Viuvo(a)';
+                        case 'D':echo 'Divorciado(a)';
+                            break;
+                        
+                        case 'V':echo 'Viuvo(a)';
                             break;
                         default:echo '';
                             break;
