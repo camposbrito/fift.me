@@ -1,0 +1,211 @@
+{
+  "ftp://ftp.exameauditivo.com.br:21@exameauditivo": {
+    "www": {
+      "laudos": {
+        "20160719_AudiometriaCampoLivre.php": {
+          "type": "-",
+          "size": 19753,
+          "lmtime": 0,
+          "modified": false
+        },
+        "Anterior": {},
+        "Audiometria.php": {
+          "type": "-",
+          "size": 13015,
+          "lmtime": 0,
+          "modified": false
+        },
+        "Audiometria2.php": {
+          "type": "-",
+          "size": 12294,
+          "lmtime": 0,
+          "modified": false
+        },
+        "AudiometriaCampoLivre.php": {
+          "type": "-",
+          "size": 20291,
+          "lmtime": 0,
+          "modified": false
+        },
+        "AudiometriaInfantil.php": {
+          "type": "-",
+          "size": 14914,
+          "lmtime": 0,
+          "modified": false
+        },
+        "Audiometria_v0.php": {
+          "type": "-",
+          "size": 12294,
+          "lmtime": 0,
+          "modified": false
+        },
+        "Audiometria_v1.php": {
+          "type": "-",
+          "size": 12300,
+          "lmtime": 0,
+          "modified": false
+        },
+        "AvaliacaoAudiologicaInfantil.php": {
+          "type": "-",
+          "size": 16335,
+          "lmtime": 0,
+          "modified": false
+        },
+        "AvaliacaoAudiologicaInfantilv2.php": {
+          "type": "-",
+          "size": 27094,
+          "lmtime": 0,
+          "modified": false
+        },
+        "AvaliacaoAudiologicaInfantilv3.php": {
+          "type": "-",
+          "size": 15272,
+          "lmtime": 0,
+          "modified": false
+        },
+        "AvaliacaoAudiologicaInfantilv4.php": {
+          "type": "-",
+          "size": 21041,
+          "lmtime": 0,
+          "modified": false
+        },
+        "AvaliacaoAudiometricaOcupacional.php": {
+          "type": "-",
+          "size": 15258,
+          "lmtime": 1542153214562,
+          "modified": false
+        },
+        "AvaliacaoAudiometricaOcupacional2.php": {
+          "type": "-",
+          "size": 14793,
+          "lmtime": 0,
+          "modified": false
+        },
+        "AvaliacaoProcessamentoAuditivo.php": {
+          "type": "-",
+          "size": 38238,
+          "lmtime": 0,
+          "modified": false
+        },
+        "BKP": {},
+        "Impedanciometria.php": {
+          "type": "-",
+          "size": 16037,
+          "lmtime": 0,
+          "modified": false
+        },
+        "OD.php": {
+          "type": "-",
+          "size": 5483,
+          "lmtime": 0,
+          "modified": false
+        },
+        "OD_New.php": {
+          "type": "-",
+          "size": 9658,
+          "lmtime": 0,
+          "modified": false
+        },
+        "OD_v1.OLD.php": {
+          "type": "-",
+          "size": 10309,
+          "lmtime": 0,
+          "modified": false
+        },
+        "OD_v1.php": {
+          "type": "-",
+          "size": 10729,
+          "lmtime": 0,
+          "modified": false
+        },
+        "OE.php": {
+          "type": "-",
+          "size": 5347,
+          "lmtime": 0,
+          "modified": false
+        },
+        "OE2.php": {
+          "type": "-",
+          "size": 5347,
+          "lmtime": 0,
+          "modified": false
+        },
+        "OEOD.php": {
+          "type": "-",
+          "size": 8344,
+          "lmtime": 0,
+          "modified": false
+        },
+        "OEOD_v1.php": {
+          "type": "-",
+          "size": 19945,
+          "lmtime": 0,
+          "modified": false
+        },
+        "OE_v1.OLD.php": {
+          "type": "-",
+          "size": 10277,
+          "lmtime": 0,
+          "modified": false
+        },
+        "OE_v1.php": {
+          "type": "-",
+          "size": 10650,
+          "lmtime": 0,
+          "modified": false
+        },
+        "_AudiometriaCampoLivre.php": {
+          "type": "-",
+          "size": 13126,
+          "lmtime": 0,
+          "modified": false
+        },
+        "_OD_v1.php": {
+          "type": "-",
+          "size": 9248,
+          "lmtime": 0,
+          "modified": false
+        },
+        "_OE_v1.php": {
+          "type": "-",
+          "size": 10281,
+          "lmtime": 0,
+          "modified": false
+        },
+        "_css": {},
+        "_db": {},
+        "_graph": {},
+        "_img": {},
+        "_img.old": {},
+        "_includes": {},
+        "_js": {},
+        "erros": {
+          "type": "l",
+          "size": 29,
+          "lmtime": 0,
+          "modified": false
+        },
+        "favicon.ico": {
+          "type": "-",
+          "size": 44278,
+          "lmtime": 0,
+          "modified": false
+        },
+        "index.htm": {
+          "type": "-",
+          "size": 15535,
+          "lmtime": 0,
+          "modified": false
+        },
+        "src": {},
+        "timpanometria.php": {
+          "type": "-",
+          "size": 3736,
+          "lmtime": 0,
+          "modified": false
+        }
+      }
+    }
+  },
+  "$version": 1
+}

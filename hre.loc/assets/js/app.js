@@ -60,9 +60,9 @@ myApp.controller("DashboardController", [
     // };
     // $scope.setQuantidade = function(data) {
     //     var obj = JSON.parse(data);
-    //     console.debug($scope.Quantidade);
-    //     if (obj == '{start:  false}')
-    //       $scope.Quantidade.qtde = parseInt($scope.Quantidade.qtde) + 1;
+    //     console.debug($scope.turno);
+    //     // if (obj == '{start:  false}')
+    //     //   $scope.turno.QtdPecas = parseInt($scope.turno.QtdPecas) + 1;
     // };
     // $scope.getOperador = function() {
     //     $http
@@ -228,6 +228,13 @@ myApp.controller("TurnoController", [
       .error(function(data, status) {
         $log.error(status);
       });
+      $scope.setQuantidade = function(data) {
+        var obj = JSON.parse(data);
+        console.debug($scope.turno);
+        console.debug($scope.turno.QtdPecas);
+        if (obj == '{start:  false}')
+          $scope.turno.QtdPecas = parseInt($scope.turno.QtdPecas) + 1;
+    };
       $scope.inProgress = function() {
         $http
           .get("turno/inProgress")

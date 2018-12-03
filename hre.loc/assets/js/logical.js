@@ -82,11 +82,11 @@ function routesClient(socket) {
     console.debug(data);
     console.debug("SetOcorrencia");
     angular
-      .element("#DashboardController")
+      .element("#TurnoController")
       .scope()
       .setQuantidade(data);
     angular
-      .element("#DashboardController")
+      .element("#TurnoController")
       .scope()
       .$apply();
     // window.location.href = './#/dashboard';
