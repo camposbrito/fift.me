@@ -76,8 +76,8 @@
 			<DCCReference Include="FExercicio7_ProcessosConcorrentes.pas">
 				<Form>FormExercicio7_ProcessosConcorrentes</Form>
 			</DCCReference>
-			<DCCReference Include="FExercicio1_CadastroNomesArrays.pas">
-				<Form>FormExercicio1_CadastroNomesArrays</Form>
+			<DCCReference Include="FExercicio1_Arrays.pas">
+				<Form>FormExercicio1_Arrays</Form>
 			</DCCReference>
 			<BuildConfiguration Include="Debug">
 				<Key>Cfg_2</Key>

@@ -11,13 +11,12 @@ uses
   FExercicio5_Arquivos in 'FExercicio5_Arquivos.pas' {FormExercicio5_Arquivos},
   FExercicio6_UtilizacaoBibliotecasDinamicas in 'FExercicio6_UtilizacaoBibliotecasDinamicas.pas' {FormExercicio6_UtilizacaoBibliotecasDinamicas},
   FExercicio7_ProcessosConcorrentes in 'FExercicio7_ProcessosConcorrentes.pas' {FormExercicio7_ProcessosConcorrentes},
-  FExercicio1_CadastroNomesArrays in 'FExercicio1_CadastroNomesArrays.pas' {FormExercicio1_CadastroNomesArrays};
+  FExercicio1_Arrays in 'FExercicio1_Arrays.pas' {FormExercicio1_Arrays};
 
 {$R *.RES}
 
 begin
   Application.Initialize;
   Application.CreateForm(TFormPrincipal, FormPrincipal);
-  Application.CreateForm(TFormExercicio1_CadastroNomesArrays, FormExercicio1_CadastroNomesArrays);
   Application.Run;
 end.

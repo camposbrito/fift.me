@@ -4,17 +4,15 @@ interface
 
 uses Windows, SysUtils, Classes, Graphics, Forms, Controls, Menus,
   StdCtrls, Dialogs, Buttons, Messages, ExtCtrls, ComCtrls, StdActns,
-  ActnList, ToolWin, ImgList, FExercicio1_CadastroNomesArrays;
+  ActnList, ToolWin, ImgList, XPMan;
 
 type
   TFormPrincipal = class(TForm)
     MainMenu1: TMainMenu;
     N1: TMenuItem;
     FileExitItem: TMenuItem;
-    OpenDialog: TOpenDialog;
     StatusBar: TStatusBar;
     ActionList1: TActionList;
-    ImageList1: TImageList;
     Exerccios1: TMenuItem;
     actExerc1: TAction;
     actExerc2: TAction;
@@ -30,7 +28,7 @@ type
     Exerccio5Criaodearquivos1: TMenuItem;
     Exerccio6Utilizaodebibliotecasdinmicas1: TMenuItem;
     Exerccio7Processosconcorrentes1: TMenuItem;
-    procedure FileExit1Execute(Sender: TObject);
+    XPManifest1: TXPManifest;
     procedure actExerc1Execute(Sender: TObject);
     procedure actExerc2Execute(Sender: TObject);
     procedure actExerc3Execute(Sender: TObject);
@@ -39,9 +37,8 @@ type
     procedure actExerc6Execute(Sender: TObject);
     procedure actExerc7Execute(Sender: TObject);
   private
-    procedure CriarMDI(MainForm: TForm; FormClass: TFormClass; var Reference);
     { Private declarations }
-
+    procedure CriarMDI(MainForm: TForm; FormClass: TFormClass; var Reference);
   public
     { Public declarations }
   end;
@@ -53,7 +50,7 @@ implementation
 
 {$R *.dfm}
 
-uses CHILDWIN, about, FExercicio2_ConversaoTexto, FExercicio3_Pessoas,
+uses CHILDWIN, about, FExercicio1_Arrays, FExercicio2_ConversaoTexto, FExercicio3_Pessoas,
   FExercicio4_Componentes, FExercicio5_Arquivos,
   FExercicio6_UtilizacaoBibliotecasDinamicas, FExercicio7_Processosconcorrentes;
 
@@ -72,7 +69,7 @@ end;
 
 procedure TFormPrincipal.actExerc1Execute(Sender: TObject);
 begin
-  CriarMDI(Self, TFormExercicio1_CadastroNomesArrays, FormExercicio1_CadastroNomesArrays);
+  CriarMDI(Self, TFormExercicio1_Arrays, FormExercicio1_Arrays);
 end;
 
 procedure TFormPrincipal.actExerc2Execute(Sender: TObject);
@@ -96,26 +93,13 @@ begin
 end;
 
 procedure TFormPrincipal.actExerc6Execute(Sender: TObject);
-var
-  Child: TFormExercicio6_UtilizacaoBibliotecasDinamicas;
 begin
-  { create a new MDI child window }
-  Child := FormExercicio6_UtilizacaoBibliotecasDinamicas.Create(Application);
-  Child.Show;
+ CriarMDI(Self, TFormExercicio6_UtilizacaoBibliotecasDinamicas, FormExercicio6_UtilizacaoBibliotecasDinamicas);
 end;
 
 procedure TFormPrincipal.actExerc7Execute(Sender: TObject);
-var
-  Child: TFormExercicio7_ProcessosConcorrentes;
 begin
-  { create a new MDI child window }
-  Child := TFormExercicio7_ProcessosConcorrentes.Create(Application);
-  Child.Show;
-end;
-
-procedure TFormPrincipal.FileExit1Execute(Sender: TObject);
-begin
-  Close;
+  CriarMDI(Self, TFormExercicio7_ProcessosConcorrentes, FormExercicio7_ProcessosConcorrentes);
 end;
 
 end.

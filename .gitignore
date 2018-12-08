@@ -2,3 +2,5 @@
 hre.loc/assets/server/node_modules/
 DB1/__history/
 *.dcu
+*.local
+*.exe
