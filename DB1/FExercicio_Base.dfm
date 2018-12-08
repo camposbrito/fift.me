@@ -1,0 +1,20 @@
+object FormExercicio_base: TFormExercicio_base
+  Left = 0
+  Top = 0
+  Caption = 'Exerc'#237'cio'
+  ClientHeight = 299
+  ClientWidth = 635
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  FormStyle = fsMDIChild
+  OldCreateOrder = False
+  Position = poMainFormCenter
+  Visible = True
+  OnClose = FormClose
+  PixelsPerInch = 96
+  TextHeight = 13
+end

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/12/07 13:05:52.000.153,=C:\Users\rodrigo.brito\Google Drive\DB1\Unit1.pas</Transaction>
+    <Transaction>2018/12/07 13:06:22.000.564,=C:\Users\rodrigo.brito\Google Drive\DB1\Unit1.pas</Transaction>
+    <Transaction>2018/12/07 13:07:50.000.950,C:\Users\rodrigo.brito\Google Drive\DB1\Unit1.dfm=C:\Users\rodrigo.brito\Google Drive\DB1\FExercicio1.dfm</Transaction>
+    <Transaction>2018/12/07 13:07:50.000.950,C:\Users\rodrigo.brito\Google Drive\DB1\Unit1.pas=C:\Users\rodrigo.brito\Google Drive\DB1\FExercicio1.pas</Transaction>
+    <Transaction>2018/12/07 13:08:07.000.992,=C:\Users\rodrigo.brito\Google Drive\DB1\Unit1.pas</Transaction>
+    <Transaction>2018/12/07 13:08:55.000.217,=C:\Users\rodrigo.brito\Google Drive\DB1\Unit2.pas</Transaction>
+    <Transaction>2018/12/07 13:09:25.000.027,=C:\Users\rodrigo.brito\Google Drive\DB1\Unit3.pas</Transaction>
+    <Transaction>2018/12/07 13:09:47.000.395,=C:\Users\rodrigo.brito\Google Drive\DB1\Unit4.pas</Transaction>
+    <Transaction>2018/12/07 13:10:15.000.660,=C:\Users\rodrigo.brito\Google Drive\DB1\Unit5.pas</Transaction>
+    <Transaction>2018/12/07 13:10:31.000.027,=C:\Users\rodrigo.brito\Google Drive\DB1\Unit6.pas</Transaction>
+    <Transaction>2018/12/07 13:11:09.000.834,=C:\Users\rodrigo.brito\Google Drive\DB1\Unit7.pas</Transaction>
+    <Transaction>2018/12/07 13:11:48.000.931,C:\Users\rodrigo.brito\Google Drive\DB1\Unit7.dfm=C:\Users\rodrigo.brito\Google Drive\DB1\FExercicio7_Processosconcorrentes.dfm</Transaction>
+    <Transaction>2018/12/07 13:11:48.000.931,C:\Users\rodrigo.brito\Google Drive\DB1\Unit7.pas=C:\Users\rodrigo.brito\Google Drive\DB1\FExercicio7_Processosconcorrentes.pas</Transaction>
+    <Transaction>2018/12/07 13:12:42.000.704,C:\Users\rodrigo.brito\Google Drive\DB1\Unit6.dfm=C:\Users\rodrigo.brito\Google Drive\DB1\FExercicio6_UtilizacaoBibliotecasDinamicas.dfm</Transaction>
+    <Transaction>2018/12/07 13:12:42.000.704,C:\Users\rodrigo.brito\Google Drive\DB1\Unit6.pas=C:\Users\rodrigo.brito\Google Drive\DB1\FExercicio6_UtilizacaoBibliotecasDinamicas.pas</Transaction>
+    <Transaction>2018/12/07 13:13:21.000.576,C:\Users\rodrigo.brito\Google Drive\DB1\Unit1.dfm=C:\Users\rodrigo.brito\Google Drive\DB1\FExercicio2_ConversaoTexto.dfm</Transaction>
+    <Transaction>2018/12/07 13:13:21.000.576,C:\Users\rodrigo.brito\Google Drive\DB1\Unit1.pas=C:\Users\rodrigo.brito\Google Drive\DB1\FExercicio2_ConversaoTexto.pas</Transaction>
+    <Transaction>2018/12/07 13:14:12.000.378,C:\Users\rodrigo.brito\Google Drive\DB1\Unit2.dfm=C:\Users\rodrigo.brito\Google Drive\DB1\FExercicio3_Pessoas.dfm</Transaction>
+    <Transaction>2018/12/07 13:14:12.000.378,C:\Users\rodrigo.brito\Google Drive\DB1\Unit2.pas=C:\Users\rodrigo.brito\Google Drive\DB1\FExercicio3_Pessoas.pas</Transaction>
+    <Transaction>2018/12/07 13:14:52.000.858,C:\Users\rodrigo.brito\Google Drive\DB1\Unit3.dfm=C:\Users\rodrigo.brito\Google Drive\DB1\FExercicio3_Pessoas_Pesquisa.dfm</Transaction>
+    <Transaction>2018/12/07 13:14:52.000.858,C:\Users\rodrigo.brito\Google Drive\DB1\Unit3.pas=C:\Users\rodrigo.brito\Google Drive\DB1\FExercicio3_Pessoas_Pesquisa.pas</Transaction>
+    <Transaction>2018/12/07 13:15:04.000.432,C:\Users\rodrigo.brito\Google Drive\DB1\Unit4.pas=C:\Users\rodrigo.brito\Google Drive\DB1\FComponentes.pas</Transaction>
+    <Transaction>2018/12/07 13:15:04.000.432,C:\Users\rodrigo.brito\Google Drive\DB1\Unit4.dfm=C:\Users\rodrigo.brito\Google Drive\DB1\FComponentes.dfm</Transaction>
+    <Transaction>2018/12/07 13:15:19.000.308,C:\Users\rodrigo.brito\Google Drive\DB1\Unit5.pas=C:\Users\rodrigo.brito\Google Drive\DB1\FArquivos.pas</Transaction>
+    <Transaction>2018/12/07 13:15:19.000.308,C:\Users\rodrigo.brito\Google Drive\DB1\Unit5.dfm=C:\Users\rodrigo.brito\Google Drive\DB1\FArquivos.dfm</Transaction>
+    <Transaction>2018/12/07 13:15:50.000.477,C:\Users\rodrigo.brito\Google Drive\DB1\Main.dfm=C:\Users\rodrigo.brito\Google Drive\DB1\FPrincipal.dfm</Transaction>
+    <Transaction>2018/12/07 13:15:50.000.477,C:\Users\rodrigo.brito\Google Drive\DB1\Main.pas=C:\Users\rodrigo.brito\Google Drive\DB1\FPrincipal.pas</Transaction>
+    <Transaction>2018/12/07 13:16:22.000.532,C:\Users\rodrigo.brito\Google Drive\DB1\FComponentes.dfm=C:\Users\rodrigo.brito\Google Drive\DB1\FExercicio4_Componentes.dfm</Transaction>
+    <Transaction>2018/12/07 13:16:22.000.532,C:\Users\rodrigo.brito\Google Drive\DB1\FComponentes.pas=C:\Users\rodrigo.brito\Google Drive\DB1\FExercicio4_Componentes.pas</Transaction>
+    <Transaction>2018/12/07 13:16:43.000.660,C:\Users\rodrigo.brito\Google Drive\DB1\FArquivos.dfm=C:\Users\rodrigo.brito\Google Drive\DB1\FExercicio5_Arquivos.dfm</Transaction>
+    <Transaction>2018/12/07 13:16:43.000.660,C:\Users\rodrigo.brito\Google Drive\DB1\FArquivos.pas=C:\Users\rodrigo.brito\Google Drive\DB1\FExercicio5_Arquivos.pas</Transaction>
+    <Transaction>2018/12/07 13:16:49.000.355,C:\Users\rodrigo.brito\Google Drive\DB1\CHILDWIN.PAS=</Transaction>
+    <Transaction>2018/12/07 13:16:51.000.625,C:\Users\rodrigo.brito\Google Drive\DB1\about.pas=</Transaction>
+    <Transaction>2018/12/07 13:17:38.000.619,C:\Users\rodrigo.brito\Google Drive\DB1\FExercicio1.pas=C:\Users\rodrigo.brito\Google Drive\DB1\FExercicio1_.pas</Transaction>
+    <Transaction>2018/12/07 13:17:38.000.619,C:\Users\rodrigo.brito\Google Drive\DB1\FExercicio1.dfm=C:\Users\rodrigo.brito\Google Drive\DB1\FExercicio1_.dfm</Transaction>
+    <Transaction>2018/12/07 13:17:53.000.876,C:\Users\rodrigo.brito\Google Drive\DB1\FExercicio1_.pas=C:\Users\rodrigo.brito\Google Drive\DB1\FExercicio1_CadastroNomesArrays.pas</Transaction>
+    <Transaction>2018/12/07 13:17:53.000.876,C:\Users\rodrigo.brito\Google Drive\DB1\FExercicio1_.dfm=C:\Users\rodrigo.brito\Google Drive\DB1\FExercicio1_CadastroNomesArrays.dfm</Transaction>
+    <Transaction>2018/12/07 13:35:02.000.490,C:\Users\rodrigo.brito\Google Drive\DB1\FExercicio7_Processosconcorrentes.pas=C:\Users\rodrigo.brito\Google Drive\DB1\FExercicio7_Processos_Concorrentes.pas</Transaction>
+    <Transaction>2018/12/07 13:35:02.000.490,C:\Users\rodrigo.brito\Google Drive\DB1\FExercicio7_Processosconcorrentes.dfm=C:\Users\rodrigo.brito\Google Drive\DB1\FExercicio7_Processos_Concorrentes.dfm</Transaction>
+    <Transaction>2018/12/07 13:35:07.000.303,C:\Users\rodrigo.brito\Google Drive\DB1\FExercicio7_Processos_Concorrentes.dfm=C:\Users\rodrigo.brito\Google Drive\DB1\FExercicio7_ProcessosConcorrentes.dfm</Transaction>
+    <Transaction>2018/12/07 13:35:07.000.303,C:\Users\rodrigo.brito\Google Drive\DB1\FExercicio7_Processos_Concorrentes.pas=C:\Users\rodrigo.brito\Google Drive\DB1\FExercicio7_ProcessosConcorrentes.pas</Transaction>
+    <Transaction>2018/12/08 10:53:13.771,C:\DB1\FExercicio_base.pas=C:\DB1\FExercicio1_CadastroNomesArrays.pas</Transaction>
+    <Transaction>2018/12/08 10:53:13.771,C:\DB1\FExercicio_base.dfm=C:\DB1\FExercicio1_CadastroNomesArrays.dfm</Transaction>
+    <Transaction>2018/12/08 10:53:56.573,C:\DB1\FExercicio1_CadastroNomesArrays.dfm=C:\DB1\FExercicio_base.dfm</Transaction>
+    <Transaction>2018/12/08 10:53:56.573,C:\DB1\FExercicio1_CadastroNomesArrays.pas=C:\DB1\FExercicio_base.pas</Transaction>
+    <Transaction>2018/12/08 10:54:29.645,C:\DB1\FExercicio_Base.dfm=C:\DB1\FExercicio1_CadastroNomesArrays.dfm</Transaction>
+    <Transaction>2018/12/08 10:54:29.645,C:\DB1\FExercicio_Base.pas=C:\DB1\FExercicio1_CadastroNomesArrays.pas</Transaction>
+    <Transaction>2018/12/08 10:55:30.959,C:\DB1\DB1.dproj=C:\DB1\MDIAPP.dproj</Transaction>
+    <Transaction>2018/12/08 10:55:39.958,=C:\DB1\FExercicio1_CadastroNomesArrays.pas</Transaction>
+  </Transactions>
+</BorlandProject>
