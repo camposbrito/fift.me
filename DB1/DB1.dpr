@@ -11,7 +11,12 @@ uses
   FExercicio5_Arquivos in 'FExercicio5_Arquivos.pas' {FormExercicio5_Arquivos},
   FExercicio6_UtilizacaoBibliotecasDinamicas in 'FExercicio6_UtilizacaoBibliotecasDinamicas.pas' {FormExercicio6_UtilizacaoBibliotecasDinamicas},
   FExercicio7_ProcessosConcorrentes in 'FExercicio7_ProcessosConcorrentes.pas' {FormExercicio7_ProcessosConcorrentes},
-  FExercicio1_Arrays in 'FExercicio1_Arrays.pas' {FormExercicio1_Arrays};
+  FExercicio1_Arrays in 'FExercicio1_Arrays.pas' {FormExercicio1_Arrays},
+  Conversao in 'Conversao.pas',
+  ConverteTexto in 'ConverteTexto.pas',
+  ConverteInvertido in 'ConverteInvertido.pas',
+  ConvertePrimeiraMaiuscula in 'ConvertePrimeiraMaiuscula.pas',
+  ConverteOrdenado in 'ConverteOrdenado.pas';
 
 {$R *.RES}
 

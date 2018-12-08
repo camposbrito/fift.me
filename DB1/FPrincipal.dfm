@@ -97,8 +97,4 @@ object FormPrincipal: TFormPrincipal
       OnExecute = actExerc7Execute
     end
   end
-  object XPManifest1: TXPManifest
-    Left = 712
-    Top = 112
-  end
 end

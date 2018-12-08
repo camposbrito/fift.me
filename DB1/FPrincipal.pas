@@ -28,7 +28,6 @@ type
     Exerccio5Criaodearquivos1: TMenuItem;
     Exerccio6Utilizaodebibliotecasdinmicas1: TMenuItem;
     Exerccio7Processosconcorrentes1: TMenuItem;
-    XPManifest1: TXPManifest;
     procedure actExerc1Execute(Sender: TObject);
     procedure actExerc2Execute(Sender: TObject);
     procedure actExerc3Execute(Sender: TObject);
