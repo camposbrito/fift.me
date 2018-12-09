@@ -28,7 +28,7 @@ var
   database, username, password: String;
 begin
 try
-  ini := TIniFile.Create(GetCurrentDir + '\db1.config.ini'); //default directory is Window's directory!!
+  ini := TIniFile.Create(GetCurrentDir + '\db1.config.ini');
   try
     connDB1.Connected := False;
 
@@ -37,6 +37,10 @@ try
       database := ini.readString('CONFIG','database','');
       username := ini.readString('CONFIG','username','');
       password := ini.readString('CONFIG','password','');
+
+      connDB1.Params.Values['DataBase'] := database;
+      connDB1.Params.Values['User_Name']:= username;
+      connDB1.Params.Values['Password'] := password;
     end;
   finally
      ini.free;
