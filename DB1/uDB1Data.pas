@@ -3,7 +3,7 @@ unit uDB1Data;
 interface
 
 uses
-  SysUtils, Classes, Controls, StdCtrls, graphics, messages, db, SqlExpr;
+  SysUtils, Classes, Controls, StdCtrls, graphics, messages, db, SqlExpr, Dialogs;
 
 type
   TDB1Data = class(TSQLDataSet)
@@ -44,6 +44,11 @@ var
   sql: string;
   i: Integer;
 begin
+  if Trim(ListaTabelas.Text) = '' then
+  begin
+     MessageDlg('Favor informar ao menos uma tabela.',mtError, [mbOK], 0);
+     abort;
+  end;
   Self.Active := False;
   sql := 'SELECT ';
   if trim(ListaCampos.Text) = '' then

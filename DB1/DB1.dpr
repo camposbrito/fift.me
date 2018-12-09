@@ -18,7 +18,8 @@ uses
   ConvertePrimeiraMaiuscula in 'ConvertePrimeiraMaiuscula.pas',
   ConverteOrdenado in 'ConverteOrdenado.pas',
   uBanco in 'uBanco.pas' {dmBanco: TDataModule},
-  FExercicio3_Cidades_Pesquisa in 'FExercicio3_Cidades_Pesquisa.pas' {FormExercicio3_Cidades_Pesquisa};
+  FExercicio3_Cidades_Pesquisa in 'FExercicio3_Cidades_Pesquisa.pas' {FormExercicio3_Cidades_Pesquisa},
+  BarraProgresso in 'BarraProgresso.pas';
 
 {$R *.RES}
 
