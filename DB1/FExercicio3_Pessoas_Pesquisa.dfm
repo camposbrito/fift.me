@@ -14,6 +14,7 @@ object FormExercicio3_Pessoas_Pesquisa: TFormExercicio3_Pessoas_Pesquisa
   Font.Style = []
   OldCreateOrder = False
   Position = poMainFormCenter
+  OnCreate = FormCreate
   OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
@@ -72,6 +73,7 @@ object FormExercicio3_Pessoas_Pesquisa: TFormExercicio3_Pessoas_Pesquisa
       Width = 183
       Height = 21
       TabOrder = 0
+      OnKeyDown = Edit1KeyDown
     end
   end
   object grdResultado: TDBGrid

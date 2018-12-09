@@ -39,6 +39,7 @@ type
     cdsPessoaCDCIDADE: TIntegerField;
     cdsPessoaNMCIDADE: TStringField;
     cdsPessoaUF: TStringField;
+    SQLConnection1: TSQLConnection;
     procedure btnSairClick(Sender: TObject);
     procedure btnNovoClick(Sender: TObject);
     procedure btnSalvarClick(Sender: TObject);
@@ -48,6 +49,14 @@ type
     procedure btnExcluirClick(Sender: TObject);
     procedure btnPesquisarCidadeClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
+    procedure qryPessoaParseDeleteSql(var FieldNames: TStrings; SQL: string;
+      var TableName: string);
+    procedure qryPessoaParseInsertSql(var FieldNames: TStrings; SQL: string;
+      var BindAllFields: Boolean; var TableName: string);
+    procedure qryPessoaParseSelectSql(var FieldNames: TStrings; SQL: string;
+      var TableName: string);
+    procedure qryPessoaParseUpdateSql(var FieldNames: TStrings; SQL: string;
+      var TableName: string);
   private
     { Private declarations }
     Testado : (Normal,Inserindo, Alterando);
@@ -199,6 +208,7 @@ begin
   if cdsPessoa.State in dsEditModes then
     cdsPessoa.Post;
 
+//  qryAux.SQLConnection.BeginTransaction;
   if Testado = Inserindo then
   begin
     qryAux.Close;
@@ -239,6 +249,8 @@ begin
     qryAux.ParamByName('DEBAIRRO').AsString := cdsPessoaDEBAIRRO.AsString;
     qryAux.ParamByName('CDCIDADE').AsString := cdsPessoaCDCIDADE.AsString;
     qryAux.ExecSQL;
+
+
   end
   else
   if Testado = Alterando then
@@ -259,6 +271,7 @@ begin
     qryAux.ParamByName('CDCIDADE').AsString := cdsPessoaCDCIDADE.AsString;
     qryAux.ExecSQL;
   end;
+//  qryAux.SQLConnection.CommitFreeAndNil(qryAux.SQLConnection.BeginTransaction);
   TEstado := Normal;
   ControleBotoes(True, True, False, True, True, True, False);
 end;
@@ -313,7 +326,38 @@ end;
 procedure TFormExercicio3_Pessoas.FormCreate(Sender: TObject);
 begin
   inherited;
+  if not(dmBanco.connDB1.Connected) then
+    dmBanco.connDB1.Open;
   ControleBotoes(True, False,False, True, False, True, False);
+end;
+
+procedure TFormExercicio3_Pessoas.qryPessoaParseDeleteSql(
+  var FieldNames: TStrings; SQL: string; var TableName: string);
+begin
+  inherited;
+  ;
+end;
+
+procedure TFormExercicio3_Pessoas.qryPessoaParseInsertSql(
+  var FieldNames: TStrings; SQL: string; var BindAllFields: Boolean;
+  var TableName: string);
+begin
+  inherited;
+  ;
+end;
+
+procedure TFormExercicio3_Pessoas.qryPessoaParseSelectSql(
+  var FieldNames: TStrings; SQL: string; var TableName: string);
+begin
+  inherited;
+  ;
+end;
+
+procedure TFormExercicio3_Pessoas.qryPessoaParseUpdateSql(
+  var FieldNames: TStrings; SQL: string; var TableName: string);
+begin
+  inherited;
+  ;
 end;
 
 end.

@@ -1,6 +1,7 @@
 object dmBanco: TdmBanco
   OldCreateOrder = False
   OnCreate = DataModuleCreate
+  OnDestroy = DataModuleDestroy
   Height = 150
   Width = 215
   object connDB1: TSQLConnection
@@ -47,7 +48,6 @@ object dmBanco: TdmBanco
       'Trim Char=False')
     TableScope = [tsTable]
     VendorLib = 'fbclient.DLL'
-    Connected = True
     Left = 24
     Top = 8
   end

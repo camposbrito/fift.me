@@ -60,8 +60,9 @@ object FormPrincipal: TFormPrincipal
         Caption = '-'
       end
       object FileExitItem: TMenuItem
-        Caption = 'E&xit'
+        Caption = '&Sair'
         Hint = 'Exit|Exit application'
+        OnClick = FileExitItemClick
       end
     end
   end

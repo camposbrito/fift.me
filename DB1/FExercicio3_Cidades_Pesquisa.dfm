@@ -12,6 +12,7 @@ object FormExercicio3_Cidades_Pesquisa: TFormExercicio3_Cidades_Pesquisa
   Font.Style = []
   OldCreateOrder = False
   Position = poMainFormCenter
+  OnCreate = FormCreate
   OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13
@@ -22,8 +23,6 @@ object FormExercicio3_Cidades_Pesquisa: TFormExercicio3_Cidades_Pesquisa
     Height = 41
     Align = alBottom
     TabOrder = 1
-    ExplicitTop = 233
-    ExplicitWidth = 648
     object btnSelecionar: TButton
       Left = 18
       Top = 6
@@ -50,7 +49,6 @@ object FormExercicio3_Cidades_Pesquisa: TFormExercicio3_Cidades_Pesquisa
     Height = 41
     Align = alTop
     TabOrder = 0
-    ExplicitWidth = 648
     object Label1: TLabel
       Left = 8
       Top = 14

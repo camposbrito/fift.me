@@ -35,6 +35,7 @@ type
     procedure actExerc5Execute(Sender: TObject);
     procedure actExerc6Execute(Sender: TObject);
     procedure actExerc7Execute(Sender: TObject);
+    procedure FileExitItemClick(Sender: TObject);
   private
     { Private declarations }
     procedure CriarMDI(MainForm: TForm; FormClass: TFormClass; var Reference);
@@ -51,7 +52,8 @@ implementation
 
 uses CHILDWIN, about, FExercicio1_Arrays, FExercicio2_ConversaoTexto, FExercicio3_Pessoas,
   FExercicio4_Componentes, FExercicio5_Arquivos,
-  FExercicio6_UtilizacaoBibliotecasDinamicas, FExercicio7_Processosconcorrentes;
+  FExercicio6_UtilizacaoBibliotecasDinamicas, FExercicio7_Processosconcorrentes,
+  uBanco;
 
 procedure TFormPrincipal.CriarMDI(MainForm: TForm; FormClass: TFormClass; var Reference);
 var
@@ -64,6 +66,11 @@ begin
       Exit;
     end;
   Application.CreateForm(FormClass, Reference);
+end;
+
+procedure TFormPrincipal.FileExitItemClick(Sender: TObject);
+begin
+  Close;
 end;
 
 procedure TFormPrincipal.actExerc1Execute(Sender: TObject);

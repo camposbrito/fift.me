@@ -24,8 +24,7 @@ uses
 
 begin
   Application.Initialize;
-  Application.CreateForm(TFormPrincipal, FormPrincipal);
   Application.CreateForm(TdmBanco, dmBanco);
-  Application.CreateForm(TFormExercicio3_Cidades_Pesquisa, FormExercicio3_Cidades_Pesquisa);
+  Application.CreateForm(TFormPrincipal, FormPrincipal);
   Application.Run;
 end.

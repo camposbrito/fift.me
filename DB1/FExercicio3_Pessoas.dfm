@@ -27,8 +27,6 @@ object FormExercicio3_Pessoas: TFormExercicio3_Pessoas
     Anchors = [akLeft, akTop, akRight, akBottom]
     Caption = ' Cadastro de Pessoas: '
     TabOrder = 0
-    ExplicitWidth = 876
-    ExplicitHeight = 504
     DesignSize = (
       521
       181)
@@ -72,8 +70,6 @@ object FormExercicio3_Pessoas: TFormExercicio3_Pessoas
       Anchors = [akLeft, akRight, akBottom]
       BevelInner = bvLowered
       TabOrder = 1
-      ExplicitTop = 453
-      ExplicitWidth = 858
       object btnNovo: TButton
         Left = 12
         Top = 11
@@ -138,7 +134,6 @@ object FormExercicio3_Pessoas: TFormExercicio3_Pessoas
       Caption = 'Pesquisar'
       TabOrder = 0
       OnClick = btnPesquisarCidadeClick
-      ExplicitLeft = 791
     end
     object edtNMPESSOA: TDBEdit
       Left = 80
@@ -149,7 +144,6 @@ object FormExercicio3_Pessoas: TFormExercicio3_Pessoas
       DataField = 'NMPESSOA'
       DataSource = dsPessoa
       TabOrder = 2
-      ExplicitWidth = 786
     end
     object edtDELOGRADOURO: TDBEdit
       Left = 80
@@ -160,7 +154,6 @@ object FormExercicio3_Pessoas: TFormExercicio3_Pessoas
       DataField = 'DELOGRADOURO'
       DataSource = dsPessoa
       TabOrder = 3
-      ExplicitWidth = 786
     end
     object edtDEBAIRRO: TDBEdit
       Left = 80
@@ -171,7 +164,6 @@ object FormExercicio3_Pessoas: TFormExercicio3_Pessoas
       DataField = 'DEBAIRRO'
       DataSource = dsPessoa
       TabOrder = 4
-      ExplicitWidth = 786
     end
     object edtNMCIDADE: TDBEdit
       Left = 80
@@ -182,7 +174,6 @@ object FormExercicio3_Pessoas: TFormExercicio3_Pessoas
       DataField = 'NMCIDADE'
       DataSource = dsPessoa
       TabOrder = 5
-      ExplicitWidth = 669
     end
     object edtUF: TDBEdit
       Left = 400
@@ -208,6 +199,10 @@ object FormExercicio3_Pessoas: TFormExercicio3_Pessoas
     Top = 96
   end
   object qryPessoa: TSQLDataSet
+    ParseSelectSql = qryPessoaParseSelectSql
+    ParseDeleteSql = qryPessoaParseDeleteSql
+    ParseUpdateSql = qryPessoaParseUpdateSql
+    ParseInsertSql = qryPessoaParseInsertSql
     SchemaName = 'sysdba'
     CommandText = 
       'SELECT  p.cdpessoa, '#13#10'              p.nmpessoa, '#13#10'              ' +
@@ -286,5 +281,9 @@ object FormExercicio3_Pessoas: TFormExercicio3_Pessoas
       FixedChar = True
       Size = 2
     end
+  end
+  object SQLConnection1: TSQLConnection
+    Left = 112
+    Top = 24
   end
 end

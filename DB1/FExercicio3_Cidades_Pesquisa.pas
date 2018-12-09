@@ -30,6 +30,7 @@ type
     procedure grdResultadoDblClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure Edit1KeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -72,6 +73,12 @@ procedure TFormExercicio3_Cidades_Pesquisa.Edit1KeyDown(Sender: TObject;
 begin
   if key = 13 then
     btnPesquisarClick(nil);
+end;
+
+procedure TFormExercicio3_Cidades_Pesquisa.FormCreate(Sender: TObject);
+begin
+  if not(dmBanco.connDB1.Connected) then
+    dmBanco.connDB1.Open;
 end;
 
 procedure TFormExercicio3_Cidades_Pesquisa.FormShow(Sender: TObject);

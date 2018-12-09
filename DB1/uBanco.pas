@@ -8,6 +8,7 @@ type
   TdmBanco = class(TDataModule)
     connDB1: TSQLConnection;
     procedure DataModuleCreate(Sender: TObject);
+    procedure DataModuleDestroy(Sender: TObject);
   private
     { Private declarations }
   public
@@ -37,7 +38,7 @@ try
       username := ini.readString('CONFIG','username','');
       password := ini.readString('CONFIG','password','');
     end;
-    connDB1.Connected := True;
+//    connDB1.Connected := True;
   finally
      ini.free;
   end;
@@ -45,6 +46,12 @@ except on E: Exception do
   raise Exception.Create(e.Message);
 end;
 
+end;
+
+procedure TdmBanco.DataModuleDestroy(Sender: TObject);
+begin
+  if (dmBanco.connDB1.Connected) then
+    dmBanco.connDB1.Close;
 end;
 
 end.
