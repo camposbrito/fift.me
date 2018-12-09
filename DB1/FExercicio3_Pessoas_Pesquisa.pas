@@ -4,8 +4,8 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, FExercicio_Base, uBanco, FMTBcd, DB, DBClient, Provider, SqlExpr,
-  Grids, DBGrids, ExtCtrls, StdCtrls;
+  Dialogs, uBanco, FMTBcd, DB, DBClient, Provider, SqlExpr,
+  DBGrids, ExtCtrls, StdCtrls, Grids;
 
 type
   TFormExercicio3_Pessoas_Pesquisa = class(TForm)

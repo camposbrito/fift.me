@@ -4,8 +4,8 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, FExercicio_Base, StdCtrls, ExtCtrls, FMTBcd, DB, uBanco, FExercicio3_Cidades_Pesquisa,
-  Mask, DBCtrls, SqlExpr, DBTables, DBClient, SimpleDS, Provider, FExercicio3_Pessoas_Pesquisa;
+  Dialogs, FExercicio_Base, StdCtrls, ExtCtrls, FMTBcd, DB, uBanco, DBCtrls,
+  SqlExpr, DBClient, Provider, Mask, ;
 
 type
   TFormExercicio3_Pessoas = class(TFormExercicio_base)
@@ -72,7 +72,7 @@ var
 implementation
 
 {$R *.dfm}
-
+uses FExercicio3_Cidades_Pesquisa, FExercicio3_Pessoas_Pesquisa;
 { TFormExercicio3_Pessoas }
 
 procedure TFormExercicio3_Pessoas.btnEditarClick(Sender: TObject);

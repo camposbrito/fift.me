@@ -3,7 +3,7 @@ unit uDB1Data;
 interface
 
 uses
-  SysUtils, Classes, Controls, StdCtrls, graphics, messages, db, SqlExpr, Dialogs;
+  SysUtils, Classes, Controls, graphics, messages, db, SqlExpr, Dialogs;
 
 type
   TDB1Data = class(TSQLDataSet)

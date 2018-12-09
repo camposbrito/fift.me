@@ -38,7 +38,6 @@ try
       username := ini.readString('CONFIG','username','');
       password := ini.readString('CONFIG','password','');
     end;
-//    connDB1.Connected := True;
   finally
      ini.free;
   end;

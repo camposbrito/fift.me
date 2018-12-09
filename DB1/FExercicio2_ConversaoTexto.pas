@@ -4,7 +4,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, FExercicio_Base, StdCtrls, ExtCtrls, StrUtils, Math;
+  Dialogs, FExercicio_Base, StdCtrls, ExtCtrls;
 
 type
   TFormExercicio2_ConversaoTexto = class(TFormExercicio_base)

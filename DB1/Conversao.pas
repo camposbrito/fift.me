@@ -2,7 +2,7 @@ unit Conversao;
 
 interface
 
-uses StrUtils, Dialogs ;
+uses Dialogs ;
 type
   TConversao = Class
   public

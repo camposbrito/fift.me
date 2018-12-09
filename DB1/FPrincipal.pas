@@ -2,9 +2,8 @@ unit FPrincipal;
 
 interface
 
-uses Windows, SysUtils, Classes, Graphics, Forms, Controls, Menus,
-  StdCtrls, Dialogs, Buttons, Messages, ExtCtrls, ComCtrls, StdActns,
-  ActnList, ToolWin, ImgList, XPMan;
+uses Windows, SysUtils, Classes, Graphics, Forms, Controls, Menus, Dialogs,
+Buttons, Messages, ExtCtrls, ComCtrls, ActnList;
 
 type
   TFormPrincipal = class(TForm)
@@ -50,10 +49,9 @@ implementation
 
 {$R *.dfm}
 
-uses CHILDWIN, about, FExercicio1_Arrays, FExercicio2_ConversaoTexto, FExercicio3_Pessoas,
+uses FExercicio1_Arrays, FExercicio2_ConversaoTexto, FExercicio3_Pessoas,
   FExercicio4_Componentes, FExercicio5_Arquivos,
-  FExercicio6_UtilizacaoBibliotecasDinamicas, FExercicio7_Processosconcorrentes,
-  uBanco;
+  FExercicio6_UtilizacaoBibliotecasDinamicas, FExercicio7_Processosconcorrentes;
 
 procedure TFormPrincipal.CriarMDI(MainForm: TForm; FormClass: TFormClass; var Reference);
 var

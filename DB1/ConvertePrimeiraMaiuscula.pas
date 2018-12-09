@@ -1,7 +1,7 @@
 unit ConvertePrimeiraMaiuscula;
 
 interface
-uses ConverteInvertido, ConverteTexto, StrUtils, Classes, SysUtils;
+uses ConverteTexto, Classes, SysUtils;
 
 type
   TConvertePrimeiraMaiuscula = class(TConverteTexto)

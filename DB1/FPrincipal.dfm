@@ -4,7 +4,7 @@ object FormPrincipal: TFormPrincipal
   Caption = 'Avalia'#231#227'o T'#233'cnica DB1 - Rodrigo de Campos Brito'
   ClientHeight = 408
   ClientWidth = 856
-  Color = clAppWorkSpace
+  Color = clWindow
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clBlack
   Font.Height = -11

@@ -2,7 +2,7 @@ unit ConverteOrdenado;
 
 interface
 
-uses ConverteInvertido, ConverteTexto, StrUtils, Classes, SysUtils;
+uses ConverteTexto, Classes, SysUtils;
 
 type
   TConverteOrdenado = class(TConverteTexto)
