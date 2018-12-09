@@ -8,18 +8,18 @@ uses
 
 type
   TFormExercicio6_UtilizacaoBibliotecasDinamicas = class(TFormExercicio_base)
-    GroupBox1: TGroupBox;
+    grpQuadrado: TGroupBox;
     edtLado: TLabeledEdit;
     rdgCalculoQuadrado: TRadioGroup;
-    Button1: TButton;
+    btnCalcularQuadrado: TButton;
     edtResultadoQuadrado: TLabeledEdit;
-    GroupBox2: TGroupBox;
+    grpCirculo: TGroupBox;
     edtRaio: TLabeledEdit;
     rdgCalculoCirculo: TRadioGroup;
-    Button2: TButton;
+    btnCalcularCirculo: TButton;
     edtResultadoCirculo: TLabeledEdit;
-    procedure Button1Click(Sender: TObject);
-    procedure Button2Click(Sender: TObject);
+    procedure btnCalcularQuadradoClick(Sender: TObject);
+    procedure btnCalcularCirculoClick(Sender: TObject);
   private
     function CarregarDLL(NomeArquivo, NomeFuncao: String;
       AParams: array of Variant; AObjetos: array of TObject): Variant;
@@ -35,7 +35,7 @@ var
 implementation
 
 {$R *.dfm}
-procedure TFormExercicio6_UtilizacaoBibliotecasDinamicas.Button1Click(
+procedure TFormExercicio6_UtilizacaoBibliotecasDinamicas.btnCalcularQuadradoClick(
   Sender: TObject);
 var
   TipoCalculo: string;
@@ -45,7 +45,7 @@ begin
   edtResultadoQuadrado.Text := CarregarDLL('DB1FigurasGeometricas.dll','Calcular',['Q', TipoCalculo, StrToIntDef(edtLado.Text, 0)],[]);
 end;
 
-procedure TFormExercicio6_UtilizacaoBibliotecasDinamicas.Button2Click(
+procedure TFormExercicio6_UtilizacaoBibliotecasDinamicas.btnCalcularCirculoClick(
   Sender: TObject);
 var
   TipoCalculo: string;

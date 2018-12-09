@@ -9,13 +9,13 @@ uses
 
 type
   TFormExercicio5_Arquivos = class(TFormExercicio_base)
-    Panel1: TPanel;
-    Panel2: TPanel;
-    Label1: TLabel;
-    Edit1: TEdit;
-    Button1: TButton;
-    Button2: TButton;
-    Button3: TButton;
+    pnlGeral: TPanel;
+    pnlBotoes: TPanel;
+    lblLocal: TLabel;
+    edtLocal: TEdit;
+    btnSelecionar: TButton;
+    btnSalvar: TButton;
+    btnSair: TButton;
     db1Consulta: TSQLDataSet;
     dsConsulta: TDataSource;
     dspConsulta: TDataSetProvider;
@@ -24,10 +24,10 @@ type
     cdsConsultaNMPESSOA: TStringField;
     cdsConsultaNMCIDADE: TStringField;
     cdsConsultaUF: TStringField;
-    procedure Button1Click(Sender: TObject);
-    procedure Button2Click(Sender: TObject);
+    procedure btnSelecionarClick(Sender: TObject);
+    procedure btnSalvarClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
-    procedure Button3Click(Sender: TObject);
+    procedure btnSairClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -43,14 +43,14 @@ uses uBanco;
 
 {$R *.dfm}
 
-procedure TFormExercicio5_Arquivos.Button1Click(Sender: TObject);
+procedure TFormExercicio5_Arquivos.btnSelecionarClick(Sender: TObject);
 begin
   inherited;
   if OpenTextFileDialog1.Execute then
-      Edit1.Text := OpenTextFileDialog1.FileName;
+      edtLocal.Text := OpenTextFileDialog1.FileName;
 end;
 
-procedure TFormExercicio5_Arquivos.Button2Click(Sender: TObject);
+procedure TFormExercicio5_Arquivos.btnSalvarClick(Sender: TObject);
 var
   Lista: TStringList;
   i: Integer;
@@ -58,8 +58,8 @@ var
 begin
   inherited;
   Lista := TStringList.Create;
-  if trim(Edit1.Text) = '' then
-    Button1Click(nil);
+  if trim(edtLocal.Text) = '' then
+    btnSelecionarClick(nil);
   try
     cdsConsulta.Open;
 
@@ -73,7 +73,7 @@ begin
                  UF     + StringOfChar(' ',  2 - Length(UF)));
       cdsConsulta.Next;
     end;
-    lista.SaveToFile(Edit1.Text, TEncoding.UTF8);
+    lista.SaveToFile(edtLocal.Text, TEncoding.UTF8);
   finally
     Lista.Free;
     cdsConsulta.Close;
@@ -82,7 +82,7 @@ begin
 
 end;
 
-procedure TFormExercicio5_Arquivos.Button3Click(Sender: TObject);
+procedure TFormExercicio5_Arquivos.btnSairClick(Sender: TObject);
 begin
   inherited;
   Close;

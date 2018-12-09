@@ -9,7 +9,7 @@ type
   TFormPrincipal = class(TForm)
     MainMenu1: TMainMenu;
     N1: TMenuItem;
-    FileExitItem: TMenuItem;
+    Sair: TMenuItem;
     StatusBar: TStatusBar;
     ActionList1: TActionList;
     Exerccios1: TMenuItem;
@@ -34,7 +34,7 @@ type
     procedure actExerc5Execute(Sender: TObject);
     procedure actExerc6Execute(Sender: TObject);
     procedure actExerc7Execute(Sender: TObject);
-    procedure FileExitItemClick(Sender: TObject);
+    procedure SairClick(Sender: TObject);
   private
     { Private declarations }
     procedure CriarMDI(MainForm: TForm; FormClass: TFormClass; var Reference);
@@ -66,7 +66,7 @@ begin
   Application.CreateForm(FormClass, Reference);
 end;
 
-procedure TFormPrincipal.FileExitItemClick(Sender: TObject);
+procedure TFormPrincipal.SairClick(Sender: TObject);
 begin
   Close;
 end;

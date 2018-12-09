@@ -5,12 +5,12 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, FExercicio_Base, StdCtrls, ExtCtrls, FMTBcd, DB, uBanco, DBCtrls,
-  SqlExpr, DBClient, Provider, Mask, ;
+  SqlExpr, DBClient, Provider, Mask;
 
 type
   TFormExercicio3_Pessoas = class(TFormExercicio_base)
     grpCadastro: TGroupBox;
-    Panel1: TPanel;
+    pnlBotoes: TPanel;
     btnNovo: TButton;
     btnSalvar: TButton;
     btnEditar: TButton;
@@ -18,14 +18,14 @@ type
     btnPesquisar: TButton;
     btnSair: TButton;
     btnPesquisarCidade: TButton;
-    Label1: TLabel;
+    lblNome: TLabel;
     edtNMPESSOA: TDBEdit;
     dsPessoa: TDataSource;
-    Label2: TLabel;
+    lblLogradouro: TLabel;
     edtDELOGRADOURO: TDBEdit;
-    Label3: TLabel;
+    lblBairro: TLabel;
     edtDEBAIRRO: TDBEdit;
-    Label4: TLabel;
+    lblCidade: TLabel;
     edtNMCIDADE: TDBEdit;
     edtUF: TDBEdit;
     qryAux: TSQLQuery;

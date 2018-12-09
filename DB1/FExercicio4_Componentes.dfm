@@ -16,7 +16,7 @@ object FormExercicio4_Componentes: TFormExercicio4_Componentes
     406)
   PixelsPerInch = 96
   TextHeight = 13
-  object GroupBox1: TGroupBox
+  object grpParametros: TGroupBox
     Left = 8
     Top = 8
     Width = 258
@@ -27,7 +27,7 @@ object FormExercicio4_Componentes: TFormExercicio4_Componentes
     DesignSize = (
       258
       391)
-    object Label1: TLabel
+    object lblCampos: TLabel
       Left = 16
       Top = 15
       Width = 45
@@ -41,7 +41,7 @@ object FormExercicio4_Componentes: TFormExercicio4_Componentes
       Height = 13
       Caption = 'Tabelas:'
     end
-    object Label3: TLabel
+    object lblCondicoes: TLabel
       Left = 16
       Top = 233
       Width = 56
@@ -72,17 +72,17 @@ object FormExercicio4_Componentes: TFormExercicio4_Componentes
       Anchors = [akLeft, akTop, akRight]
       TabOrder = 2
     end
-    object Button1: TButton
+    object btnConsultar: TButton
       Left = 56
       Top = 352
       Width = 137
       Height = 25
       Caption = 'Consultar'
       TabOrder = 3
-      OnClick = Button1Click
+      OnClick = btnConsultarClick
     end
   end
-  object GroupBox2: TGroupBox
+  object grpResultado: TGroupBox
     Left = 272
     Top = 8
     Width = 433
@@ -90,7 +90,7 @@ object FormExercicio4_Componentes: TFormExercicio4_Componentes
     Anchors = [akLeft, akTop, akRight, akBottom]
     Caption = 'Resultado: '
     TabOrder = 1
-    object DBGrid1: TDBGrid
+    object grdResultado: TDBGrid
       Left = 2
       Top = 15
       Width = 429

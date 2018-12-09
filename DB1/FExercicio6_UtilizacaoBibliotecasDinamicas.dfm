@@ -17,7 +17,7 @@ object FormExercicio6_UtilizacaoBibliotecasDinamicas: TFormExercicio6_Utilizacao
   OldCreateOrder = False
   PixelsPerInch = 96
   TextHeight = 13
-  object GroupBox1: TGroupBox
+  object grpQuadrado: TGroupBox
     Left = 0
     Top = 0
     Width = 676
@@ -49,14 +49,14 @@ object FormExercicio6_UtilizacaoBibliotecasDinamicas: TFormExercicio6_Utilizacao
         'Per'#237'metro')
       TabOrder = 1
     end
-    object Button1: TButton
+    object btnCalcularQuadrado: TButton
       Left = 407
       Top = 16
       Width = 75
       Height = 25
       Caption = 'Calcular'
       TabOrder = 2
-      OnClick = Button1Click
+      OnClick = btnCalcularQuadradoClick
     end
     object edtResultadoQuadrado: TLabeledEdit
       Left = 544
@@ -71,7 +71,7 @@ object FormExercicio6_UtilizacaoBibliotecasDinamicas: TFormExercicio6_Utilizacao
       TabOrder = 3
     end
   end
-  object GroupBox2: TGroupBox
+  object grpCirculo: TGroupBox
     Left = 0
     Top = 57
     Width = 676
@@ -103,14 +103,14 @@ object FormExercicio6_UtilizacaoBibliotecasDinamicas: TFormExercicio6_Utilizacao
         'Per'#237'metro')
       TabOrder = 1
     end
-    object Button2: TButton
+    object btnCalcularCirculo: TButton
       Left = 407
       Top = 16
       Width = 75
       Height = 25
       Caption = 'Calcular'
       TabOrder = 2
-      OnClick = Button2Click
+      OnClick = btnCalcularCirculoClick
     end
     object edtResultadoCirculo: TLabeledEdit
       Left = 544

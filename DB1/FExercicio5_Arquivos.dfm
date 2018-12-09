@@ -16,61 +16,61 @@ object FormExercicio5_Arquivos: TFormExercicio5_Arquivos
   OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
-  object Panel1: TPanel
+  object pnlGeral: TPanel
     Left = 0
     Top = 0
     Width = 621
     Height = 50
     Align = alClient
     TabOrder = 0
-    object Label1: TLabel
+    object lblLocal: TLabel
       Left = 16
       Top = 18
       Width = 85
       Height = 13
       Caption = 'Local do arquivo: '
     end
-    object Edit1: TEdit
+    object edtLocal: TEdit
       Left = 104
       Top = 15
       Width = 425
       Height = 21
       TabOrder = 0
     end
-    object Button1: TButton
+    object btnSelecionar: TButton
       Left = 535
       Top = 13
       Width = 75
       Height = 25
       Caption = 'Selecionar'
       TabOrder = 1
-      OnClick = Button1Click
+      OnClick = btnSelecionarClick
     end
   end
-  object Panel2: TPanel
+  object pnlBotoes: TPanel
     Left = 0
     Top = 50
     Width = 621
     Height = 41
     Align = alBottom
     TabOrder = 1
-    object Button2: TButton
+    object btnSalvar: TButton
       Left = 231
       Top = 6
       Width = 75
       Height = 25
       Caption = 'Salvar'
       TabOrder = 0
-      OnClick = Button2Click
+      OnClick = btnSalvarClick
     end
-    object Button3: TButton
+    object btnSair: TButton
       Left = 312
       Top = 6
       Width = 75
       Height = 25
       Caption = 'Sair'
       TabOrder = 1
-      OnClick = Button3Click
+      OnClick = btnSairClick
     end
   end
   object db1Consulta: TSQLDataSet

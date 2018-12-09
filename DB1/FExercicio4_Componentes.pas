@@ -5,25 +5,25 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, FExercicio_Base, StdCtrls, FMTBcd, DB, DBGrids,
-  uDB1Data,  Provider, DBClient;
+  uDB1Data,  Provider, DBClient, SqlExpr, Grids;
 
 type
   TFormExercicio4_Componentes = class(TFormExercicio_base)
-    GroupBox1: TGroupBox;
-    GroupBox2: TGroupBox;
+    grpParametros: TGroupBox;
+    grpResultado: TGroupBox;
     mmoCampos: TMemo;
-    Label1: TLabel;
+    lblCampos: TLabel;
     mmoTabelas: TMemo;
     lblTabelas: TLabel;
     mmoCondicoes: TMemo;
-    Label3: TLabel;
-    Button1: TButton;
+    lblCondicoes: TLabel;
+    btnConsultar: TButton;
     db1Consulta: TDB1Data;
-    DBGrid1: TDBGrid;
+    grdResultado: TDBGrid;
     dsConsulta: TDataSource;
     cdsConsulta: TClientDataSet;
     dspConsulta: TDataSetProvider;
-    procedure Button1Click(Sender: TObject);
+    procedure btnConsultarClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -37,7 +37,7 @@ implementation
 
 {$R *.dfm}
 
-procedure TFormExercicio4_Componentes.Button1Click(Sender: TObject);
+procedure TFormExercicio4_Componentes.btnConsultarClick(Sender: TObject);
 begin
   inherited;
   if cdsConsulta.Active then

@@ -9,14 +9,14 @@ uses
 type
   TFormExercicio2_ConversaoTexto = class(TFormExercicio_base)
     mmoTextoOriginal: TMemo;
-    Label1: TLabel;
+    lblTextoOriginal: TLabel;
     mmoTextoConvertido: TMemo;
-    Label2: TLabel;
-    lbl1: TLabel;
+    lblTextoConvertido: TLabel;
+    lblQuantidadeLetras: TLabel;
     edtQuantidadeLetras: TEdit;
-    Button1: TButton;
-    RadioGroup1: TRadioGroup;
-    procedure Button1Click(Sender: TObject);
+    btnConverter: TButton;
+    rdgOpcoesConversao: TRadioGroup;
+    procedure btnConverterClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
   private
@@ -41,16 +41,16 @@ var
   ConverteInvertido         : TConverteInvertido ;
   ConvertePrimeiraMaiuscula : TConvertePrimeiraMaiuscula;
 
-procedure TFormExercicio2_ConversaoTexto.Button1Click(Sender: TObject);
+procedure TFormExercicio2_ConversaoTexto.btnConverterClick(Sender: TObject);
 begin
   inherited;
-  if RadioGroup1.ItemIndex = 0 then
+  if rdgOpcoesConversao.ItemIndex = 0 then
     InverterTexto
   else
-  if RadioGroup1.ItemIndex = 1 then
+  if rdgOpcoesConversao.ItemIndex = 1 then
     PrimeiraMaiuscula
   else
-  if RadioGroup1.ItemIndex = 2 then
+  if rdgOpcoesConversao.ItemIndex = 2 then
     OrdemAlfabetica;
 end;
 

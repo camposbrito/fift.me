@@ -22,21 +22,21 @@ object FormExercicio2_ConversaoTexto: TFormExercicio2_ConversaoTexto
     268)
   PixelsPerInch = 96
   TextHeight = 13
-  object Label1: TLabel
+  object lblTextoOriginal: TLabel
     Left = 8
     Top = 8
     Width = 74
     Height = 13
     Caption = 'Texto Original: '
   end
-  object Label2: TLabel
+  object lblTextoConvertido: TLabel
     Left = 532
     Top = 8
     Width = 91
     Height = 13
     Caption = 'Texto Convertido: '
   end
-  object lbl1: TLabel
+  object lblQuantidadeLetras: TLabel
     Left = 301
     Top = 188
     Width = 108
@@ -67,16 +67,16 @@ object FormExercicio2_ConversaoTexto: TFormExercicio2_ConversaoTexto
     NumbersOnly = True
     TabOrder = 2
   end
-  object Button1: TButton
+  object btnConverter: TButton
     Left = 301
     Top = 234
     Width = 222
     Height = 25
     Caption = 'Converter'
     TabOrder = 3
-    OnClick = Button1Click
+    OnClick = btnConverterClick
   end
-  object RadioGroup1: TRadioGroup
+  object rdgOpcoesConversao: TRadioGroup
     Left = 301
     Top = 24
     Width = 222

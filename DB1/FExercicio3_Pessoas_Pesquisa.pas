@@ -9,9 +9,9 @@ uses
 
 type
   TFormExercicio3_Pessoas_Pesquisa = class(TForm)
-    Label1: TLabel;
+    lblNome: TLabel;
     btnPesquisar: TButton;
-    Edit1: TEdit;
+    edtPesquisar: TEdit;
     pnlBotoes: TPanel;
     pnlTopo: TPanel;
     grdResultado: TDBGrid;
@@ -34,7 +34,7 @@ type
     procedure grdResultadoDblClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure FormCreate(Sender: TObject);
-    procedure Edit1KeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
+    procedure edtPesquisarKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
   private
     { Private declarations }
   public
@@ -60,7 +60,7 @@ begin
   Close;
 end;
 
-procedure TFormExercicio3_Pessoas_Pesquisa.Edit1KeyDown(Sender: TObject;
+procedure TFormExercicio3_Pessoas_Pesquisa.edtPesquisarKeyDown(Sender: TObject;
   var Key: Word; Shift: TShiftState);
 begin
   if key = 13 then
@@ -70,7 +70,7 @@ end;
 procedure TFormExercicio3_Pessoas_Pesquisa.btnPesquisarClick(Sender: TObject);
 begin
   cdsPesquisa.Close;
-  cdsPesquisa.Params.ParamByName('nmpessoa').AsString := Edit1.Text;
+  cdsPesquisa.Params.ParamByName('nmpessoa').AsString := edtPesquisar.Text;
   cdsPesquisa.Open;
 end;
 

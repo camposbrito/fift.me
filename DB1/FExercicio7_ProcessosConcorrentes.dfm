@@ -83,23 +83,23 @@ object FormExercicio7_ProcessosConcorrentes: TFormExercicio7_ProcessosConcorrent
     Height = 40
     Align = alBottom
     TabOrder = 1
-    object Button1: TButton
+    object btnExecutar: TButton
       Left = 168
       Top = 6
       Width = 75
       Height = 25
       Caption = 'Executar'
       TabOrder = 0
-      OnClick = Button1Click
+      OnClick = btnExecutarClick
     end
-    object Button2: TButton
+    object btnSair: TButton
       Left = 272
       Top = 6
       Width = 75
       Height = 25
       Caption = 'Sair'
       TabOrder = 1
-      OnClick = Button2Click
+      OnClick = btnSairClick
     end
   end
 end

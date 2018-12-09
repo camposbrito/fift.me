@@ -30,7 +30,7 @@ object FormExercicio3_Pessoas: TFormExercicio3_Pessoas
     DesignSize = (
       521
       181)
-    object Label1: TLabel
+    object lblNome: TLabel
       Left = 43
       Top = 27
       Width = 31
@@ -38,7 +38,7 @@ object FormExercicio3_Pessoas: TFormExercicio3_Pessoas
       Caption = 'Nome:'
       FocusControl = edtNMPESSOA
     end
-    object Label2: TLabel
+    object lblLogradouro: TLabel
       Left = 15
       Top = 54
       Width = 59
@@ -46,7 +46,7 @@ object FormExercicio3_Pessoas: TFormExercicio3_Pessoas
       Caption = 'Logradouro:'
       FocusControl = edtDELOGRADOURO
     end
-    object Label3: TLabel
+    object lblBairro: TLabel
       Left = 42
       Top = 81
       Width = 32
@@ -54,7 +54,7 @@ object FormExercicio3_Pessoas: TFormExercicio3_Pessoas
       Caption = 'Bairro:'
       FocusControl = edtDEBAIRRO
     end
-    object Label4: TLabel
+    object lblCidade: TLabel
       Left = 37
       Top = 108
       Width = 37
@@ -62,7 +62,7 @@ object FormExercicio3_Pessoas: TFormExercicio3_Pessoas
       Caption = 'Cidade:'
       FocusControl = edtNMCIDADE
     end
-    object Panel1: TPanel
+    object pnlBotoes: TPanel
       Left = 8
       Top = 130
       Width = 503

@@ -10,16 +10,16 @@ type
   TFormExercicio7_ProcessosConcorrentes = class(TFormExercicio_base)
     pnlProgresso: TPanel;
     pnlBotoes: TPanel;
-    Button1: TButton;
-    Button2: TButton;
+    btnExecutar: TButton;
+    btnSair: TButton;
     edtSleep1: TLabeledEdit;
     edtSleep2: TLabeledEdit;
     gThread1: TGauge;
     lblThread1: TLabel;
     gThread2: TGauge;
     lblThread2: TLabel;
-    procedure Button2Click(Sender: TObject);
-    procedure Button1Click(Sender: TObject);
+    procedure btnSairClick(Sender: TObject);
+    procedure btnExecutarClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
   private
     { Private declarations }
@@ -35,7 +35,7 @@ implementation
 
 {$R *.dfm}
 
-procedure TFormExercicio7_ProcessosConcorrentes.Button1Click(Sender: TObject);
+procedure TFormExercicio7_ProcessosConcorrentes.btnExecutarClick(Sender: TObject);
 
 begin
   inherited;
@@ -46,7 +46,7 @@ begin
   thr2 := TBarraProgresso.Create(gThread2, StrToIntDef(edtSleep2.Text, 0));
 end;
 
-procedure TFormExercicio7_ProcessosConcorrentes.Button2Click(Sender: TObject);
+procedure TFormExercicio7_ProcessosConcorrentes.btnSairClick(Sender: TObject);
 begin
   inherited;
   Close;

@@ -59,10 +59,10 @@ object FormPrincipal: TFormPrincipal
       object N1: TMenuItem
         Caption = '-'
       end
-      object FileExitItem: TMenuItem
+      object Sair: TMenuItem
         Caption = '&Sair'
         Hint = 'Exit|Exit application'
-        OnClick = FileExitItemClick
+        OnClick = SairClick
       end
     end
   end

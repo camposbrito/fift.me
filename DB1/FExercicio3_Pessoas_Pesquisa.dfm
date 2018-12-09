@@ -51,7 +51,7 @@ object FormExercicio3_Pessoas_Pesquisa: TFormExercicio3_Pessoas_Pesquisa
     Height = 41
     Align = alTop
     TabOrder = 0
-    object Label1: TLabel
+    object lblNome: TLabel
       Left = 8
       Top = 14
       Width = 31
@@ -67,13 +67,13 @@ object FormExercicio3_Pessoas_Pesquisa: TFormExercicio3_Pessoas_Pesquisa
       TabOrder = 1
       OnClick = btnPesquisarClick
     end
-    object Edit1: TEdit
+    object edtPesquisar: TEdit
       Left = 45
       Top = 11
       Width = 183
       Height = 21
       TabOrder = 0
-      OnKeyDown = Edit1KeyDown
+      OnKeyDown = edtPesquisarKeyDown
     end
   end
   object grdResultado: TDBGrid
