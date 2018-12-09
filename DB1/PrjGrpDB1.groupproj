@@ -1,0 +1,48 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{2712DB13-F036-4A7D-AF96-F4199753AFAF}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="DB1.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="DB1Data.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="DB1">
+			<MSBuild Projects="DB1.dproj"/>
+		</Target>
+		<Target Name="DB1:Clean">
+			<MSBuild Projects="DB1.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="DB1:Make">
+			<MSBuild Projects="DB1.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="DB1Data">
+			<MSBuild Projects="DB1Data.dproj"/>
+		</Target>
+		<Target Name="DB1Data:Clean">
+			<MSBuild Projects="DB1Data.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="DB1Data:Make">
+			<MSBuild Projects="DB1Data.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="DB1;DB1Data"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="DB1:Clean;DB1Data:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="DB1:Make;DB1Data:Make"/>
+		</Target>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')" Project="$(BDS)\Bin\CodeGear.Group.Targets"/>
+	</Project>

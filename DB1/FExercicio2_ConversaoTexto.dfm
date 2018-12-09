@@ -50,7 +50,6 @@ object FormExercicio2_ConversaoTexto: TFormExercicio2_ConversaoTexto
     Height = 236
     Anchors = [akLeft, akTop, akBottom]
     TabOrder = 0
-    ExplicitHeight = 267
   end
   object mmoTextoConvertido: TMemo
     Left = 532
@@ -59,7 +58,6 @@ object FormExercicio2_ConversaoTexto: TFormExercicio2_ConversaoTexto
     Height = 236
     Anchors = [akLeft, akTop, akBottom]
     TabOrder = 1
-    ExplicitHeight = 267
   end
   object edtQuantidadeLetras: TEdit
     Left = 301

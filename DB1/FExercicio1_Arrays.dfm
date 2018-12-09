@@ -64,7 +64,6 @@ object FormExercicio1_Arrays: TFormExercicio1_Arrays
     Anchors = [akTop, akRight, akBottom]
     Caption = ' Lista de nomes: '
     TabOrder = 1
-    ExplicitHeight = 246
     DesignSize = (
       280
       239)
@@ -97,7 +96,6 @@ object FormExercicio1_Arrays: TFormExercicio1_Arrays
     Anchors = [akLeft, akTop, akRight, akBottom]
     Caption = ' Opera'#231#245'es: '
     TabOrder = 2
-    ExplicitHeight = 175
     DesignSize = (
       353
       168)

@@ -24,9 +24,6 @@ object FormExercicio3_Pessoas_Pesquisa: TFormExercicio3_Pessoas_Pesquisa
     Height = 41
     Align = alBottom
     TabOrder = 1
-    ExplicitLeft = 608
-    ExplicitTop = 176
-    ExplicitWidth = 185
     object btnSelecionar: TButton
       Left = 18
       Top = 6
@@ -53,9 +50,6 @@ object FormExercicio3_Pessoas_Pesquisa: TFormExercicio3_Pessoas_Pesquisa
     Height = 41
     Align = alTop
     TabOrder = 0
-    ExplicitLeft = 608
-    ExplicitTop = 176
-    ExplicitWidth = 185
     object Label1: TLabel
       Left = 8
       Top = 14
@@ -138,7 +132,7 @@ object FormExercicio3_Pessoas_Pesquisa: TFormExercicio3_Pessoas_Pesquisa
     MaxBlobSize = -1
     Params = <
       item
-        DataType = ftUnknown
+        DataType = ftString
         Name = 'nmpessoa'
         ParamType = ptInput
       end>
@@ -159,7 +153,6 @@ object FormExercicio3_Pessoas_Pesquisa: TFormExercicio3_Pessoas_Pesquisa
     Top = 144
   end
   object cdsPesquisa: TClientDataSet
-    Active = True
     Aggregates = <>
     Params = <
       item

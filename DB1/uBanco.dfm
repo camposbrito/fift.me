@@ -47,6 +47,7 @@ object dmBanco: TdmBanco
       'Trim Char=False')
     TableScope = [tsTable]
     VendorLib = 'fbclient.DLL'
+    Connected = True
     Left = 24
     Top = 8
   end
