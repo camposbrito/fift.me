@@ -57,11 +57,12 @@ var
   Nome, Cidade, UF: string;
 begin
   inherited;
+  Lista := TStringList.Create;
   if trim(Edit1.Text) = '' then
     Button1Click(nil);
   try
     cdsConsulta.Open;
-    Lista := TStringList.Create;
+
     for i := 0 to cdsConsulta.RecordCount -1 do
     begin
       Nome   := Copy(cdsConsultaNMPESSOA.AsString, 1, 50);

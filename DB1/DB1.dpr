@@ -24,6 +24,7 @@ uses
 
 begin
   Application.Initialize;
+  Application.Title := 'Avaliação Técnica DB1';
   Application.CreateForm(TdmBanco, dmBanco);
   Application.CreateForm(TFormPrincipal, FormPrincipal);
   Application.Run;

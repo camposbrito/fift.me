@@ -1,0 +1,60 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{B949BEBA-ABCA-4570-A439-9AE249270887}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="DB1.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="DB1Data.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="DB1FigurasGeometricas.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="DB1">
+			<MSBuild Projects="DB1.dproj"/>
+		</Target>
+		<Target Name="DB1:Clean">
+			<MSBuild Targets="Clean" Projects="DB1.dproj"/>
+		</Target>
+		<Target Name="DB1:Make">
+			<MSBuild Targets="Make" Projects="DB1.dproj"/>
+		</Target>
+		<Target Name="DB1Data">
+			<MSBuild Projects="DB1Data.dproj"/>
+		</Target>
+		<Target Name="DB1Data:Clean">
+			<MSBuild Targets="Clean" Projects="DB1Data.dproj"/>
+		</Target>
+		<Target Name="DB1Data:Make">
+			<MSBuild Targets="Make" Projects="DB1Data.dproj"/>
+		</Target>
+		<Target Name="DB1FigurasGeometricas">
+			<MSBuild Projects="DB1FigurasGeometricas.dproj"/>
+		</Target>
+		<Target Name="DB1FigurasGeometricas:Clean">
+			<MSBuild Targets="Clean" Projects="DB1FigurasGeometricas.dproj"/>
+		</Target>
+		<Target Name="DB1FigurasGeometricas:Make">
+			<MSBuild Targets="Make" Projects="DB1FigurasGeometricas.dproj"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="DB1;DB1Data;DB1FigurasGeometricas"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="DB1:Clean;DB1Data:Clean;DB1FigurasGeometricas:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="DB1:Make;DB1Data:Make;DB1FigurasGeometricas:Make"/>
+		</Target>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')" Project="$(BDS)\Bin\CodeGear.Group.Targets"/>
+	</Project>
