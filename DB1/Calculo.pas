@@ -5,7 +5,7 @@ interface
 uses StrUtils, Dialogs, Math;
 
 type
-  TFigura = class // (TConversao)
+  TFigura = class
   private
     ATipoCalculo: String; //(Á)rea ou (P)erímetro
   public
@@ -20,9 +20,6 @@ type
   public
     constructor Create;
     function Calcular: Integer;
-//    function CalcularArea: Integer;
-//    function CalcularPerimetro: Integer;
-
     property Lado: Integer read iLado write iLado;
   end;
 
@@ -81,7 +78,6 @@ end;
 
 destructor TFigura.Destroy;
 begin
-
   inherited;
 end;
 

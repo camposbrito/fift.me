@@ -11,7 +11,6 @@ type
     _Gauge: TGauge;
     iSleep: Integer;
     procedure Execute; override;
-    procedure AtualizaTela;
   public
     _Posicao: integer;
     constructor Create( var gauge: TGauge; Sleep: integer);
@@ -21,14 +20,6 @@ type
 implementation
 
 { BarraProgresso }
-
-procedure TBarraProgresso.AtualizaTela;
-//var _gauge : TForm1;
-begin
-//  lForm1 := _Form As TForm1;
-//  lForm1.pbProgresso.Position := _Posicao;
-
-end;
 
 function TBarraProgresso.Cancelou: boolean;
 begin
@@ -46,11 +37,10 @@ end;
 procedure TBarraProgresso.Execute;
 begin
   { Place thread code here }
-    _Posicao := 0;
-  while (not Terminated) and (_Posicao < 100) do begin
+  while (not Terminated) and (_Posicao < 100) do
+  begin
     Inc (_Posicao);
     _Gauge.AddProgress(1);
-//    Synchronize (AtualizaTela);
     Sleep (iSleep);
   end;
 end;

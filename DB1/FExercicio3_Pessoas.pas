@@ -208,7 +208,6 @@ begin
   if cdsPessoa.State in dsEditModes then
     cdsPessoa.Post;
 
-//  qryAux.SQLConnection.BeginTransaction;
   if Testado = Inserindo then
   begin
     qryAux.Close;
@@ -271,7 +270,6 @@ begin
     qryAux.ParamByName('CDCIDADE').AsString := cdsPessoaCDCIDADE.AsString;
     qryAux.ExecSQL;
   end;
-//  qryAux.SQLConnection.CommitFreeAndNil(qryAux.SQLConnection.BeginTransaction);
   TEstado := Normal;
   ControleBotoes(True, True, False, True, True, True, False);
 end;
