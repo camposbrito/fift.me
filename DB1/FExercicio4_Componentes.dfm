@@ -107,7 +107,6 @@ object FormExercicio4_Componentes: TFormExercicio4_Componentes
   end
   object db1Consulta: TDB1Data
     SchemaName = 'sysdba'
-    CommandText = 'select * from CIDADE'
     DbxCommandType = 'Dbx.SQL'
     MaxBlobSize = -1
     Params = <>

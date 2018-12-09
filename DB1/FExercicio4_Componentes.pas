@@ -40,14 +40,14 @@ implementation
 procedure TFormExercicio4_Componentes.Button1Click(Sender: TObject);
 begin
   inherited;
+  if cdsConsulta.Active then
+    cdsConsulta.Active := False;
   db1Consulta.ListaTabelas    := mmoTabelas.Lines;
   db1Consulta.ListaCampos     := mmoCampos.Lines;
   db1Consulta.ListaCondicoes  := mmoCondicoes.Lines;
   db1Consulta.Open;
-  if cdsConsulta.Active then
-    cdsConsulta.Active := False;
-  cdsConsulta.Active := true;
 
+  cdsConsulta.Active := true;
 end;
 
 end.
