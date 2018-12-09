@@ -16,12 +16,16 @@ uses
   ConverteTexto in 'ConverteTexto.pas',
   ConverteInvertido in 'ConverteInvertido.pas',
   ConvertePrimeiraMaiuscula in 'ConvertePrimeiraMaiuscula.pas',
-  ConverteOrdenado in 'ConverteOrdenado.pas';
+  ConverteOrdenado in 'ConverteOrdenado.pas',
+  uBanco in 'uBanco.pas' {dmBanco: TDataModule},
+  FExercicio3_Cidades_Pesquisa in 'FExercicio3_Cidades_Pesquisa.pas' {FormExercicio3_Cidades_Pesquisa};
 
 {$R *.RES}
 
 begin
   Application.Initialize;
   Application.CreateForm(TFormPrincipal, FormPrincipal);
+  Application.CreateForm(TdmBanco, dmBanco);
+  Application.CreateForm(TFormExercicio3_Cidades_Pesquisa, FormExercicio3_Cidades_Pesquisa);
   Application.Run;
 end.

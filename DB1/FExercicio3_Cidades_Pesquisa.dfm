@@ -1,12 +1,10 @@
-object FormExercicio3_Pessoas_Pesquisa: TFormExercicio3_Pessoas_Pesquisa
+object FormExercicio3_Cidades_Pesquisa: TFormExercicio3_Cidades_Pesquisa
   Left = 0
   Top = 0
   Caption = 'Exerc'#237'cio 3 - Formul'#225'rio de Pesquisa'
-  ClientHeight = 274
-  ClientWidth = 581
+  ClientHeight = 251
+  ClientWidth = 442
   Color = clBtnFace
-  Constraints.MinHeight = 313
-  Constraints.MinWidth = 597
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -19,14 +17,13 @@ object FormExercicio3_Pessoas_Pesquisa: TFormExercicio3_Pessoas_Pesquisa
   TextHeight = 13
   object pnlBotoes: TPanel
     Left = 0
-    Top = 233
-    Width = 581
+    Top = 210
+    Width = 442
     Height = 41
     Align = alBottom
     TabOrder = 1
-    ExplicitLeft = 608
-    ExplicitTop = 176
-    ExplicitWidth = 185
+    ExplicitTop = 233
+    ExplicitWidth = 648
     object btnSelecionar: TButton
       Left = 18
       Top = 6
@@ -36,26 +33,24 @@ object FormExercicio3_Pessoas_Pesquisa: TFormExercicio3_Pessoas_Pesquisa
       TabOrder = 0
       OnClick = btnSelecionarClick
     end
-    object Cancelar: TButton
+    object btnCancelar: TButton
       Left = 114
       Top = 6
       Width = 75
       Height = 25
       Caption = 'Cancelar'
       TabOrder = 1
-      OnClick = CancelarClick
+      OnClick = btnCancelarClick
     end
   end
   object pnlTopo: TPanel
     Left = 0
     Top = 0
-    Width = 581
+    Width = 442
     Height = 41
     Align = alTop
     TabOrder = 0
-    ExplicitLeft = 608
-    ExplicitTop = 176
-    ExplicitWidth = 185
+    ExplicitWidth = 648
     object Label1: TLabel
       Left = 8
       Top = 14
@@ -78,14 +73,17 @@ object FormExercicio3_Pessoas_Pesquisa: TFormExercicio3_Pessoas_Pesquisa
       Width = 183
       Height = 21
       TabOrder = 0
+      OnKeyDown = Edit1KeyDown
     end
   end
   object grdResultado: TDBGrid
     Left = 0
     Top = 41
-    Width = 581
-    Height = 192
+    Width = 442
+    Height = 169
     Align = alClient
+    Constraints.MinHeight = 169
+    Constraints.MinWidth = 442
     DataSource = dsPesquisa
     TabOrder = 2
     TitleFont.Charset = DEFAULT_CHARSET
@@ -97,19 +95,7 @@ object FormExercicio3_Pessoas_Pesquisa: TFormExercicio3_Pessoas_Pesquisa
     Columns = <
       item
         Expanded = False
-        FieldName = 'NMPESSOA'
-        Title.Alignment = taCenter
-        Visible = True
-      end
-      item
-        Expanded = False
-        FieldName = 'DELOGRADOURO'
-        Title.Alignment = taCenter
-        Visible = True
-      end
-      item
-        Expanded = False
-        FieldName = 'DEBAIRRO'
+        FieldName = 'CDCIDADE'
         Title.Alignment = taCenter
         Visible = True
       end
@@ -129,17 +115,15 @@ object FormExercicio3_Pessoas_Pesquisa: TFormExercicio3_Pessoas_Pesquisa
   object qryPesquisa: TSQLDataSet
     SchemaName = 'sysdba'
     CommandText = 
-      'SELECT  p.cdpessoa, '#13#10'              p.nmpessoa, '#13#10'              ' +
-      'p.delogradouro, '#13#10'              p.debairro, '#13#10'              p.cd' +
-      'cidade, '#13#10'              c.nmcidade,   '#13#10'              c.uf '#13#10'FRO' +
-      'M    PESSOA p '#13#10'INNER JOIN Cidade c  ON c.cdcidade = p.cdcidade ' +
-      #13#10'WHERE  p.nmpessoa containing  :nmpessoa'
+      'SELECT  c.cdCidade,'#13#10'              c.nmcidade,   '#13#10'             ' +
+      ' c.uf '#13#10'FROM     Cidade c '#13#10'WHERE  c.nmcidade containing  :nmcid' +
+      'ade'
     DbxCommandType = 'Dbx.SQL'
     MaxBlobSize = -1
     Params = <
       item
-        DataType = ftUnknown
-        Name = 'nmpessoa'
+        DataType = ftInteger
+        Name = 'nmcidade'
         ParamType = ptInput
       end>
     SQLConnection = dmBanco.connDB1
@@ -159,48 +143,20 @@ object FormExercicio3_Pessoas_Pesquisa: TFormExercicio3_Pessoas_Pesquisa
     Top = 144
   end
   object cdsPesquisa: TClientDataSet
-    Active = True
     Aggregates = <>
     Params = <
       item
-        DataType = ftString
-        Name = 'nmpessoa'
+        DataType = ftInteger
+        Name = 'nmcidade'
         ParamType = ptInput
       end>
     ProviderName = 'dspPesquisa'
     Left = 296
     Top = 144
-    object cdsPesquisaCDPESSOA: TIntegerField
-      FieldName = 'CDPESSOA'
-      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
-      Required = True
-    end
-    object cdsPesquisaNMPESSOA: TStringField
-      DisplayLabel = 'Nome'
-      DisplayWidth = 25
-      FieldName = 'NMPESSOA'
-      ProviderFlags = [pfInUpdate]
-      Required = True
-      Size = 100
-    end
-    object cdsPesquisaDELOGRADOURO: TStringField
-      DisplayLabel = 'Logradouro'
-      DisplayWidth = 20
-      FieldName = 'DELOGRADOURO'
-      ProviderFlags = [pfInUpdate]
-      Size = 100
-    end
-    object cdsPesquisaDEBAIRRO: TStringField
-      DisplayLabel = 'Bairro'
-      DisplayWidth = 20
-      FieldName = 'DEBAIRRO'
-      ProviderFlags = [pfInUpdate]
-      Size = 100
-    end
     object cdsPesquisaCDCIDADE: TIntegerField
       DisplayLabel = 'Cidade'
       FieldName = 'CDCIDADE'
-      ProviderFlags = [pfInUpdate]
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
       Required = True
     end
     object cdsPesquisaNMCIDADE: TStringField
@@ -213,7 +169,6 @@ object FormExercicio3_Pessoas_Pesquisa: TFormExercicio3_Pessoas_Pesquisa
     end
     object cdsPesquisaUF: TStringField
       FieldName = 'UF'
-      ProviderFlags = [pfInUpdate]
       FixedChar = True
       Size = 2
     end

@@ -1,4 +1,4 @@
-unit FExercicio3_Pessoas_Pesquisa;
+unit FExercicio3_Cidades_Pesquisa;
 
 interface
 
@@ -8,7 +8,7 @@ uses
   Grids, DBGrids, ExtCtrls, StdCtrls;
 
 type
-  TFormExercicio3_Pessoas_Pesquisa = class(TForm)
+  TFormExercicio3_Cidades_Pesquisa = class(TForm)
     Label1: TLabel;
     btnPesquisar: TButton;
     Edit1: TEdit;
@@ -19,20 +19,17 @@ type
     dsPesquisa: TDataSource;
     dspPesquisa: TDataSetProvider;
     cdsPesquisa: TClientDataSet;
-    cdsPesquisaCDPESSOA: TIntegerField;
-    cdsPesquisaNMPESSOA: TStringField;
-    cdsPesquisaDELOGRADOURO: TStringField;
-    cdsPesquisaDEBAIRRO: TStringField;
     cdsPesquisaCDCIDADE: TIntegerField;
     cdsPesquisaNMCIDADE: TStringField;
-    cdsPesquisaUF: TStringField;
     btnSelecionar: TButton;
-    Cancelar: TButton;
+    btnCancelar: TButton;
+    cdsPesquisaUF: TStringField;
     procedure btnPesquisarClick(Sender: TObject);
     procedure btnSelecionarClick(Sender: TObject);
-    procedure CancelarClick(Sender: TObject);
+    procedure btnCancelarClick(Sender: TObject);
     procedure grdResultadoDblClick(Sender: TObject);
     procedure FormShow(Sender: TObject);
+    procedure Edit1KeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
   private
     { Private declarations }
   public
@@ -41,36 +38,43 @@ type
   end;
 
 var
-  FormExercicio3_Pessoas_Pesquisa: TFormExercicio3_Pessoas_Pesquisa;
+  FormExercicio3_Cidades_Pesquisa: TFormExercicio3_Cidades_Pesquisa;
 
 implementation
 
 {$R *.dfm}
 
-procedure TFormExercicio3_Pessoas_Pesquisa.btnSelecionarClick(Sender: TObject);
+procedure TFormExercicio3_Cidades_Pesquisa.btnSelecionarClick(Sender: TObject);
 begin
   bSelecionou := True;
   Close;
 end;
 
-procedure TFormExercicio3_Pessoas_Pesquisa.CancelarClick(Sender: TObject);
+procedure TFormExercicio3_Cidades_Pesquisa.btnCancelarClick(Sender: TObject);
 begin
   Close;
 end;
 
-procedure TFormExercicio3_Pessoas_Pesquisa.btnPesquisarClick(Sender: TObject);
+procedure TFormExercicio3_Cidades_Pesquisa.btnPesquisarClick(Sender: TObject);
 begin
   cdsPesquisa.Close;
-  cdsPesquisa.Params.ParamByName('nmpessoa').AsString := Edit1.Text;
+  cdsPesquisa.Params.ParamByName('nmcidade').AsString := Edit1.Text;
   cdsPesquisa.Open;
 end;
 
-procedure TFormExercicio3_Pessoas_Pesquisa.grdResultadoDblClick(Sender: TObject);
+procedure TFormExercicio3_Cidades_Pesquisa.grdResultadoDblClick(Sender: TObject);
 begin
   btnSelecionarClick(nil);
 end;
 
-procedure TFormExercicio3_Pessoas_Pesquisa.FormShow(Sender: TObject);
+procedure TFormExercicio3_Cidades_Pesquisa.Edit1KeyDown(Sender: TObject;
+  var Key: Word; Shift: TShiftState);
+begin
+  if key = 13 then
+    btnPesquisarClick(nil);
+end;
+
+procedure TFormExercicio3_Cidades_Pesquisa.FormShow(Sender: TObject);
 begin
   btnPesquisarClick(nil);
 end;
