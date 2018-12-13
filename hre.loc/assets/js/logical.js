@@ -79,8 +79,10 @@ function routesClient(socket) {
     $('.modal-backdrop').remove();
   });
   socket.on("SetOcorrencia", function(data) {
-    console.debug(data);
-    console.debug("SetOcorrencia");
+
+    var Dados = $.parseJSON(data); 
+     
+    $.post("./ciclostart/save", { Dados});
     angular
       .element("#TurnoController")
       .scope()
