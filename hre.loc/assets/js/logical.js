@@ -113,8 +113,13 @@ function routesClient(socket) {
   });
   $("#ConcluirTurno").click(function() {
     console.debug("#resultado");
+    var Pecas_Producao =  $("#Pecas_Producao").val();
+    var Refugo_Producao = $("#Refugo_Producao").val();
+    var Refugo_Fundicao = $("#Refugo_Fundicao").val();       
+    console.debug("#/resultado");
+    $.post("./turno/concluir_turno", { Pecas_Producao, Refugo_Producao, Refugo_Fundicao});
     socket.disconnect(true);
-    window.location.href = "./#/resultado";
+    // window.location.href = "./#/resultado";
   });
   $("#Ocorrencia").click(function() {
     console.debug("#resultado");

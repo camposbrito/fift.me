@@ -1,13 +1,14 @@
-    <header  ng-include="'./templates/header-temino-turno.html'"></header>
+    <!-- <header  ng-include="'./templates/header-temino-turno.html'"></header> -->
     <div class="container-fluid d-flex flex-column body-content justify-content-center">
-        <div class="row" id="TerminoController" ng-controller="TerminoController" ng-init="getTermino()">
+        <div class="row" id="TerminoController" ng-controller="TerminoController" <!--{ng-init="inProgress()"--> > 
             <div class="col-lg-1"></div>
-            <div class="col-md-4 col-lg-4 col-xl-4 align-self-center"><span class="btn btn-warning btn-block btn-lg d-block"><br><h1>{{quantidade.atual}}</h1><br></span>
+            <input type="hidden" value="{{turno.QtdPecas}}" id="Pecas_Producao" />
+            <div class="col-md-4 col-lg-4 col-xl-4 align-self-center"><span class="btn btn-warning btn-block btn-lg d-block"><br><h1>{{turno.QtdPecas}}</h1><br></span>
                 <h5 class="text-center">Quantidade Atual</h5>
             </div>
             <div class="col-lg-2"></div>
-            <div class="col-md-4 col-lg-4 col-xl-4"><input type="text" class="btn btn-danger btn-block btn-lg d-block btn-lar" style="height: 150px;"/>
-                <h5 class="text-center">Refugos de Produção</h5><input type="text" class="btn btn-dark btn-block btn-lg d-block" style="height: 150px;"/>
+            <div class="col-md-4 col-lg-4 col-xl-4"><input <input id="Refugo_Producao" type="text" class="btn btn-danger btn-block btn-lg d-block btn-lar" style="height: 150px;"/>
+                <h5 class="text-center">Refugos de Produção</h5><input id="Refugo_Fundicao" type="text" class="btn btn-dark btn-block btn-lg d-block" style="height: 150px;"/>
                 <h5 class="text-center">Refugos de Fundição</h5>
             </div>
             <div class="col-lg-1"></div>

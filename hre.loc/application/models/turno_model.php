@@ -2,7 +2,8 @@
 class Turno_Model extends CI_Model {
 	
   // função para fazer a paginação
-  public function getAtual() {    
+  public function getAtual() {  
+    // $this->output->enable_profiler(true); 
     $this->db->select('*');
     $this->db->from('Turno');
     return $this->db->get()->result();
@@ -15,6 +16,17 @@ class Turno_Model extends CI_Model {
     return $this->db->get()->num_rows() > 0;
     
   }
+  public function concluir_turno() { 
+
+    $data['PecasProducao']   = $this->input->post('Pecas_Producao');
+    $data['RefugosProducao'] = $this->input->post('Refugo_Producao');
+    $data['RefugosFundicao'] = $this->input->post('Refugo_Fundicao');
+    
+    return ($this->db->insert('turno', $data));
+    
+    $this->output->enable_profiler(true);
+  }
+
   public function save() { 
     echo $this->input->post('TAG');
     $data['DataIni'] = date('Y-m-d H:i:s', now());

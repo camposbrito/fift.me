@@ -78,37 +78,6 @@ myApp.controller("DashboardController", [
   }
 ]);
 
-myApp.controller("TerminoController", [
-  "$scope",
-  "$location",
-  "$log",
-  "$http",
-  function($scope, $location, $log, $http) {
-    console.debug('terminoController');
-    // $http
-    //   .get("sessao/get")
-    //   .success(function(data) {        
-    //     $scope.session = data;
-
-    //   })
-    //   .error(function(data, status) {
-    //     $log.error(status);
-    //   });
-
-    // $scope.getTermino = function() {
-    //   $http
-    //     .get("sessao/getTermino")
-    //     .success(function(data) {
-    //       console.debug(data);
-    //       $scope.quantidade = data;
-    //     })
-    //     .error(function(data, status) {
-    //       $log.error(status);
-    //     });
-    // };      
-  }
-]);
-
 myApp.controller("ResultadoController", [
   "$scope",
   "$location",
@@ -212,6 +181,43 @@ myApp.controller("SessionController", [
 ]);
 
 /* CONTROLLERS OFICIAIS */
+myApp.controller("TerminoController", [
+  "$scope",
+  "$location",
+  "$log",
+  "$http",
+  function($scope, $location, $log, $http) {
+    console.debug('TerminoController');
+    $http
+      .get("turno/getAtual")
+      .success(function(data) {
+        $scope.turno = data;
+      })
+      .error(function(data, status) {
+        $log.error(status);
+      });
+      $scope.setQuantidade = function(data) {
+        var obj = JSON.parse(data);
+        // console.debug($scope.turno);
+        // console.debug($scope.turno.QtdPecas);
+        if (obj == '{start:  false}')
+          $scope.turno.QtdPecas = parseInt($scope.turno.QtdPecas) + 1;
+      };
+      $scope.inProgress = function() {
+        $http
+          .get("turno/inProgress")
+          .success(function(data) {            
+            // $scope.Current = data;
+            // console.debug($scope.Current);
+            // if (data.progress == true)
+            // window.location.href = "./#/dashboard";
+          })
+          .error(function(data, status) {
+            $log.error(status);
+          });
+      }; 
+  }
+]);
 
 myApp.controller("TurnoController", [
   "$scope",
@@ -230,11 +236,11 @@ myApp.controller("TurnoController", [
       });
       $scope.setQuantidade = function(data) {
         var obj = JSON.parse(data);
-        console.debug($scope.turno);
-        console.debug($scope.turno.QtdPecas);
+        // console.debug($scope.turno);
+        // console.debug($scope.turno.QtdPecas);
         if (obj == '{start:  false}')
           $scope.turno.QtdPecas = parseInt($scope.turno.QtdPecas) + 1;
-    };
+      };
       $scope.inProgress = function() {
         $http
           .get("turno/inProgress")
