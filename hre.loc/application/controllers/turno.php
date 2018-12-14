@@ -26,6 +26,7 @@ class turno extends CI_Controller {
 	{
 		$this->Turno_Model->encerrar_turno();
 	} 
+
 	public function getAtual() { 
 		$res 					= $this->Turno_Model->getAtual()[0];
 		$res->Operador 			= $this->Funcionario_Model->get($res->Operador_id)[0];
@@ -34,11 +35,13 @@ class turno extends CI_Controller {
 		$res->Parametros 		= $this->Parametros_Model->get($res->ParamGeral_id)[0];
 		echo json_encode($res);
 	} 
+
 	public function getResultadoAtual() { 
 		$res 					= $this->Turno_Model->getResultadoAtual()[0];	
 		$res->QtdPecas			= $this->CicloStart_model->getAtual($res->id, $res->ParamGeral_id)[0]->QtdPecas;
 		echo json_encode($res);
 	} 
+	
 	public function inProgress() { 
 		$res			= array('progress' => $this->Turno_Model->inProgress());
 		echo json_encode($res);
