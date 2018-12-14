@@ -1,10 +1,12 @@
-    <header  ng-include="'./templates/header-resultado.html'">  </header>
+    <!-- <header  ng-include="'./templates/header-resultado.html'">  </header> -->
     <div class="container-fluid d-flex flex-column body-content justify-content-center">
-        <div class="row" id="ResultadoController" ng-controller="ResultadoController" ng-init="getResultado()">
+        <div class="row" id="ResultadoController" ng-controller="ResultadoController" >
             <div class="col-lg-1"></div>
-            <div class="col-md-4 col-lg-3 col-xl-4 align-self-center"><span class="btn btn-warning btn-block btn-sm d-block"><br>{{quantidade.producao}}<br><br></span>
-                <h5 class="text-center">Produção</h5><span class="btn btn-danger btn-block btn-sm d-block"><br>{{quantidade.refugos}}<br><br></span>
-                <h5 class="text-center">Refugos</h5><span class="btn btn-dark btn-block btn-sm d-block"><br>{{quantidade.realizado}}<br><br></span>
+            <div class="col-md-4 col-lg-3 col-xl-4 align-self-center"><span class="btn btn-warning btn-block btn-sm d-block"><br>{{turno.PecasProducao}}<br><br></span>
+                <h5 class="text-center">Produção</h5>
+                <span class="btn btn-danger btn-block btn-sm d-block"><br>{{turno.Refugos}}<br><br></span>
+                <h5 class="text-center">Refugos</h5>
+                <span class="btn btn-dark btn-block btn-sm d-block"><br>{{turno.Producao}}<br><br></span>
                 <h5 class="text-center">Peças boas</h5>
             </div>
             <div class="col-md-4 col-lg-8 col-xl-6">
@@ -23,10 +25,10 @@
                                 <td class="table-active">OEE</td>
                             </tr>
                             <tr>
-                                <td class="table-active">{{quantidade.previsto}}</td>
-                                <td class="table-active">{{quantidade.realizado}}</td>
-                                <td class="table-active">{{quantidade.diferenca}}</td>
-                                <td class="table-active">{{quantidade.oee}}</td>
+                                <td class="table-active">{{turno.QuantidadePrevistaTurno}}</td>
+                                <td class="table-active">{{turno.Producao}}</td>
+                                <td class="table-active">{{turno.Diferenca}}</td>
+                                <td class="table-active">{{turno.OEE}}</td>
                             </tr>
                         </tbody>
                     </table>

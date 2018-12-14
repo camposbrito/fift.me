@@ -5,10 +5,21 @@ class Turno_Model extends CI_Model {
   public function getAtual() {  
     // $this->output->enable_profiler(true); 
     $this->db->select('*');
-    $this->db->from('Turno');
+    $this->db->from('Turno T');
+    $this->db->where( 't.DataFin IS NULL');
     return $this->db->get()->result();
     
   }
+  public function getResultadoAtual() {  
+    // $this->output->enable_profiler(true); 
+    $this->db->select('*');
+    $this->db->from('Turno T');
+    $this->db->join('Parametros p', 'p.id = t.paramgeral_id', 'INNER');
+    $this->db->where( 't.DataFin IS NULL');
+    return $this->db->get()->result();
+    
+  }
+
   public function inProgress() {    
     $this->db->select('*');
     $this->db->from('Turno');
@@ -16,19 +27,25 @@ class Turno_Model extends CI_Model {
     return $this->db->get()->num_rows() > 0;
     
   }
-  public function concluir_turno() { 
 
+  public function concluir_turno() { 
     $data['PecasProducao']   = $this->input->post('Pecas_Producao');
     $data['RefugosProducao'] = $this->input->post('Refugo_Producao');
-    $data['RefugosFundicao'] = $this->input->post('Refugo_Fundicao');
-    
-    return ($this->db->insert('turno', $data));
-    
+    $data['RefugosFundicao'] = $this->input->post('Refugo_Fundicao');    
+    return ( $this->db->where(array('DataFin' => null))->update('Turno', $data));
     $this->output->enable_profiler(true);
   }
 
+  public function encerrar_turno() { 
+    date_default_timezone_set("America/Sao_Paulo");
+    $data['DataFin'] = date('Y-m-d H:i:s', now());    
+    return ( $this->db->where(array('DataFin' => null))->update('Turno', $data));    
+    $this->output->enable_profiler(true);
+  }
+  
   public function save() { 
     echo $this->input->post('TAG');
+    date_default_timezone_set("America/Sao_Paulo");
     $data['DataIni'] = date('Y-m-d H:i:s', now());
     $data['ParamGeral_id'] = 1;
     $data['Estado_id'] = 1;
@@ -36,40 +53,8 @@ class Turno_Model extends CI_Model {
     $data['JornadaTrabalho_id'] = 1;
     $data['PecasProducao'] = 0;
     $data['RefugosProducao'] = 0;
-    $data['RefugosFundicao'] = 0;
-    
+    $data['RefugosFundicao'] = 0;    
     return ($this->db->insert('turno', $data));
-    
     $this->output->enable_profiler(true);
   }
-  // public function getOperador() {
-  //   $this->db->select("'Rodrigo' as Nome, 'A' as Turno");
-  //   $this->db->from('sessao');
-  //   return $this->db->get()->result();
-  // }
-
-  // public function getQuantidade() {
-  //   $this->db->select('0 as qtde');
-  //   $this->db->from('sessao');
-  //   return $this->db->get()->result();
-  // }
-  // public function getTermino() {
-  //   $this->db->select('4 as atual');
-  //   $this->db->from('sessao');
-  //   return $this->db->get()->result();
-  // }
-  // public function getResultado() {
-  //   $this->db->select('4 as producao, 1 as refugos, 3 as realizado, 4 as previsto, 1 as diferenca, 90 as oee ');
-  //   $this->db->from('sessao');
-  //   return $this->db->get()->result();
-  // }
-
-//  public function post($itens){
-//    $res = $this->db->insert('items', $itens);
-//    if($res){
-//      return $this->get();
-//    }else{
-//      return FALSE;
-//    }
-//  }
 }

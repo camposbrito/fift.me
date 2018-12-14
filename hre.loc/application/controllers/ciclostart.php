@@ -8,7 +8,7 @@ class ciclostart extends CI_Controller {
 	}
 	public function save()
 	{
-		$this->CicloStart_Model->save();
+		$this->CicloStart_Model->save(); 
 	} 
 
 }

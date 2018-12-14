@@ -181,6 +181,49 @@ myApp.controller("SessionController", [
 ]);
 
 /* CONTROLLERS OFICIAIS */
+myApp.controller("ResultadoController", [
+    "$scope",
+    "$location",
+    "$log",
+    "$http",
+    function($scope, $location, $log, $http) {
+      console.debug('ResultadoController');
+      $http
+        .get("turno/getResultadoAtual")
+        .success(function(data) {
+          $scope.turno = data;
+          $scope.turno.Refugos = parseInt($scope.turno.RefugosProducao) + parseInt($scope.turno.RefugosFundicao);
+          $scope.turno.Producao = parseInt($scope.turno.PecasProducao) - parseInt($scope.turno.Refugos);
+          $scope.turno.Diferenca = parseInt($scope.turno.QuantidadePrevistaTurno) - parseInt($scope.turno.Producao);
+          //Qualidade = quantidade de produtos produzidos – (quantidade retrabalhada + quantidade perdida) / quantidade de produtos produzidos
+          $scope.turno.OEE = parseInt(parseFloat(parseFloat($scope.turno.Producao - $scope.turno.Refugos) / parseFloat($scope.turno.Producao)) * 100);         
+        })
+        .error(function(data, status) {
+          $log.error(status);
+        });
+        $scope.setQuantidade = function(data) {
+          var obj = JSON.parse(data);
+          // console.debug($scope.turno);
+          // console.debug($scope.turno.QtdPecas);
+          if (obj == '{start:  false}')
+            $scope.turno.QtdPecas = parseInt($scope.turno.QtdPecas) + 1;
+        };
+        $scope.inProgress = function() {
+          $http
+            .get("turno/inProgress")
+            .success(function(data) {            
+              // $scope.Current = data;
+              // console.debug($scope.Current);
+              // if (data.progress == true)
+              // window.location.href = "./#/dashboard";
+            })
+            .error(function(data, status) {
+              $log.error(status);
+            });
+        }; 
+    }
+  ]);
+  
 myApp.controller("TerminoController", [
   "$scope",
   "$location",
@@ -189,7 +232,7 @@ myApp.controller("TerminoController", [
   function($scope, $location, $log, $http) {
     console.debug('TerminoController');
     $http
-      .get("turno/getAtual")
+      .get("turno/getResultadoAtual")
       .success(function(data) {
         $scope.turno = data;
       })

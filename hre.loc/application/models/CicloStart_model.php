@@ -9,11 +9,12 @@ class CicloStart_model extends CI_Model
   public function getAtual($Turno_id, $ParamGeral_id) { 
     // $this->output->enable_profiler(TRUE);
 
-    $this->db->select('IFNULL(COUNT(c.id) * p.PecasPorCiclo,0) as QtdPecas');
-    $this->db->from('parametros p');
-    $this->db->join('CicloStart c', 'c.Turno_id = '. $Turno_id, 'LEFT');
-    $this->db->where( 'p.id', $ParamGeral_id);
-    $this->db->group_by('p.PecasPorCiclo'); 
+    $this->db->select('IFNULL(COUNT(c.id) * p.PecasPorCiclo, 0) as QtdPecas');
+    $this->db->from('Turno t');
+    $this->db->join('CicloStart c', 'c.turno_id = t.id', 'INNER');
+    $this->db->join('Parametros p', 'p.id = t.paramgeral_id', 'INNER');
+    $this->db->where( 't.DataFin IS NULL');
+    // $this->db->group_by('p.PecasPorCiclo'); 
     $res = $this->db->get()->result();
     
     return $res;    
@@ -21,7 +22,7 @@ class CicloStart_model extends CI_Model
   public function save()
 	{
     
-    $this->output->enable_profiler(TRUE);
+    // $this->output->enable_profiler(TRUE);
     date_default_timezone_set("America/Sao_Paulo");
     $Dados = $this->input->post('Dados');  
     if (strpos($Dados, 'true')  == true)

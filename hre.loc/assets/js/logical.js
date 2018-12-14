@@ -72,11 +72,12 @@ function routesClient(socket) {
     var TAG = $.parseJSON(data);    
     $.post("./turno/save", {TAG});
     
-    // socket.disconnect(true);
-    // //window.location.href = "./#/dashboard";
+
     $('#your-modal-id').modal('hide');
     $('body').removeClass('modal-open');
     $('.modal-backdrop').remove();
+    socket.disconnect(true);
+    window.location.href = "./#/dashboard";
   });
   socket.on("SetOcorrencia", function(data) {
 
@@ -91,7 +92,7 @@ function routesClient(socket) {
       .element("#TurnoController")
       .scope()
       .$apply();
-    // window.location.href = './#/dashboard';
+    window.location.href = './#/dashboard';
   });
 
   $("#IniciarTurno").click(function() {
@@ -119,7 +120,13 @@ function routesClient(socket) {
     console.debug("#/resultado");
     $.post("./turno/concluir_turno", { Pecas_Producao, Refugo_Producao, Refugo_Fundicao});
     socket.disconnect(true);
-    // window.location.href = "./#/resultado";
+    window.location.href = "./#/resultado";
+  });
+  $("#FecharTurno").click(function() {
+    console.debug("#FecharTurno");
+    $.post("./turno/encerrar_turno");
+    socket.disconnect(true);
+    window.location.href = "./#/";
   });
   $("#Ocorrencia").click(function() {
     console.debug("#resultado");
