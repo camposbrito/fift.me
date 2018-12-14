@@ -6,6 +6,7 @@ class ciclostart extends CI_Controller {
 		parent::__construct (); 
 		$this->load->model ( "CicloStart_Model" );	
 	}
+	
 	public function save()
 	{
 		$this->CicloStart_Model->save(); 
