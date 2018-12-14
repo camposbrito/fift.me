@@ -54,7 +54,7 @@ var
   i: Integer;
 begin
   inherited;
-  for i := Low(aNomes) to High(aNomes) do
+  for i := Low(aNomes) to High(aNomes)  do
     aNomes[i] := aNomes[i+1];
   RemoverUltimo;
 end;

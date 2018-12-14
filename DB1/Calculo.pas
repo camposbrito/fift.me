@@ -11,7 +11,7 @@ type
   public
     constructor Create;
     destructor Destroy; Override;
-     property TipoCalculo: String read ATipoCalculo write ATipoCalculo;
+    property TipoCalculo: String read ATipoCalculo write ATipoCalculo;
   end;
 
   TQuadrado = class(TFigura)

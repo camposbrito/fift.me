@@ -7,4 +7,7 @@ DB1/__history/
 DB1 - Rodrigo.zip
 DB1.zip
 DB1/DB1.dproj.local
-DB1/DB1.projdata
+*.projdata
+*.identcache
+*.dll
+
