@@ -93,12 +93,12 @@ socket.on('connect', function () {
   console.log('connected');
   $('#operador').click(function() {
       var valor = $('#operador').val();
-      socket.emit('SetCartao', JSON.stringify(''+ valor +''));
+      socket.emit('SetCartao', JSON.stringify(valor));
   });
  
   $('#supervisor').click(function() {
     var valor = $(this).val();
-    socket.emit('SetCartao', JSON.stringify('{ '+ valor +'}'));
+    socket.emit('SetCartao', JSON.stringify(valor));
   });
   $('.slided').click(function() {
     console.log('slided');
@@ -109,7 +109,7 @@ socket.on('connect', function () {
   });
   $('#administrador').click(function() {
     valor = $(this).val();
-    socket.emit('SetCartao', JSON.stringify('{ '+ valor +'}'));
+    socket.emit('SetCartao', JSON.stringify(valor));
   });
   socket.on('disconnect', function () {
     console.log('disconnect');

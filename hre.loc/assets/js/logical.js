@@ -72,12 +72,11 @@ function routesClient(socket) {
     var TAG = $.parseJSON(data);    
     $.post("./turno/save", {TAG});
     
-
     $('#your-modal-id').modal('hide');
     $('body').removeClass('modal-open');
     $('.modal-backdrop').remove();
-    socket.disconnect(true);
     window.location.href = "./#/dashboard";
+    socket.disconnect(true);    
   });
   socket.on("SetOcorrencia", function(data) {
 

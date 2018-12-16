@@ -9,7 +9,8 @@ class turno extends CI_Controller {
 		$this->load->model ( "JornadaTrabalho_Model" );
 		$this->load->model ( "CicloStart_model" );
 		$this->load->model ( "Produto_Model" );
-		$this->load->model ( "Parametros_Model" );		
+		$this->load->model ( "Parametros_Model" );			
+		// $this->output->enable_profiler(true); 	
 	}
 
 	public function save()
@@ -27,18 +28,26 @@ class turno extends CI_Controller {
 		$this->Turno_Model->encerrar_turno();
 	} 
 
-	public function getAtual() { 
-		$res 					= $this->Turno_Model->getAtual()[0];
-		$res->Operador 			= $this->Funcionario_Model->get($res->Operador_id)[0];
-		$res->JornadaTrabalho 	= $this->JornadaTrabalho_Model->get($res->JornadaTrabalho_id)[0];		
-		$res->QtdPecas			= $this->CicloStart_model->getAtual($res->id, $res->ParamGeral_id)[0]->QtdPecas;
-		$res->Parametros 		= $this->Parametros_Model->get($res->ParamGeral_id)[0];
-		echo json_encode($res);
+	public function getAtual() { 		
+		$Turno					= $this->Turno_Model->getAtual()[0];
+		if ($Turno->id > 0)
+		{
+			$res 					= $this->Turno_Model->get($Turno->id)[0];
+			$res->Operador 			= $this->Funcionario_Model->get($res->Operador_id)[0];
+			$res->JornadaTrabalho 	= $this->JornadaTrabalho_Model->get($res->JornadaTrabalho_id)[0];		
+			$res->QtdPecas			= $this->CicloStart_model->getAtual($res->id, $res->ParamGeral_id)[0]->QtdPecas;
+			$res->Parametros 		= $this->Parametros_Model->get($res->ParamGeral_id)[0];
+			echo json_encode($res);
+		} 				
 	} 
 
 	public function getResultadoAtual() { 
-		$res 					= $this->Turno_Model->getResultadoAtual()[0];	
+		$Turno					= $this->Turno_Model->getAtual()[0];
+		$res 					= $this->Turno_Model->getResultadoAtual($Turno->id)[0];	
 		$res->QtdPecas			= $this->CicloStart_model->getAtual($res->id, $res->ParamGeral_id)[0]->QtdPecas;
+		$res->Operador 			= $this->Funcionario_Model->get($res->Operador_id)[0];
+		$res->JornadaTrabalho 	= $this->JornadaTrabalho_Model->get($res->JornadaTrabalho_id)[0];		
+			
 		echo json_encode($res);
 	} 
 	
