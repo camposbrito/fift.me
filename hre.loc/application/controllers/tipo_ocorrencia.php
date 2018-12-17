@@ -8,7 +8,7 @@ class tipo_ocorrencia extends CI_Controller {
 	}
    
 	public function getAll() { 
-		$res 			= $this->tipo_ocorrencia_Model->getAll();
+		$res = $this->tipo_ocorrencia_Model->getAll();
 		echo json_encode($res);
 	} 
 }

@@ -53,8 +53,3 @@ $route['default_controller'] = 'hre';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-// $route['viewPost'] = 'post/viewPost'; 
-// $route['addPost'] = 'post/addPost';
-// $route['getPosts'] = 'post/getPosts';
-// $route['getSessao'] = 'post/getSessao';
-

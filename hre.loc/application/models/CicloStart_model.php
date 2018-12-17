@@ -3,39 +3,44 @@ class CicloStart_model extends CI_Model
 {
   function __construct() {
     parent::__construct();           
-    $this->load->model ( "CicloStart_Model" );
+    $this->load->model("CicloStart_Model");
+    $this->load->model("Turno_Model");
   } 
-  // função para fazer a paginação
-  public function getAtual($Turno_id, $ParamGeral_id) { 
-    // $this->output->enable_profiler(TRUE);
 
+  public function getAtual() {
+    $Turno = $this->session->turno;   
+    if (!isset($Turno))
+    {
+      $Turno					= $this->Turno_Model->getAtual()[0]->id;
+    }
     $this->db->select('IFNULL(COUNT(c.id) * p.PecasPorCiclo, 0) as QtdPecas');
     $this->db->from('Turno t');
     $this->db->join('CicloStart c', 'c.turno_id = t.id', 'INNER');
     $this->db->join('Parametros p', 'p.id = t.paramgeral_id', 'INNER');
-    $this->db->where( 't.DataFin IS NULL');
+    $this->db->where('t.id', $Turno);
     // $this->db->group_by('p.PecasPorCiclo'); 
-    $res = $this->db->get()->result();
-    
-    return $res;    
+    $res = $this->db->get();    
+    return $res->result();    
   }
   public function save()
 	{
-    
-    // $this->output->enable_profiler(TRUE);
+    $Turno = $this->session->turno;   
+    if (!isset($Turno))
+    {
+      $Turno					= $this->Turno_Model->getAtual()[0]->id;
+    }  
     date_default_timezone_set("America/Sao_Paulo");
     $Dados = $this->input->post('Dados');  
     if (strpos($Dados, 'true')  == true)
     {
       $data['DataIni'] = date("Y-m-d H:i:s");
-      $data['Turno_id'] = 1;
+      $data['Turno_id'] = $Turno;
       $this->db->insert('ciclostart', $data);
     }
     else
     {
       $data['DataFin'] = date("Y-m-d H:i:s");
-      $this->db->where(array('DataFin' => null, 'Turno_id' => 1))->update('ciclostart', $data);
-    }
-   
+      $this->db->where(array('DataFin' => null, 'Turno_id' => $Turno))->update('ciclostart', $data);
+    }   
   }
 }
