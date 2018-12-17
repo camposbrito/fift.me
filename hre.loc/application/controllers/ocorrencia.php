@@ -9,11 +9,11 @@ class ocorrencia extends CI_Controller {
 		// $this->load->model ( "Produto_Model" );
 		$this->load->model ( "Ocorrencia_Model" );
 			
-		$this->output->enable_profiler(true); 	
+		// $this->output->enable_profiler(true); 	
 	}
    
 	public function getAll() { 
-		$res 				= $this->Ocorrencia_Model->getAll();
+		$res 				= $this->Ocorrencia_Model->getAll()[0];
 		// $res->Equipamento 	= $this->Equipamento_Model->get($res->Equipamento_id)[0];
 		// $res->Produto 		= $this->Produto_Model->get($res->Produto_id)[0];
 		// $res->Operacao 		= $this->Operacao_Model->get($res->Operacao_id)[0];	
