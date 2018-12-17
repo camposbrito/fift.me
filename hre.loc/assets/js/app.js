@@ -145,23 +145,22 @@ myApp.controller("TipoOcorrenciaController", [
   "$location",
   "$log",
   "$http",
-  function($scope, $location, $log, $http) {
-    // $http
-    //   .get("tipo_ocorrencia/getAll")
-    //   .success(function(data) {
-    //     $scope.turno = data;
-    //   })
-    //   .error(function(data, status) {
-    //     $log.error(status);
-    //   });
-    $http
-      .get("turno/getAtual")
+  function($scope, $location, $log, $http) 
+  {
+    $http.get("tipo_ocorrencia/getAll")
       .success(function(data) {
-        $scope.turno = data;
+        $scope.TipoOcorrencia = data;
       })
       .error(function(data, status) {
         $log.error(status);
       });
+    $http.get("turno/getAtual")
+         .success(function(data) {
+            $scope.turno = data;
+          })
+          .error(function(data, status) {
+            $log.error(status);
+          });
     $scope.getAll = function() {
       $http
         .get("tipo_ocorrencia/getAll")
@@ -171,7 +170,7 @@ myApp.controller("TipoOcorrenciaController", [
         })
         .error(function(data, status) {
           $log.error(status);
-        });
+      });      
     };
   }  
 ]);
@@ -182,26 +181,47 @@ myApp.controller("OcorrenciaController", [
   "$log",
   "$http",
   function($scope, $location, $log, $http) {
+    console.log('http - BEGIN');
+    console.log($http);
+    console.log('http - END');
     $scope.currentPage = 1;
-    $http
-      .get("ocorrencia/getAll?pageno="+ $scope.currentPage)
-      .success(function(data) {
-        $scope.ocorrencia = data;
-      })
-      .error(function(data, status) {
-        $log.error(status);
-      });
+    // $http
+    //   .get("ocorrencia/getAll?pageno="+ $scope.currentPage)
+    //   .success(function(data) {
+    //     $scope.ocorrencia = data;
+    //   })
+    //   .error(function(data, status) {
+    //     $log.error(status);
+    //   });
     $scope.getAll = function() {
       $http
         .get("ocorrencia/getAll?pageno="+ $scope.currentPage)
         .success(function(data) {
           console.debug('Sucesso - Ocorrencia');
+          $scope.lastPage = 5;
           $scope.ocorrencia = data;
         })
         .error(function(data, status) {
           $log.error(status);
         });
-    };      
+    }; 
+    function getPerPage(){			
+      return parseInt(localStorage.itemPerPage);
+    }
+    if (localStorage.getItem("itemPerPage") === null) {
+      localStorage.setItem("itemPerPage", 10);
+    }
+    $scope.changeNum = function (itemNum) {
+      localStorage.itemPerPage = itemNum;
+      $scope.numPerPage = getPerPage();
+    };
+    $scope.pageChanged = function(pageno) {
+      // Equivalent to console.log
+      $scope.currentPage = pageno;
+      console.log($scope.currentPage);
+      $scope.getAll();
+      // $log.log('Page changed to: ' + $scope.pagination.currentPage);    
+    };     
   }
 ]);
 myApp.controller("ResultadoController", [

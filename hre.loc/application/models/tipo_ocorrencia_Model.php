@@ -7,6 +7,14 @@ class tipo_ocorrencia_Model extends CI_Model {
     return $this->db->get()->result();
     
   }
+  public function getByOcorrencia($Ocorrencia) {    
+    $this->db->select('t.*');
+    $this->db->select('o.TipoOcorrencia_id');
+    $this->db->from('TipoOcorrencia t');
+    $this->db->join(' Ocorrencia o', 'o.TipoOcorrencia_id = t.id AND o.Id = ' . $Ocorrencia, 'LEFT');
+    return $this->db->get()->result();
+    
+  }
 
    
 }

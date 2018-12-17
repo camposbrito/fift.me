@@ -3,7 +3,7 @@ class Ocorrencia_Model extends CI_Model {
 	
   // função para fazer a paginação
   public function getAll() { 
-    $pageno = $_GET['pageno'];
+    $pageno = $_GET['pageno']; 
  
     $this->db->select('o.id');
     $this->db->select('o.TipoOcorrencia_id');
@@ -19,7 +19,7 @@ class Ocorrencia_Model extends CI_Model {
     }
     $this->db->from('ocorrencia o');
     
-    return $this->db->get()->result();
+    return $this->db->get()->result()[0];
     
   }
 
