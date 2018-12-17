@@ -64,17 +64,17 @@ myApp.controller("DashboardController", [
     //     // if (obj == '{start:  false}')
     //     //   $scope.turno.QtdPecas = parseInt($scope.turno.QtdPecas) + 1;
     // };
-    // $scope.getOperador = function() {
-    //     $http
-    //       .get("sessao/getOperador")
-    //       .success(function(data) {
-    //         console.debug(data)
-    //         $scope.Operador = data;;
-    //       })
-    //       .error(function(data, status) {
-    //         $log.error(status);
-    //       });
-    //   };     
+    $scope.getOperador = function() {
+        $http
+          .get("sessao/getOperador")
+          .success(function(data) {
+            console.debug(data)
+            $scope.Operador = data;;
+          })
+          .error(function(data, status) {
+            $log.error(status);
+          });
+      };     
   }
 ]);
 
@@ -120,47 +120,6 @@ myApp.controller("ResultadoController", [
   }
 ]);
 
-myApp.controller("OcorrenciaController", [
-  "$scope",
-  "$location",
-  "$log",
-  "$http",
-  function($scope, $location, $log, $http) {
-    console.debug('OcorrenciaController');
-    $http
-      .get("sessao/get")
-      .success(function(data) {        
-        $scope.session = data;
-
-      })
-      .error(function(data, status) {
-        $log.error(status);
-      });
-
-      $scope.getResultado = function() {
-        $http
-          .get("sessao/getResultado")
-          .success(function(data) {
-            console.debug(data);
-            $scope.quantidade = data;
-          })
-          .error(function(data, status) {
-            $log.error(status);
-          });
-      };  
-      $scope.getTermino = function() {
-        $http
-          .get("sessao/getResultado")
-          .success(function(data) {
-            console.debug(data);
-            $scope.quantidade = data;
-          })
-          .error(function(data, status) {
-            $log.error(status);
-          });
-      };      
-  }
-]);
 
 // myApp.controller("SessionController", [
 //   "$scope",
@@ -181,6 +140,70 @@ myApp.controller("OcorrenciaController", [
 // ]);
 
 /* CONTROLLERS OFICIAIS */
+myApp.controller("TipoOcorrenciaController", [
+  "$scope",
+  "$location",
+  "$log",
+  "$http",
+  function($scope, $location, $log, $http) {
+    // $http
+    //   .get("tipo_ocorrencia/getAll")
+    //   .success(function(data) {
+    //     $scope.turno = data;
+    //   })
+    //   .error(function(data, status) {
+    //     $log.error(status);
+    //   });
+    $http
+      .get("turno/getAtual")
+      .success(function(data) {
+        $scope.turno = data;
+      })
+      .error(function(data, status) {
+        $log.error(status);
+      });
+    $scope.getAll = function() {
+      $http
+        .get("tipo_ocorrencia/getAll")
+        .success(function(data) {
+          console.debug('Sucesso! tipo_ocorrencia');
+          $scope.TipoOcorrencia = data;
+        })
+        .error(function(data, status) {
+          $log.error(status);
+        });
+    };
+  }  
+]);
+
+myApp.controller("OcorrenciaController", [
+  "$scope",
+  "$location",
+  "$log",
+  "$http",
+  function($scope, $location, $log, $http) {
+    $scope.currentPage = 1;
+    $http
+      .get("ocorrencia/getAll?pageno="+ $scope.currentPage)
+      .success(function(data) {
+        $scope.ocorrencia = data;
+      })
+      .error(function(data, status) {
+        $log.error(status);
+      });
+    $scope.getAll = function() {
+      $http
+        .get("ocorrencia/getAll?pageno="+ $scope.currentPage)
+        .success(function(data) {
+          console.debug('Sucesso - Ocorrencia');
+          $scope.ocorrencia = data;
+        })
+        .error(function(data, status) {
+          $log.error(status);
+        });
+    };      
+  }
+]);
 myApp.controller("ResultadoController", [
     "$scope",
     "$location",
@@ -197,7 +220,7 @@ myApp.controller("ResultadoController", [
           $scope.turno.Producao = parseInt($scope.turno.PecasProducao) - parseInt($scope.turno.Refugos);
           $scope.turno.Diferenca = parseInt($scope.turno.QuantidadePrevistaTurno) - parseInt($scope.turno.Producao);
           //Qualidade = quantidade de produtos produzidos – (quantidade retrabalhada + quantidade perdida) / quantidade de produtos produzidos
-//          previsto-(previsto-realizado+refugo)/previsto*100
+          //previsto-(previsto-realizado+refugo)/previsto*100
           var OEE = parseFloat(($scope.turno.Previsto-($scope.turno.Previsto-$scope.turno.Producao+$scope.turno.Refugos))/$scope.turno.Previsto)*100;
           // var OEE = parseInt(parseFloat(parseFloat($scope.turno.Producao - $scope.turno.Refugos/$scope.turno.Producao)) );         
           $scope.turno.OEE = 0;
@@ -210,19 +233,13 @@ myApp.controller("ResultadoController", [
         });
         $scope.setQuantidade = function(data) {
           var obj = JSON.parse(data);
-          // console.debug($scope.turno);
-          // console.debug($scope.turno.QtdPecas);
           if (obj == '{start:  false}')
             $scope.turno.QtdPecas = parseInt($scope.turno.QtdPecas) + 1;
         };
         $scope.inProgress = function() {
           $http
             .get("turno/inProgress")
-            .success(function(data) {            
-              // $scope.Current = data;
-              // console.debug($scope.Current);
-              // if (data.progress == true)
-              // window.location.href = "./#/dashboard";
+            .success(function(data) {  
             })
             .error(function(data, status) {
               $log.error(status);
@@ -325,32 +342,3 @@ myApp.controller("ParametrosController", [
   }
 ]);
 
-myApp.controller("TipoOcorrenciaController", [
-  "$scope",
-  "$location",
-  "$log",
-  "$http",
-  function($scope, $location, $log, $http) {
-    console.debug('TipoOcorrenciaController');
-    // $http
-    //   .get("tipo_ocorrencia/getAll")
-    //   .success(function(data) {
-    //     $scope.turno = data;
-    //   })
-    //   .error(function(data, status) {
-    //     $log.error(status);
-    //   });
-
-    $scope.getAll = function() {
-      $http
-        .get("tipo_ocorrencia/getAll")
-        .success(function(data) {
-          console.debug(data);
-          $scope.TipoOcorrencia = data;
-        })
-        .error(function(data, status) {
-          $log.error(status);
-        });
-    };
-  }  
-]);
