@@ -185,20 +185,19 @@ myApp.controller("OcorrenciaController", [
     console.log($http);
     console.log('http - END');
     $scope.currentPage = 1;
-    // $http
-    //   .get("ocorrencia/getAll?pageno="+ $scope.currentPage)
-    //   .success(function(data) {
-    //     $scope.ocorrencia = data;
-    //   })
-    //   .error(function(data, status) {
-    //     $log.error(status);
-    //   });
+    $http
+      .get("ocorrencia/Count")
+      .success(function(data) {
+        $scope.lastPage = data.Registros;
+      })
+      .error(function(data, status) {
+        $log.error(status);
+      });
     $scope.getAll = function() {
       $http
         .get("ocorrencia/getAll?pageno="+ $scope.currentPage)
         .success(function(data) {
-          console.debug('Sucesso - Ocorrencia');
-          $scope.lastPage = 5;
+          console.debug('Sucesso - Ocorrencia');          
           $scope.ocorrencia = data;
         })
         .error(function(data, status) {
@@ -219,6 +218,8 @@ myApp.controller("OcorrenciaController", [
       // Equivalent to console.log
       $scope.currentPage = pageno;
       console.log($scope.currentPage);
+      console.log('-');
+      console.log($scope.lastPage);
       $scope.getAll();
       // $log.log('Page changed to: ' + $scope.pagination.currentPage);    
     };     

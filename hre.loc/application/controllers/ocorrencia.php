@@ -15,9 +15,10 @@ class ocorrencia extends CI_Controller {
 	public function getAll() { 
 		$res 					= $this->Ocorrencia_Model->getAll();
 		$res->TipoOcorrencia	= $this->tipo_ocorrencia_Model->getByOcorrencia($res->id);	
-		// $res->Equipamento 	= $this->Equipamento_Model->get($res->Equipamento_id)[0];
-		// $res->Produto 		= $this->Produto_Model->get($res->Produto_id)[0];
-		// $res->Operacao 		= $this->Operacao_Model->get($res->Operacao_id)[0];	
+		echo json_encode($res);
+	} 
+	public function Count() { 
+		$res 					= $this->Ocorrencia_Model->Count()[0];
 		echo json_encode($res);
 	} 
 }
