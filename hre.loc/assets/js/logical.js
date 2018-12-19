@@ -134,13 +134,15 @@ function routesClient(socket) {
   
   $("#voltar_ocorrencia").click(function() {
     console.debug("#voltar_ocorrencia");  
+    socket.disconnect(true);
     window.location.href = './#/dashboard'
   });
 
   $("#Ocorrencia").click(function() {
-    console.debug("#resultado");
+    console.debug("#resultado");   
     socket.disconnect(true);
     window.location.href = "./#/ocorrencia";
+
   });
 
   socket.on("disconnect", function() {

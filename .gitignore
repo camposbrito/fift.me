@@ -1,6 +1,7 @@
 # Para todos os arquivos e sub-pastas localizados na pasta vendor/
 hre.loc/assets/server/node_modules/
 DB1/__history/
+_hre.loc/
 *.dcu
 *.local
 *.exe
