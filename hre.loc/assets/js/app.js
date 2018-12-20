@@ -3,7 +3,7 @@ var myApp = angular.module("myApp", ["ngRoute"]);
 myApp.config(function($routeProvider) {
   $routeProvider
     .when("/", {
-      templateUrl: "templates/hre.html" 
+      templateUrl: "templates/hre.html"
     })
     .when("/ocorrencia", {
       redirectTo: "/ocorrencia/1"
@@ -15,7 +15,7 @@ myApp.config(function($routeProvider) {
     .when("/dashboard", {
       templateUrl: "templates/dashboard.html",
       controller: "DashboardController"
-    })    
+    })
     .when("/finaliza", {
       templateUrl: "templates/terminoturno.html",
       controller: "TerminoController"
@@ -26,10 +26,8 @@ myApp.config(function($routeProvider) {
     })
     .otherwise({
       redirectTo: "/"
-  })  
+    });
 });
-
-
 
 myApp.controller("DashboardController", [
   "$scope",
@@ -37,44 +35,17 @@ myApp.controller("DashboardController", [
   "$log",
   "$http",
   function($scope, $location, $log, $http) {
-    console.debug('DashboardController');
-    // $http
-    //   .get("sessao/get")
-    //   .success(function(data) {        
-    //     $scope.session = data;
-
-    //   })
-    //   .error(function(data, status) {
-    //     $log.error(status);
-    //   });
-
-    // $scope.getQuantidade = function() {
-    //   $http
-    //     .get("sessao/getQuantidade")
-    //     .success(function(data) {
-    //       $scope.Quantidade = data;
-    //     })
-    //     .error(function(data, status) {
-    //       $log.error(status);
-    //     });
-    // };
-    // $scope.setQuantidade = function(data) {
-    //     var obj = JSON.parse(data);
-    //     console.debug($scope.turno);
-    //     // if (obj == '{start:  false}')
-    //     //   $scope.turno.QtdPecas = parseInt($scope.turno.QtdPecas) + 1;
-    // };
     $scope.getOperador = function() {
-        $http
-          .get("sessao/getOperador")
-          .success(function(data) {
-            console.debug(data)
-            $scope.Operador = data;;
-          })
-          .error(function(data, status) {
-            $log.error(status);
-          });
-      };     
+      $http
+        .get("sessao/getOperador")
+        .success(function(data) {
+          console.debug(data);
+          $scope.Operador = data;
+        })
+        .error(function(data, status) {
+          $log.error(status);
+        });
+    };
   }
 ]);
 
@@ -83,61 +54,8 @@ myApp.controller("ResultadoController", [
   "$location",
   "$log",
   "$http",
-  function($scope, $location, $log, $http) {
-    console.debug('ResultadoController');
-    // $http
-    //   .get("sessao/get")
-    //   .success(function(data) {        
-    //     $scope.session = data;
-
-    //   })
-    //   .error(function(data, status) {
-    //     $log.error(status);
-    //   });
-
-    //   $scope.getResultado = function() {
-    //     $http
-    //       .get("sessao/getResultado")
-    //       .success(function(data) {
-    //         console.debug(data);
-    //         $scope.quantidade = data;
-    //       })
-    //       .error(function(data, status) {
-    //         $log.error(status);
-    //       });
-    //   };  
-    //   $scope.getTermino = function() {
-    //     $http
-    //       .get("sessao/getResultado")
-    //       .success(function(data) {
-    //         console.debug(data);
-    //         $scope.quantidade = data;
-    //       })
-    //       .error(function(data, status) {
-    //         $log.error(status);
-    //       });
-    //   };      
-  }
+  function($scope, $location, $log, $http) {}
 ]);
-
-
-// myApp.controller("SessionController", [
-//   "$scope",
-//   "$location",
-//   "$log",
-//   "$http",
-//   // function($scope, $location, $log, $http) {
-//   //   console.debug('SessionController');
-//   //   $http
-//   //     .get("sessao/get")
-//   //     .success(function(data) {
-//   //       $scope.session = data;
-//   //     })
-//   //     .error(function(data, status) {
-//   //       $log.error(status);
-//   //     });
-//   // }
-// ]);
 
 /* CONTROLLERS OFICIAIS */
 myApp.controller("TipoOcorrenciaController", [
@@ -145,34 +63,34 @@ myApp.controller("TipoOcorrenciaController", [
   "$location",
   "$log",
   "$http",
-  function($scope, $location, $log, $http) 
-  {
-    $http.get("tipo_ocorrencia/getAll")
+  function($scope, $location, $log, $http) {
+    $http
+      .get("tipo_ocorrencia/getAll")
       .success(function(data) {
         $scope.TipoOcorrencia = data;
       })
       .error(function(data, status) {
         $log.error(status);
       });
-    $http.get("turno/getAtual")
-         .success(function(data) {
-            $scope.turno = data;
-          })
-          .error(function(data, status) {
-            $log.error(status);
-          });
+    $http
+      .get("turno/getAtual")
+      .success(function(data) {
+        $scope.turno = data;
+      })
+      .error(function(data, status) {
+        $log.error(status);
+      });
     $scope.getAll = function() {
       $http
         .get("tipo_ocorrencia/getAll")
         .success(function(data) {
-          console.debug('Sucesso! tipo_ocorrencia');
           $scope.TipoOcorrencia = data;
         })
         .error(function(data, status) {
           $log.error(status);
-      });      
+        });
     };
-  }  
+  }
 ]);
 
 myApp.controller("OcorrenciaController", [
@@ -181,9 +99,6 @@ myApp.controller("OcorrenciaController", [
   "$log",
   "$http",
   function($scope, $location, $log, $http) {
-    console.log('http - BEGIN');
-    console.log($http);
-    console.log('http - END');
     $scope.currentPage = 1;
     $http
       .get("ocorrencia/Count")
@@ -193,89 +108,103 @@ myApp.controller("OcorrenciaController", [
       .error(function(data, status) {
         $log.error(status);
       });
+    $http
+      .get("turno/getAtual")
+      .success(function(data) {
+        $scope.turno = data;
+      })
+      .error(function(data, status) {
+        $log.error(status);
+      });  
     $scope.getAll = function() {
       $http
-        .get("ocorrencia/getAll?pageno="+ $scope.currentPage)
+        .get("ocorrencia/getAll?pageno=" + $scope.currentPage)
         .success(function(data) {
-          console.debug('Sucesso - Ocorrencia');          
           $scope.ocorrencia = data;
         })
         .error(function(data, status) {
           $log.error(status);
         });
-    }; 
-    function getPerPage(){			
-      return parseInt(localStorage.itemPerPage);
+    };
+    function getPerPage() {
+      return parseInt(sessionStorage.itemPerPage);
     }
-    if (localStorage.getItem("itemPerPage") === null) {
-      localStorage.setItem("itemPerPage", 10);
+    if (sessionStorage.getItem("itemPerPage") === null) {
+      sessionStorage.setItem("itemPerPage", 10);
     }
-    $scope.changeNum = function (itemNum) {
-      localStorage.itemPerPage = itemNum;
+    $scope.changeNum = function(itemNum) {
+      sessionStorage.itemPerPage = itemNum;
       $scope.numPerPage = getPerPage();
     };
     $scope.pageChanged = function(pageno) {
       // Equivalent to console.log
       $scope.currentPage = pageno;
-      console.log($scope.currentPage);
-      console.log('-');
-      console.log($scope.lastPage);
       $scope.getAll();
-      // $log.log('Page changed to: ' + $scope.pagination.currentPage);    
-    };     
+      // $log.log('Page changed to: ' + $scope.pagination.currentPage);
+    };
   }
 ]);
 myApp.controller("ResultadoController", [
-    "$scope",
-    "$location",
-    "$log",
-    "$http",
-    function($scope, $location, $log, $http) {
-      console.debug('ResultadoController');
-      $http
-        .get("turno/getResultadoAtual")
-        .success(function(data) {
-          $scope.turno = data;
-          $scope.turno.Previsto = $scope.turno.QuantidadePrevistaTurno;
-          $scope.turno.Refugos = parseInt($scope.turno.RefugosProducao) + parseInt($scope.turno.RefugosFundicao);
-          $scope.turno.Producao = parseInt($scope.turno.PecasProducao) - parseInt($scope.turno.Refugos);
-          $scope.turno.Diferenca = parseInt($scope.turno.QuantidadePrevistaTurno) - parseInt($scope.turno.Producao);
-          //Qualidade = quantidade de produtos produzidos – (quantidade retrabalhada + quantidade perdida) / quantidade de produtos produzidos
-          //previsto-(previsto-realizado+refugo)/previsto*100
-          var OEE = parseFloat(($scope.turno.Previsto-($scope.turno.Previsto-$scope.turno.Producao+$scope.turno.Refugos))/$scope.turno.Previsto)*100;
-          // var OEE = parseInt(parseFloat(parseFloat($scope.turno.Producao - $scope.turno.Refugos/$scope.turno.Producao)) );         
-          $scope.turno.OEE = 0;
-          if (!isNaN(OEE)){
-            $scope.turno.OEE = OEE.toFixed(2);
-          }
-        })
-        .error(function(data, status) {
-          $log.error(status);
-        });
-        $scope.setQuantidade = function(data) {
-          var obj = JSON.parse(data);
-          if (obj == '{start:  false}')
-            $scope.turno.QtdPecas = parseInt($scope.turno.QtdPecas) + 1;
-        };
-        $scope.inProgress = function() {
-          $http
-            .get("turno/inProgress")
-            .success(function(data) {  
-            })
-            .error(function(data, status) {
-              $log.error(status);
-            });
-        }; 
-    }
-  ]);
-  
+  "$scope",
+  "$location",
+  "$log",
+  "$http",
+  function($scope, $location, $log, $http) {
+    console.debug("ResultadoController");
+    $http
+      .get("turno/getResultadoAtual")
+      .success(function(data) {
+        $scope.turno = data;
+        $scope.turno.Previsto = $scope.turno.QuantidadePrevistaTurno;
+        $scope.turno.Refugos =
+          parseInt($scope.turno.RefugosProducao) +
+          parseInt($scope.turno.RefugosFundicao);
+        $scope.turno.Producao =
+          parseInt($scope.turno.PecasProducao) - parseInt($scope.turno.Refugos);
+        $scope.turno.Diferenca =
+          parseInt($scope.turno.QuantidadePrevistaTurno) -
+          parseInt($scope.turno.Producao);
+        //Qualidade = quantidade de produtos produzidos – (quantidade retrabalhada + quantidade perdida) / quantidade de produtos produzidos
+        //previsto-(previsto-realizado+refugo)/previsto*100
+        var OEE =
+          parseFloat(
+            ($scope.turno.Previsto -
+              ($scope.turno.Previsto -
+                $scope.turno.Producao +
+                $scope.turno.Refugos)) /
+              $scope.turno.Previsto
+          ) * 100;
+        // var OEE = parseInt(parseFloat(parseFloat($scope.turno.Producao - $scope.turno.Refugos/$scope.turno.Producao)) );
+        $scope.turno.OEE = 0;
+        if (!isNaN(OEE)) {
+          $scope.turno.OEE = OEE.toFixed(2);
+        }
+      })
+      .error(function(data, status) {
+        $log.error(status);
+      });
+    // $scope.setQuantidade = function(data) {
+    //   var obj = JSON.parse(data);
+    //   if (obj == "{start:  false}")
+    //     $scope.turno.QtdPecas = parseInt($scope.turno.QtdPecas) + 1;
+    // };
+    // $scope.inProgress = function() {
+    //   $http
+    //     .get("turno/inProgress")
+    //     .success(function(data) {})
+    //     .error(function(data, status) {
+    //       $log.error(status);
+    //     });
+    // };
+  }
+]);
+
 myApp.controller("TerminoController", [
   "$scope",
   "$location",
   "$log",
   "$http",
   function($scope, $location, $log, $http) {
-   
     $http
       .get("turno/getResultadoAtual")
       .success(function(data) {
@@ -284,26 +213,24 @@ myApp.controller("TerminoController", [
       .error(function(data, status) {
         $log.error(status);
       });
-      $scope.setQuantidade = function(data) {
-        var obj = JSON.parse(data);
-        // console.debug($scope.turno);
-        // console.debug($scope.turno.QtdPecas);
-        if (obj == '{start:  false}')
-          $scope.turno.QtdPecas = parseInt($scope.turno.QtdPecas) + 1;
-      };
-      $scope.inProgress = function() {
-        $http
-          .get("turno/inProgress")
-          .success(function(data) {            
-            // $scope.Current = data;
-            // console.debug($scope.Current);
-            // if (data.progress == true)
-            // window.location.href = "./#/dashboard";
-          })
-          .error(function(data, status) {
-            $log.error(status);
-          });
-      }; 
+    // $scope.setQuantidade = function(data) {
+    //   var obj = JSON.parse(data);
+    //   if (obj == "{start:  false}")
+    //     $scope.turno.QtdPecas = parseInt($scope.turno.QtdPecas) + 1;
+    // };
+    // $scope.inProgress = function() {
+    //   $http
+    //     .get("turno/inProgress")
+    //     .success(function(data) {
+    //       // $scope.Current = data;
+    //       // console.debug($scope.Current);
+    //       // if (data.progress == true)
+    //       // window.location.href = "./#/dashboard";
+    //     })
+    //     .error(function(data, status) {
+    //       $log.error(status);
+    //     });
+    // };
   }
 ]);
 
@@ -313,7 +240,7 @@ myApp.controller("TurnoController", [
   "$log",
   "$http",
   function($scope, $location, $log, $http) {
-    console.debug('TurnoController');
+    console.debug("TurnoController");
     $http
       .get("turno/getAtual")
       .success(function(data) {
@@ -322,26 +249,23 @@ myApp.controller("TurnoController", [
       .error(function(data, status) {
         $log.error(status);
       });
-      $scope.setQuantidade = function(data) {
-        var obj = JSON.parse(data);
-        // console.debug($scope.turno);
-        // console.debug($scope.turno.QtdPecas);
-        if (obj == '{start:  false}')
-          $scope.turno.QtdPecas = parseInt($scope.turno.QtdPecas) + 1;
-      };
-      $scope.inProgress = function() {
-        $http
-          .get("turno/inProgress")
-          .success(function(data) {            
-            $scope.Current = data;
-            console.debug($scope.Current);
-            if (data.progress == true)
-            window.location.href = "./#/dashboard";
-          })
-          .error(function(data, status) {
-            $log.error(status);
-          });
-      }; 
+    $scope.setQuantidade = function(data) {
+      var obj = JSON.parse(data);
+      if (obj == "{start:  false}")
+        $scope.turno.QtdPecas = parseInt($scope.turno.QtdPecas) + parseInt(sessionStorage.PecasPorCiclo);
+    };
+    $scope.inProgress = function() {
+      $http
+        .get("turno/inProgress")
+        .success(function(data) {
+          $scope.Current = data;
+          console.debug($scope.Current);
+          if (data.progress == true) window.location.href = "./#/dashboard";
+        })
+        .error(function(data, status) {
+          $log.error(status);
+        });
+    };
   }
 ]);
 
@@ -351,15 +275,15 @@ myApp.controller("ParametrosController", [
   "$log",
   "$http",
   function($scope, $location, $log, $http) {
-    console.debug('TurnoController');
     $http
       .get("parametros/get")
       .success(function(data) {
         $scope.parametros = data;
+        $scope.PecasPorCiclo = data.PecasPorCiclo;
+        sessionStorage.PecasPorCiclo = data.PecasPorCiclo;
       })
       .error(function(data, status) {
         $log.error(status);
       });
   }
 ]);
-
