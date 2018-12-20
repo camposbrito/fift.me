@@ -30,7 +30,6 @@ function connectClient() {
     $("#messages").append(
       '<font color="green"><b>' + getDataTime() + "  - Connected</b></font><br>"
     );
-    // setTimeout(esconder, 4000);
     routesClient(socket);
   });
 
@@ -38,7 +37,6 @@ function connectClient() {
     reconnectionTry++;
     console.log("Reconnection attempt #" + reconnectionTry);
   });
-
   return false;
 }
 
@@ -79,10 +77,9 @@ function routesClient(socket) {
     socket.disconnect(true);    
   });
   socket.on("SetOcorrencia", function(data) {
-
+    
     var Dados = $.parseJSON(data); 
-     
-    $.post("./ciclostart/save", { Dados});
+    $.post("./ciclostart/save", {Dados});
     angular
       .element("#TurnoController")
       .scope()
@@ -111,8 +108,6 @@ function routesClient(socket) {
     socket.disconnect(true);
     window.location.href = "./#/finaliza";
   }); 
-
-
 
   $("#ConcluirTurno").click(function() {
     console.debug("#resultado");
