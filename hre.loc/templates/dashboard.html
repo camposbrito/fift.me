@@ -1,13 +1,14 @@
     <header ng-include="'./templates/header.html'"></header>
-    <div class="container-fluid d-flex flex-column body-content justify-content-center">
-        <div id="TurnoController" class="row" ng-controller="TurnoController" ng-init="getAtual()">
-            <div class="col">
-                <h5 class="text-right">Quantidade Atual:</h5>
+    <div ng-controller="TurnoController" ng-init="getAtual()">
+        <div class="container-fluid d-flex flex-column body-content justify-content-center">
+            <div id="TurnoController" class="row">
+                <div class="col">
+                    <h5 class="text-right">Quantidade Atual:</h5>
+                </div>
+                <div class="col-md-4 col-lg-4 col-xl-4"><span class="btn btn-warning btn-block btn-lg d-block"><br><h1>{{turno.QtdPecas}}</h1> <br></span></div>
+                <div class="col"></div>
             </div>
-            <div class="col-md-4 col-lg-4 col-xl-4"><span class="btn btn-warning btn-block btn-lg d-block"><br><h1>{{turno.QtdPecas}}</h1> <br></span></div>
-            <div class="col"></div>
         </div>
+        <footer ng-include="'./templates/footer-dashboard.html'"></footer>
+        <div ng-include="'./templates/partial.html'"></div>  
     </div>
-    <footer ng-include="'./templates/footer.html'"></footer>
-    <div ng-include="'./templates/partial.html'"></div>  
-    

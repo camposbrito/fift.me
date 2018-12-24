@@ -6,6 +6,12 @@ class Produto_Model extends CI_Model {
     $this->db->select('*');
     $this->db->from('Produto');
     $this->db->where('id', $id);
+    return $this->db->get()->result();    
+  }
+  public function getAll() { 
+    $this->db->select('*');
+    $this->db->from('Produto');
+  
     return $this->db->get()->result();
     
   }

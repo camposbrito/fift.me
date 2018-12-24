@@ -51,8 +51,8 @@ class turno extends CI_Controller {
 		echo json_encode($res);
 	} 
 	
-	public function inProgress() { 
-		$res			= array('progress' => $this->Turno_Model->inProgress());
+	public function EmAndamento() { 
+		$res			= array('progress' => $this->Turno_Model->EmAndamento());
 		echo json_encode($res);
 	} 
 }

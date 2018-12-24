@@ -16,6 +16,10 @@ myApp.config(function($routeProvider) {
       templateUrl: "templates/dashboard.html",
       controller: "DashboardController"
     })
+    .when("/em_andamento", {
+      templateUrl: "templates/dashboard.html",
+      controller: "DashboardController"
+    })
     .when("/finaliza", {
       templateUrl: "templates/terminoturno.html",
       controller: "TerminoController"
@@ -58,6 +62,32 @@ myApp.controller("ResultadoController", [
 ]);
 
 /* CONTROLLERS OFICIAIS */
+myApp.controller("JornadaController", [
+  "$scope",
+  "$location",
+  "$log",
+  "$http",
+  function($scope, $location, $log, $http) {
+    $http
+      .get("JornadaTrabalho/getAll")
+      .success(function(data) {
+        $scope.JornadaTrabalho = data;
+      })
+      .error(function(data, status) {
+        $log.error(status);
+      });
+    $http
+      .get("turno/getAtual")
+      .success(function(data) {
+        $scope.turno = data;
+      })
+      .error(function(data, status) {
+        $log.error(status);
+      });
+ 
+  }
+]);
+
 myApp.controller("TipoOcorrenciaController", [
   "$scope",
   "$location",
@@ -182,20 +212,7 @@ myApp.controller("ResultadoController", [
       })
       .error(function(data, status) {
         $log.error(status);
-      });
-    // $scope.setQuantidade = function(data) {
-    //   var obj = JSON.parse(data);
-    //   if (obj == "{start:  false}")
-    //     $scope.turno.QtdPecas = parseInt($scope.turno.QtdPecas) + 1;
-    // };
-    // $scope.inProgress = function() {
-    //   $http
-    //     .get("turno/inProgress")
-    //     .success(function(data) {})
-    //     .error(function(data, status) {
-    //       $log.error(status);
-    //     });
-    // };
+      });    
   }
 ]);
 
@@ -213,24 +230,6 @@ myApp.controller("TerminoController", [
       .error(function(data, status) {
         $log.error(status);
       });
-    // $scope.setQuantidade = function(data) {
-    //   var obj = JSON.parse(data);
-    //   if (obj == "{start:  false}")
-    //     $scope.turno.QtdPecas = parseInt($scope.turno.QtdPecas) + 1;
-    // };
-    // $scope.inProgress = function() {
-    //   $http
-    //     .get("turno/inProgress")
-    //     .success(function(data) {
-    //       // $scope.Current = data;
-    //       // console.debug($scope.Current);
-    //       // if (data.progress == true)
-    //       // window.location.href = "./#/dashboard";
-    //     })
-    //     .error(function(data, status) {
-    //       $log.error(status);
-    //     });
-    // };
   }
 ]);
 
@@ -239,28 +238,35 @@ myApp.controller("TurnoController", [
   "$location",
   "$log",
   "$http",
-  function($scope, $location, $log, $http) {
-    console.debug("TurnoController");
-    $http
-      .get("turno/getAtual")
-      .success(function(data) {
-        $scope.turno = data;
-      })
-      .error(function(data, status) {
-        $log.error(status);
-      });
+  function($scope, $location, $log, $http) {    
     $scope.setQuantidade = function(data) {
       var obj = JSON.parse(data);
       if (obj == "{start:  false}")
         $scope.turno.QtdPecas = parseInt($scope.turno.QtdPecas) + parseInt(sessionStorage.PecasPorCiclo);
     };
-    $scope.inProgress = function() {
+    $scope.getAtual = function() {
+      console.debug("get Atual");
       $http
-        .get("turno/inProgress")
+      .get("turno/getAtual")
+        .success(function(data) {
+          $scope.turno = data;          
+        })
+        .error(function(data, status) {
+          $log.error(status);
+        });
+    };
+    $scope.EmAndamento = function() {
+      console.log('in progress');
+      $http
+        .get("turno/EmAndamento")
         .success(function(data) {
           $scope.Current = data;
           console.debug($scope.Current);
-          if (data.progress == true) window.location.href = "./#/dashboard";
+          if (data.progress == true) 
+          {            
+            $location.path('/dashboard');            
+          }
+           
         })
         .error(function(data, status) {
           $log.error(status);

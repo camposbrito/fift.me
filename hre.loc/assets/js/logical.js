@@ -1,5 +1,5 @@
 "use strict";
-
+console.log('partial');
 function esconder() {
   $("#messages").hide();
 }
@@ -23,12 +23,14 @@ function initClient() {
 
 function connectClient() {
   console.debug("connectClient");
+  
   var socket = io.connect("//127.0.0.1:1337");
-  console.debug(socket);
+  
   socket.on("connect", function(e) {
     resetMensagem();
+    
     $("#messages").append(
-      '<font color="green"><b>' + getDataTime() + "  - Connected</b></font><br>"
+      '<font color="green"><b>' + getDataTime() + "  - Connected - "+ socket.id +"</b></font><br>"
     );
     routesClient(socket);
   });
@@ -68,13 +70,17 @@ function routesClient(socket) {
     console.debug(data);
     // alert(data);
     var TAG = $.parseJSON(data);    
-    $.post("./turno/save", {TAG});
+    var Jornada = $('#Jornada').val();
+    console.log(Jornada);
+    console.log("FIM");
+    $.post("./turno/save", {TAG, Jornada});
     
     $('#your-modal-id').modal('hide');
     $('body').removeClass('modal-open');
     $('.modal-backdrop').remove();
-    window.location.href = "./#/dashboard";
-    socket.disconnect(true);    
+    console.log(1);
+    window.location.href = "./#/em_andamento/";        
+    socket.disconnect(true);
   });
   socket.on("SetOcorrencia", function(data) {
     
@@ -88,7 +94,8 @@ function routesClient(socket) {
       .element("#TurnoController")
       .scope()
       .$apply();
-    window.location.href = './#/dashboard';
+    //   console.log(2); 
+    // window.location.href = './#/em_andamento/';
   });
 
   $("#IniciarTurno").click(function() {
@@ -102,7 +109,22 @@ function routesClient(socket) {
     socket.emit("GetCartao", { message: sMessage });
     // setTimeout(esconder, 4000);
   });
-
+  $("#menuitem").click(function() {    
+    console.debug("menuitem");
+    socket.disconnect(true);    
+  }); 
+  $("#salvar-parametros").click(function() {    
+    // var TAG = $.parseJSON(data);    
+    // var Jornada = $('#Jornada').val();
+    var Parametros = $('#parametros').serialize();
+    console.log($('#parametros').serializeArray());
+    console.log($('#parametros').serialize());
+    $.post("../parametros/salvar", $('#parametros').serialize());    
+    socket.disconnect(true); 
+    console.log(3);
+    window.location.href = "../#/em_andamento/";        
+    
+  }); 
   $("#finalizaturno").click(function() {
     console.debug("#finalizaturno");
     socket.disconnect(true);
@@ -130,7 +152,8 @@ function routesClient(socket) {
   $("#voltar_ocorrencia").click(function() {
     console.debug("#voltar_ocorrencia");  
     socket.disconnect(true);
-    window.location.href = './#/dashboard'
+    console.log(4)
+    window.location.href = './#/em_andamento/'
   });
 
   $("#Ocorrencia").click(function() {
@@ -145,7 +168,7 @@ function routesClient(socket) {
     $("#messages").append(
       '<font color="red"><b>' +
         getDataTime() +
-        "  - disconnected</b></font><br>"
+        "  - disconnected - "+ socket.id +"</b></font><br>"
     );
     // setTimeout(esconder, 4000);
   });

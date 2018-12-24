@@ -8,7 +8,11 @@ class Equipamento_Model extends CI_Model {
     $this->db->where('id', $id);
     return $this->db->get()->result();    
   }
-
+  public function getAll() {
+    $this->db->select('*');
+    $this->db->from('Equipamento');
+    return $this->db->get()->result();    
+  }
   // public function getOperador() {
   //   $this->db->select("'Rodrigo' as Nome, 'A' as Turno");
   //   $this->db->from('sessao');

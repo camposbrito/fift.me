@@ -8,6 +8,7 @@ class hre extends CI_Controller {
 	 	
 	function index()
 	{
+		$this->load->view('includes/includes');
 		$this->load->view("hre");
 	}
 }
