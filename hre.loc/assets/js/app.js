@@ -50,6 +50,24 @@ myApp.controller("DashboardController", [
           $log.error(status);
         });
     };
+    $scope.EmAndamento = function() {
+      console.log('in progress');
+      $log.log('in progress');
+      $http
+        .get("turno/EmAndamento")
+        .success(function(data) {
+          $scope.Current = data;
+          // console.debug($scope.Current);
+          if (data.progress == false) 
+          {            
+            $location.path('/');            
+          }
+           
+        })
+        .error(function(data, status) {
+          $log.error(status);
+        });
+    };
   }
 ]);
 
@@ -166,6 +184,9 @@ myApp.controller("OcorrenciaController", [
       sessionStorage.itemPerPage = itemNum;
       $scope.numPerPage = getPerPage();
     };
+    $scope.voltar_ocorrencia = function() {
+      $location.path('/dashboard');            
+    }
     $scope.pageChanged = function(pageno) {
       // Equivalent to console.log
       $scope.currentPage = pageno;
@@ -212,7 +233,11 @@ myApp.controller("ResultadoController", [
       })
       .error(function(data, status) {
         $log.error(status);
-      });    
+      }); 
+      $scope.FecharTurno = function() {  
+        $.post("./turno/encerrar_turno");
+        $location.path('/');                  
+    }   
   }
 ]);
 
@@ -230,7 +255,20 @@ myApp.controller("TerminoController", [
       .error(function(data, status) {
         $log.error(status);
       });
+      $scope.ConcluirTurno = function() {
+        var Pecas_Producao  = $("#Pecas_Producao").val();
+        var Refugo_Producao = $("#Refugo_Producao").val();
+        var Refugo_Fundicao = $("#Refugo_Fundicao").val();
+        
+        $.post("./turno/concluir_turno", {
+          Pecas_Producao,
+          Refugo_Producao,
+          Refugo_Fundicao
+        });   
+        $location.path('/resultado');                  
+      };
   }
+  
 ]);
 
 myApp.controller("TurnoController", [
@@ -273,6 +311,12 @@ myApp.controller("TurnoController", [
           $log.error(status);
         });
     };
+    $scope.GetOcorrencias = function() {      
+        $location.path('/ocorrencia');                  
+    }
+    $scope.FinalizarTurno = function() {      
+      $location.path('/finaliza');                     
+    }
   }
 ]);
 

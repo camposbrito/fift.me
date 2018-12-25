@@ -134,7 +134,29 @@ function routesClient(socket){
                 }, reconnectionDelay);
         }
   });
-  
+
+  $('#start').click(function() {
+    console.log('start');
+    socket.emit('SetCicloStart', JSON.stringify('{start:  '+ $(this).prop('checked') +'}'));
+  });
+
+  $('#operador').click(function() {
+      var valor = $('#operador').val();
+      console.log(valor);
+      socket.emit('SetCartao', JSON.stringify(valor));
+  });
+ 
+  $('#supervisor').click(function() {
+    var valor = $(this).val();
+    console.log(valor);
+    socket.emit('SetCartao', JSON.stringify(valor));
+  });
+
+  $('#administrador').click(function() {
+    var valor = $(this).val();
+    console.log(valor);
+    socket.emit('SetCartao', JSON.stringify(valor));
+  });
   return false;
 }
 

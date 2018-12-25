@@ -17,3 +17,7 @@ div#messages {
     right: 0;
     opacity: 0.7;
 }
+.circle-badge {
+    border-radius: 13px;
+    padding: 6px 10px;
+}
