@@ -8,19 +8,21 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- <link rel="stylesheet" href="../../assets/css/hre.css"> -->
 </head>
 <body>
+  <div id="messages" class=" alert alert-secondary" role="alert" style="display:none;"> </div>
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
+      <span>Ciclo Start</span>
       <label class="switch">
         <input id="start" type="checkbox"  >
         <span class="slider round"></span>
       </label>
       <br>
-      <button id="operador" type="button" class="btn btn-default" value="02150E0">02150E0</button>
-
-        <button id="supervisor" type="button" class="btn btn-default" value="019643A">019643A</button>
-        <button id="administrador" type="button" class="btn btn-default" value="01A013D">01A013D</button>
+      <button id="operador" type="button" class="btn btn-default"      value="02150E0">02150E0 | Operador&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </button>
+      <button id="supervisor" type="button" class="btn btn-default"    value="019643A">019643A | Supervisor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </button>
+      <button id="administrador" type="button" class="btn btn-default" value="01A013D">01A013D | Administrador</button>
 
     </div>
   </div>
@@ -88,32 +90,56 @@
   }
 </style>
 <script>
-var socket = io.connect('http://127.0.0.1:1337');
-socket.on('connect', function () {
+'use strict';
+
+var  reconnection = true,
+    reconnectionDelay = 5000,
+    reconnectionTry = 0;
+
+function initClient() {
+  connectClient();
+}
+
+function connectClient() {
+  var socket = "";
+  socket = io.connect('http://127.0.0.1:1337');
+  
+    socket.on('connect', function (e) {
+      routesClient(socket);
+    });
+    
+    socket.on("connect_error", function(e){
+        reconnectionTry++;
+        console.log("Reconnection attempt #"+reconnectionTry);
+    });
+  
+  return false;
+}
+
+function routesClient(socket){
   console.log('connected');
-  $('#operador').click(function() {
-      var valor = $('#operador').val();
-      socket.emit('SetCartao', JSON.stringify(valor));
+  
+  socket.on('test', function (e) {
+    console.log(e);
+    socket.emit("test", "pong");
   });
- 
-  $('#supervisor').click(function() {
-    var valor = $(this).val();
-    socket.emit('SetCartao', JSON.stringify(valor));
-  });
-  $('.slided').click(function() {
-    console.log('slided');
-  });
-  $('#start').click(function() {
-    console.log('start');
-    socket.emit('SetOcorrencia', JSON.stringify('{start:  '+ $(this).prop('checked') +'}'));
-  });
-  $('#administrador').click(function() {
-    valor = $(this).val();
-    socket.emit('SetCartao', JSON.stringify(valor));
-  });
+  
   socket.on('disconnect', function () {
-    console.log('disconnect');
+    socket.disconnect();
+    console.log("client disconnected");
+    if(reconnection === true) {
+            setTimeout(function () {
+                    console.log("client trying reconnect");
+                    connectClient();
+                }, reconnectionDelay);
+        }
   });
-});
+  
+  return false;
+}
+
+ window.onload = function () {
+   initClient();
+ };
 </script>
 </html>

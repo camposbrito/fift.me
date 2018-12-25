@@ -5,13 +5,13 @@
                     <button class="btn btn-primary btn-lg dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">MENU
                     <span class="caret"></span></button>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                        <li role="presentation"><a role="menuitem" class="menuitem" name="menuitem" id="menuitem" tabindex="-1" href="./">INICIO</a></li>    
-                        <li role="presentation"><a role="menuitem" class="menuitem" name="menuitem" id="menuitem" tabindex="-1" href="./parametros/">PARÂMETROS</a></li>    
+                        <li role="presentation"><a role="menuitem" class="menuitem" name="menuitem" id="inicio" tabindex="-1" href="./">INICIO</a></li>    
+                        <li role="presentation"><a role="menuitem" class="menuitem" name="menuitem" id="parametros" tabindex="-1" href="./parametros/">PARÂMETROS</a></li>    
                     </ul>
                 </div>
             </div>
             <div class="col"><span></span><button id="Ocorrencia" class="btn btn-primary btn-lg" type="button" style="margin-top:7px;">OCORRÊNCIA</button></div>
-            <div class="col-md-4 col-lg-3 col-xl-4"><span></span></div>
+            <div class="col"><span></span></div>
             <div class="col d-flex flex-column align-items-end"><span></span><button class="btn btn-primary btn-lg d-flex align-content-center" type="button" style="margin-top:7px;">AJUDA</button></div>
             <div class="col d-flex flex-column align-items-end"><span></span><button id="finalizaturno" class="btn btn-primary btn-lg d-flex align-content-center" type="button" style="margin-top:7px;">FINALIZAR O TURNO</button></div>
         </div>
@@ -19,19 +19,19 @@
     <div class="container" style="position:relative;top:-113px;/*background:red;*/">
         <div class="row">
                  
-            <div class="col-xs-4 col-sm-4  col-md-4 col-lg-4 col-xl-4 offset-lg-0 text-center"  >
+            <div class="col  col-xs-4 col-sm-4  col-md-4 col-lg-4 col-xl-4 offset-lg-0 text-center"  >
                 <div>
                     <span>Operador</span>
                     <div class="card"><span>{{turno.Operador.Descricao}}<br></span></div>
                 </div>
             </div>
-            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 text-center" >
+            <div class="col col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 text-center" >
                 <div>
                     <!-- <span>Produto</span>
                     <div class="card"><span>{{session.Produto}}<br></span></div> -->
                 </div>
             </div>
-            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 text-center" >
+            <div class="col col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 text-center" >
                 <div>
                     <span>Turno</span>
                     <div class="card"><span>{{turno.JornadaTrabalho.Sigla}}<br></span></div>

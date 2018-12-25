@@ -185,15 +185,15 @@ myApp.controller("ResultadoController", [
       .get("turno/getResultadoAtual")
       .success(function(data) {
         $scope.turno = data;
-        $scope.turno.Previsto = $scope.turno.QuantidadePrevistaTurno;
-        $scope.turno.Refugos =
-          parseInt($scope.turno.RefugosProducao) +
-          parseInt($scope.turno.RefugosFundicao);
-        $scope.turno.Producao =
-          parseInt($scope.turno.PecasProducao) - parseInt($scope.turno.Refugos);
-        $scope.turno.Diferenca =
-          parseInt($scope.turno.QuantidadePrevistaTurno) -
-          parseInt($scope.turno.Producao);
+        $scope.turno.Previsto   = $scope.turno.QuantidadePrevistaTurno;
+        $scope.turno.Refugos    = parseInt($scope.turno.RefugosProducao) 
+                                + parseInt($scope.turno.RefugosFundicao);
+
+        $scope.turno.Producao   = parseInt($scope.turno.PecasProducao) 
+                                - parseInt($scope.turno.Refugos);
+                                
+        $scope.turno.Diferenca  = parseInt($scope.turno.QuantidadePrevistaTurno) 
+                                - parseInt($scope.turno.Producao);
         //Qualidade = quantidade de produtos produzidos – (quantidade retrabalhada + quantidade perdida) / quantidade de produtos produzidos
         //previsto-(previsto-realizado+refugo)/previsto*100
         var OEE =
@@ -257,11 +257,12 @@ myApp.controller("TurnoController", [
     };
     $scope.EmAndamento = function() {
       console.log('in progress');
+      $log.log('in progress');
       $http
         .get("turno/EmAndamento")
         .success(function(data) {
           $scope.Current = data;
-          console.debug($scope.Current);
+          // console.debug($scope.Current);
           if (data.progress == true) 
           {            
             $location.path('/dashboard');            

@@ -1,0 +1,77 @@
+function esconder() {
+    $("#messages").hide();
+  }
+function resetMensagem() {
+  $("#messages").show();
+
+  $("#messages").empty();
+}
+function getDataTime() {
+  var d = new Date();
+  return d;
+}
+
+var reconnection = true,
+  reconnectionDelay = 0,
+  reconnectionTry = 0;
+
+var socket = io.connect('http://127.0.0.1:1337');
+socket.on('connect', function () {
+  console.log('connected');
+  
+  socket.on("test_pi", function(e) {
+    console.log(e);
+    socket.emit("test_pi", "pong");
+  });
+
+  resetMensagem();
+  $("#messages").append(
+      '<font color="green"><b>' + getDataTime() + "  - Connected - "+ socket.id +"</b></font><br>"
+    );
+  $('#operador').click(function() {
+      var valor = $('#operador').val();
+      socket.emit('SetCartao', JSON.stringify(valor));
+  });
+ 
+  $('#supervisor').click(function() {
+    var valor = $(this).val();
+    socket.emit('SetCartao', JSON.stringify(valor));
+  });
+
+  $('.slided').click(function() {
+    console.log('slided');
+  });
+
+  $('#start').click(function() {
+    console.log('start');
+    socket.emit('SetOcorrencia', JSON.stringify('{start:  '+ $(this).prop('checked') +'}'));
+  });
+
+  $('#administrador').click(function() {
+    valor = $(this).val();
+    socket.emit('SetCartao', JSON.stringify(valor));
+  });
+
+  // $(window).on("beforeunload", function() { 
+  //   socket.disconnect(true);
+  // });
+
+  socket.on("connect_error", function(e) {
+    reconnectionTry++;
+    resetMensagem();
+    $("#messages").append(
+      '<font color="orange"><b>' + getDataTime() + "Reconnection attempt #" + reconnectionTry + " "+ socket.id +"</b></font><br>"
+    );
+    console.log();
+  });
+
+  socket.on('disconnect', function () {
+    resetMensagem();
+    $("#messages").append(
+      '<font color="red"><b>' +
+        getDataTime() +
+        "  - disconnected - "+ socket.id +"</b></font><br>"
+    );
+  });
+
+});
