@@ -5,20 +5,42 @@ var reconnection = true,
     reconnectionTry = 0;
 
 function initClient() {
+  resetMensagem("client trying connect", 'silver');
   connectClient();
+}
+
+function resetMensagem(msg, color) {
+  $("#messages").show();
+
+  $("#messages").empty();
+
+  $("#messages").append('<font color="'+color+'"><b>' + getDataTime() + " - " + msg + "</b></font><br>" );
+}
+
+resetMensagem("Loading", 'silver');
+
+function getDataTime() {
+  var d = new Date();
+  return d;
 }
 
 function connectClient() {
   var socket = "";
-  socket = io.connect('http://127.0.0.1:1337');
-  
+  socket = io.connect('http://127.0.0.1:1337');    
     socket.on('connect', function (e) {
+      resetMensagem("Connected - "+ socket.id, 'green');
       routesClient(socket);
     });
     
     socket.on("connect_error", function(e){
         reconnectionTry++;
-        console.log("Reconnection attempt #"+reconnectionTry);
+        if(reconnection === true) {
+          setTimeout(function () {
+            resetMensagem("client trying reconnect", 'silver');
+                  connectClient();
+              }, reconnectionDelay);
+          }
+        resetMensagem("Reconnection attempt #" +reconnectionTry +" " +id, 'orange' );        
     });
   
   return false;
@@ -105,9 +127,10 @@ function routesClient(socket){
   socket.on('disconnect', function () {
     socket.disconnect();
     console.log("client disconnected");
+    resetMensagem("disconnected - " +id, 'red' );
     if(reconnection === true) {
             setTimeout(function () {
-                    console.log("client trying reconnect");
+              resetMensagem("client trying reconnect", 'silver');
                     connectClient();
                 }, reconnectionDelay);
         }
@@ -116,6 +139,7 @@ function routesClient(socket){
   return false;
 }
 
- window.onload = function () {
-   initClient();
- };
+//  window.onload = function () {
+  resetMensagem("Inicializando", 'silver'); 
+  initClient();
+//  };
