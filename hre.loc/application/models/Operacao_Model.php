@@ -7,7 +7,12 @@ class Operacao_Model extends CI_Model {
     $this->db->from('Operacao');
     $this->db->where('id', $id);
     return $this->db->get()->result();
-    
+  }
+
+  public function getAll() { 
+    $this->db->select('*');
+    $this->db->from('Operacao');
+    return $this->db->get()->result();    
   }
 
   // public function getOperador() {

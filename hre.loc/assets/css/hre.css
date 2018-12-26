@@ -1,6 +1,14 @@
 #DashboardController h5.text-right {
     padding-top: 55px;
 }
+a.menuitem {
+    background: none !important;
+    color: #111 !important;
+}
+ul.dropdown-menu li{
+    float: none;  
+    width: 100%;
+}
 div#messages {
     margin: 10px;
     position: absolute;
@@ -8,4 +16,8 @@ div#messages {
     top: 60px;
     right: 0;
     opacity: 0.7;
+}
+.circle-badge {
+    border-radius: 13px;
+    padding: 6px 10px;
 }

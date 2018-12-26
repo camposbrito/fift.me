@@ -16,6 +16,10 @@ myApp.config(function($routeProvider) {
       templateUrl: "templates/dashboard.html",
       controller: "DashboardController"
     })
+    .when("/em_andamento", {
+      templateUrl: "templates/dashboard.html",
+      controller: "DashboardController"
+    })
     .when("/finaliza", {
       templateUrl: "templates/terminoturno.html",
       controller: "TerminoController"
@@ -46,6 +50,24 @@ myApp.controller("DashboardController", [
           $log.error(status);
         });
     };
+    $scope.EmAndamento = function() {
+      console.log('in progress');
+      $log.log('in progress');
+      $http
+        .get("turno/EmAndamento")
+        .success(function(data) {
+          $scope.Current = data;
+          // console.debug($scope.Current);
+          if (data.progress == false) 
+          {            
+            $location.path('/');            
+          }
+           
+        })
+        .error(function(data, status) {
+          $log.error(status);
+        });
+    };
   }
 ]);
 
@@ -58,6 +80,32 @@ myApp.controller("ResultadoController", [
 ]);
 
 /* CONTROLLERS OFICIAIS */
+myApp.controller("JornadaController", [
+  "$scope",
+  "$location",
+  "$log",
+  "$http",
+  function($scope, $location, $log, $http) {
+    $http
+      .get("JornadaTrabalho/getAll")
+      .success(function(data) {
+        $scope.JornadaTrabalho = data;
+      })
+      .error(function(data, status) {
+        $log.error(status);
+      });
+    $http
+      .get("turno/getAtual")
+      .success(function(data) {
+        $scope.turno = data;
+      })
+      .error(function(data, status) {
+        $log.error(status);
+      });
+ 
+  }
+]);
+
 myApp.controller("TipoOcorrenciaController", [
   "$scope",
   "$location",
@@ -136,6 +184,9 @@ myApp.controller("OcorrenciaController", [
       sessionStorage.itemPerPage = itemNum;
       $scope.numPerPage = getPerPage();
     };
+    $scope.voltar_ocorrencia = function() {
+      $location.path('/dashboard');            
+    }
     $scope.pageChanged = function(pageno) {
       // Equivalent to console.log
       $scope.currentPage = pageno;
@@ -155,15 +206,15 @@ myApp.controller("ResultadoController", [
       .get("turno/getResultadoAtual")
       .success(function(data) {
         $scope.turno = data;
-        $scope.turno.Previsto = $scope.turno.QuantidadePrevistaTurno;
-        $scope.turno.Refugos =
-          parseInt($scope.turno.RefugosProducao) +
-          parseInt($scope.turno.RefugosFundicao);
-        $scope.turno.Producao =
-          parseInt($scope.turno.PecasProducao) - parseInt($scope.turno.Refugos);
-        $scope.turno.Diferenca =
-          parseInt($scope.turno.QuantidadePrevistaTurno) -
-          parseInt($scope.turno.Producao);
+        $scope.turno.Previsto   = $scope.turno.QuantidadePrevistaTurno;
+        $scope.turno.Refugos    = parseInt($scope.turno.RefugosProducao) 
+                                + parseInt($scope.turno.RefugosFundicao);
+
+        $scope.turno.Producao   = parseInt($scope.turno.PecasProducao) 
+                                - parseInt($scope.turno.Refugos);
+                                
+        $scope.turno.Diferenca  = parseInt($scope.turno.QuantidadePrevistaTurno) 
+                                - parseInt($scope.turno.Producao);
         //Qualidade = quantidade de produtos produzidos – (quantidade retrabalhada + quantidade perdida) / quantidade de produtos produzidos
         //previsto-(previsto-realizado+refugo)/previsto*100
         var OEE =
@@ -182,20 +233,11 @@ myApp.controller("ResultadoController", [
       })
       .error(function(data, status) {
         $log.error(status);
-      });
-    // $scope.setQuantidade = function(data) {
-    //   var obj = JSON.parse(data);
-    //   if (obj == "{start:  false}")
-    //     $scope.turno.QtdPecas = parseInt($scope.turno.QtdPecas) + 1;
-    // };
-    // $scope.inProgress = function() {
-    //   $http
-    //     .get("turno/inProgress")
-    //     .success(function(data) {})
-    //     .error(function(data, status) {
-    //       $log.error(status);
-    //     });
-    // };
+      }); 
+      $scope.FecharTurno = function() {  
+        $.post("./turno/encerrar_turno");
+        $location.path('/');                  
+    }   
   }
 ]);
 
@@ -213,25 +255,20 @@ myApp.controller("TerminoController", [
       .error(function(data, status) {
         $log.error(status);
       });
-    // $scope.setQuantidade = function(data) {
-    //   var obj = JSON.parse(data);
-    //   if (obj == "{start:  false}")
-    //     $scope.turno.QtdPecas = parseInt($scope.turno.QtdPecas) + 1;
-    // };
-    // $scope.inProgress = function() {
-    //   $http
-    //     .get("turno/inProgress")
-    //     .success(function(data) {
-    //       // $scope.Current = data;
-    //       // console.debug($scope.Current);
-    //       // if (data.progress == true)
-    //       // window.location.href = "./#/dashboard";
-    //     })
-    //     .error(function(data, status) {
-    //       $log.error(status);
-    //     });
-    // };
+      $scope.ConcluirTurno = function() {
+        var Pecas_Producao  = $("#Pecas_Producao").val();
+        var Refugo_Producao = $("#Refugo_Producao").val();
+        var Refugo_Fundicao = $("#Refugo_Fundicao").val();
+        
+        $.post("./turno/concluir_turno", {
+          Pecas_Producao,
+          Refugo_Producao,
+          Refugo_Fundicao
+        });   
+        $location.path('/resultado');                  
+      };
   }
+  
 ]);
 
 myApp.controller("TurnoController", [
@@ -239,33 +276,47 @@ myApp.controller("TurnoController", [
   "$location",
   "$log",
   "$http",
-  function($scope, $location, $log, $http) {
-    console.debug("TurnoController");
-    $http
-      .get("turno/getAtual")
-      .success(function(data) {
-        $scope.turno = data;
-      })
-      .error(function(data, status) {
-        $log.error(status);
-      });
+  function($scope, $location, $log, $http) {    
     $scope.setQuantidade = function(data) {
       var obj = JSON.parse(data);
       if (obj == "{start:  false}")
         $scope.turno.QtdPecas = parseInt($scope.turno.QtdPecas) + parseInt(sessionStorage.PecasPorCiclo);
     };
-    $scope.inProgress = function() {
+    $scope.getAtual = function() {
+      console.debug("get Atual");
       $http
-        .get("turno/inProgress")
+      .get("turno/getAtual")
         .success(function(data) {
-          $scope.Current = data;
-          console.debug($scope.Current);
-          if (data.progress == true) window.location.href = "./#/dashboard";
+          $scope.turno = data;          
         })
         .error(function(data, status) {
           $log.error(status);
         });
     };
+    $scope.EmAndamento = function() {
+      console.log('in progress');
+      $log.log('in progress');
+      $http
+        .get("turno/EmAndamento")
+        .success(function(data) {
+          $scope.Current = data;
+          // console.debug($scope.Current);
+          if (data.progress == true) 
+          {            
+            $location.path('/dashboard');            
+          }
+           
+        })
+        .error(function(data, status) {
+          $log.error(status);
+        });
+    };
+    $scope.GetOcorrencias = function() {      
+        $location.path('/ocorrencia');                  
+    }
+    $scope.FinalizarTurno = function() {      
+      $location.path('/finaliza');                     
+    }
   }
 ]);
 

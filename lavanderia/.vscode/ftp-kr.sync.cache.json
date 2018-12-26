@@ -178,8 +178,8 @@
             },
             "Maquinas.php": {
               "type": "-",
-              "size": 984,
-              "lmtime": 0,
+              "size": 1014,
+              "lmtime": 1545574789287,
               "modified": false
             },
             "Metodos.php": {
@@ -373,8 +373,8 @@
             },
             "Usuarios_model.php": {
               "type": "-",
-              "size": 3102,
-              "lmtime": 0,
+              "size": 3179,
+              "lmtime": 1545574799351,
               "modified": false
             },
             "Utilizacao_model.php": {
@@ -500,7 +500,7 @@
             "maquinas.php": {
               "type": "-",
               "size": 5740,
-              "lmtime": 1537125615474,
+              "lmtime": 1545570701618,
               "modified": false
             },
             "metodos.php": {

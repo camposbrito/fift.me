@@ -5,7 +5,7 @@ class ciclostart extends CI_Controller {
     public function __construct() {
 		parent::__construct (); 
 		$this->load->model ( "CicloStart_Model" );		
-		$this->output->enable_profiler(true); 	
+		// $this->output->enable_profiler(true); 	
 	}
 	
 	public function save()

@@ -31,7 +31,7 @@ class Turno_Model extends CI_Model {
     return $this->db->get()->result();
   }
 
-  public function inProgress() {    
+  public function EmAndamento() {    
     $this->db->select('*');
     $this->db->from('Turno');
     $this->db->where('dataFin is null'); 
@@ -53,13 +53,14 @@ class Turno_Model extends CI_Model {
   
   public function save() { 
     $TAG = $this->input->post('TAG');
+    $Jornada = $this->input->post('Jornada');
     $resFuncionario = $this->Funcionario_Model->getFuncionarioByTag($TAG);
     date_default_timezone_set("America/Sao_Paulo");
     $data['DataIni'] = date('Y-m-d H:i:s', now());
     $data['ParamGeral_id'] = 1;
     $data['Estado_id'] = 1;
     $data['Operador_id'] = $resFuncionario[0]->id;
-    $data['JornadaTrabalho_id'] = 1;
+    $data['JornadaTrabalho_id'] = $Jornada;
     $data['PecasProducao'] = 0;
     $data['RefugosProducao'] = 0;
     $data['RefugosFundicao'] = 0;    

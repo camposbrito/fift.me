@@ -8,7 +8,23 @@ class Parametros_Model extends CI_Model {
     return $this->db->get()->result();
     
   }
-
+  
+  public function save() {
+     
+    $id                               = $this->input->post('id');
+    $data['Equipamento_id']           = $this->input->post('Equipamento_id');
+    $data['Produto_id']               = $this->input->post('Produto_id');
+    $data['Operacao_id']              = $this->input->post('Operacao_id');
+    $data['PecasPorCiclo']            = $this->input->post('PecasPorCiclo');
+    $data['TempoMaximoCiclo']         = $this->input->post('TempoMaximoCiclo');
+    $data['QuantidadePrevistaTurno']  = $this->input->post('QuantidadePrevistaTurno');
+    
+    // return = 
+    $this->db-> where(array('id' => $id))
+             -> update('parametros', $data);
+        
+   
+}
   // public function getOperador() {
   //   $this->db->select("'Rodrigo' as Nome, 'A' as Turno");
   //   $this->db->from('sessao');

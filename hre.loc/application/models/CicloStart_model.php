@@ -35,6 +35,7 @@ class CicloStart_model extends CI_Model
     {
       $data['DataIni'] = date("Y-m-d H:i:s");
       $data['Turno_id'] = $Turno;
+      $data[socket_id] = $this->input->post('socket_id');
       $this->db->insert('ciclostart', $data);
     }
     else
