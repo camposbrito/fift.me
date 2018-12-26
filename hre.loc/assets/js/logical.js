@@ -93,11 +93,11 @@ function routesClient(socket){
   //+---------------+
   //|-- FINALIZAR --|
   //+---------------+ 
-  $("#finalizaturno").click(function() {
-    // console.debug("#finalizaturno");
-    // socket.disconnect(true);
-    window.location.href = "./#/finaliza";
-  });
+  // $("#finalizaturno").click(function() {
+  //   // console.debug("#finalizaturno");
+  //   // socket.disconnect(true);
+  //   window.location.href = "./#/finaliza";
+  // });
   
   //+---------------+
   //|--- DISCONN ---|
