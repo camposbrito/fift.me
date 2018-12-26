@@ -103,6 +103,7 @@ function initClient() {
 }
 
 function resetMensagem(msg, color) {
+  console.log(getDataTime() + ' - '+ msg);
   $("#messages").show();
 
   $("#messages").empty();
@@ -124,14 +125,8 @@ function connectClient() {
     });
     
     socket.on("connect_error", function(e){
-        reconnectionTry++;
-        resetMensagem("Reconnection attempt #" +reconnectionTry +" " +id, 'orange' );        
-        if(reconnection === true) {
-            setTimeout(function () {
-              resetMensagem("client trying reconnect", 'silver');
-                    connectClient();
-                }, reconnectionDelay);
-        }
+      reconnectionTry++;
+      resetMensagem("client trying reconnect#" +reconnectionTry, 'silver');
     });
   
   return false;
@@ -147,7 +142,8 @@ function routesClient(socket){
   
   socket.on('disconnect', function () {
     socket.disconnect();
-    resetMensagem("disconnected - " +id, 'red' );
+    reconnectionTry = 0;
+    resetMensagem("disconnected" , 'red' );
     if(reconnection === true) {
             setTimeout(function () {
                     resetMensagem("client trying reconnect", 'silver');
@@ -181,9 +177,7 @@ function routesClient(socket){
   return false;
 }
 
-  // window.onload = function () {
-    resetMensagem("Inicializando", 'silver');
-    initClient();
-//  };
+resetMensagem("Inicializando", 'silver');
+initClient();
 </script>
 </html>

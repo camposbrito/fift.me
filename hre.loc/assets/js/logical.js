@@ -10,6 +10,8 @@ function initClient() {
 }
 
 function resetMensagem(msg, color) {
+  console.log(getDataTime() + ' - '+ msg);
+  
   $("#messages").show();
 
   $("#messages").empty();
@@ -34,13 +36,7 @@ function connectClient() {
     
     socket.on("connect_error", function(e){
         reconnectionTry++;
-        if(reconnection === true) {
-          setTimeout(function () {
-            resetMensagem("client trying reconnect", 'silver');
-                  connectClient();
-              }, reconnectionDelay);
-          }
-        resetMensagem("Reconnection attempt #" +reconnectionTry +" " +id, 'orange' );        
+        resetMensagem("client trying reconnect #" + reconnectionTry, 'silver');               
     });
   
   return false;
@@ -81,27 +77,7 @@ function routesClient(socket){
     angular.element("#TurnoController").scope().setQuantidade(data);
     angular.element("#TurnoController").scope().$apply(); 
   });
-  //+---------------+
-  //| INICIAR TURNO |
-  //+---------------+   
-  // $("#IniciarTurno").click(function() {
-  //   resetMensagem();
-  //   console.debug("#IniciarTurno");
-  //   var sMessage = "Iniciar Turno";
-  //   socket.emit("GetCartao", { message: sMessage });
-  // });
-  //+---------------+
-  //| INICIAR TURNO |
-  //+---------------+ 
-  // $("#inicio").click(function() {
-  //   console.debug("inicio");
-  //   socket.disconnect(true);
-  // });
 
-  // $("#parametros").click(function() {
-  //   console.debug("parametros");
-  //   socket.disconnect(true);
-  // });
   //+---------------+
   //|SAVAR PARAMETRO|
   //+---------------+ 
@@ -112,22 +88,15 @@ function routesClient(socket){
     // socket.disconnect(true);
     window.location.href = "../#/em_andamento/";
   });
-  //+---------------+
-  //|-- FINALIZAR --|
-  //+---------------+ 
-  // $("#finalizaturno").click(function() {
-  //   // console.debug("#finalizaturno");
-  //   // socket.disconnect(true);
-  //   window.location.href = "./#/finaliza";
-  // });
   
   //+---------------+
   //|--- DISCONN ---|
   //+---------------+ 
   socket.on('disconnect', function () {
     socket.disconnect();
+    reconnectionTry = 0;
     console.log("client disconnected");
-    resetMensagem("disconnected - " +id, 'red' );
+    resetMensagem("disconnected" , 'red' );
     if(reconnection === true) {
             setTimeout(function () {
               resetMensagem("client trying reconnect", 'silver');
@@ -139,7 +108,5 @@ function routesClient(socket){
   return false;
 }
 
-//  window.onload = function () {
-  resetMensagem("Inicializando", 'silver'); 
-  initClient();
-//  };
+resetMensagem("Inicializando", 'silver'); 
+initClient();
