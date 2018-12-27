@@ -83,13 +83,25 @@
             </div>
             <div class="col-sm-4 col-5">
                 <div class="form-group" style="">
-                    <label>Tempo Ciclo (segundos)</label>
+                    <label>Tempo Operação (segundos)</label>
+                    <input name="TempoMaximoCiclo" type="text" class="form-control" value="<?= $Parametros->TempoMaximoCiclo;?>">
+                </div>
+            </div>
+            <div class="col-sm-4 col-5">
+                <div class="form-group" style="">
+                    <label>Tempo Carga e Descarga (segundos)</label>
+                    <input name="TempoMaximoCiclo" type="text" class="form-control" value="<?= $Parametros->TempoMaximoCiclo;?>">
+                </div>
+            </div>
+            <div class="col-sm-4 col-5">
+                <div class="form-group" style="">
+                    <label>Margem de Tolerância (segundos)</label>
                     <input name="TempoMaximoCiclo" type="text" class="form-control" value="<?= $Parametros->TempoMaximoCiclo;?>">
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="form-group" style="">
-                    <label contenteditable="true" spellcheckker="false">Quantidade Prevista&nbsp;</label>
+                    <label contenteditable="true" spellcheckker="false">Quantidade Prevista (hora)&nbsp;</label>
                     <input name="QuantidadePrevistaTurno"  type="text" class="form-control" value="<?= $Parametros->QuantidadePrevistaTurno;?>">
                 </div>
             </div>

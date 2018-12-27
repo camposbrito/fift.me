@@ -6,7 +6,11 @@
 		<div class="col d-flex flex-column align-items-end">
 			<span></span>
 			<button ng-click="pageChanged(currentPage+1)"  ng-disabled="currentPage == lastPage"   class="btn btn-primary btn-lg d-flex align-content-center" type="button" style="margin-top:7px;">PRÓXIMA &gt;{{pagination.last}}</button>
-		</div>			
+		</div>	
+		<div class="col d-flex flex-column align-items-end">
+			<span></span>
+			<button ng-click="pageChanged(currentPage+1)"  ng-disabled="currentPage == lastPage"   class="btn btn-danger btn-lg d-flex align-content-center" type="button" style="margin-top:7px;">REGISTRAR NOVA &nbsp;{{pagination.last}}</button>
+		</div>		
 	</div>
 	<div style="clear: both;"></div>
 	<div style="clear: both;"></div>
