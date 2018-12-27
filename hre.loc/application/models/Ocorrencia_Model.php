@@ -4,7 +4,7 @@ class Ocorrencia_Model extends CI_Model {
   // função para fazer a paginação
   public function getAll() { 
     $pageno = $_GET['pageno']; 
- 
+    //1h 30min 20s
     $this->db->select('o.id');
     $this->db->select('o.TipoOcorrencia_id');
     $this->db->select('CONCAT(DATE_FORMAT(DataIni,\'%H:%i:%s -  %d/%m/%Y\'),\' -  \' , TIMEDIFF(DataFin, DataIni)) DataIni');

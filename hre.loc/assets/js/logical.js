@@ -5,20 +5,38 @@ var reconnection = true,
     reconnectionTry = 0;
 
 function initClient() {
+  resetMensagem("client trying connect", 'silver');
   connectClient();
+}
+
+function resetMensagem(msg, color) {
+  console.log(getDataTime() + ' - '+ msg);
+  
+  $("#messages").show();
+
+  $("#messages").empty();
+
+  $("#messages").append('<font color="'+color+'"><b>' + getDataTime() + " - " + msg + "</b></font><br>" );
+}
+
+resetMensagem("Loading", 'silver');
+
+function getDataTime() {
+  var d = new Date();
+  return d;
 }
 
 function connectClient() {
   var socket = "";
-  socket = io.connect('http://127.0.0.1:1337');
-  
+  socket = io.connect('http://127.0.0.1:1337');    
     socket.on('connect', function (e) {
+      resetMensagem("Connected - "+ socket.id, 'green');
       routesClient(socket);
     });
     
     socket.on("connect_error", function(e){
         reconnectionTry++;
-        console.log("Reconnection attempt #"+reconnectionTry);
+        resetMensagem("client trying reconnect #" + reconnectionTry, 'silver');               
     });
   
   return false;
@@ -59,27 +77,7 @@ function routesClient(socket){
     angular.element("#TurnoController").scope().setQuantidade(data);
     angular.element("#TurnoController").scope().$apply(); 
   });
-  //+---------------+
-  //| INICIAR TURNO |
-  //+---------------+   
-  // $("#IniciarTurno").click(function() {
-  //   resetMensagem();
-  //   console.debug("#IniciarTurno");
-  //   var sMessage = "Iniciar Turno";
-  //   socket.emit("GetCartao", { message: sMessage });
-  // });
-  //+---------------+
-  //| INICIAR TURNO |
-  //+---------------+ 
-  // $("#inicio").click(function() {
-  //   console.debug("inicio");
-  //   socket.disconnect(true);
-  // });
 
-  // $("#parametros").click(function() {
-  //   console.debug("parametros");
-  //   socket.disconnect(true);
-  // });
   //+---------------+
   //|SAVAR PARAMETRO|
   //+---------------+ 
@@ -90,24 +88,18 @@ function routesClient(socket){
     // socket.disconnect(true);
     window.location.href = "../#/em_andamento/";
   });
-  //+---------------+
-  //|-- FINALIZAR --|
-  //+---------------+ 
-  // $("#finalizaturno").click(function() {
-  //   // console.debug("#finalizaturno");
-  //   // socket.disconnect(true);
-  //   window.location.href = "./#/finaliza";
-  // });
   
   //+---------------+
   //|--- DISCONN ---|
   //+---------------+ 
   socket.on('disconnect', function () {
     socket.disconnect();
+    reconnectionTry = 0;
     console.log("client disconnected");
+    resetMensagem("disconnected" , 'red' );
     if(reconnection === true) {
             setTimeout(function () {
-                    console.log("client trying reconnect");
+              resetMensagem("client trying reconnect", 'silver');
                     connectClient();
                 }, reconnectionDelay);
         }
@@ -116,6 +108,5 @@ function routesClient(socket){
   return false;
 }
 
- window.onload = function () {
-   initClient();
- };
+resetMensagem("Inicializando", 'silver'); 
+initClient();
