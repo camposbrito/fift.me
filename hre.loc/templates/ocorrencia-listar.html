@@ -6,11 +6,7 @@
 		<div class="col d-flex flex-column align-items-end">
 			<span></span>
 			<button ng-click="pageChanged(currentPage+1)"  ng-disabled="currentPage == lastPage"   class="btn btn-primary btn-lg d-flex align-content-center" type="button" style="margin-top:7px;">PRÓXIMA &gt;{{pagination.last}}</button>
-		</div>	
-		<div class="col d-flex flex-column align-items-end">
-			<span></span>
-			<button ng-click="pageChanged(currentPage+1)"  ng-disabled="currentPage == lastPage"   class="btn btn-danger btn-lg d-flex align-content-center" type="button" style="margin-top:7px;">REGISTRAR NOVA &nbsp;{{pagination.last}}</button>
-		</div>		
+		</div>			
 	</div>
 	<div style="clear: both;"></div>
 	<div style="clear: both;"></div>
@@ -19,7 +15,7 @@
 		<ul  class="funkyradio radio-group btn-matrix" ng-repeat="tipo in ocorrencia.TipoOcorrencia" >             		
 			<li>				 
 				<div class="funkyradio-default">
-					<input ng-checked="tipo.id == tipo.TipoOcorrencia_id" [value]="tipo.id" type="radio" name="radio" id="radio{{tipo.id}}" />
+					<input ng-checked="tipo.id == tipo.TipoOcorrencia_id" value="{{tipo.id}}" type="radio" name="TipoOcorrencia" id="radio{{tipo.id}}"  />
 					<label for="radio{{tipo.id}}">{{tipo.id}} - {{tipo.Descricao}}</label>
 				</div>
 			</li>                                               
@@ -27,5 +23,5 @@
 		<div style="clear: both;"></div>
 	</div>
 </div>
-<footer ng-include="'./templates/footer-ocorrencia.html'"></footer>
+<footer ng-include="'./templates/footer.html'"></footer>
 <div ng-include="'./templates/partial.html'"></div>  

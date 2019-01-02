@@ -98,7 +98,7 @@ var  reconnection = true,
 resetMensagem("Loading", 'silver');
 
 function initClient() {
-  resetMensagem("client trying connect", 'silver');
+  resetMensagem("client trying connect..", 'silver');
   connectClient();
 }
 
@@ -146,7 +146,7 @@ function routesClient(socket){
     resetMensagem("disconnected" , 'red' );
     if(reconnection === true) {
             setTimeout(function () {
-                    resetMensagem("client trying reconnect", 'silver');
+                    resetMensagem("client trying reconnect..", 'silver');
                     connectClient();
                 }, reconnectionDelay);
         }

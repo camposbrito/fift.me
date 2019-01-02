@@ -4,6 +4,7 @@ class Ocorrencia_Model extends CI_Model {
   // função para fazer a paginação
   public function getAll() { 
     $pageno = $_GET['pageno']; 
+    $Turno = $_GET['Turno_Id']; 
     //1h 30min 20s
     $this->db->select('o.id');
     $this->db->select('o.TipoOcorrencia_id');
@@ -19,14 +20,37 @@ class Ocorrencia_Model extends CI_Model {
     else {
       $this->db->limit($pageno);
     }
+    $this->db->where(array( 'Turno_id' => $Turno));
     $this->db->from('ocorrencia o');
     
     return $this->db->get()->result()[0];
     
   }
 
+  public function save() {
+     
+    // $id                               = $this->input->post('id');
+    $data['Turno_id']                 = $this->input->post('turno');
+    $data['TipoOcorrencia_id']        = $this->input->post('TipoOcorrencia');
+    $data['DataIni']                  = date('Y-m-d H:i:s', now());
+    $data['Descricao']                = '';    
+    $this->db->insert('Ocorrencia', $data);
+        
+   
+  }
+
+  public function GetOcorrenciaAberto() {
+    $Turno = $_GET['Turno_Id']; 
+    $this->db->select("*");
+    $this->db->where(array( 'Turno_id' => $Turno, 'DataFin' => null));
+    $this->db->from('ocorrencia');
+    return $this->db->get()->result();
+  }
+
   public function Count() {
+    $Turno = $_GET['Turno_Id']; 
     $this->db->select("COUNT(1) AS Registros");
+    $this->db->where(array( 'Turno_id' => $Turno));
     $this->db->from('ocorrencia');
     return $this->db->get()->result();
   }

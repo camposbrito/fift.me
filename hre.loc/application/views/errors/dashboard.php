@@ -1,4 +1,4 @@
-<div class="mian" ng-controller="homeCtrl">
+<!-- <div class="mian" ng-controller="homeCtrl">
 	<div class="view-container">
 		<div id="container">
 			<div class="breadcrumbs">
@@ -6,8 +6,9 @@
 					<li><a href="#/dashboard" title=""><i class="ti-home"></i></a>/</li>
 					<li><a title="">Dashboard</a></li>
 				</ul>
-			</div><!-- breadcrumbs -->
-			<div class="content-sec">
+			</div>-->
+			<!-- breadcrumbs -->
+			<!-- <div class="content-sec">
 				<div class="title">
 					<h1>Dashboard</h1>
 					<span>Admin Moderator</span>
@@ -28,4 +29,4 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div> --> 

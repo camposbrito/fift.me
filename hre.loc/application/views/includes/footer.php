@@ -1,4 +1,4 @@
-<footer>
+<!-- <footer>
 <div class="container flex-row">
     <div class="row justify-content-center align-items-center align-self-center">
         <div class="col"><span></span>
@@ -18,4 +18,4 @@
     </div>
 </div>
 <script src='../assets/js/logical.js'></script>
-</footer>
+</footer> -->

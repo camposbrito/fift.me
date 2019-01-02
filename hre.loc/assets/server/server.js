@@ -10,15 +10,25 @@ var server     = require('http').createServer(),
     console.info('listening on port ' + port);
     io.sockets.on('connection', function (socket) {
         clients[socket.id] = socket;
-        console.info('Connected > CONN > ' + socket.id);
-        console.info('Connected > PING > ' + socket.id);
-        socket.emit("test", "ping");
+        console.info('CONN > ' + socket.id);
+        //+---------------+
+        //|---- CONECTADOS ----|
+        //+---------------+ 
+        // var clients_in_the_room = io.sockets.clients('room');  
+        for (var clientId in clients ) {
+            console.log('client: %s', clientId); //Seeing is believing 
+            // var client_socket = io.sockets.connected[clientId];//Do whatever you want with this
+            // console.log('client Socket: %s', client_socket.id); //Seeing is believing 
+        } 
         //+---------------+
         //|---- TESTE ----|
         //+---------------+ 
-        socket.on('test', function (e) {
-            console.info('Connected > ' + e +' > '+ socket.id);
-        });
+
+        // console.info('PING > ' + socket.id);
+        // socket.emit("test", "PING");
+        // socket.on('test', function (e) {
+        //     console.info(e +' > '+ socket.id);
+        // });
         //+---------------+
         //|- RECEBE RFID -|
         //+---------------+ 
@@ -41,7 +51,7 @@ var server     = require('http').createServer(),
         //+---------------+  
         socket.on("disconnect",function(data){            
             // console.info(data);
-            console.info('disconnected socket > ' + socket.id);            
+            console.info('DISCONN > ' + socket.id);            
             delete clients[socket.id];
         });
     });
