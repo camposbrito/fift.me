@@ -12,7 +12,7 @@ myApp.controller("OcorrenciaController", [
     $scope.backgroud_color = LocalStorageService.get('backgroud_color');
     $scope.font_color = LocalStorageService.get('font_color');
     $scope.Mensagem = LocalStorageService.get('Mensagem');
-
+    $scope.TipoOcorrenciaDescr = LocalStorageService.get('TipoOcorrenciaDescr');
     $scope.RoteamentoBloqueio = function(){
       $http
       .get("ocorrencia/GetOcorrenciaAberto?Turno_Id=" + $scope.Turno)
@@ -23,16 +23,19 @@ myApp.controller("OcorrenciaController", [
           TipoOcorrencia = ocorrencia.TipoOcorrencia;
         
           LocalStorageService.set('InPreparation', TipoOcorrencia.Preparacao == 'S');
+          LocalStorageService.set('InMaintenance', TipoOcorrencia.Manutencao == 'S');
+          LocalStorageService.set('InScheduledInterval', TipoOcorrencia.InterProgr == 'S');
+          LocalStorageService.set('TipoOcorrenciaDescr', TipoOcorrencia.Descricao);
           if ( TipoOcorrencia.Preparacao == 'S')
           {
-            $scope.MaquinaPreparacao();
+            $scope.MaquinaPreparacao()            
           }
-          LocalStorageService.set('InMaintenance', TipoOcorrencia.Manutencao == 'S');
+          else
           if (TipoOcorrencia.Manutencao == 'S') 
           {
             $scope.MaquinaManutencao();
           }  
-          LocalStorageService.set('InScheduledInterval', TipoOcorrencia.InterProgr == 'S');
+          else
           if (TipoOcorrencia.InterProgr == 'S')     
           {
             $scope.IntervaloProgramado();
