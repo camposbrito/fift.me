@@ -27,16 +27,18 @@ class Ocorrencia_Model extends CI_Model {
     
   }
 
-  public function save() {
-     
-    // $id                               = $this->input->post('id');
+  public function save() {    
     $data['Turno_id']                 = $this->input->post('turno');
     $data['TipoOcorrencia_id']        = $this->input->post('TipoOcorrencia');
     $data['DataIni']                  = date('Y-m-d H:i:s', now());
     $data['Descricao']                = '';    
     $this->db->insert('Ocorrencia', $data);
-        
-   
+  }  
+  public function FinalizarTurno($Turno) {
+    // $Turno                            = $this->input->post('Turno');    
+    $data['DataFin']                  = date('Y-m-d H:i:s', now());
+    $this->db->where(array( 'Turno_id' => $Turno, 'DataFin' => null));        
+    $this->db->update('Ocorrencia', $data);  
   }
 
   public function GetOcorrenciaAberto() {

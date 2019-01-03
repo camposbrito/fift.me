@@ -16,47 +16,73 @@ myApp.controller("OcorrenciaController", [
     $scope.RoteamentoBloqueio = function(){
       $http
       .get("ocorrencia/GetOcorrenciaAberto?Turno_Id=" + $scope.Turno)
-      .success(function(data) {
-        console.log(data);
-        Ocorrencia = data;
-        console.log(Ocorrencia);        
-        TipoOcorrencia = Ocorrencia.TipoOcorrencia;
-        console.log(TipoOcorrencia);
-        LocalStorageService.set('InPreparation', data.TipoOcorrencia.Preparacao == 'S');
-        if ( data.TipoOcorrencia.Preparacao == 'S')
-        {
-          $scope.MaquinaPreparacao();
-        }
-        LocalStorageService.set('InMaintenance', data.TipoOcorrencia.Manutancao == 'S');
-        if (data.TipoOcorrencia.Manutencao == 'S') 
-        {
-          $scope.MaquinaManutencao();
-        }  
-        LocalStorageService.set('InScheduledInterval', data.TipoOcorrencia.InterProgr == 'S');
-        if (data.TipoOcorrencia.InterProgr == 'S')     
-        {
-          $scope.IntervaloProgramado();
-        }
-        $location.path('/ocorrencia/bloqueio');
+      .success(function(data) {    
+                 
+        if (data.length > 0){
+          ocorrencia = data;  
+          TipoOcorrencia = ocorrencia.TipoOcorrencia;
+        
+          LocalStorageService.set('InPreparation', TipoOcorrencia.Preparacao == 'S');
+          if ( TipoOcorrencia.Preparacao == 'S')
+          {
+            $scope.MaquinaPreparacao();
+          }
+          LocalStorageService.set('InMaintenance', TipoOcorrencia.Manutencao == 'S');
+          if (TipoOcorrencia.Manutencao == 'S') 
+          {
+            $scope.MaquinaManutencao();
+          }  
+          LocalStorageService.set('InScheduledInterval', TipoOcorrencia.InterProgr == 'S');
+          if (TipoOcorrencia.InterProgr == 'S')     
+          {
+            $scope.IntervaloProgramado();
+          }
+        }            
       })
       .error(function(data, status) {
         $log.error(status);
       });  
     }
     $scope.IntervaloProgramado = function(){
+      console.log('IntervaloProgramado');
+
       LocalStorageService.set('backgroud_color', '#ffa500');
       LocalStorageService.set('font_color', '#ffffff');
-      LocalStorageService.set('Mensagem', 'INTERVALO PROGRAMADO');            
+      LocalStorageService.set('Mensagem', 'INTERVALO PROGRAMADO');  
+      $location.path('/ocorrencia/bloqueio');          
     };
     $scope.MaquinaPreparacao = function(){
+      console.log('MaquinaPreparacao');
+      
       LocalStorageService.set('backgroud_color', '#1e90ff');
       LocalStorageService.set('font_color', '#000000');
-      LocalStorageService.set('Mensagem', 'Máquina em Preparação');            
+      LocalStorageService.set('Mensagem', 'Máquina em Preparação');    
+      $location.path('/ocorrencia/bloqueio');        
     };
     $scope.MaquinaManutencao = function(){
+      console.log('MaquinaManutencao');
+      
       LocalStorageService.set('backgroud_color', '#ff0000');
       LocalStorageService.set('font_color', '#000000');
-      LocalStorageService.set('Mensagem', 'Máquina em Manutenção');         
+      LocalStorageService.set('Mensagem', 'Máquina em Manutenção');   
+      $location.path('/ocorrencia/bloqueio');      
+    };
+    $scope.LiberarMaquina = function(){
+      $http({
+        url: 'ocorrencia/FinalizarTurno',
+        method: "POST",
+        headers: {'Content-Type': 'application/json'},        
+        data: JSON.stringify({ 'Turno' : $scope.Turno })
+      })
+      .then(function(response) {
+        LocalStorageService.set('InScheduledInterval', false);
+        LocalStorageService.set('InMaintenance', false);
+        LocalStorageService.set('InPreparation', false);
+        $location.path('/dashboard/index');       
+      }, 
+      function(response) { // optional
+        $log.error(response);
+      })
     };
     $http
       .get("ocorrencia/Count?Turno_Id=" + $scope.Turno)

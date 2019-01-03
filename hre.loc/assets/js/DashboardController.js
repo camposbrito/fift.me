@@ -17,16 +17,16 @@ myApp.controller("DashboardController", [
     // //console.log('FIM:DashboardController');
     $scope.currentPath = $location.path();
          
-    $scope.InProgress          = LocalStorageService.get("InProgress")          ? true: false;   
+    $scope.InProgress          = $.parseJSON(LocalStorageService.get("InProgress"))          ? true: false;   
     if (($scope.InProgress == false))
     {                  
       $location.path('/');   
       // alert('InProgress');         
     }
     
-    $scope.InPreparation       = LocalStorageService.get("InPreparation")       ? true: false;
-    $scope.InMaintenance       = LocalStorageService.get("InMaintenance")       ? true: false;
-    $scope.InScheduledInterval = LocalStorageService.get("InScheduledInterval") ? true: false;    
+    $scope.InPreparation       = $.parseJSON(LocalStorageService.get("InPreparation"))       ? true: false;
+    $scope.InMaintenance       = $.parseJSON(LocalStorageService.get("InMaintenance"))       ? true: false;
+    $scope.InScheduledInterval = $.parseJSON(LocalStorageService.get("InScheduledInterval")) ? true: false;    
     if ($scope.InPreparation == true ||      
       $scope.InMaintenance  == true ||     
       $scope.InScheduledInterval  == true)

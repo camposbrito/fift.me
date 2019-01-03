@@ -18,6 +18,14 @@ class ocorrencia extends CI_Controller {
 		echo $res;
 		// redirect(base_url()); 
 	} 
+	public function FinalizarTurno() { 
+		$this->output->enable_profiler(true); 	
+		$postdata = file_get_contents("php://input");
+		$request = json_decode($postdata);
+		$res = $this->Ocorrencia_Model->FinalizarTurno($request->Turno);
+		echo $res;
+		// redirect(base_url()); 
+	} 
 	
 	public function getAll() { 
 		$res 					= $this->Ocorrencia_Model->getAll();
@@ -26,9 +34,14 @@ class ocorrencia extends CI_Controller {
 	} 	
 
 	public function GetOcorrenciaAberto() { 
-		$res 					= $this->Ocorrencia_Model->GetOcorrenciaAberto()[0];
- 
-		$res->TipoOcorrencia	= $this->tipo_ocorrencia_Model->get($res->TipoOcorrencia_id)[0];	
+		$res 					= $this->Ocorrencia_Model->GetOcorrenciaAberto();
+		
+		if (json_encode($res) != '[]' ){
+			$res = $res[0];			
+			$res->TipoOcorrencia	= $this->tipo_ocorrencia_Model->get($res->TipoOcorrencia_id)[0];	
+			$res->length = 1;
+		}
+		
 		echo json_encode($res);
 	} 
 	

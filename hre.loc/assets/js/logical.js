@@ -98,7 +98,7 @@ function routesClient(socket){
   $("#ocorrencia-salvar").click(function() {
     var Ocorrencia = $("#ocorrencia-form").serialize();
     //console.debug("#salvar-parametros");
-    // $.post("./ocorrencia/salvar", Ocorrencia);
+    $.post("./ocorrencia/salvar", Ocorrencia);
     if(angular.element("#ocorrencia-form").length > 0 )
     {
       // angular.element("#ocorrencia-form").scope().IntervaloProgramado();
