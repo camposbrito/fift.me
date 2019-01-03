@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2012/05/07 20:10:27.000.272,C:\Users\Rodrigo\Documents\RAD Studio\Projects\Project1.dproj=D:\Toshiba\Banco\Gerenciador de CCU\CCU.dproj</Transaction>
+    <Transaction>2012/05/07 20:10:50.000.245,=D:\Toshiba\Banco\Gerenciador de CCU\uFrmCCU.pas</Transaction>
+    <Transaction>2012/05/07 20:12:00.000.801,=D:\Toshiba\Banco\Gerenciador de CCU\Unit1.pas</Transaction>
+    <Transaction>2012/07/27 15:06:49.000.135,=F:\Gerenciador de CCU\Unit1.pas</Transaction>
+    <Transaction>2012/07/27 15:15:47.000.238,F:\Gerenciador de CCU\Unit1.pas=F:\Gerenciador de CCU\Funcoes.pas</Transaction>
+    <Transaction>2013/02/01 16:13:43.000.918,=C:\Rodrigo\Gerenciador de CCU\Unit1.pas</Transaction>
+    <Transaction>2013/02/01 16:14:16.000.047,C:\Rodrigo\Gerenciador de CCU\Unit1.pas=C:\Rodrigo\Gerenciador de CCU\FExportaExcel.pas</Transaction>
+    <Transaction>2013/02/01 16:14:16.000.047,C:\Rodrigo\Gerenciador de CCU\Unit1.dfm=C:\Rodrigo\Gerenciador de CCU\FExportaExcel.dfm</Transaction>
+    <Transaction>2013/02/15 18:29:53.000.394,=C:\Rodrigo\Gerenciador de CCU\botao_carregar_permissoes.bmp</Transaction>
+    <Transaction>2013/02/15 18:29:53.000.429,=C:\Rodrigo\Gerenciador de CCU\botao_carregars.bmp</Transaction>
+    <Transaction>2013/02/15 18:31:04.000.621,=C:\Users\rodrigo.brito\Desktop\Porta Arquivos\Escort\3161.gif</Transaction>
+    <Transaction>2013/02/15 18:32:50.000.670,C:\Users\rodrigo.brito\Desktop\Porta Arquivos\Escort\3161.gif=</Transaction>
+    <Transaction>2013/02/15 18:32:50.000.469,C:\Rodrigo\Gerenciador de CCU\botao_carregar_permissoes.bmp=</Transaction>
+    <Transaction>2013/02/15 18:32:50.000.654,C:\Rodrigo\Gerenciador de CCU\botao_carregars.bmp=</Transaction>
+  </Transactions>
+</BorlandProject>

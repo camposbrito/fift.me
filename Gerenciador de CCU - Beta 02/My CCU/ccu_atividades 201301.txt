@@ -1,0 +1,319 @@
+* 02/01
+0800-0840 POS1340198 RT 33939 *PR* Solicitante: Carla Vivas Tela/Procedimento: Tela de Pedido, Reenvio e Digitação  Solicitação: Ajustar tela de Pedido, Reenvio e Digitação para quando estiver pendente na central mostrar o campo em vermelho. Solução: Em programação 
+0840-1000 POS1340193 RT 35157 *TI* Solicitante: (sem valor) Tela/Procedimento: ER Solicitação: Atualizar ER com novos campos e tabelas 260.*, 270.* e TRUNK Solução: Teste Inicial
+1000-1100 POS1340101 RT 35178 *PR* Solicitante: (sem valor) Tela/Procedimento: CA-160 Solicitação: Verificar porque o relatório CA-160 não está ficando habilitado no principal,  versão 250.1  Solução: Em programação
+1100-1200 POS1340193 RT 35157 *TI* Solicitante: (sem valor) Tela/Procedimento: ER Solicitação: Atualizar ER com novos campos e tabelas 260.*, 270.* e TRUNK Solução: Teste Inicial
+1400-1550 POS1340193 RT 35157 *TI* Solicitante: (sem valor) Tela/Procedimento: ER Solicitação: Atualizar ER com novos campos e tabelas 260.*, 270.* e TRUNK Solução: Teste Inicial
+1550-1720 POS1340198 RT 34582 *TI* Solicitante: Sueli Zimmerman Tela/Procedimento: Lançamento de nota de entrada Solicitação: Na tela de lançamento de nota de entrada inserir campos de Ordem de Compra (Character[30]) e observação. Solução: Teste Inicial
+1720-1800 POS1340193 RT 35157 *TI* Solicitante: (sem valor) Tela/Procedimento: ER Solicitação: Atualizar ER com novos campos e tabelas 260.*, 270.* e TRUNK Solução: Teste Inicial
+
+* 03/01
+0820-0910 POS1340198 RT 34939 *PR* Solicitante: Ricardo Musiat Tela/Procedimento: Envio de Fax de Interesse Solicitação: Favor adicionar uma opção no sge que permita enviar email do fax de interesse. Solução: Em programação - Revertendo na 280.0
+0910-0920 POS1340101 RT 35178 *PR* Solicitante: (sem valor) Tela/Procedimento: CA-160 Solicitação: Verificar porque o relatório CA-160 não está ficando habilitado no principal,  versão 250.1  Solução: Em programação
+0920-0955 POS1340198 RT 35156 *TI* Solicitante: Fernando Tela/Procedimento: F2 terceiro Solicitação:  Incluir busca por matrícula no F2 de funcionário Solução: Teste Inicial
+0955-1115 POS1340101 RT 35182 *PR* Solicitante: Juliana Garippe Tela/Procedimento: Envio de email Solicitação: Erro de envio de email Solução: Em programação
+1115-1200 POS1340198 RT 35194 *PR* Solicitante: Juliana Garippe Tela/Procedimento: PoolingCancelaPedido Solicitação: Favor alterar a mensagem gravada como observação de cancelamento Solução: Em programação
+1340-1800 POS1341330 RT 33949 *TI* Solicitante: Fernando Tela/Procedimento: Levantamento de LOG Solicitação: Identificar telas do 3C que devem ser alteradas para LOG  Solução: Teste Inicial
+
+* 04/01
+0830-0920 POS1340193 RT 35190 *PR* Solicitante: Flavio Tela/Procedimento: CELTA Solicitação: Atualizar Procedures, trigger, view do Celta Solução: Em programação
+0920-0930 XCO0000103 Ginástica Laboral  
+0930-1050 POS1340193 RT 35190 *PR* Solicitante: Flavio Tela/Procedimento: CELTA Solicitação: Atualizar Procedures, trigger, view do Celta Solução: Em programação
+1050-1200 POS1340198 RT 35154 *PR* Solicitante: Flávio Tela/Procedimento: Log_Pedido Solicitação: Adicionar campo DataDev na tabela LOG_Pedido Solução:  Em programação
+1330-1700 POS1340198 RT 35154 *PR* Solicitante: Flávio Tela/Procedimento: Log_Pedido Solicitação: Adicionar campo DataDev na tabela LOG_Pedido Solução:  Em programação
+1700-1710 POS1340198 RT 35156 *TI* Solicitante: Fernando Tela/Procedimento: F2 terceiro Solicitação:  Incluir busca por matrícula no F2 de funcionário Solução: Teste Inicial
+1710-1725 POS1340193 RT 35157 *TI* Solicitante: (sem valor) Tela/Procedimento: ER Solicitação: Atualizar ER com novos campos e tabelas 260.*, 270.* e TRUNK Solução: Teste Inicial
+1725-1810 POS1340101 RT 35210 *PR* Solicitante: Flávio Tela/Procedimento: Corporativo Solicitação: Erro de property not exist no Corporativo Solução: Em programação
+
+* 07/01
+0800-0900 POS1340101 RT 35210 *PR* Solicitante: Flávio Tela/Procedimento: Corporativo Solicitação: Erro de property not exist no Corporativo Solução: Em programação
+0900-0920 POS1340198 RT 35211 *PR* Solicitante: Juliana Garippe Tela/Procedimento: Tamanho do campo Sigla Solicitação: Aumentar tamanho do campo Sigla de sistema de ensino Solução: Em programação
+0920-0930 XCO0000103 Ginástica Laboral  
+0930-1200 POS1340198 RT 35211 *PR* Solicitante: Juliana Garippe Tela/Procedimento: Tamanho do campo Sigla Solicitação: Aumentar tamanho do campo Sigla de sistema de ensino Solução: Em programação
+1400-1805 POS1340198 RT 35211 *PR* Solicitante: Juliana Garippe Tela/Procedimento: Tamanho do campo Sigla Solicitação: Aumentar tamanho do campo Sigla de sistema de ensino Solução: Em programação
+
+* 08/01
+0800-0920 POS1340198 RT 35211 *PR* Solicitante: Juliana Garippe Tela/Procedimento: Tamanho do campo Sigla Solicitação: Aumentar tamanho do campo Sigla de sistema de ensino Solução: Em programação
+0920-0930 XCO0000103 Ginástica Laboral  
+0930-1200 POS1340198 RT 35211 *PR* Solicitante: Juliana Garippe Tela/Procedimento: Tamanho do campo Sigla Solicitação: Aumentar tamanho do campo Sigla de sistema de ensino Solução: Em programação
+1400-1801 POS1340198 RT 35211 *PR* Solicitante: Juliana Garippe Tela/Procedimento: Tamanho do campo Sigla Solicitação: Aumentar tamanho do campo Sigla de sistema de ensino Solução: Em programação
+
+* 09/01
+0945-1200 POS1340198 RT 35211 *PR* Solicitante: Juliana Garippe Tela/Procedimento: Tamanho do campo Sigla Solicitação: Aumentar tamanho do campo Sigla de sistema de ensino Solução: Em programação
+1345-1515 POS1340198 RT 35211 *PR* Solicitante: Juliana Garippe Tela/Procedimento: Tamanho do campo Sigla Solicitação: Aumentar tamanho do campo Sigla de sistema de ensino Solução: Em programação
+1515-1545 POS1340198 RT 35064 *TI* Solicitante: João Luiz Garbini Tela/Procedimento:  Novo relatório para acompanhar politica de desconto Solicitação: Favor criar um novo relatório no sistema. Solução: Teste Inicial
+1545-1650 POS1340198 RT 35211 *PR* Solicitante: Juliana Garippe Tela/Procedimento: Tamanho do campo Sigla Solicitação: Aumentar tamanho do campo Sigla de sistema de ensino Solução: Em programação
+1650-1700 POS1340101 RT 35210 *PR* Solicitante: Flávio Tela/Procedimento: Corporativo Solicitação: Erro de property not exist no Corporativo Solução: Em programação
+1700-1910 POS1340198 RT 35211 *PR* Solicitante: Juliana Garippe Tela/Procedimento: Tamanho do campo Sigla Solicitação: Aumentar tamanho do campo Sigla de sistema de ensino Solução: Em programação
+
+* 10/01
+0800-0941 POS1340198 RT 35211 *PR* Solicitante: Juliana Garippe Tela/Procedimento: Tamanho do campo Sigla Solicitação: Aumentar tamanho do campo Sigla de sistema de ensino Solução: Em programação
+0941-0955 XCO0000103 Ginástica Laboral  
+0955-1200 POS1340198 RT 35211 *PR* Solicitante: Juliana Garippe Tela/Procedimento: Tamanho do campo Sigla Solicitação: Aumentar tamanho do campo Sigla de sistema de ensino Solução: Em programação
+1400-1520 POS1340198 RT 35211 *PR* Solicitante: Juliana Garippe Tela/Procedimento: Tamanho do campo Sigla Solicitação: Aumentar tamanho do campo Sigla de sistema de ensino Solução: Em programação
+1520-1820 POS1340198 RT 35195 *PR* Solicitante: Sandra Ferlin Tela/Procedimento:  Tela(s) para manutenção das tabelas de Célula Solicitação: Criar tela para manutenção das tabelas de Célula Solução: Em programação
+
+
+* 11/01
+0800-0911 POS1340198 RT 35195 *PR* Solicitante: Sandra Ferlin Tela/Procedimento:  Tela(s) para manutenção das tabelas de Célula Solicitação: Criar tela para manutenção das tabelas de Célula Solução: Em programação
+0911-0921 XCO0000103 Ginástica Laboral  
+0921-1200 POS1340198 RT 35195 *PR* Solicitante: Sandra Ferlin Tela/Procedimento:  Tela(s) para manutenção das tabelas de Célula Solicitação: Criar tela para manutenção das tabelas de Célula Solução: Em programação
+1400-1645 POS1340198 RT 35195 *PR* Solicitante: Sandra Ferlin Tela/Procedimento:  Tela(s) para manutenção das tabelas de Célula Solicitação: Criar tela para manutenção das tabelas de Célula Solução: Em programação
+1645-1710 POS1340196 GP 999005 - Padrao de EF e ET - Reuniao com Equipe toda
+1710-1810 POS1340198 RT 35195 *PR* Solicitante: Sandra Ferlin Tela/Procedimento:  Tela(s) para manutenção das tabelas de Célula Solicitação: Criar tela para manutenção das tabelas de Célula Solução: Em programação
+
+* 14/01
+0800-0911 POS1340198 RT 35195 *PR* Solicitante: Sandra Ferlin Tela/Procedimento:  Tela(s) para manutenção das tabelas de Célula Solicitação: Criar tela para manutenção das tabelas de Célula Solução: Em programação
+0911-0921 XCO0000103 Ginástica Laboral  
+0921-1200 POS1340198 RT 35195 *PR* Solicitante: Sandra Ferlin Tela/Procedimento:  Tela(s) para manutenção das tabelas de Célula Solicitação: Criar tela para manutenção das tabelas de Célula Solução: Em programação
+1400-1740 POS1340198 RT 35195 *PR* Solicitante: Sandra Ferlin Tela/Procedimento:  Tela(s) para manutenção das tabelas de Célula Solicitação: Criar tela para manutenção das tabelas de Célula Solução: Em programação
+1740-1800 POS1340198 RT 34673 *PR* Solicitante: Fernando Tela/Procedimento: Cadastro Professor SAC Solicitação: Unificar cadastros de professores Solução: Em programação
+
+* 15/01
+0800-0920 POS1340198 RT 34673 *PR* Solicitante: Fernando Tela/Procedimento: Cadastro Professor SAC Solicitação: Unificar cadastros de professores Solução: Em programação
+0920-0930 XCO0000103 Ginástica Laboral  
+0930-1000 POS1340198 RT 34673 *PR* Solicitante: Fernando Tela/Procedimento: Cadastro Professor SAC Solicitação: Unificar cadastros de professores Solução: Em programação
+1000-1030 POS1340198 RT 35267 *TI* Solicitante: Juliana Garippe Tela/Procedimento: PedidoIU_atualiza_liberacao Solicitação:  Não bloquear pedidos colocados para clientes do grupo Solução: Teste Inicial
+1030-1200 POS1340198 RT 34673 *PR* Solicitante: Fernando Tela/Procedimento: Cadastro Professor SAC Solicitação: Unificar cadastros de professores Solução: Em programação 
+1400-1530 POS1340198 RT 34673 *PR* Solicitante: Fernando Tela/Procedimento: Cadastro Professor SAC Solicitação: Unificar cadastros de professores Solução: Em programação 
+1530-1650 POS1340101 RT 35330 *PR* Solicitante: Brito Tela/Procedimento: Cadastro Professor Solicitação: Cadastro de Professor Zerando Campo FaturadoPor, ExpedidoPor Solução: Em programação 
+1650-1700 POS1340193 RT 35205 *TI* Solicitante: Flávio Tela/Procedimento: Azucrinator Solicitação: Atualizar azucrinator para nova versão do principal Solução: Teste Inicial
+1700-1805 POS1340198 RT 35077 *TI* Solicitante Juliana Garippe Tela/Procedimento: Tela de Pedidos Solicitação:  Possibilitar informar frete na 1ª parcela Solução: Teste Inicial
+
+* 16/01
+0800-0840 POS1340198 RT 35238 *TI* Solicitante: Flavio Tela/Procedimento: databases da LP Solicitação:  Levantar onde eram usados os Databases da LP Solução: Teste Inicial
+0840-0920 POS1341330 RT 35204 *TI* Solicitante: Fernando Tela/Procedimento: Tabela de Log e Triggers Solicitação: Atualizar campos das tabela de logs e triggers de log Solução: Teste Inicial
+0920-0930 XCO0000103 Ginástica Laboral 
+0930-0940 POS1341330 RT 35204 *TI* Solicitante: Fernando Tela/Procedimento: Tabela de Log e Triggers Solicitação: Atualizar campos das tabela de logs e triggers de log Solução: Teste Inicial
+0940-1120 POS1340198 RT 34156 *TI* Solicitante: Leone Tela/Procedimento: Digitação de Pedido Solicitação: Favor verificar uma forma de enviar uma agenda para determinada pessoa para avisar-lhe sobre o lançamento de um pedido no sistema. Solução: Teste Inicial
+1120-1200 POS1340198 RT 34939 *PR* Solicitante: Ricardo Musiat Tela/Procedimento: Envio de Fax de Interesse Solicitação: Favor adicionar uma opção no sge que permita enviar email do fax de interesse. Solução: Em programação 
+1400-1802 POS1340198 RT 34939 *PR* Solicitante: Ricardo Musiat Tela/Procedimento: Envio de Fax de Interesse Solicitação: Favor adicionar uma opção no sge que permita enviar email do fax de interesse. Solução: Em programação 
+
+* 17/01
+0800-0920 POS1340198 RT 34939 *PR* Solicitante: Ricardo Musiat Tela/Procedimento: Envio de Fax de Interesse Solicitação: Favor adicionar uma opção no sge que permita enviar email do fax de interesse. Solução: Em programação 
+0920-0930 XCO0000103 Ginástica Laboral 
+0930-1130 POS1340198 RT 34939 *PR* Solicitante: Ricardo Musiat Tela/Procedimento: Envio de Fax de Interesse Solicitação: Favor adicionar uma opção no sge que permita enviar email do fax de interesse. Solução: Em programação 
+1130-1200 POS1340198 RT 34156 *TI* Solicitante: Leone Tela/Procedimento: Digitação de Pedido Solicitação: Favor verificar uma forma de enviar uma agenda para determinada pessoa para avisar-lhe sobre o lançamento de um pedido no sistema. Solução: Teste Inicial
+1400-1415 POS1340198 RT 34156 *TI* Solicitante: Leone Tela/Procedimento: Digitação de Pedido Solicitação: Favor verificar uma forma de enviar uma agenda para determinada pessoa para avisar-lhe sobre o lançamento de um pedido no sistema. Solução: Teste Inicial
+1415-1510 POS1340198 RT 35077 *TI* Solicitante Juliana Garippe Tela/Procedimento: Tela de Pedidos Solicitação:  Possibilitar informar frete na 1ª parcela Solução: Teste Inicial
+1510-1551 POS1340198 RT 35064 *TI* Solicitante: João Luiz Garbini Tela/Procedimento:  Novo relatório para acompanhar politica de desconto Solicitação: Favor criar um novo relatório no sistema. Solução: Teste Inicial
+1551-1804 POS1340198 RT 34420 *PR* Solicitante: Fernando Tela/Procedimento: Cargos e Profissões Solicitação: Criar mecanismo de inativação de cargos e profissões Solução: Em programação
+
+* 18/01
+0800-0830 POS1340198 RT 34420 *PR* Solicitante: Fernando Tela/Procedimento: Cargos e Profissões Solicitação: Criar mecanismo de inativação de cargos e profissões Solução: Em programação
+0830-0930 POS1340101 RT 35372 *PR* Solicitante: Alex Silva Tela/Procedimento: Requisição Solicitação:  Alterar a tela de Requisição (Movimento -> Requisição -> Lançamento) para permitir marcar a opção "Aceita Atendimento Parcial" em requisições de Mala-Direta que geram pedido.Solução: Em programação
+0930-0940 XCO0000103 Ginástica Laboral 
+0940-1200 POS1340198 RT 34420 *PR* Solicitante: Fernando Tela/Procedimento: Cargos e Profissões Solicitação: Criar mecanismo de inativação de cargos e profissões Solução: Em programação
+1400-1510 POS1340198 RT 34420 *PR* Solicitante: Fernando Tela/Procedimento: Cargos e Profissões Solicitação: Criar mecanismo de inativação de cargos e profissões Solução: Em programação
+1510-1530 POS1340198 RT 35064 *TI* Solicitante: João Luiz Garbini Tela/Procedimento:  Novo relatório para acompanhar politica de desconto Solicitação: Favor criar um novo relatório no sistema. Solução: Teste Inicial
+1530-1805 POS1340198 RT 34420 *PR* Solicitante: Fernando Tela/Procedimento: Cargos e Profissões Solicitação: Criar mecanismo de inativação de cargos e profissões Solução: Em programação
+
+
+* 21/01
+0800-0915 POS1340198 RT 34420 *PR* Solicitante: Fernando Tela/Procedimento: Cargos e Profissões Solicitação: Criar mecanismo de inativação de cargos e profissões Solução: Em programação
+0915-0925 XCO0000103 Ginástica Laboral 
+0925-1200 POS1340198 RT 34420 *PR* Solicitante: Fernando Tela/Procedimento: Cargos e Profissões Solicitação: Criar mecanismo de inativação de cargos e profissões Solução: Em programação
+1400-1805 POS1340198 RT 34420 *PR* Solicitante: Fernando Tela/Procedimento: Cargos e Profissões Solicitação: Criar mecanismo de inativação de cargos e profissões Solução: Em programação
+
+* 22/01
+0800-0915 POS1340198 RT 34420 *PR* Solicitante: Fernando Tela/Procedimento: Cargos e Profissões Solicitação: Criar mecanismo de inativação de cargos e profissões Solução: Em programação
+0915-0925 XCO0000103 Ginástica Laboral 
+0925-1200 POS1340198 RT 34420 *PR* Solicitante: Fernando Tela/Procedimento: Cargos e Profissões Solicitação: Criar mecanismo de inativação de cargos e profissões Solução: Em programação
+1400-1730 POS1340198 RT 34420 *PR* Solicitante: Fernando Tela/Procedimento: Cargos e Profissões Solicitação: Criar mecanismo de inativação de cargos e profissões Solução: Em programação
+1730-1801 POS1341330 RT 33765 *PR* Solicitante: Fernando Tela/Procedimento:  Logs para as tabelas de Contrato Solicitação: Criar  Logs para as tabelas de Contrato Solução: Em programação
+
+* 23/01
+0800-0827 POS1341330 RT 33794 *PR* Solicitante: Fernando Tela/Procedimento: Logs para as tabelas de EdicaoEventoSessoes Solicitação: Criar Logs para as tabelas de EdicaoEventoSessoes Solução: Em programação
+0827-0854 POS1341330 RT 34073 *PR* Solicitante: Fernando Tela/Procedimento: criar tabelas de Logs e Triggers Solicitação: Favor alterar o sistema e criar tabelas de Logs e Triggers Solução: Em programação
+0854-0925 POS1341330 RT 34930 *PR* Solicitante: Fernando Tela/Procedimento: Telas 3C Solicitação: Alterar telas 3C para gravar usuário logado no log - ParamTiragem Solução: Em programação
+0925-0935 XCO0000103 Ginástica Laboral 
+0935-1002 POS1341330 RT 34931 *PR* Solicitante: Fernando Tela/Procedimento: Telas 3C Solicitação: Alterar telas 3C para gravar usuário logado no log - ProvPortal Solução: Em programação
+1002-1029 POS1341330 RT 34933 *PR* Solicitante: Fernando Tela/Procedimento: Telas 3C Solicitação: Alterar telas 3C para gravar usuário logado no log - TipoConcorrencia Solução: Em programação
+1029-1056 POS1341330 RT 34934 *PR* Solicitante: Fernando Tela/Procedimento: Telas 3C Solicitação: Alterar telas 3C para gravar usuário logado no log Solução: Em programação
+1056-1200 POS1340198 RT 34420 *PR* Solicitante: Fernando Tela/Procedimento: Cargos e Profissões Solicitação: Criar mecanismo de inativação de cargos e profissões Solução: Em programação
+1400-1430 POS1340198 RT 34420 *PR* Solicitante: Fernando Tela/Procedimento: Cargos e Profissões Solicitação: Criar mecanismo de inativação de cargos e profissões Solução: Em programação
+1430-1600 POS1340101 RT 35477 *SU* Solicitante: Ricardo Musiat Tela/Procedimento: Pedido -> 1º Relatorio Solicitação: Favor verificar porque o pedido 715297 não está mostrando a 1º página do relatório 1º Pedido. Solução: Suporte - Corrigido e Baixado em produção
+1600-1640 POS1340198 RT 35382 *TI* Solicitante: (sem valor) Tela/Procedimento: Telas de Requisição Solicitação: Alterar telas de Requisicoes Solução:  Teste Inicial 
+1640-1800 POS1340194 RT 35483 *SU* Solicitante: Alex Silva  Tela/Procedimento: Requisição de Mala direta Solicitação: Encaminhar mala direta 2013/000003 Solução: Suporte
+
+* 24/01
+0900-1000 POS1340194 RT 35483 *SU* Solicitante: Alex Silva  Tela/Procedimento: Requisição de Mala direta Solicitação: Encaminhar mala direta 2013/000003 Solução: Suporte
+1000-1100 POS1340198 RT 35378 *PR* Solicitante: (sem valor) Tela/Procedimento: Pedidos Solicitação: Corrigir tabulação da Tela de digitação de Pedido, e alinhar Campos da tela de Reenvio. Solução: Em programação
+1100-1120 POS1340101 RT 35440 *PR* Solicitante: (sem valor) Tela/Procedimento: Pedidos Solicitação:  Erro de Invalid column name 'DDD' Solução: Em programação
+1120-1200 POS1340198 RT 35410 *PR* Solicitante: Ricardo Musiat Tela/Procedimento: Contrato Solicitação: Aumentar o tamanho da coluna Descrição Solução: Em programação
+1330-1630 POS1340198 RT 35410 *PR* Solicitante: Ricardo Musiat Tela/Procedimento: Contrato Solicitação: Aumentar o tamanho da coluna Descrição Solução: Em programação
+1630-1830 POS1340198 RT 35273 *PR* Solicitante: Rodrigo Tela/Procedimento: TMCentroSQL Solicitação: Remover SQLs não utilizados do componente TMCentroSQL Solução: Em programação
+
+* 25/01
+0800-0920 POS1340198 RT 35273 *PR* Solicitante: Rodrigo Tela/Procedimento: TMCentroSQL Solicitação: Remover SQLs não utilizados do componente TMCentroSQL Solução: Em programação
+0920-0930 XCO0000103 Ginástica Laboral 
+0930-1200 POS1340198 RT 35273 *PR* Solicitante: Rodrigo Tela/Procedimento: TMCentroSQL Solicitação: Remover SQLs não utilizados do componente TMCentroSQL Solução: Em programação
+1400-1604 POS1340198 RT 35273 *PR* Solicitante: Rodrigo Tela/Procedimento: TMCentroSQL Solicitação: Remover SQLs não utilizados do componente TMCentroSQL Solução: Em programação
+1604-1700 POS1340198 RT 35531 *SU* Solicitante: Isabela Formighieri Tela/Procedimento: Atendimento Solicitação: Verificar Pontuação de Satisfação escola 944 Solução: Suporte
+1700-1801 POS1340198 RT 35273 *PR* Solicitante: Rodrigo Tela/Procedimento: TMCentroSQL Solicitação: Remover SQLs não utilizados do componente TMCentroSQL Solução: Em programação
+
+* 28/01
+0800-0917 POS1340198 RT 35273 *PR* Solicitante: Rodrigo Tela/Procedimento: TMCentroSQL Solicitação: Remover SQLs não utilizados do componente TMCentroSQL Solução: Em programação
+0917-0927 XCO0000103 Ginástica Laboral
+0927-1200 POS1340198 RT 35273 *PR* Solicitante: Rodrigo Tela/Procedimento: TMCentroSQL Solicitação: Remover SQLs não utilizados do componente TMCentroSQL Solução: Em programação
+1400-1530 POS1340198 RT 35273 *PR* Solicitante: Rodrigo Tela/Procedimento: TMCentroSQL Solicitação: Remover SQLs não utilizados do componente TMCentroSQL Solução: Em programação
+1530-1600 POS1340198 RT 35531 *SU* Solicitante: Isabela Formighieri Tela/Procedimento: Atendimento Solicitação: Verificar Pontuação de Satisfação escola 944 Solução: Suporte
+1600-1800 POS1340198 RT 35273 *PR* Solicitante: Rodrigo Tela/Procedimento: TMCentroSQL Solicitação: Remover SQLs não utilizados do componente TMCentroSQL Solução: Em programação
+
+* 29/01
+0800-0927 POS1340198 RT 35273 *PR* Solicitante: Rodrigo Tela/Procedimento: TMCentroSQL Solicitação: Remover SQLs não utilizados do componente TMCentroSQL Solução: Em programação
+0927-0937 XCO0000103 Ginástica Laboral 
+0937-1048 POS1340198 RT 35542 *PR* Solicitante: Jaqueline Tela/Procedimento: Cadastro de Autor Solicitação: Conversão de pessoa física para autor Solução: Em programação 
+1048-1200 POS1340198 RT 35382 *TI* Solicitante: (sem valor) Tela/Procedimento: Telas de Requisição Solicitação: Alterar telas de Requisicoes Solução:  Teste Inicial 
+1400-1700 POS1340198 RT 35382 *TI* Solicitante: (sem valor) Tela/Procedimento: Telas de Requisição Solicitação: Alterar telas de Requisicoes Solução:  Teste Inicial 
+1700-1800 POS1340193 Gerando Versão 280 e Trunk
+
+* 30/01
+0800-0910 POS1340194 RT 35560 *SU* Solicitante: Ricardo Musiat Tela/Procedimento: Cargos Solicitação: Favor verificar porque temos no sistema cadastrado 02 (dois) código para o cargo SECRETÁRIO MUNICIPAL DE EDUCAÇÃO. Solução: Suporte
+0910-0920 XCO0000103 Ginástica Laboral 
+0920-1200 POS1340194 RT 35560 *SU* Solicitante: Ricardo Musiat Tela/Procedimento: Cargos Solicitação: Favor verificar porque temos no sistema cadastrado 02 (dois) código para o cargo SECRETÁRIO MUNICIPAL DE EDUCAÇÃO. Solução: Suporte
+1400-1415 POS1340194 RT 35560 *SU* Solicitante: Ricardo Musiat Tela/Procedimento: Cargos Solicitação: Favor verificar porque temos no sistema cadastrado 02 (dois) código para o cargo SECRETÁRIO MUNICIPAL DE EDUCAÇÃO. Solução: Suporte
+1415-1500 POS1340101 RT 35581 *SU* Solicitante: Tela/Procedimento: F2 Produtos Solicitação:Busca de produtos trazendo itens repetidos Solução: Suporte
+1500-1800 POS1340194 RT 35560 *SU* Solicitante: Ricardo Musiat Tela/Procedimento: Cargos Solicitação: Favor verificar porque temos no sistema cadastrado 02 (dois) código para o cargo SECRETÁRIO MUNICIPAL DE EDUCAÇÃO. Solução: Suporte
+
+* 31/01
+0800-0920 POS1340198 RT 35574 *SU* Solicitante: Ricardo Musiat Tela/Procedimento: Cadastro Cliente Solicitação:Desativar o cadastro duplicado (cód. 138185), e migrar as ocorrências/eventos que estão lançadas neste cadastro para o cadastro que ficará ativo (Cód. 654864). Solução: Suporte
+0920-0930 XCO0000103 Ginástica Laboral 
+0930-1100 POS1340198 RT 35574 *SU* Solicitante: Ricardo Musiat Tela/Procedimento: Cadastro Cliente Solicitação:Desativar o cadastro duplicado (cód. 138185), e migrar as ocorrências/eventos que estão lançadas neste cadastro para o cadastro que ficará ativo (Cód. 654864). Solução: Suporte
+1100-1200 POS1340198 RT 35574 *SU* Solicitante: Ricardo Musiat Tela/Procedimento: Cadastro Cliente Solicitação:Desativar o cadastro duplicado (cód. 138185), e migrar as ocorrências/eventos que estão lançadas neste cadastro para o cadastro que ficará ativo (Cód. 654864). Solução: Suporte
+1400-1500 POS1340198 RT 34045 *LI* Solicitante: Fernando Tela/Procedimento: Form principal SGE Solicitação: tela do SGE quando restaurada Solução: Liberação de Versão
+1500-1530 POS1340198 RT 34280 *LI* Solicitante: Cilene Tela/Procedimento: Consulta Faturamento Solicitação: Tratar mensagem de erro quando usuário não tem acesso à tela de faturamento  Solução: Liberação de Versão
+1530-1600 POS1340198 RT 34417 *LI* Solicitante: Juliana Garippe Tela/Procedimento:  cadastro de data de bimestre Solicitação: Remover validação do cadastro de data de bimestre Solução: Liberação de Versão
+1600-1630 POS1340101 RT 34636 *LI* Solicitante: Juliana Garippe Tela/Procedimento: Inativação do PEG Solicitação: Corrigir usuário passado na inativação do PEG Solução: Liberação de Versão
+1630-1730 POS1340198 RT 35154 *LI* Solicitante: Flávio Tela/Procedimento: Log_Pedido Solicitação: Adicionar campo DataDev na tabela LOG_Pedido Solução:  Liberação de Versão
+1730-1800 POS1340101 RT 35139 *LI* Solicitante: (sem valor)  Tela/Procedimento: FT140 Solicitação: Corrigir erro relatório FT140 Solução: Liberação de Versão
+
+...
+Para lançar
+1400-1800 35603
+...Ignorar leitura para baixo...
+
+declare @Terceiro int = 138185  -- Destivar
+--select * from terceiro where cod = @Terceiro
+--select * from Endereco where Terceiro = @Terceiro 
+--select * from TerJuridica where Cod = @Terceiro 
+--select * from FoneticaTerceiro4p where CodTerceiro = @Terceiro 
+--select * from Cliente where cod in (@Terceiro )
+
+--select * from TerceiroContato where terceiro = @Terceiro 
+--select * from RequisicaoCompl where Favorecido = @Terceiro 
+--select * from OcorrenciaTabela where Terceiro = @Terceiro 
+--select * from Ocorrencia  where Terceiro = @Terceiro
+--select * from SelecaoTerceiroEspecif where Terceiro in (@Terceiro)
+
+
+
+
+
+
+
+parei no  LOG_ModeloCheckListPortalSite
+convert(varchar(8),suser_sname())
+
+isnull(Usuario, convert(varchar(8),suser_sname()))
+
+A01) Para cliente Inativo, o sistema apresenta no campo 'Cópias para' mensagem de Código Incorreto, Sugestão: Apresentar Código ou Cliente Inativo	
+A02) Separar os Código Inativos por virgula, para evitar que o Dialogo de Erro fiquei muito grande no 'Heidth'
+A03) Sugestão: Se o final da String do 'Copias para' terminar com (,) virgula, remove-la antes de validar.
+A01) No campo funcionário não valida Funcionários inativos
+A02) Erro ao Clicar no Botão Notificar:  "ObterPermissoesClasse": Erro em execução de comando:
+
+
+ select 
+	p.Cod,  
+	t.Nome,
+	tf.Profissao,
+   (select pf.Descricao from Profissao pf where pf.cod = tf.Profissao) ProfissaoNome, 
+	p.FuncPrincipal,
+	(select pf1.Descricao from Profissao pf1 where pf1.cod = p.FuncPrincipal) FuncPrincipal,
+	t.SitCad
+from professor p 
+join TerFisica tf on tf.Cod = p.Cod
+join Terceiro t on t.Cod = p.Cod
+
+where 
+p.FuncPrincipal  is not null
+and p.FuncPrincipal <> tf.Profissao 
+order by p.cod
+
+
+*TI* - Teste Inicial
+*PR* - Programação
+*SU* - Suporte
+*LI* - Liberação de Versão
+MODEL:
+-
+*PR* Solicitante: Tela/Procedimento: Solicitação: Solução: Em programação
+*TI* Solicitante: Tela/Procedimento: Solicitação: Solução: Teste Inicial
+*LI* Solicitante: Tela/Procedimento: Solicitação: Solução: Liberação de Versão
+*SU* Solicitante: Tela/Procedimento: Solicitação: Solução: Suporte
+
+
+SPE:
+-
+POS1340101 - CORRETIVA
+POS1340193 - LIBERAÇÃO DE VERSÃO - geração de versao, tirando warnings, baixando versao
+POS1340194 - SUPORTE
+POS1340196 - GERENCIAMENTO (reunião)
+POS1340198 - MELHORIAS / ALTERAÇÕES / NOVAS IMPLEMENTAÇÕES
+POS1340199 - TREINAMENTO
+POS3161260 - NOVAS TELAS
+
+
+Esses RTs especiais são:
+999101 ********** EM DESUSO ********** GERAÇÃO DE VERSÕES + ACOMPANHAMENTO DE BAIXA DE VERSÕES.
+999102 PORTS ENTRE ÁRVORES DO SVN
+999103 CRIAÇÃO DE ÁRVORE NO SVN
+999104 ATUALIZAÇÕES DE RTS
+999105 INSTALAÇÃO/UPGRADE DE SOFTWARE (DELPHI, ETC)
+999106   PROBLEMA COM EQUIPAMENTO/ACESSO
+999107    TECNICAS AVALIAÇÃO DE INFRAESTRUTURA - 3 CAMADAS, ETC.
+
+** Se precisar de alguma orientação adicional, depois conversamos.
+
+
+XCO:
+-
+XCO0000000 - ATIVIDADES GERAIS
+XCO0000010 - TREINAMENTO RECEBIDO
+XCO0000012 - MANUTENCAO DE EQUIPAMENTOS
+XCO0000014 - TREINAMENTO MINISTRADO
+XCO0000015 - REUNIOES INTERNAS
+XCO0000016 - SUPORTE NOVOS NEGOCIOS
+XCO0000017 - LANC. HORAS/SUPER PROJ.
+XCO0000019 - LEITURA INFORMATIVOS
+XCO0000029 - AVALIACAO DE DESEMPENHO
+XCO0000032 - ESTUDO DE SOFTWARE
+XCO0000050 - IMPRODUTIVO
+XCO0000051 - FERIAS
+XCO0000054 - ESTUDOS UNIVERSIDADE
+XCO0000057 - LICENCA
+
+inicialmente, foram criados os seguintes projetos:
+POS1340601 2009/001 - MARKETING
+POS1340602 2009/004 - DIAGRAMACAO ER 
+POS1340603 2009/005 - SISTEMA DE 9 ANOS
+POS3160701 2009/002 - UNIFICACAO LP-SE
+POS3160702  2009/003 - IMPORTACAO LST.ADO
+POS1340607 (-PRJ-) CARTÕES CORPORATIVOS
+XCO0000076 - 2:00 hrs da 4a. feira cinzas
+XCO0000082 - DISPENSA JUSTICA ELEITORAL
+XCO0000084 - ACERTO FINAL DE ANO - 4:00
+XCO0000103 - GINASTICA LABORAL
+XCO0000119 - AUDIENCIA TRABALHISTA
+
+* PARA QUEM TRABALHA NOS SISTEMAS DA EDITORA LP (Executável Editora.EXE):
+
+
+POS3160201  2009 - MANUTENCAO CORRETIVA
+POS3160293  2009 - GERACAO DE VERSOES
+POS3160294  2009 - SUPORTE AOS USUARIOS
+POS3160296  2009 - GERENCIA DO PROJETO
+POS3160298  2009 - MELHORIAS EXTRAS
+POS3160299  2009 - TREINAMENTO 
+

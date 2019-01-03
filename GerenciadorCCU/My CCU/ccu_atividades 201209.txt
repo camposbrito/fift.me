@@ -1,0 +1,225 @@
+* 03/09
+0810-0936 POS1340198 RT 32780 *TI* Solicitante: CA-110 Tela/Procedimento: CA-110 Solicitação: Incluir opção para geração de dados do CA-110 em Excel Solução: Teste apos port da 201 -> TRUNK - OK
+0936-0946 XCO0000103 Ginástica Laboral
+0946-1200 POS1341330 RT 33444 *PR* Solicitante: Flavio Tela/Procedimento: tabela de logs e triggers de log Solicitação: Atualizar campos das tabela de logs e triggers de log Solução: Em programação
+1350-1801 POS1341330 RT 33444 *PR* Solicitante: Flavio Tela/Procedimento: tabela de logs e triggers de log Solicitação: Atualizar campos das tabela de logs e triggers de log Solução: Em programação
+
+* 04/09
+0815-1200 POS1341330 RT 33444 *PR* Solicitante: Flavio Tela/Procedimento: tabela de logs e triggers de log Solicitação: Atualizar campos das tabela de logs e triggers de log Solução: Em programação
+1350-1730 POS1341330 RT 33444 *PR* Solicitante: Flavio Tela/Procedimento: tabela de logs e triggers de log Solicitação: Atualizar campos das tabela de logs e triggers de log Solução: Em programação
+1730-1810 POS1340101 RT 32520 *PR* Solicitante: Alex Silva Tela/Procedimento: campos tipo e o subtipo Solicitação: Os campos tipo e o subtipo incluídos no RT 21073 não constam mais na tela. Solução: Em programação
+
+* 05/09
+0810-0900 POS1340101 RT 32520 *PR* Solicitante: Alex Silva Tela/Procedimento: campos tipo e o subtipo Solicitação: Os campos tipo e o subtipo incluídos no RT 21073 não constam mais na tela. Solução: Em programação
+0900-0936 POS1340198 RT 33471 *TI* Solicitante: Damila Bonato Tela/Procedimento: CA-110 Solicitação: Incluir colunas no CA-110 Solução: Teste Inicial
+0936-0946 XCO0000103 Ginástica Laboral
+0946-1036 POS1340198 RT 33471 *TI* Solicitante: Damila Bonato Tela/Procedimento: CA-110 Solicitação: Incluir colunas no CA-110 Solução: Teste Inicial - ok
+1036-1200 POS1340198 RT 33452 *TI* Solicitante: Sandra Ferlin Tela/Procedimento: campo de segmentação na seleção Solicitação:  Incluir campo de segmentação na seleção Solução: Teste Inicial
+1345-1500 POS1340198 RT 33228 *TI* Solicitante: Alex Silva Tela/Procedimento: AT-630 Solicitação: Relatório AT-630 trazenndo responsável pela secretaria Solução: Teste Final
+1500-1550 POS1340101 RT 31479 *TI* Solicitante: Rodrigo Tela/Procedimento: F2 de Contatos Solicitação: Problema no F2 de Contatos Solução: Teste Final - OK
+1550-1650 POS1340198 RT 32087 *TI* Solicitante: Juliana Garippe Tela/Procedimento: CA-200 Solicitação: Criação de novo relatório com dados de escolas Solução: Teste inicial - Erro nos testes!
+1650-1805 POS1340198 RT 33327 *TI* Solicitante: Fernando Tela/Procedimento: cadastro de funcionários Solicitação: Os campos referentes a pessoa jurídica (CNPJ) estão habilitados no cadastro de funcionários, que são pessoas físias. Solução: Teste Final - OK
+
+* 06/09
+0820-0935 POS1340198 RT 32756 *TI* Solicitante: Ricardo Musiat Tela/Procedimento: PL-910, PL-915, PL-923, PL-925, PL-930, PL-120 e PL-920. Solicitação: Favor inserir os níveis G1 e G2  Solução: Teste Final
+0935-0945 XCO0000103 Ginástica Laboral
+0945-1020 POS1340198 RT 32756 *TI* Solicitante: Ricardo Musiat Tela/Procedimento: PL-910, PL-915, PL-923, PL-925, PL-930, PL-120 e PL-920. Solicitação: Favor inserir os níveis G1 e G2  Solução: Teste Final
+1020-1115 POS1340198 RT 32087 *TI* Solicitante: Juliana Garippe Tela/Procedimento: CA-200 Solicitação: Criação de novo relatório com dados de escolas Solução: Teste inicial 
+1115-1200 POS1340198 RT 33452 *TI* Solicitante: Sandra Ferlin Tela/Procedimento: campo de segmentação na seleção Solicitação:  Incluir campo de segmentação na seleção Solução: Teste Inicial
+1350-1440 POS1340198 RT 33452 *TI* Solicitante: Sandra Ferlin Tela/Procedimento: campo de segmentação na seleção Solicitação:  Incluir campo de segmentação na seleção Solução: Teste Inicial
+1440-1505 POS1340198 RT 32107 *TI* Solicitante: Sandra Ferlin Tela/Procedimento: Sandra Ferlin Solicitação:  incluir o filtro de Grupo de Fechamento Solução:  Teste Final
+1505-1617 POS3161290 RT 32187 *PR* Solicitante: Alexander Tela/Procedimento: Nova tela para Alterar Parcelas Solicitação: Nova tela para Alterar Parcelas Solução: Em programação
+1617-1704 POS1340198 RT 33452 *TI* Solicitante: Sandra Ferlin Tela/Procedimento: campo de segmentação na seleção Solicitação:  Incluir campo de segmentação na seleção Solução: Teste Inicial
+1704-1811 POS1340198 RT 32107 *TI* Solicitante: Sandra Ferlin Tela/Procedimento: Sandra Ferlin Solicitação:  incluir o filtro de Grupo de Fechamento Solução:  Teste Final
+
+
+* 10/09
+0815-0935 POS1340198 RT 32808 *TI* Solicitante: Fernando Tela/Procedimento: relatórios do sistem Solicitação: Verificar todos os relatórios do sistema que apresentam dados de endereço e inserir, se já não existir, os dados de tipo de logradouro Solução:  Teste Inicial
+0935-0945 XCO0000103 Ginástica Laboral
+0945-1027 POS1340198 RT 32808 *TI* Solicitante: Fernando Tela/Procedimento: relatórios do sistem Solicitação: Verificar todos os relatórios do sistema que apresentam dados de endereço e inserir, se já não existir, os dados de tipo de logradouro Solução:  Teste Inicial
+1027-1200 POS1340193 RT 33352 *PR* Solicitante: Flavio Tela/Procedimento: ER  Solicitação: Atualizar ER com campos e tabelas criadas e/ou excluidas nas versões 201.*, 210.*, 220.* Solução: Em programação
+1350-1810 POS1341330 RT 33552 *PR* Solicitante: Flavio Tela/Procedimento: tabelas sem Log Solicitação:  Levantamento de tabelas sem Log de alteraçã Solução: Levantamento
+
+* 11/09
+0800-0905 POS1341330 RT 33552 *PR* Solicitante: Flavio Tela/Procedimento: tabelas sem Log Solicitação:  Levantamento de tabelas sem Log de alteraçã Solução: Levantamento
+0905-0927 POS1340198 RT 33536 *TI* Solicitante: Fernando Tela/Procedimento: Duplicatas de acordo Solicitação: Duplicatas de acordo não importadas Solução: Teste Inicial
+0927-0937 XCO0000103 Ginástica Laboral
+0937-1041 POS1340198 RT 33536 *TI* Solicitante: Fernando Tela/Procedimento: Duplicatas de acordo Solicitação: Duplicatas de acordo não importadas Solução: Teste Inicial
+1041-1200 POS1341330 RT 33552 *PR* Solicitante: Flavio Tela/Procedimento: tabelas sem Log Solicitação:  Levantamento de tabelas sem Log de alteraçã Solução: Levantamento
+1400-1802 POS1341330 RT 33552 *PR* Solicitante: Flavio Tela/Procedimento: tabelas sem Log Solicitação:  Levantamento de tabelas sem Log de alteraçã Solução: Levantamento
+
+* 12/09
+0825-0900 POS1341330 RT 33552 *PR* Solicitante: Flavio Tela/Procedimento: tabelas sem Log Solicitação:  Levantamento de tabelas sem Log de alteraçã Solução: Levantamento
+0900-1000 POS1341330 RT 33444 *PR* Solicitante: Flavio Tela/Procedimento: tabela de logs e triggers de log Solicitação: Atualizar campos das tabela de logs e triggers de log Solução: Em programação
+1000-1100 POS3161290 RT 32186 *LI* Solicitante: Alexander Tela/Procedimento: Alterações em Pedido Solicitação: RT para atender ao 2 da Especificação Funcional. Solução: Evidencia de testes
+1100-1200 POS1340198 RT 33615 *PR* Solicitante: Alex Silva Tela/Procedimento: envio de e-mail´s Solicitação: Ao tentar enviar e-mails via SGE, o sistema apresenta o erro Solução: Em programação
+1350-1545 POS1340198 RT 33615 *PR* Solicitante: Alex Silva Tela/Procedimento: envio de e-mail´s Solicitação: Ao tentar enviar e-mails via SGE, o sistema apresenta o erro Solução: Em programação
+1545-1600 POS3161270 RT 31144 *LI* Solicitante: Alexander. Tela/Procedimento: Importação de Clientes do SIP. Solicitação:(-PRJ-)IMPORTACAO SIP - Importar Clientes. Solução: .
+1600-1808 POS1340198 RT 33615 *PR* Solicitante: Alex Silva Tela/Procedimento: envio de e-mail´s Solicitação: Ao tentar enviar e-mails via SGE, o sistema apresenta o erro Solução: Em programação
+
+* 13/09
+0815-0936 POS1341330 RT 33444 *PR* Solicitante: Flavio Tela/Procedimento: tabela de logs e triggers de log Solicitação: Atualizar campos das tabela de logs e triggers de log Solução: Baixando árvore 250
+0936-0946 XCO0000103 Ginástica Laboral
+0946-1200 POS1340198 RT 33615 *PR* Solicitante: Alex Silva Tela/Procedimento: envio de e-mail´s Solicitação: Ao tentar enviar e-mails via SGE, o sistema apresenta o erro Solução: Em programação
+1350-1800 POS1341330 RT 33444 *PR* Solicitante: Flavio Tela/Procedimento: tabela de logs e triggers de log Solicitação: Atualizar campos das tabela de logs e triggers de log Solução: Em programação
+
+* 14/09
+0830-1018 POS1341330 RT 33444 *PR* Solicitante: Flavio Tela/Procedimento: tabela de logs e triggers de log Solicitação: Atualizar campos das tabela de logs e triggers de log Solução: Em programação
+1018-1200 POS1341330 RT 33444 *PR* Solicitante: Flavio Tela/Procedimento: tabela de logs e triggers de log Solicitação: Atualizar campos das tabela de logs e triggers de log Solução: Em programação
+1345-1720 POS1341330 RT 33444 *PR* Solicitante: Flavio Tela/Procedimento: tabela de logs e triggers de log Solicitação: Atualizar campos das tabela de logs e triggers de log Solução: Em programação
+1720-1812 POS1340101 RT 33603 *TI* Solicitante: Fernando Tela/Procedimento: tela de faturamento Solicitação:  Remover label escondido na tela de faturamento Solução:Teste Inicial
+
+* 17/09
+0830-0850 POS1340198 RT 33615 *PR* Solicitante: Alex Silva Tela/Procedimento: envio de e-mail´s Solicitação: Ao tentar enviar e-mails via SGE, o sistema apresenta o erro Solução: Em programação
+0850-1200 POS1340198 RT 32323 *TI* Solicitante: Juliana Garippe Tela/Procedimento: campo DDD na tabela Endereço Solicitação: Incluir campo DDD na tabela Endereço e possibilitar alteração do usuário Solução: Teste Final 
+1345-1450 POS1340198 RT 32323 *TI* Solicitante: Juliana Garippe Tela/Procedimento: campo DDD na tabela Endereço Solicitação: Incluir campo DDD na tabela Endereço e possibilitar alteração do usuário Solução: Teste Final - Erro nos testes32323
+1450-1615 POS1340198 RT 33651 *PR* Solicitante: Ricardo Musiat Tela/Procedimento:  lançar requisição Solicitação: Erro de data ao lançar requisição Solução: Em programação
+1615-1700 POS1340198 RT 32323 *TI* Solicitante: Juliana Garippe Tela/Procedimento: campo DDD na tabela Endereço Solicitação: Incluir campo DDD na tabela Endereço e possibilitar alteração do usuário Solução: Teste Final - Erro nos testes32323
+1700-1807 POS1340193 RT 33627 *PR* Solicitante: Flavio Tela/Procedimento: ER  Solicitação: Altualizar ER com tabelas faltantes Solução: Teste Inicial
+
+* 18/09
+0830-0900 POS1340193 RT 33627 *PR* Solicitante: Flavio Tela/Procedimento: ER  Solicitação: Altualizar ER com tabelas faltantes Solução: Teste Inicial 
+0900-1200 POS1340198 RT 33615 *PR* Solicitante: Alex Silva Tela/Procedimento: envio de e-mail´s Solicitação: Ao tentar enviar e-mails via SGE, o sistema apresenta o erro Solução: Em programação
+1410-1850 POS1340198 RT 33615 *PR* Solicitante: Alex Silva Tela/Procedimento: envio de e-mail´s Solicitação: Ao tentar enviar e-mails via SGE, o sistema apresenta o erro Solução: Em programação
+
+* 19/09
+0810-0940 POS1340198 RT 33615 *PR* Solicitante: Alex Silva Tela/Procedimento: envio de e-mail´s Solicitação: Ao tentar enviar e-mails via SGE, o sistema apresenta o erro Solução: Em programação
+0940-0950 XCO0000103 Ginástica Laboral
+0950-1200 POS1340198 RT 33615 *PR* Solicitante: Alex Silva Tela/Procedimento: envio de e-mail´s Solicitação: Ao tentar enviar e-mails via SGE, o sistema apresenta o erro Solução: Em programação
+1348-1415 POS1340198 RT 33615 *PR* Solicitante: Alex Silva Tela/Procedimento: envio de e-mail´s Solicitação: Ao tentar enviar e-mails via SGE, o sistema apresenta o erro Solução: Em programação
+1415-1430 POS1340193 RT 33627 *PR* Solicitante: Flavio Tela/Procedimento: ER  Solicitação: Altualizar ER com tabelas faltantes Solução: Teste Inicial - ok
+1430-1530 POS1341330 RT 33686 *TI* Solicitante: Altair Tela/Procedimento: Tabelas Alfabetizacao Solicitação: Criar Logs para as Tabelas Alfabetizacao Solução: Teste Inicial
+1530-1805 POS1340198 RT 33615 *PR* Solicitante: Alex Silva Tela/Procedimento: envio de e-mail´s Solicitação: Ao tentar enviar e-mails via SGE, o sistema apresenta o erro Solução: Em programação
+
+* 20/09
+0830-1200 POS1340198 RT 33615 *PR* Solicitante: Alex Silva Tela/Procedimento: envio de e-mail´s Solicitação: Ao tentar enviar e-mails via SGE, o sistema apresenta o erro Solução: Em programação
+1340-1812 POS1340198 RT 33615 *PR* Solicitante: Alex Silva Tela/Procedimento: envio de e-mail´s Solicitação: Ao tentar enviar e-mails via SGE, o sistema apresenta o erro Solução: Em programação
+
+* 21/09
+0900-1200 POS1340198 RT 33615 *PR* Solicitante: Alex Silva Tela/Procedimento: envio de e-mail´s Solicitação: Ao tentar enviar e-mails via SGE, o sistema apresenta o erro Solução: Em programação
+1300-1811 POS1340198 RT 33615 *PR* Solicitante: Alex Silva Tela/Procedimento: envio de e-mail´s Solicitação: Ao tentar enviar e-mails via SGE, o sistema apresenta o erro Solução: Em programação
+
+* 24/09
+0820-0916 POS1340198 RT 33615 *PR* Solicitante: Alex Silva Tela/Procedimento: envio de e-mail´s Solicitação: Ao tentar enviar e-mails via SGE, o sistema apresenta o erro Solução: Em programação
+0916-0935 POS1341330 RT 33708 *TI* Solicitante: Flavio Tela/Procedimento:  Logs para as tabelas AtendimentoTabela, AtivEconomica e Autor Solicitação: Criar Logs para as tabelas AtendimentoTabela, AtivEconomica e Autor Solução:  Teste Inicial
+0935-0945 XCO0000103 Ginástica Laboral
+0945-1035 POS1340193 RT 999106 Sem acesso ao banco/rede/RT
+1035-1100 POS1341330 RT 33708 *TI* Solicitante: Flavio Tela/Procedimento: Logs para as tabelas AtendimentoTabela, AtivEconomica e Autor Solicitação: Criar Logs para as tabelas AtendimentoTabela, AtivEconomica e Autor Solução:  Teste Inicial - OK
+1100-1135 POS1341330 RT 33714 *TI* Solicitante: Flavio Tela/Procedimento: Logs para as tabelas Avaliacao de Conceito Solicitação: Criar Logs para as tabelas Avaliacao de Conceito Solução: Teste inicial
+1135-1200 POS1341330 RT 33726 *TI* Solicitante: Flavio Tela/Procedimento: Logs para as tabelas AvaliaConc e BandeiraCartao Solicitação: Criar  Logs para as tabelas AvaliaConc e BandeiraCartao Solução: Teste Inicial
+1350-1415 POS1341330 RT 33726 *TI* Solicitante: Flavio Tela/Procedimento: Logs para as tabelas AvaliaConc e BandeiraCartao Solicitação: Criar  Logs para as tabelas AvaliaConc e BandeiraCartao Solução: Teste Inicial
+1415-1808 POS1341330 RT 33765 *PR* Solicitante: Fernando Tela/Procedimento:  Logs para as tabelas de Contrato Solicitação: Criar  Logs para as tabelas de Contrato Solução: Em programação
+
+* 25/09
+0835-0935 POS1341330 RT 33750 *TI* Solicitante: Fernando Tela/Procedimento: Logs para as tabelas CndPagto, Colecao e outras Solicitação: Criar Logs para as tabelas CndPagto, Colecao e outras Solução: Teste Inicial - OK
+0935-0945 XCO0000103 Ginástica Laboral
+0945-1000 POS1341330 RT 33750 *TI* Solicitante: Fernando Tela/Procedimento: Logs para as tabelas CndPagto, Colecao e outras Solicitação: Criar Logs para as tabelas CndPagto, Colecao e outras Solução: Teste Inicial - OK 
+1000-1025 POS1341330 RT 33756 *TI* Solicitante: Fernando Tela/Procedimento:  Logs para as tabelas Congregacao, ContaContabil e ContaCorrente Solicitação: Criar Logs para as tabelas Congregacao, ContaContabil e ContaCorrente Solução: Teste Inicial
+1025-1040 POS1341330 RT 33765 *PR* Solicitante: Fernando Tela/Procedimento:  Logs para as tabelas de Contrato Solicitação: Criar  Logs para as tabelas de Contrato Solução: Em programação
+1040-1200 POS1340198 RT 33776 *PR* Solicitante: Flavio Tela/Procedimento:  Metodo de Gravar ClienteSegmentacao e ClienteSistema na (Escola, Governo e Secretaria) Solicitação: Alterar forma de gravar ClienteSegmentacao e ClienteSistema Solução: Em programação
+1345-1620 POS1340198 RT 33776 *PR* Solicitante: Flavio Tela/Procedimento:  Metodo de Gravar ClienteSegmentacao e ClienteSistema na (Escola, Governo e Secretaria) Solicitação: Alterar forma de gravar ClienteSegmentacao e ClienteSistema Solução: Em programação
+1620-1825 POS1341330 RT 33756 *TI* Solicitante: Fernando Tela/Procedimento:  Logs para as tabelas Congregacao, ContaContabil e ContaCorrente Solicitação: Criar Logs para as tabelas Congregacao, ContaContabil e ContaCorrente Solução: Teste Inicial
+
+* 26/09
+0838-0930 POS1341330 RT 33772 *TI* Solicitante: Fernando Tela/Procedimento: tabelas ContatoFrequente, ConvenioPortal e Outras Solicitação: Criar Logs para as tabelas ContatoFrequente, ConvenioPortal e Outras Solução: Teste inicial - ok
+0930-0940 XCO0000103 Ginástica Laboral
+0940-1200 POS1341330 RT 33794 *PR* Solicitante: Fernando Tela/Procedimento: Logs para as tabelas de EdicaoEventoSessoes Solicitação: Criar Logs para as tabelas de EdicaoEventoSessoes Solução: Em programação
+1400-1456 POS1340101 RT 33775 *PR* Solicitante: Fernando Tela/Procedimento: cadastro de operações Solicitação: Verificar bugsender no cadastro de operações Solução: Em programação
+1456-1610 POS1340194 RT 33645 *PR* Solicitante: Sandra Ferlin Tela/Procedimento:  Cadastro do hotel Solicitação: Verificar trava impedindo hotel de ser apagado se tiver lançamentos Solução: Em programação
+1610-1805 POS1341320 RT 33567 *PR* Solicitante: (sem valor) Tela/Procedimento: Cadastro de produtos de Contrato Solicitação: Cadastro de produtos de Contrato por Ano Solução: Em programação
+
+* 27/09
+0800-0930 POS1341320 RT 33567 *PR* Solicitante: (sem valor) Tela/Procedimento: Cadastro de produtos de Contrato Solicitação: Cadastro de produtos de Contrato por Ano Solução: Em programação
+0930-0940 XCO0000103 Ginástica Laboral
+0940-1200 POS1341320 RT 33567 *PR* Solicitante: (sem valor) Tela/Procedimento: Cadastro de produtos de Contrato Solicitação: Cadastro de produtos de Contrato por Ano Solução: Em programação
+1400-1710 POS1341320 RT 33567 *PR* Solicitante: (sem valor) Tela/Procedimento: Cadastro de produtos de Contrato Solicitação: Cadastro de produtos de Contrato por Ano Solução: Em programação
+1710-1800 POS1340198 RT 33615 *PR* Solicitante: Alex Silva Tela/Procedimento: envio de e-mail´s Solicitação: Ao tentar enviar e-mails via SGE, o sistema apresenta o erro Solução: Ajustando port na 260, 250 e trunk
+
+* 28/09
+0815-0850 POS1341330 RT 33794 *PR* Solicitante: Fernando Tela/Procedimento: Logs para as tabelas de EdicaoEventoSessoes Solicitação: Criar Logs para as tabelas de EdicaoEventoSessoes Solução: Em programação - Validação A - Não corrigido, foge o escopo do RT
+0850-0930 POS1341320 RT 33567 *PR* Solicitante: (sem valor) Tela/Procedimento: Cadastro de produtos de Contrato Solicitação: Cadastro de produtos de Contrato por Ano Solução: Em programação
+0927-0937 XCO0000103 Ginástica Laboral
+0940-1200 POS1341320 RT 33567 *PR* Solicitante: (sem valor) Tela/Procedimento: Cadastro de produtos de Contrato Solicitação: Cadastro de produtos de Contrato por Ano Solução: Em programação
+1355-1815 POS1341320 RT 33567 *PR* Solicitante: (sem valor) Tela/Procedimento: Cadastro de produtos de Contrato Solicitação: Cadastro de produtos de Contrato por Ano Solução: Em programação
+
+..
+...
+
+/*  */
+
+...Ignorar leitura para baixo...
+*TI* - Teste Inicial
+*PR* - Programação
+*SU* - Suporte
+*LI* - Liberação de Versão
+MODEL:
+-
+*PR* Solicitante: Tela/Procedimento: Solicitação: Solução: Em programação
+*TI* Solicitante: Tela/Procedimento: Solicitação: Solução: Teste Inicial
+*LI* Solicitante: Tela/Procedimento: Solicitação: Solução: Liberação de Versão
+*SU* Solicitante: Tela/Procedimento: Solicitação: Solução: Suporte
+
+
+SPE:
+-
+POS1340101 - CORRETIVA
+POS1340193 - LIBERAÇÃO DE VERSÃO - geração de versao, tirando warnings, baixando versao
+POS1340194 - SUPORTE
+POS1340196 - GERENCIAMENTO (reunião)
+POS1340198 - MELHORIAS / ALTERAÇÕES / NOVAS IMPLEMENTAÇÕES
+POS1340199 - TREINAMENTO
+POS3161260 - NOVAS TELAS
+
+
+Esses RTs especiais são:
+999101 ********** EM DESUSO ********** GERAÇÃO DE VERSÕES + ACOMPANHAMENTO DE BAIXA DE VERSÕES.
+999102 PORTS ENTRE ÁRVORES DO SVN
+999103 CRIAÇÃO DE ÁRVORE NO SVN
+999104 ATUALIZAÇÕES DE RTS
+999105 INSTALAÇÃO/UPGRADE DE SOFTWARE (DELPHI, ETC)
+999106   PROBLEMA COM EQUIPAMENTO/ACESSO
+999107    TECNICAS AVALIAÇÃO DE INFRAESTRUTURA - 3 CAMADAS, ETC.
+
+** Se precisar de alguma orientação adicional, depois conversamos.
+
+
+XCO:
+-
+XCO0000000 - ATIVIDADES GERAIS
+XCO0000010 - TREINAMENTO RECEBIDO
+XCO0000012 - MANUTENCAO DE EQUIPAMENTOS
+XCO0000014 - TREINAMENTO MINISTRADO
+XCO0000015 - REUNIOES INTERNAS
+XCO0000016 - SUPORTE NOVOS NEGOCIOS
+XCO0000017 - LANC. HORAS/SUPER PROJ.
+XCO0000019 - LEITURA INFORMATIVOS
+XCO0000029 - AVALIACAO DE DESEMPENHO
+XCO0000032 - ESTUDO DE SOFTWARE
+XCO0000050 - IMPRODUTIVO
+XCO0000051 - FERIAS
+XCO0000054 - ESTUDOS UNIVERSIDADE
+XCO0000057 - LICENCA
+
+inicialmente, foram criados os seguintes projetos:
+POS1340601 2009/001 - MARKETING
+POS1340602 2009/004 - DIAGRAMACAO ER 
+POS1340603 2009/005 - SISTEMA DE 9 ANOS
+POS3160701 2009/002 - UNIFICACAO LP-SE
+POS3160702  2009/003 - IMPORTACAO LST.ADO
+POS1340607 (-PRJ-) CARTÕES CORPORATIVOS
+XCO0000076 - 2:00 hrs da 4a. feira cinzas
+XCO0000082 - DISPENSA JUSTICA ELEITORAL
+XCO0000084 - ACERTO FINAL DE ANO - 4:00
+XCO0000103 - GINASTICA LABORAL
+XCO0000119 - AUDIENCIA TRABALHISTA
+
+* PARA QUEM TRABALHA NOS SISTEMAS DA EDITORA LP (Executável Editora.EXE):
+
+
+POS3160201  2009 - MANUTENCAO CORRETIVA
+POS3160293  2009 - GERACAO DE VERSOES
+POS3160294  2009 - SUPORTE AOS USUARIOS
+POS3160296  2009 - GERENCIA DO PROJETO
+POS3160298  2009 - MELHORIAS EXTRAS
+POS3160299  2009 - TREINAMENTO 
+

@@ -1,0 +1,239 @@
+* 01/08
+0807-0938 POS1341300 RT 32704 *PR* Solicitante: Alexander Tela/Procedimento: VE-130 Solicitação: Alterações no Relatório VE-130 Solução: Em programação
+0938-0948 XCO0000103 Ginástica Laboral
+0948-1200 POS1341300 RT 32704 *PR* Solicitante: Alexander Tela/Procedimento: VE-130 Solicitação: Alterações no Relatório VE-130 Solução: Em programação
+1400-1500 POS1341300 RT 32704 *PR* Solicitante: Alexander Tela/Procedimento: VE-130 Solicitação: Alterações no Relatório VE-130 Solução: Em programação
+1500-1600 POS3161290 RT 32186 *TI* Solicitante: Alexander Tela/Procedimento: Alterações em Pedido Solicitação: RT para atender ao 2 da Especificação Funcional. Solução: Teste Inicial - Erro nos testes
+1600-1810 POS3161290 RT 32187 *PR* Solicitante: Alexander Tela/Procedimento: Nova tela para Alterar Parcelas Solicitação: Nova tela para Alterar Parcelas Solução: Em programação
+
+* 02/08
+0807-0933 POS3161290 RT 32189 *PR* Solicitante: Alexander Tela/Procedimento: Gerar Pedido de Licitação Solicitação: RT para atender ao item 5 da Especificação Funcional. Solução: em programacao
+0933-0943 XCO0000103 Ginástica Laboral
+0943-1100 POS3161290 RT 32189 *PR* Solicitante: Alexander Tela/Procedimento: Gerar Pedido de Licitação Solicitação: RT para atender ao item 5 da Especificação Funcional. Solução: em programacao
+1100-1200 POS3161290 RT 32187 *PR* Solicitante: Alexander Tela/Procedimento: Nova tela para Alterar Parcelas Solicitação: Nova tela para Alterar Parcelas Solução: Em programação
+1350-1500 POS3161290 RT 32186 *TI* Solicitante: Alexander Tela/Procedimento: Alterações em Pedido Solicitação: RT para atender ao 2 da Especificação Funcional. Solução: Teste Inicial - OK
+1500-1800 POS1341300 RT 32703 *PR* Solicitante: Alexander Tela/Procedimento: VE-120 Solicitação: Alterações no Relatório VE-130 Solução: Em programação
+
+* 03/08
+0820-0935 POS1341300 RT 32705 *PR* Solicitante: Alexander Tela/Procedimento: VE-210 Solicitação: Alterações no Relatório VE-210 Solução: Em programação
+0935-0945 XCO0000103 Ginástica Laboral
+0945-1050 POS1341300 RT 32705 *PR* Solicitante: Alexander Tela/Procedimento: VE-210 Solicitação: Alterações no Relatório VE-210 Solução: Em programação
+1050-1200 POS1341300 RT 32706 *PR* Solicitante: Alexander Tela/Procedimento: VE-410, VE-411 e VE-530 Solicitação: Alterações nos Relatórios VE-410, VE-411 e VE-530 Solução: Em programação
+1340-1430 POS1341300 RT 32706 *PR* Solicitante: Alexander Tela/Procedimento: VE-410, VE-411 e VE-530 Solicitação: Alterações nos Relatórios VE-410, VE-411 e VE-530 Solução: Em programação
+1430-1600 POS1341300 RT 32707 *PR* Solicitante: Alexander Tela/Procedimento: VE-610 Solicitação: Alterações no Relatório VE-610 Solução: Em programação
+1600-1800 POS1341300 RT 32708 *PR* Solicitante: Alexander Tela/Procedimento: VE-620 Solicitação: Alterações no Relatório VE-620 Solução: Em Programação
+
+* 06/08
+0805-0935 POS1341300 RT 32709 *PR* Solicitante: Alexander  Tela/Procedimento: VE-650 Solicitação: Alterações no Relatório VE-650 Solução: Em Programação
+0933-0945 XCO0000103 Ginástica Laboral
+0945-1135 POS1341300 RT 32709 *PR* Solicitante: Alexander  Tela/Procedimento: VE-650 Solicitação: Alterações no Relatório VE-650 Solução: Em Programação
+1135-1200 POS1340198 RT 32136 *PR* Solicitante: Carla Vivas Tela/Procedimento: cadastro de produtos Solicitação:  Incluir tipo (Aluno ou Professor) no cadastro de produtos  Solução: Em programação - Portando da 210 para 201
+1400-1430 POS1340198 RT 32136 *PR* Solicitante: Carla Vivas Tela/Procedimento: cadastro de produtos Solicitação:  Incluir tipo (Aluno ou Professor) no cadastro de produtos  Solução: Em programação - Portando da 210 para 201
+1430-1520 POS1340198 RT 32094 *PR* Solicitante: Carla Vivas Tela/Procedimento: Relatório FT 120 Solicitação: Acrescentar validação no relatorio para saber se é mostruario de professor Solução: Em programação - Portando da 210 para 201
+1520-1640 POS1340198 RT 32136 *PR* Solicitante: Carla Vivas Tela/Procedimento: cadastro de produtos Solicitação:  Incluir tipo (Aluno ou Professor) no cadastro de produtos  Solução: Em programação - Revertendo da 210 
+1640-1808 POS1340198 RT 32094 *PR* Solicitante: Carla Vivas Tela/Procedimento: Relatório FT 120 Solicitação: Acrescentar validação no relatorio para saber se é mostruario de professor Solução: Em programação - Revertendo da 210 
+
+* 07/08
+0815-0931 POS1341300 RT 32710 *PR* Solicitante: Alexander Tela/Procedimento: VE-140, VE-220, VE-230, VE-310 e VE-320 Solicitação: Alterações nos Relatórios VE-140, VE-220, VE-230, VE-310 e VE-320 Solução: Em Programação
+0931-0941 XCO0000103 Ginástica Laboral
+0941-1200 POS1341300 RT 32710 *PR* Solicitante: Alexander Tela/Procedimento: VE-140, VE-220, VE-230, VE-310 e VE-320 Solicitação: Alterações nos Relatórios VE-140, VE-220, VE-230, VE-310 e VE-320 Solução: Em Programação
+1345-1500 POS1340101 RT 32941 *TI* Solicitante: Alex Silva Tela/Procedimento:  E-mail pelo sistema Solicitação:  E-mail pelo sistema saindo desconfigurado Solução: Teste Inicial - OK
+1500-1600 POS1341300 RT 32710 *PR* Solicitante: Alexander Tela/Procedimento: VE-140, VE-220, VE-230, VE-310 e VE-320 Solicitação: Alterações nos Relatórios VE-140, VE-220, VE-230, VE-310 e VE-320 Solução: Em Programação
+1600-1740 POS1340198 RT 32459 *TI* Solicitante: Michelle Taminato Tela/Procedimento: Cadastro Escola Solicitação: Adicionar novos campos na tela de escola para dados de Gestão Escolar Solução: Teste Inicial - Erro nos testes!
+1740-1800 POS1341300 RT 32698 *PR* Solicitante: Alexander Tela/Procedimento: Telas de Plano de Contas Solicitação: Limitar ações nas telas de Plano de Contas Solução: Em programação
+
+* 08/08
+0821-0902 POS1341300 RT 32692 *PR* Solicitante: Alexander Tela/Procedimento: Menus e Relatorios Modulos VERBAS Solicitação: Revisão dos menus dos módulos Verbas e Relatórios  Solução: Em programaçãos
+0902-0916 POS1341300 RT 32699 *PR* Solicitante: Alexander Tela/Procedimento: Solicitação: Tela de Planejamento Financeiro  Limitar ações na tela de Planejamento Financeiro Solução: Em programação
+0916-0927 POS1341300 RT 32695 *PR* Solicitante: Alexander Tela/Procedimento: Tela de Lancto. de Fatura de Verba Solicitação:  Limitar ações na tela de Lancto. de Fatura de Verba Solução: Em Programação
+0927-0937 XCO0000103 Ginástica Laboral
+0937-1000 POS1341300 RT 32695 *PR* Solicitante: Alexander Tela/Procedimento: Tela de Lancto. de Fatura de Verba Solicitação:  Limitar ações na tela de Lancto. de Fatura de Verba Solução: Em Programação 
+1000-1200 POS3161290 RT 32189 *PR* Solicitante: Alexander Tela/Procedimento: Gerar Pedido de Licitação Solicitação: RT para atender ao item 5 da Especificação Funcional. Solução: em programacao
+1356-1445 POS3161290 RT 32189 *PR* Solicitante: Alexander Tela/Procedimento: Gerar Pedido de Licitação Solicitação: RT para atender ao item 5 da Especificação Funcional. Solução: em programacao
+1445-1500 POS1340198 RT 32087 *TI* Solicitante: Juliana Garippe Tela/Procedimento: CA-200 Solicitação: Criação de novo relatório com dados de escolas Solução: Teste inicial
+1500-1515 POS1340198 RT 32459 *TI* Solicitante: Michelle Taminato Tela/Procedimento: Cadastro Escola Solicitação: Adicionar novos campos na tela de escola para dados de Gestão Escolar Solução: Teste Inicial - Erro nos testes! 
+1515-1530 POS1340198 RT 32267 *TI* Solicitante: Juliana Garippe Tela/Procedimento: Relatório com mensalidade Solicitação: Criação de novo relatório com mensalidade Solução: Testando PORT nas arvores 220, 230 e trunk 
+1530-1644 POS1340198 RT 32562 *TI* Solicitante: Sandra Ferlin Tela/Procedimento: Segmentação Solicitação: Inclusão de campo para segmentação de cliente Solução: Testando PORT nas arvores 220, 230 e trunk
+1644-1645 POS1340198 RT 32094 *PR* Solicitante: Carla Vivas Tela/Procedimento: Relatório FT 120 Solicitação: Acrescentar validação no relatorio para saber se é mostruario de professor Solução: Solução: Testando PORT nas arvores 220, 230 e trunk
+1645-1710 POS1341300 RT 32699 *PR* Solicitante: Alexander Tela/Procedimento: Solicitação: Tela de Planejamento Financeiro  Limitar ações na tela de Planejamento Financeiro Solução: Em programação 
+1710-1806 POS1341300 RT 32724 *PR* Solicitante: Alexander Tela/Procedimento: Lancto. Fatura (Múlt. Verbas) Solicitação: Limitar ações na tela de Lancto. Fatura (Múlt. Verbas) Solução: Em programação
+
+* 09/08
+0810-1010 POS1340198 RT 32780 *TI* OK Solicitante: CA-110 Tela/Procedimento: CA-110 Solicitação: Incluir opção para geração de dados do CA-110 em Excel Solução: Teste Inicial
+1010-1200 POS1340198 RT 32267 *PR* Solicitante: Juliana Garippe Tela/Procedimento: Relatório com mensalidade Solicitação: Criação de novo relatório com mensalidade Solução: Em programação
+1400-1600 POS1340198 RT 32267 *PR* Solicitante: Juliana Garippe Tela/Procedimento: Relatório com mensalidade Solicitação: Criação de novo relatório com mensalidade Solução: Em programação
+1600-1629 POS1341300 RT 32694 *PR* Solicitante: Alexander Tela/Procedimento: Tela de Prestação de Contas Solicitação: Limitar ações na tela de Prestação de Contas Solução: Em Programação
+1629-1710 POS3161290 RT 32189 *PR* Solicitante: Alexander Tela/Procedimento: Gerar Pedido de Licitação Solicitação: RT para atender ao item 5 da Especificação Funcional. Solução: em programacao
+1710-1815 POS1341300 RT 32694 *PR* Solicitante: Alexander Tela/Procedimento: Tela de Prestação de Contas Solicitação: Limitar ações na tela de Prestação de Contas Solução: Em Programação
+
+* 10/08
+0820-0926 POS1340198 RT 32780 *TI* OK Solicitante: CA-110 Tela/Procedimento: CA-110 Solicitação: Incluir opção para geração de dados do CA-110 em Excel Solução: Teste Inicial
+0926-0936 XCO0000103 Ginástica Laboral
+0936-1020 POS1340198 RT 32459 *TI* Solicitante: Michelle Taminato Tela/Procedimento: Cadastro Escola Solicitação: Adicionar novos campos na tela de escola para dados de Gestão Escolar Solução: Teste Inicial - Erro nos testes! 
+1020-1110 POS1340198 RT 32456 *TI* erro Solicitante: Hermes Tela/Procedimento: endereço de Escola, Secretaria e Governo  Solicitação: Alterar as telas de endereço de Escola, Secretaria e Governo para mostrar as informações de Latitude e Longitude Solução: Teste Inicial - Erro nos testes.
+1110-1200 POS1340198 RT 32834 *PR* Solicitante: Alex Silva Tela/Procedimento: EV-290 Solicitação: Inclusão de dados no EV-290 Solução: Em programação
+1300-1521 POS1340198 RT 32834 *PR* Solicitante: Alex Silva Tela/Procedimento: EV-290 Solicitação: Inclusão de dados no EV-290 Solução: Em programação
+1521-1540 POS1341300 RT 32702 *PR* Solicitante: Alexander Tela/Procedimento: VE-110 Solicitação: Alterações no Relatório VE-110 Solução: Em programação
+1540-1600 POS1340198 RT 32456 *TI* Solicitante: Hermes Tela/Procedimento: endereço de Escola, Secretaria e Governo  Solicitação: Alterar as telas de endereço de Escola, Secretaria e Governo para mostrar as informações de Latitude e Longitude Solução: Teste Inicial - OK
+1600-1740 POS1340198 RT 32834 *PR* Solicitante: Alex Silva Tela/Procedimento: EV-290 Solicitação: Inclusão de dados no EV-290 Solução: Em programação
+
+* 13/08
+0825-0923 POS1340198 RT 32970 *TI* Solicitante: Carla Vivas Tela/Procedimento: RE-110 Solicitação: Favor incluir uma opção para trazer as requisições que ainda não foram encaminhadas expedição Solução: Teste Inicial - OK
+0923-0943 POS1340198 RT 32834 *PR* Solicitante: Alex Silva Tela/Procedimento: EV-290 Solicitação: Inclusão de dados no EV-290 Solução: Em programação
+0943-0953 XCO0000103 Ginástica Laboral
+0953-1035 POS1340198 RT 32834 *PR* Solicitante: Alex Silva Tela/Procedimento: EV-290 Solicitação: Inclusão de dados no EV-290 Solução: Em programação
+1035-1200 POS1341300 RT 32710 *PR* Solicitante: Alexander Tela/Procedimento: VE-140, VE-220, VE-230, VE-310 e VE-320 Solicitação: Alterações nos Relatórios VE-140, VE-220, VE-230, VE-310 e VE-320 Solução: Em Programação
+1330-1410 POS1341300 RT 32710 *PR* Solicitante: Alexander Tela/Procedimento: VE-140, VE-220, VE-230, VE-310 e VE-320 Solicitação: Alterações nos Relatórios VE-140, VE-220, VE-230, VE-310 e VE-320 Solução: Em Programação
+1410-1510 POS1340101 RT 33157 *TI* Solicitante: Fernando Tela/Procedimento: resetar a senha do usuário Solicitação: Verificar problema, após resetar a senha do usuário o mesmo não está conseguindo logar no sistema Solução:   Teste Inicial
+1510-1536 POS1341300 RT 32710 *PR* Solicitante: Alexander Tela/Procedimento: VE-140, VE-220, VE-230, VE-310 e VE-320 Solicitação: Alterações nos Relatórios VE-140, VE-220, VE-230, VE-310 e VE-320 Solução: Em Programação
+1536-1800 POS1340101 RT 33162 *SU* Solicitante: Alex Silva Tela/Procedimento: Envio de Email Solicitação: Email enviado pelo sistema continua sendo enviado desconfigurado,  Solução: Em suporte/ Programação
+
+* 14/08
+0815-0915 POS3161180 RT 28992 *TI* Solicitante: Alexander Tela/Procedimento: Tela de Cadastro de Portal Solicitação:  Implementar item 1 da Especificação Funcional. Solução: Teste Inicial
+0915-1200 POS1340101 RT 33162 *SU* Solicitante: Alex Silva Tela/Procedimento: Envio de Email Solicitação: Email enviado pelo sistema continua sendo enviado desconfigurado,  Solução: Em suporte/ Programação
+1340-1600 POS1340101 RT 33162 *SU* Solicitante: Alex Silva Tela/Procedimento: Envio de Email Solicitação: Email enviado pelo sistema continua sendo enviado desconfigurado,  Solução: Em suporte/ Programação
+1600-1800 POS1340198 RT 32834 *PR* Solicitante: Alex Silva Tela/Procedimento: EV-290 Solicitação: Inclusão de dados no EV-290 Solução: Em programação
+
+* 15/08
+0820-0855 POS1340198 RT 32834 *PR* Solicitante: Alex Silva Tela/Procedimento: EV-290 Solicitação: Inclusão de dados no EV-290 Solução: Em programação 
+0855-0915 POS1340101 RT 33162 *SU* Solicitante: Alex Silva Tela/Procedimento: Envio de Email Solicitação: Email enviado pelo sistema continua sendo enviado desconfigurado,  Solução: Em suporte/ Programação
+0915-0935 POS1340198 RT 32834 *PR* Solicitante: Alex Silva Tela/Procedimento: EV-290 Solicitação: Inclusão de dados no EV-290 Solução: Em programação
+0935-0945 XCO0000103 Ginástica Laboral
+0945-1039 POS1340198 RT 32834 *PR* Solicitante: Alex Silva Tela/Procedimento: EV-290 Solicitação: Inclusão de dados no EV-290 Solução: Em programação
+1039-1106 POS3161180 RT 28992 *TI* Solicitante: Alexander Tela/Procedimento: Tela de Cadastro de Portal Solicitação:  Implementar item 1 da Especificação Funcional. Solução: Teste Inicial
+1106-1200 POS3161180 RT 28994 *TI* Solicitante: Alexander Tela/Procedimento: Tela de Exportação de Chaves e Escolas Solicitação:  Implementar item 3 da Especificação Funcional Solução: Teste Inicial - Erro nos testes.
+1345-1500 POS3161180 RT 28995 *TI* Solicitante: Alexander Tela/Procedimento: Procedimento de Importação de Chaves e Professores Solicitação: Implementar item 4 da Especificação Funcional. Solução: Teste Inicial - Pendente MPS
+1500-1550 POS3161180 RT 28997 *TI* Solicitante: Alexander Tela/Procedimento: Histórico de Utilização de Chave  Solicitação: Implementar item 5 da Especificação Funcional. Solução: Teste inicial
+1550-1620 POS1340198 RT 32037 *TI* Solicitante: Juliana Garippe Tela/Procedimento: cadastro de produtos vinculados Solicitação: criar uma nova tela no SGE (SAC) para o cadastro de produtos vinculados  Solução: Testes após o Port - OK
+1620-1640 POS3161180 RT 28995 *TI* Solicitante: Alexander Tela/Procedimento: Procedimento de Importação de Chaves e Professores Solicitação: Implementar item 4 da Especificação Funcional. Solução: Teste Inicial  - Pendente MPS
+1640-1800 POS1340198 RT 32808 *TI* Solicitante: Fernando Tela/Procedimento: relatórios do sistem Solicitação: Verificar todos os relatórios do sistema que apresentam dados de endereço e inserir, se já não existir, os dados de tipo de logradouro Solução:  Teste Inicial
+
+* 16/08
+0830-0925 POS1340198 RT 32808 *TI* Solicitante: Fernando Tela/Procedimento: relatórios do sistem Solicitação: Verificar todos os relatórios do sistema que apresentam dados de endereço e inserir, se já não existir, os dados de tipo de logradouro Solução:  Teste Inicial
+0925-0935 XCO0000103 Ginástica Laboral
+0935-1200 POS1340198 RT 32808 *TI* Solicitante: Fernando Tela/Procedimento: relatórios do sistem Solicitação: Verificar todos os relatórios do sistema que apresentam dados de endereço e inserir, se já não existir, os dados de tipo de logradouro Solução:  Teste Inicial
+1400-1642 POS1340198 RT 33212 *PR* Solicitante: Iranei Tela/Procedimento: PL-150 Solicitação: Favor inserir o filtro de seleção no relatório PL-150 Solução: Em programação 
+1642-1830 POS1340101 RT 33195 *PR* Solicitante: Abel Tela/Procedimento:  impressao de pedido Solicitação: Favor verificar impressao de pedido e primeiro pedido da tela de pedido, erro de double.  Solução:  Em programação
+
+* 17/08 
+0830-0845 POS1340101 RT 33195 *PR* Solicitante: Abel Tela/Procedimento:  impressao de pedido Solicitação: Favor verificar impressao de pedido e primeiro pedido da tela de pedido, erro de double.  Solução:  Em programação
+0845-0910 POS1340198 RT 32808 *TI* Solicitante: Fernando Tela/Procedimento: relatórios do sistem Solicitação: Verificar todos os relatórios do sistema que apresentam dados de endereço e inserir, se já não existir, os dados de tipo de logradouro Solução:  Teste Inicial
+0910-0935 POS1340101 RT 33231 *PR* Solicitante: Rodrigo Cesar Tela/Procedimento: impressão de QP Verbas Multiplas Solicitação:  Acess Violation na impressão de QP Verbas Multiplas Solução: Implementado
+0935-0945 XCO0000103 Ginástica Laboral
+0945-1130 POS1340101 RT 33231 *PR* Solicitante: Rodrigo Cesar Tela/Procedimento: impressão de QP Verbas Multiplas Solicitação:  Acess Violation na impressão de QP Verbas Multiplas Solução: Implementado
+1130-1200 POS1341310 RT 33147 *PR* Solicitante: Alexander Tela/Procedimento: tela de Importação Solicitação: Implementação do item 1 da Especificação Funcional Solução: Em programação
+1400-1550 POS1341310 RT 33147 *PR* Solicitante: Alexander Tela/Procedimento: tela de Importação Solicitação: Implementação do item 1 da Especificação Funcional Solução: Em programação
+1550-1730 POS3161290 RT 32189 *PR* Solicitante: Alexander Tela/Procedimento: Gerar Pedido de Licitação Solicitação: RT para atender ao item 5 da Especificação Funcional. Solução: em programacao
+1730-1810 POS3161180 RT 28995 *TI* Solicitante: Alexander Tela/Procedimento: Procedimento de Importação de Chaves e Professores Solicitação: Implementar item 4 da Especificação Funcional. Solução: Teste Inicial  - OK
+ 
+* 20/08 
+0820-0935 POS1340198 RT 33102 *TI* Solicitante: Fernando Tela/Procedimento: ExportaGrafica  Solicitação:  Converter ExportaGrafica para utilizar OpenQuery Solução:  Teste Inicial
+0935-0945 XCO0000103 Ginástica Laboral
+0935-1200 POS1340198 RT 33102 *TI* Solicitante: Fernando Tela/Procedimento: ExportaGrafica  Solicitação:  Converter ExportaGrafica para utilizar OpenQuery Solução:  Teste Inicial
+1400-1440 POS1341310 RT 33148 *PR* Solicitante: Alexander Tela/Procedimento: Tela de Importação de Dados da Central Solicitação: Implementação do item 2 da Especificação Funcional  Solução: Em programação 
+1440-1540 POS1341300 RT 32694 *PR* Solicitante: Alexander Tela/Procedimento: Tela de Prestação de Contas Solicitação: Limitar ações na tela de Prestação de Contas Solução: Em Programação
+1540-1752 POS1340198 RT 33212 *PR* Solicitante: Iranei Tela/Procedimento: PL-150 Solicitação: Favor inserir o filtro de seleção no relatório PL-150 Solução: Em programação 
+1752-1830 POS1341300 RT 32694 *PR* Solicitante: Alexander Tela/Procedimento: Tela de Prestação de Contas Solicitação: Limitar ações na tela de Prestação de Contas Solução: Em Programação
+
+* 21/08
+0821-1137 POS1341310 RT 33148 *PR* Solicitante: Alexander Tela/Procedimento: Tela de Importação de Dados da Central Solicitação: Implementação do item 2 da Especificação Funcional  Solução: Em programação 
+1137-1200 POS1341300 RT 32700 *PR* Solicitante: Alexander Tela/Procedimento: Plano de Contas Oracle Solicitação:  Integrar Plano de Contas Oracle Solução: Em programação
+1400-1804 POS1341300 RT 32700 *PR* Solicitante: Alexander Tela/Procedimento: Plano de Contas Oracle Solicitação:  Integrar Plano de Contas Oracle Solução: Em programação
+
+* 22/08
+0801-1200 POS1341300 RT 32700 *PR* Solicitante: Alexander Tela/Procedimento: Plano de Contas Oracle Solicitação:  Integrar Plano de Contas Oracle Solução: Em programação
+1400-1430 POS1341300 RT 32702 *PR* Solicitante: Alexander Tela/Procedimento: VE-110 Solicitação: Alterações no Relatório VE-110 Solução: Em programação
+1430-1803 POS3161290 RT 32187 *PR* Solicitante: Alexander Tela/Procedimento: Nova tela para Alterar Parcelas Solicitação: Nova tela para Alterar Parcelas Solução: Em programação
+
+* 23/08
+0802-0935 POS3161290 RT 32187 *PR* Solicitante: Alexander Tela/Procedimento: Nova tela para Alterar Parcelas Solicitação: Nova tela para Alterar Parcelas Solução: Em programação 
+0935-0945 XCO0000103 Ginástica Laboral
+0945-1200 POS3161290 RT 32187 *PR* Solicitante: Alexander Tela/Procedimento: Nova tela para Alterar Parcelas Solicitação: Nova tela para Alterar Parcelas Solução: Em programação 
+1400-1445 POS1341300 RT 32702 *PR* Solicitante: Alexander Tela/Procedimento: VE-110 Solicitação: Alterações no Relatório VE-110 Solução: Em programação
+1445-1538 POS1341300 RT 32707 *PR* Solicitante: Alexander Tela/Procedimento: VE-610 Solicitação: Alterações no Relatório VE-610 Solução: Em programação
+1538-1615 POS1341300 RT 32708 *PR* Solicitante: Alexander Tela/Procedimento: VE-620 Solicitação: Alterações no Relatório VE-620 Solução: Em Programação
+1615-1705 POS1340198 RT 33228 *TI* Solicitante: Alex Silva Tela/Procedimento: AT-630 Solicitação: Relatório AT-630 trazenndo responsável pela secretaria Solução: Teste Inicial - Erro nos testes
+1705-1740 POS1340198 RT 33274 *TI* Solicitante: Juliana Garippe Tela/Procedimento: PL-910 Solicitação: Inclusão de filtro de desistência no PL-910 Solução: Teste Inicial
+1740-1806 POS1340101 RT 33285 *TI* Solicitante: Ricardo Musiat Tela/Procedimento: Solicitação: Erro de inserção de dados no módulo Concorrentes Solução: Teste Inicial
+
+* 24/08
+0810-0900 POS1340101 RT 33285 *TI* Solicitante: Ricardo Musiat Tela/Procedimento: Solicitação: Erro de inserção de dados no módulo Concorrentes Solução: Teste Inicial - OK
+0935-0945 XCO0000103 Ginástica Laboral
+0945-1033 POS3161290 RT 32186 *PR* Solicitante: Alexander Tela/Procedimento: crequisicao Solicitação: atender ao 2 da Especificação Funcional. Solução: Em programação - Localizar Erro na geração de pedido por requisição
+1033-1111 POS1340193 RT 33313 *PR* Solicitante: Flávio. Tela/Procedimento: Não aplicável. Solicitação: Atualizar as procedure do celta com relação ao trunk. Solução: Atualizar procedures do celta.
+1111-1130 POS1340198 RT 33228 *TI* Solicitante: Alex Silva Tela/Procedimento: AT-630 Solicitação: Relatório AT-630 trazenndo responsável pela secretaria Solução: Teste Inicial - OK 
+1130-1200 POS1340198 RT 32780 *TI* Solicitante: CA-110 Tela/Procedimento: CA-110 Solicitação: Incluir opção para geração de dados do CA-110 em Excel Solução: Teste Inicial - Testando Port 201.4 ok
+1400-1815 POS1340198 RT 32323 *TI* Solicitante: Juliana Garippe Tela/Procedimento: campo DDD na tabela Endereço Solicitação: Incluir campo DDD na tabela Endereço e possibilitar alteração do usuário Solução: Teste Inicial 
+ 
+* 27/08
+0758-0934 POS1340198 RT 32323 *TI* Solicitante: Juliana Garippe Tela/Procedimento: campo DDD na tabela Endereço Solicitação: Incluir campo DDD na tabela Endereço e possibilitar alteração do usuário Solução: Teste Inicial 
+0934-0944 XCO0000103 Ginástica Laboral
+0944-1200 POS1340198 RT 32323 *TI* Solicitante: Juliana Garippe Tela/Procedimento: campo DDD na tabela Endereço Solicitação: Incluir campo DDD na tabela Endereço e possibilitar alteração do usuário Solução: Teste Inicial 
+1400-1500 POS3161180 RT 28997 *TI* Solicitante: Alexander Tela/Procedimento: Histórico de Utilização de Chave  Solicitação: Implementar item 5 da Especificação Funcional. Solução: Teste inicial - OK
+1500-1535 POS1340198 RT 33327 *TI* Solicitante: Fernando Tela/Procedimento: cadastro de funcionários Solicitação: Os campos referentes a pessoa jurídica (CNPJ) estão habilitados no cadastro de funcionários, que são pessoas físias. Solução: Teste Inicial
+1535-1612 POS3161180 RT 28993 *PR* Solicitante: Alexander. Tela/Procedimento: Associação de Chaves e Escolas. Solicitação: (-PRJ-) CHAVES PORTAL - Tela de Associação de Chaves e Escolas. Solução: Desenvolver tela de Associação de Chaves e Escolas
+1612-1700 POS1340101 RT 33344 *PR* Solicitante: Fernando Tela/Procedimento:  tela de pedidos Solicitação: ERRO V210.0 (32020) - Campo de desconto cortando valor Solução: Em programação
+1700-1810 POS3161180 RT 28993 *PR* Solicitante: Alexander. Tela/Procedimento: Associação de Chaves e Escolas. Solicitação: (-PRJ-) CHAVES PORTAL - Tela de Associação de Chaves e Escolas. Solução: Desenvolver tela de Associação de Chaves e Escolas
+
+* 28/08
+0822-0927 POS1340198 RT 33350 *PR* Solicitante: Flavio Tela/Procedimento: VD-240 Solicitação: Mensagem para informar falta de semanas VD-240 Solução: Em programação
+0927-0937 XCO0000103 Ginástica Laboral
+0937-1029 POS1340198 RT 33350 *PR* Solicitante: Flavio Tela/Procedimento: VD-240 Solicitação: Mensagem para informar falta de semanas VD-240 Solução: Em programação
+1029-1043 POS3161180 RT 28993 *PR* Solicitante: Alexander. Tela/Procedimento: Associação de Chaves e Escolas. Solicitação: (-PRJ-) CHAVES PORTAL - Tela de Associação de Chaves e Escolas. Solução: Desenvolver tela de Associação de Chaves e Escolas
+1043-1200 POS1340101 RT 33351 *PR* Solicitante: Flavio Tela/Procedimento:  busca de fornecedor Solicitação: Favor verificar e corrigir a busca por código na tela de fornecedor. (ver anexo) Solução:  Em Programação
+1350-1433 POS1340101 RT 33351 *PR* Solicitante: Flavio Tela/Procedimento:  busca de fornecedor Solicitação: Favor verificar e corrigir a busca por código na tela de fornecedor. (ver anexo) Solução:  Em Programação
+1433-1630 POS1340198 RT 32323 *TI* Solicitante: Juliana Garippe Tela/Procedimento: campo DDD na tabela Endereço Solicitação: Incluir campo DDD na tabela Endereço e possibilitar alteração do usuário Solução: Teste Inicial 
+1630-1659 POS3161180 RT 28993 *PR* Solicitante: Alexander. Tela/Procedimento: Associação de Chaves e Escolas. Solicitação: (-PRJ-) CHAVES PORTAL - Tela de Associação de Chaves e Escolas. Solução: Desenvolver tela de Associação de Chaves e Escolas
+1659-1815 POS1340193 RT 33352 *PR* Solicitante: Flavio Tela/Procedimento: ER  Solicitação: Atualizar ER com campos e tabelas criadas e/ou excluidas nas versões 201.*, 210.*, 220.* Solução: Em programação
+
+* 29/08 
+0815-0936 POS1340193 RT 33352 *PR* Solicitante: Flavio Tela/Procedimento: ER  Solicitação: Atualizar ER com campos e tabelas criadas e/ou excluidas nas versões 201.*, 210.*, 220.* Solução: Em programação
+0936-0946 XCO0000103 Ginástica Laboral
+0946-1200 POS1340193 RT 33352 *PR* Solicitante: Flavio Tela/Procedimento: ER  Solicitação: Atualizar ER com campos e tabelas criadas e/ou excluidas nas versões 201.*, 210.*, 220.* Solução: Em programação
+1350-1515 POS1340193 RT 33352 *PR* Solicitante: Flavio Tela/Procedimento: ER  Solicitação: Atualizar ER com campos e tabelas criadas e/ou excluidas nas versões 201.*, 210.*, 220.* Solução: Em programação
+1515-1646 POS3161180 RT 28994 *TI* Solicitante: Alexander Tela/Procedimento: Tela de Exportação de Chaves e Escolas Solicitação:  Implementar item 3 da Especificação Funcional Solução: Teste Inicial - OK
+1646-1804 POS1340198 RT 32780 *TI* Solicitante: CA-110 Tela/Procedimento: CA-110 Solicitação: Incluir opção para geração de dados do CA-110 em Excel Solução: Teste Inicial
+
+* 30/08
+0830-0935 POS1340198 RT 32780 *TI* Solicitante: CA-110 Tela/Procedimento: CA-110 Solicitação: Incluir opção para geração de dados do CA-110 em Excel Solução: Teste Inicial
+0936-0946 XCO0000103 Ginástica Laboral
+0946-1000 POS1340198 RT 32780 *TI* Solicitante: CA-110 Tela/Procedimento: CA-110 Solicitação: Incluir opção para geração de dados do CA-110 em Excel Solução: Teste Inicial
+1000-1020 POS1340193 RT 33352 *PR* Solicitante: Flavio Tela/Procedimento: ER  Solicitação: Atualizar ER com campos e tabelas criadas e/ou excluidas nas versões 201.*, 210.*, 220.* Solução: Em programação
+1020-1200 POS1340101 RT 33371 *TI* Solicitante: Fernando Tela/Procedimento: Tela de critérios Solicitação: Ao abrir a tela de critérios de desconto (Movimento > Pedido > Desconto > Cadastro de Política de Desconto - Critérios), esta abre fora da janela principal Solução: Teste Inicial - ok
+1400-1452 POS1340101 RT 33371 *TI* Solicitante: Fernando Tela/Procedimento: Tela de critérios Solicitação: Erro ao desfazer alteração na tela de critérios Solução: Teste Inicial - OK
+1452-1750 POS3161290 RT 32187 *LI* Solicitante: Alexander Tela/Procedimento: Nova tela para Alterar Parcelas Solicitação: Nova tela para Alterar Parcelas Solução: Evidencia de Testes
+1750-1807 POS3161290 RT 32193 *LI* Solicitante: Alexander. Tela/Procedimento: vinculo de Localidade de Fat.Exp. Solicitação:(-PRJ-) PEDIDO LP - Nova tela de vinculo de Localidade de Fat.Exp. Solução: Evidencia de Testes
+
+* 31/08
+0810-0935 POS3161290 RT 32193 *LI* Solicitante: Alexander. Tela/Procedimento: vinculo de Localidade de Fat.Exp. Solicitação:(-PRJ-) PEDIDO LP - Nova tela de vinculo de Localidade de Fat.Exp. Solução: Evidencia de Testes
+0935-0945 XCO0000103 Ginástica Laboral
+0935-1200 POS3161290 RT 32189 *LI* Solicitante: Alexander Tela/Procedimento: Gerar Pedido de Licitação Solicitação: RT para atender ao item 5 da Especificação Funcional. Solução: Liberação de Versão
+1350-1415 POS3161290 RT 32189 *LI* Solicitante: Alexander Tela/Procedimento: Gerar Pedido de Licitação Solicitação: RT para atender ao item 5 da Especificação Funcional. Solução: Liberação de Versão
+1415-1630 POS3161290 RT 32186 *LI* Solicitante: Alexander Tela/Procedimento: Alterações em Pedido Solicitação: RT para atender ao 2 da Especificação Funcional. Solução: Teste Inicial 
+1640-1815 POS1340198 RT 33417 *PR* Solicitante: Flavio Tela/Procedimento: Licitacao Solicitação: Não permitir cadastrar produtos não ativos em licitação Solução: Em programação
+
+ 
+...Ignorar leitura para baixo...
+*TI* - Teste Inicial
+*PR* - Programação
+*SU* - Suporte
+*LI* - Liberação de Versão
+MODEL:
+-
+Solicitante: Tela/Procedimento: Solicitação: Solução: 
+
+ 
+
+ 
+  
+  
+ 
+
+30/08/2012 POS3161180 861 05 <> 33371 1020-1200 RT 33371 TI Solicitante: Fernando Tela/Procedimento: Tela
+==> PRJ CORRETO POS1340101 
+
+30/08/2012 POS3161180 861 10 <> 33371 1400-1452 RT 33371 TI Solicitante: Fernando Tela/Procedimento: Tela
+==> PRJ CORRETO POS1340101 
+
+31/08/2012 POS3161180 861 01 <> 33417 1640-1815 RT 33417 PR Solicitante: Flavio Tela/Procedimento: Licitac
+==> PRJ CORRETO POS1340198

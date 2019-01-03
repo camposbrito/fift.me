@@ -1,0 +1,22 @@
+* 02/05
+0800-0920 POS1340194 RT 35603 *SU* Solicitante: Sandra Ferlin Tela/Procedimento: relatorios Ca-310, 320, 330 Solicitação: Verificar no guardião acessos relatorios Ca-310, 320, 330 Solução: Suporte
+0800-0920 POS1340194 RT 35603 *SU* Solicitante: Sandra Ferlin Tela/Procedimento: relatorios Ca-310, 320, 330 Solicitação: Verificar no guardião acessos relatorios Ca-310, 320, 330 Solução: Suporte
+0800-0920 XCO0000012 RT 99999  Solicitante:  Tela/Procedimento:  Solicitação:  Solução: MANUTENCAO DE EQUIPAMENTOS
+0920-0930 XCO0000103 Ginástica Laboral 
+0800-1200 POS1340198 RT  34156 *SU* Solicitante: Leone Tela/Procedimento: Agenda Solicitação: Envio de agenda ao fazer pedido Solução: Suporte
+1400-1500 POS1340198 RT  34420 *TI* Solicitante: Fernando Tela/Procedimento: Telas de Cargos e Salários Solicitação: Criar mecanismo de inativação de cargos e profissões Solução: Teste Inicial
+1500-1600 POS1340198 RT  34673 *IN* Solicitante: Fernando Tela/Procedimento:  Solicitação: Unificar cadastros de professores Solução: 
+1600-1630 POS1340198 RT  35156 *IN* Solicitante: Fernando Tela/Procedimento:  Solicitação: Incluir busca por matrícula no F2 de funcionário Solução: 
+1630-1640 POS1340101 RT  35210 *IN* Solicitante: Flavio Tela/Procedimento:  Solicitação: Erro de property not exist no Corporativo Solução: 
+1640-1650 POS1341350 RT  35330 *IN* Solicitante: rodrigo.brito Tela/Procedimento:  Solicitação: (-PRJ-) PEDIDOS CONTRATOS - Cadastro de Professor Zerando Campo FaturadoPor, ExpedidoPor  Solução: 
+1650-1700 POS1340101 RT  35378 *IN* Solicitante: rodrigo.brito Tela/Procedimento:  Solicitação: Corrigir tabulação da Tela de digitação de Pedido, e alinhar Campos da tela de Reenvio. Solução: 
+1700-1730 POS1340198 RT  35381 *IN* Solicitante: Alex Silva Tela/Procedimento:  Solicitação: FS1304 - Não aparece algumas escolas conveniadas FT-120 Solução: 
+1730-1745 POS1340198 RT  36489 *IN* Solicitante: luis.lambranho Tela/Procedimento:  Solicitação: Alterar corporativo para funcionar com nova versão do AC e do Guardião Solução: 
+1745-1810  RT  36998 *IN* Solicitante: Brito Tela/Procedimento:  Solicitação: Verificar diferenças entre os objetos do banco (DIST_PRINC) e o SVN (280) Solução: 
+
+* 03/05
+0800-0920 POS1340194 RT 35603 *SU* Solicitante: Sandra Ferlin Tela/Procedimento: relatorios Ca-310, 320, 330 Solicitação: Verificar no guardião acessos relatorios Ca-310, 320, 330 Solução: Suporte
+0920-0930 XCO0000103 Ginástica Laboral 
+0930-1200 POS1340194 RT 35603 *SU* Solicitante: Sandra Ferlin Tela/Procedimento: relatorios Ca-310, 320, 330 Solicitação: Verificar no guardião acessos relatorios Ca-310, 320, 330 Solução: Suporte
+1400-1800 POS1340194 RT 35603 *SU* Solicitante: Sandra Ferlin Tela/Procedimento: relatorios Ca-310, 320, 330 Solicitação: Verificar no guardião acessos relatorios Ca-310, 320, 330 Solução: Suporte
+

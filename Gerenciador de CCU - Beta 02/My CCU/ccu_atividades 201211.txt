@@ -1,0 +1,316 @@
+* 01/11
+0800-0900 POS1341330 RT 34302 *TI* Solicitante: Fernando Tela/Procedimento: Logs para as tabelas Solicitação: criar tabelas de Logs e Triggers Solução: Teste Inicial
+0900-0920 POS1341330 RT 34311 *TI* Solicitante: Fernando Tela/Procedimento: Logs para as tabelas Solicitação: criar tabelas de Logs e Triggers Solução: Teste Inicial
+0920-0930 XCO0000103 Ginástica Laboral
+0930-1020 POS1340198 RT 34220 *PR* Solicitante: Juliana Garippe Tela/Procedimento: Tela de desconto especial Solicitação: Alterar tela de desconto especial para conceder desconto por nível além de por produto. Solução: Em programação
+1020-1100 POS1341330 RT 34311 *TI* Solicitante: Fernando Tela/Procedimento: Logs para as tabelas Solicitação: criar tabelas de Logs e Triggers Solução: Teste Inicial
+1100-1130 POS1341330 RT 34208 *TI* Solicitante: Fernando Tela/Procedimento: Logs para as tabelas Solicitação: criar tabelas de Logs e Triggers Solução: Teste Inicial
+1130-1200 POS1340193 RT 34391 *PR* Solicitante: Tela/Procedimento: SGE 230, 240, 250, 260 Solicitação:  Revisar RTs com conflitos nos ports Solução: Em programação
+1400-1730 POS1340193 RT 34391 *PR* Solicitante: Tela/Procedimento: SGE 230, 240, 250, 260 Solicitação:  Revisar RTs com conflitos nos ports Solução: Em programação
+1730-1800 POS1340101 RT 34423 *PR* Solicitante: Tela/Procedimento: Botão de histórico de bloqueio Solicitação: Botão de histórico de bloqueio não abre tela em licitação Solução: Em programação 
+
+
+* 05/11
+0800-0900 POS1340198 RT 34417 *PR* Solicitante: Juliana Garippe Tela/Procedimento:  cadastro de data de bimestre Solicitação: Remover validação do cadastro de data de bimestre Solução: Em programação
+0900-0925 POS1340198 RT 34280 *PR* Solicitante: Cilene Tela/Procedimento: Consulta Faturamento Solicitação: Tratar mensagem de erro quando usuário não tem acesso à tela de faturamento  Solução: Em programação
+0925-0935 XCO0000103 Ginástica Laboral
+0935-1048 POS1340198 RT 34280 *PR* Solicitante: Cilene Tela/Procedimento: Consulta Faturamento Solicitação: Tratar mensagem de erro quando usuário não tem acesso à tela de faturamento  Solução: Em programação
+1048-1111 POS1340101 RT 34423 *PR* Solicitante: Tela/Procedimento: Botão de histórico de bloqueio Solicitação: Botão de histórico de bloqueio não abre tela em licitação Solução: Em programação 
+1111-1200 POS1340198 RT 33990 *TI* Solicitante: (sem valor) Tela/Procedimento:  tela de cadastro de modelo de produtos Solicitação: Validar o bimestre do produto que está sendo inserido. Solução: Teste Inicial - OK
+1400-1700 POS1341320 RT 33571 *PR* Solicitante: (sem valor) Tela/Procedimento: CADASTRO CONTRATOS  Solicitação: Cópia de ContratosSolução: Em programação
+1700-1710 POS1340198 RT 34442 *TI* Solicitante: Juliana Garippe Tela/Procedimento: Produtos Pendentes  Solicitação: Favor alterar a tela de Produtos Pendentes para barrar o cadastro de produtos sem bimestre no PEG Solução: Teste Inicial
+1710-1800 POS1341320 RT 34240 *PR* Solicitante: (sem valor) Tela/Procedimento:  CADASTRO CONTRATOS - Relatório Resumo de Contrato Solicitação:  CADASTRO CONTRATOS - Relatório Resumo de Contrato Solução: Em programação
+
+* 06/11
+0800-0900 POS1341320 RT 34240 *PR* Solicitante: (sem valor) Tela/Procedimento:  CADASTRO CONTRATOS - Relatório Resumo de Contrato Solicitação:  CADASTRO CONTRATOS - Relatório Resumo de Contrato Solução: Em programação
+0900-0930 POS1340198 RT 34442 *TI* Solicitante: Juliana Garippe Tela/Procedimento: Produtos Pendentes  Solicitação: Favor alterar a tela de Produtos Pendentes para barrar o cadastro de produtos sem bimestre no PEG Solução: Teste Inicial
+0930-0940 XCO0000103 Ginástica Laboral
+0940-1030 POS1341320 RT 34240 *PR* Solicitante: (sem valor) Tela/Procedimento:  CADASTRO CONTRATOS - Relatório Resumo de Contrato Solicitação:  CADASTRO CONTRATOS - Relatório Resumo de Contrato Solução: Em programação
+1030-1050 POS1340101 RT 34435 *TI* Solicitante: Juliana Garippe Tela/Procedimento: Tela de Produtos Pendentes Solicitação: Tela de Produtos Pendentes não permite inserir sequencia de PEG's - Correção Solução: Teste Inicial
+1050-1115 POS1341300 RT 32693 *LI* Solicitante: Alexander Tela/Procedimento: Tela de Solicitação de Verbas Solicitação:  Limitar ações na tela de Solicitação de Verbas Solução: Liberação de Versão
+1115-1145 POS1341300 RT 32694 *LI* Solicitante: Alexander Tela/Procedimento: Tela de Prestação de Contas Solicitação: Limitar ações na tela de Prestação de Contas Solução:  Liberação de Versão
+1145-1200 POS1341300 RT 32695 *LI* Solicitante: Alexander Tela/Procedimento: Tela de Lancto. de Fatura de Verba Solicitação:  Limitar ações na tela de Lancto. de Fatura de Verba Solução: Liberação de Versão
+1400 1415 POS1341300 RT 32695 *LI* Solicitante: Alexander Tela/Procedimento: Tela de Lancto. de Fatura de Verba Solicitação:  Limitar ações na tela de Lancto. de Fatura de Verba Solução: Liberação de Versão
+1415-1450 POS1341300 RT 32700 *LI* Solicitante: Alexander Tela/Procedimento: Plano de Contas Oracle Solicitação:  Integrar Plano de Contas Oracle Solução:  Liberação de Versão
+1450-1520 POS1341300 RT 32701 *LI* Solicitante: Alexander Tela/Procedimento: Integrar Solicitações de Verba Solicitação: Integrar Solicitações de Verba e Prestações de Contas Solução: Liberação de Versão
+1520-1545 POS1341300 RT 32702 *LI* Solicitante: Alexander Tela/Procedimento: VE-110 Solicitação: Alterações no Relatório VE-110 Solução: Liberação de Versão
+1545-1600 POS1341300 RT 32703 *LI* Solicitante: Alexander Tela/Procedimento: VE-120 Solicitação:  Liberação de Versão
+1600-1620 POS1341300 RT 32704 *LI* Solicitante: Alexander Tela/Procedimento: VE-130 Solicitação: Alterações no Relatório VE-130 Solução: Liberação de Versão
+1620-1640 POS1341300 RT 32724 *LI* Solicitante: Alexander Tela/Procedimento: Lancto. Fatura (Múlt. Verbas) Solicitação: Limitar ações na tela de Lancto. Fatura (Múlt. Verbas) Solução: Liberação de Versão
+1640-1720 POS1340198 RT 32267 *LI* Solicitante: Juliana Garippe Tela/Procedimento: Relatório com mensalidade Solicitação: Criação de novo relatório com mensalidade Solução: Liberação de Versão
+1720-1743 POS1340198 RT 32456 *LI* Solicitante: Hermes Tela/Procedimento: endereço de Escola, Secretaria e Governo  Solicitação: Alterar as telas de endereço de Escola, Secretaria e Governo para mostrar as informações de Latitude e Longitude Solução:  Liberação de Versão
+1743-1810 POS1340198 RT 32756 *LI* Solicitante: Ricardo Musiat Tela/Procedimento: PL-910, PL-915, PL-923, PL-925, PL-930, PL-120 e PL-920. Solicitação: Liberação de Versão
+      
+* 07/11         
+0800-0850 POS1340198 RT 33497 *LI* Solicitante: Alexander Tela/Procedimento: Entrada de Valores Solicitação: Remover tabelas de Entrada de Valores Solução:  Liberação de Versão
+0850-0925 POS1340198 RT 32970 *LI* Solicitante: Carla Vivas Tela/Procedimento: RE-110 Solicitação: Favor incluir uma opção para trazer as requisições que ainda não foram encaminhadas expedição Solução: Liberação de Versão 
+0925-0935 XCO0000103 Ginástica Laboral
+0935-1015 POS1340198 RT 32808 *LI* Solicitante: Fernando Tela/Procedimento: relatórios do sistem Solicitação: Verificar todos os relatórios do sistema que apresentam dados de endereço e inserir, se já não existir, os dados de tipo de logradouro Solução: Liberação de Versão
+1015-1030 POS1340198 RT 32834 *LI* Solicitante: Alex Silva Tela/Procedimento: EV-290 Solicitação: Inclusão de dados no EV-290 Solução: Liberação de Versão
+1030-1040 POS1341300 RT 32710 *LI* Solicitante: Alexander Tela/Procedimento: VE-140, VE-220, VE-230, VE-310 e VE-320 Solicitação: Alterações nos Relatórios VE-140, VE-220, VE-230, VE-310 e VE-320 Solução: Liberação de Versão
+1040-1045 POS1341300 RT 32692 *LI* Solicitante: Alexander Tela/Procedimento: Menus e Relatorios Modulos VERBAS Solicitação: Revisão dos menus dos módulos Verbas e Relatórios  Solução: Liberação de Versão
+1045-1050 POS1341300 RT 32697 *LI* Solicitante: Alexander Tela/Procedimento: Tela de Parâmetros de Plano de Contas Solicitação: Limitar ações na tela de Parâmetros de Plano de Contas Solução: Liberação de Versão
+1050-1055 POS1341300 RT 32698 *LI* Solicitante: Alexander Tela/Procedimento: Telas de Plano de Contas Solicitação: Limitar ações nas telas de Plano de Contas Solução: Liberação de Versão
+1055-1100 POS1341300 RT 32699 *LI* Solicitante: Alexander Tela/Procedimento: Solicitação: Tela de Planejamento Financeiro  Limitar ações na tela de Planejamento Financeiro Solução: Liberação de Versão
+1100-1103 POS1341300 RT 32705 *LI* Solicitante: Alexander Tela/Procedimento: VE-210 Solicitação: Alterações no Relatório VE-210 Solução: Liberação de Versão
+1103-1110 POS1341300 RT 32706 *LI* Solicitante: Alexander Tela/Procedimento: VE-410, VE-411 e VE-530 Solicitação: Alterações nos Relatórios VE-410, VE-411 e VE-530 Solução: Liberação de Versão
+1110-1113 POS1341300 RT 32707 *LI* Solicitante: Alexander Tela/Procedimento: VE-610 Solicitação: Alterações no Relatório VE-610 Solução: Liberação de Versão
+1113-1115 POS1341300 RT 32708 *LI* Solicitante: Alexander Tela/Procedimento: VE-620 Solicitação: Alterações no Relatório VE-620 Solução:  Liberação de Versão
+1115-1119 POS1341300 RT 32709 *LI* Solicitante: Alexander Tela/Procedimento: VE-650 Solicitação: Alterações no Relatório VE-650 Solução: Liberação de Versão
+1119-1145 POS1340198 RT 31477 *LI* Solicitante: Rodrigo Tela/Procedimento: tela de Inscrição em Eventos Solicitação: Alterar a tela de Inscrição em Eventos para mostrar a mensagem "Não são permitidas inscrições em Eventos de Marketing" Solução:  Liberação de Versão 
+1145-1200 POS1340101 RT 31479 *LI* Solicitante: Rodrigo Tela/Procedimento: F2 de Contatos Solicitação: Problema no F2 de Contatos Solução:  Liberação de Versão 
+1400-1405 POS1340101 RT 31480 *LI* Solicitante: Rodrigo Tela/Procedimento: correntes -> Concorrentes -> Cadastro  Solicitação: Corrigir erro no botão Imprimir Clientes Solução: Liberação de Versão
+1405-1410 POS1340101 RT 31529 *LI* Solicitante: (sem valor) Tela/Procedimento: Cadastro de Concorrentes Solicitação: Erro ao alterar endereço de concorrentes Solução: Liberação de Versão
+1410-1414 POS1340101 RT 32137 *LI* Solicitante: Carla Vivas Tela/Procedimento: Tela de Contrato Solicitação: Favor corrigir a ordem das colunas Solução: Liberação de Versão
+1414-1420 POS1340101 RT 32206 *LI* Solicitante: (sem valor) Tela/Procedimento: F2 contato Solicitação: Os Filtros da tela de F2 de Contatos não estão funcionando corretamente. Solução: Liberação de Versão
+1420-1424 POS1340198 RT 32207 *LI* Solicitante: Geferson Tela/Procedimento: Sac->Enviar Email Solicitação: Adicionar o campo Email do tipo varchar(50) na tabela EmailVariosTerceiro Solução: Liberação de Versão 
+1424-1427 POS1340198 RT 32328 *LI* Solicitante: Alex Silva Tela/Procedimento: tipo de terceiro padrão em busca do EV-210 Solicitação: Alterar tipo de terceiro padrão em busca do EV-210 Solução: Liberação de Versão
+1427-1431 POS1340198 RT 32363 *LI* Solicitante: Juliana Garippe Tela/Procedimento: impressão de pedido Solicitação: Corrigir ordenação de produtos na impressão de pedido Solução: Liberação de Versão
+1431-1432 POS1340101 RT 32621 *LI* Solicitante: Carla Vivas Tela/Procedimento: Modulo Tiragem Solicitação:O usuário não está conseguindo deletar uma escola (cod. 23007) Solução: Liberação de Versão  TIRAGEM - PROJETIVA DE DESISTÊNCIAS
+1432-1437 POS1340193 RT 32674 *LI* Solicitante: Flávio Tela/Procedimento: geração de versão do trunk. Solicitação: Favor corrigir os hits e warnings da geração de versão do trunk. Solução: Liberação de Versão
+1437-1450 POS1340101 RT 33231 *LI* Solicitante: Rodrigo Cesar Tela/Procedimento: impressão de QP Verbas Multiplas Solicitação:  Acess Violation na impressão de QP Verbas Multiplas Solução: Liberação de Versão
+1450-1539 POS1340198 RT 32207 *PR* Solicitante: Geferson Tela/Procedimento: Sac->Enviar Email Solicitação: Adicionar o campo Email do tipo varchar(50) na tabela EmailVariosTerceiro Solução:Em programacao- Erro ports
+1539-1543 POS1340198 RT 33274 *LI* Solicitante: Juliana Garippe Tela/Procedimento: PL-910 Solicitação: Inclusão de filtro de desistência no PL-910 Solução: Liberação de Versão
+1543-1549 POS1340198 RT 33327 *LI* Solicitante: Fernando Tela/Procedimento: cadastro de funcionários Solicitação: Os campos referentes a pessoa jurídica (CNPJ) estão habilitados no cadastro de funcionários, que são pessoas físias. Solução:  Liberação de Versão
+1549-1555 POS1340198 RT 33350 *LI* Solicitante: Flavio Tela/Procedimento: VD-240 Solicitação: Mensagem para informar falta de semanas VD-240 Solução:  Liberação de Versão
+1555-1600 POS1340101 RT 33351 *LI* Solicitante: Flavio Tela/Procedimento:  busca de fornecedor Solicitação: Favor verificar e corrigir a busca por código na tela de fornecedor. (ver anexo) Solução:  Liberação de Versão
+1600-1750 POS1341320 RT 33567 *PR* Solicitante: (sem valor) Tela/Procedimento: Cadastro de produtos de Contrato Solicitação: Cadastro de produtos de Contrato por Ano Solução: Em programação
+1750-1800 POS1341330 RT 33444 *LI* Solicitante: Flavio Tela/Procedimento: tabela de logs e triggers de log Solicitação: Atualizar campos das tabela de logs e triggers de log Solução: LIBERAÇÃO DE VERSAO
+
+* 08/11
+0800-0846 POS1341330 RT 33444 *LI* Solicitante: Flavio Tela/Procedimento: tabela de logs e triggers de log Solicitação: Atualizar campos das tabela de logs e triggers de log Solução: Liberação de Versao
+0846-0856 POS1340101 RT 32621 *LI* Solicitante: Carla Vivas Tela/Procedimento: Modulo Tiragem Solicitação:O usuário não está conseguindo deletar uma escola (cod. 23007) Solução: Liberação de Versão  TIRAGEM - PROJETIVA DE DESISTÊNCIAS
+0856-0901 POS1340198 RT 33417 *LI* Solicitante: Flavio Tela/Procedimento: Licitacao Solicitação: Não permitir cadastrar produtos não ativos em licitação Solução: Liberação de Versão Cadastro de Licitacao
+0901-0934 POS1341330 RT 33444 *LI* Solicitante: Flavio Tela/Procedimento: tabela de logs e triggers de log Solicitação: Atualizar campos das tabela de logs e triggers de log Solução: Liberação de Versao
+0934-0944 XCO0000103 Ginástica Laboral
+0944-0952 POS1340101 RT 32520 *LI* Solicitante: Alex Silva Tela/Procedimento: campos tipo e o subtipo Solicitação: Os campos tipo e o subtipo incluídos no RT 21073 não constam mais na tela. Solução: Liberação de Versão 
+0952-1000 POS1340198 RT 33228 *LI* Solicitante: Alex Silva Tela/Procedimento: AT-630 Solicitação: Relatório AT-630 trazenndo responsável pela secretaria Solução: Liberação de Versão
+1000-1045 POS1341330 RT 33828 *TI* Solicitante: Fernando Tela/Procedimento: Logs para as tabelas EnderecoFoneObs, EscolaCompl e  Solicitação: Criar Logs para as tabelas EnderecoFoneObs, EscolaCompl Solução: Teste Inicial
+1045-1200 POS1341320 RT 33567 *PR* Solicitante: (sem valor) Tela/Procedimento: Cadastro de produtos de Contrato Solicitação: Cadastro de produtos de Contrato por Ano Solução: Em programação
+1400-1700 POS1341320 RT 33567 *PR* Solicitante: (sem valor) Tela/Procedimento: Cadastro de produtos de Contrato Solicitação: Cadastro de produtos de Contrato por Ano Solução: Em programação
+1700-1800 POS1341330 RT 33935 *TI* Solicitante: Fernando Tela/Procedimento: Solicitação: Solução: Teste Inicial
+
+* 09/11
+0800-0915 POS1341330 RT 33940 *TI* Solicitante: Fernando Tela/Procedimento: Tabela de Log e Triggers Solicitação: Atualizar campos das tabela de logs e triggers de log Solução: Teste Inicial
+0915-0930 POS1341330 RT 33946 *TI* Solicitante: Fernando Tela/Procedimento: Tabela de Log e Triggers Solicitação: Atualizar campos das tabela de logs e triggers de log Solução: Teste Inicial
+0934-0944 XCO0000103 Ginástica Laboral
+0930-1011 POS1341330 RT 33946 *TI* Solicitante: Fernando Tela/Procedimento: Tabela de Log e Triggers Solicitação: Atualizar campos das tabela de logs e triggers de log Solução: Teste Inicial
+1011-1115 POS1341330 RT 34095 *TI* Solicitante: Fernando Tela/Procedimento: Tabela de Log e Triggers Solicitação: Atualizar campos das tabela de logs e triggers de log Solução: Teste Inicial
+1115-1200 POS1341330 RT 34101 *TI* Solicitante: Fernando Tela/Procedimento: Tabela de Log e Triggers Solicitação: Atualizar campos das tabela de logs e triggers de log Solução: Teste Inicial
+1400-1441 POS1341330 RT 34101 *TI* Solicitante: Fernando Tela/Procedimento: Tabela de Log e Triggers Solicitação: Atualizar campos das tabela de logs e triggers de log Solução: Teste Inicial
+1441-1548 POS1341330 RT 34118 *TI* Solicitante: Fernando Tela/Procedimento: Tabela de Log e Triggers Solicitação: Atualizar campos das tabela de logs e triggers de log Solução: Teste Inicial
+1548-1640 POS1341330 RT 34140 *TI* Solicitante: Fernando Tela/Procedimento: Tabela de Log e Triggers Solicitação: Atualizar campos das tabela de logs e triggers de log Solução: Teste Inicial
+1640-1800 POS1341330 RT 34143 *TI* Solicitante: Fernando Tela/Procedimento: Tabela de Log e Triggers Solicitação: Atualizar campos das tabela de logs e triggers de log Solução: Teste Inicial
+   
+* 12/11   
+0812-0943 POS1341330 RT 34178 *TI* Solicitante: Fernando Tela/Procedimento: Tabela de Log e Triggers Solicitação: Atualizar campos das tabela de logs e triggers de log Solução: Teste Inicial
+0943-1030 POS1341330 RT 34187 *TI* Solicitante: Fernando Tela/Procedimento: Tabela de Log e Triggers Solicitação: Atualizar campos das tabela de logs e triggers de log Solução: Teste Inicial
+1030-1119 POS1341330 RT 34193 *TI* Solicitante: Fernando Tela/Procedimento: Tabela de Log e Triggers Solicitação: Atualizar campos das tabela de logs e triggers de log Solução: Teste Inicial
+1119-1142 POS1340193 RT 999106 Sem banco/rede/RT (Problema de Proxy)
+1142-1200 POS1341330 RT 34205 *TI* Solicitante: Fernando Tela/Procedimento: Tabela de Log e Triggers Solicitação: Atualizar campos das tabela de logs e triggers de log Solução: Teste Inicial
+1400-1446 POS1341330 RT 34205 *TI* Solicitante: Fernando Tela/Procedimento: Tabela de Log e Triggers Solicitação: Atualizar campos das tabela de logs e triggers de log Solução: Teste Inicial
+1446-1517 POS1341330 RT 34331 *TI* Solicitante: Fernando Tela/Procedimento: Tabela de Log e Triggers Solicitação: Atualizar campos das tabela de logs e triggers de log Solução: Teste Inicial
+1517-1545 POS1340193 RT 999106 Sem banco/rede/RT (Problema de Proxy)
+1545-1815 POS1340193 RT 34531 *TI* Solicitante: Flavio Tela/Procedimento: ER Solicitação: Atualizar ER com novos campos e tabelas Solução: Teste Inicial 
+
+* 13/11
+0815-0915 POS1341330 RT 34340 *TI* Solicitante: Fernando Tela/Procedimento: Tabela de Log e Triggers Solicitação: Atualizar campos das tabela de logs e triggers de log Solução: Teste Inicial
+0915-0925 XCO0000103 Ginástica Laboral
+0925-0955 POS1341330 RT 34360 *TI* Solicitante: Fernando Tela/Procedimento: Tabela de Log e Triggers Solicitação: Atualizar campos das tabela de logs e triggers de log Solução: Teste Inicial
+0955-1020 POS1340101 RT 34404 *TI* Solicitante: Fernando Tela/Procedimento: Tabela de Log e Triggers Solicitação: Atualizar campos das tabela de logs e triggers de log Solução: Teste Inicial
+1020-1052 POS3161230 RT 33656 *PR* Solicitante: Fernando Tela/Procedimento: Especificação Solicitação:Projeto D.A. - Especificação Funcional Funcional Solução:  Lendo EF Projeto D.A.
+1052-1200 POS3161230 RT 34162 *PR* Solicitante: Fernando Tela/Procedimento: Parâmetros Gerais Solicitação: Alteração na tela de Parâmetros Gerais Solução: Em programação
+1345-1500 POS3161230 RT 34162 *PR* Solicitante: Fernando Tela/Procedimento: Parâmetros Gerais Solicitação: Alteração na tela de Parâmetros Gerais Solução: Em programação
+1500-1800 POS3161230 RT 34163 *PR* Solicitante: Fernando Tela/Procedimento: Cadastro de Autor Solicitação: Alteração no Cadastro de Autor Solução: Em programação
+
+* 14/11
+0800-1200 POS3161230 RT 34163 *PR* Solicitante: Fernando Tela/Procedimento: Cadastro de Autor Solicitação: Alteração no Cadastro de Autor Solução: Em programação
+1400-1800 POS3161230 RT 34163 *PR* Solicitante: Fernando Tela/Procedimento: Cadastro de Autor Solicitação: Alteração no Cadastro de Autor Solução: Em programação
+
+* 16/11
+0810-1210 POS3161230 RT 34164 *PR* Solicitante: Fernando Tela/Procedimento:  Alteração na tela de Ocorrência Solicitação: Alteração na tela de Ocorrência Solução: Em programação
+1400-1800 POS3161230 RT 34166 *PR* Solicitante: Fernando Tela/Procedimento: Cadastro de Indice de Correção Solicitação: Criar Nova Tela de Cadastro de Indice de Correção Solução: Em programação
+
+* 19/11
+0800-0930 POS3161230 RT 34168 *PR* Solicitante: Fernando Tela/Procedimento: Cadastro de Contrato e Negociação Especial Solicitação: Nova tela de Cadastro de Contrato e Negociação Especial Solução: Em programação
+0930-0940 XCO0000103 Ginástica Laboral         
+0940-1200 POS3161230 RT 34168 *PR* Solicitante: Fernando Tela/Procedimento: Cadastro de Contrato e Negociação Especial Solicitação: Nova tela de Cadastro de Contrato e Negociação Especial Solução: Em programação
+1400-1600 POS3161230 RT 34168 *PR* Solicitante: Fernando Tela/Procedimento: Cadastro de Contrato e Negociação Especial Solicitação: Nova tela de Cadastro de Contrato e Negociação Especial Solução: Em programação
+1600-1700 POS3161230 RT 34165 *PR* Solicitante: Fernando Tela/Procedimento: Tela de Tipo de Negociação Solicitação: Nova tela de Tipo de Negociação Solução: Ajudando na configuração dos menus do guardião
+1700-1800 POS3161230 RT 34168 *PR* Solicitante: Fernando Tela/Procedimento: Cadastro de Contrato e Negociação Especial Solicitação: Nova tela de Cadastro de Contrato e Negociação Especial Solução: Em programação
+
+* 20/11
+0800-1200 POS3161230 RT 34168 *PR* Solicitante: Fernando Tela/Procedimento: Cadastro de Contrato e Negociação Especial Solicitação: Nova tela de Cadastro de Contrato e Negociação Especial Solução: Em programação
+1400-1800 POS3161230 RT 34168 *PR* Solicitante: Fernando Tela/Procedimento: Cadastro de Contrato e Negociação Especial Solicitação: Nova tela de Cadastro de Contrato e Negociação Especial Solução: Em programação
+
+* 21/11
+0810-0849 POS3161230 RT 34168 *PR* Solicitante: Fernando Tela/Procedimento: Cadastro de Contrato e Negociação Especial Solicitação: Nova tela de Cadastro de Contrato e Negociação Especial Solução: Em programação
+0849-1030 POS3161230 RT 34169 *PR* Solicitante: Fernando Tela/Procedimento: Tela de Adiantamento de Direito Autoral Solicitação:  Nova tela de Adiantamento de Direito Autoral Solução: Em programação
+1030-1200 POS3161230 RT 34168 *PR* Solicitante: Fernando Tela/Procedimento: Cadastro de Contrato e Negociação Especial Solicitação: Nova tela de Cadastro de Contrato e Negociação Especial Solução: Em programação
+1400-1810 POS3161230 RT 34168 *PR* Solicitante: Fernando Tela/Procedimento: Cadastro de Contrato e Negociação Especial Solicitação: Nova tela de Cadastro de Contrato e Negociação Especial Solução: Em programação
+
+* 22/11
+0800-1200 POS3161230 RT 34168 *PR* Solicitante: Fernando Tela/Procedimento: Cadastro de Contrato e Negociação Especial Solicitação: Nova tela de Cadastro de Contrato e Negociação Especial Solução: Em programação
+1400-1800 POS3161230 RT 34168 *PR* Solicitante: Fernando Tela/Procedimento: Cadastro de Contrato e Negociação Especial Solicitação: Nova tela de Cadastro de Contrato e Negociação Especial Solução: Em programação
+
+* 23/11
+0800-0916 POS3161230 RT 34168 *PR* Solicitante: Fernando Tela/Procedimento: Cadastro de Contrato e Negociação Especial Solicitação: Nova tela de Cadastro de Contrato e Negociação Especial Solução: Em programação
+0916-0926 XCO0000103 Ginástica Laboral        
+0926-1200 POS3161230 RT 34168 *PR* Solicitante: Fernando Tela/Procedimento: Cadastro de Contrato e Negociação Especial Solicitação: Nova tela de Cadastro de Contrato e Negociação Especial Solução: Em programação
+1400-1715 POS3161230 RT 34168 *PR* Solicitante: Fernando Tela/Procedimento: Cadastro de Contrato e Negociação Especial Solicitação: Nova tela de Cadastro de Contrato e Negociação Especial Solução: Em programação
+1715-1800 POS3161230 RT 34172 *PR* Solicitante: Fernando Tela/Procedimento: Relatório de Recibo de Pagamento Solicitação: Novo Relatório de Recibo de Pagamento Solução: Em programação
+
+* 26/11 
+0800-0917 POS3161230 RT 34172 *PR* Solicitante: Fernando Tela/Procedimento: Relatório de Recibo de Pagamento Solicitação: Novo Relatório de Recibo de Pagamento Solução: Em programação
+0917-0927 XCO0000103 Ginástica Laboral 
+0927-1200 POS3161230 RT 34172 *PR* Solicitante: Fernando Tela/Procedimento: Relatório de Recibo de Pagamento Solicitação: Novo Relatório de Recibo de Pagamento Solução: Em programação
+1400-1500 POS3161230 RT 34172 *PR* Solicitante: Fernando Tela/Procedimento: Relatório de Recibo de Pagamento Solicitação: Novo Relatório de Recibo de Pagamento Solução: Em programação
+1500-1600 POS3161230 RT 34168 *PR* Solicitante: Fernando Tela/Procedimento: Cadastro de Contrato e Negociação Especial Solicitação: Nova tela de Cadastro de Contrato e Negociação Especial Solução: Em programação
+1600-1800 POS3161230 RT 34172 *PR* Solicitante: Fernando Tela/Procedimento: Relatório de Recibo de Pagamento Solicitação: Novo Relatório de Recibo de Pagamento Solução: Em programação
+
+* 27/11
+0800-1200 POS3161230 RT 34172 *PR* Solicitante: Fernando Tela/Procedimento: Relatório de Recibo de Pagamento Solicitação: Novo Relatório de Recibo de Pagamento Solução: Em programação
+1400-1620 POS3161230 RT 34172 *PR* Solicitante: Fernando Tela/Procedimento: Relatório de Recibo de Pagamento Solicitação: Novo Relatório de Recibo de Pagamento Solução: Em programação
+1620-1650 POS3161230 RT 34163 *PR* Solicitante: Fernando Tela/Procedimento: Cadastro de Autor Solicitação: Alteração no Cadastro de Autor Solução: Em programação
+1650-1728 POS3161230 RT 34164 *PR* Solicitante: Fernando Tela/Procedimento: Alteração na tela de Ocorrência Solicitação: Alteração na tela de Ocorrência Solução: Em programação
+1728-1800 POS3161230 RT 34166 *PR* Solicitante: Fernando Tela/Procedimento: Cadastro de Indice de Correção Solicitação: Criar Nova Tela de Cadastro de Indice de Correção Solução: Em programação
+
+* 28/11
+0840-0914 POS3161230 RT 34165 *TI* Solicitante: Fernando Tela/Procedimento: Tela de Tipo de Negociação Solicitação: Nova tela de Tipo de Negociação Solução: Teste Inicial
+0914-0924 XCO0000103 Ginástica Laboral 
+0924-0950 POS3161230 RT 34165 *TI* Solicitante: Fernando Tela/Procedimento: Tela de Tipo de Negociação Solicitação: Nova tela de Tipo de Negociação Solução: Teste Inicial - Erro nos testes
+0950-1036 POS3161230 RT 34167 *TI* Solicitante: Fernando Tela/Procedimento: Tela de CFOP para Direito Autoral Solicitação: Nova tela de CFOP para Direito Autoral Solução: Teste Inicial 
+1036-1200 POS3161230 RT 34169 *TI* Solicitante: Fernando Tela/Procedimento: Tela de Adiantamento de Direito Autoral Solicitação: Nova tela de Adiantamento de Direito Autoral Solução: Teste Inicial
+1400-1630 POS3161230 RT 34168 *PR* Solicitante: Fernando Tela/Procedimento: Cadastro de Contrato e Negociação Especial Solicitação: Nova tela de Cadastro de Contrato e Negociação Especial Solução: Em programação
+1630-1740 POS3161230 RT 34172 *PR* Solicitante: Fernando Tela/Procedimento: Relatório de Recibo de Pagamento Solicitação: Novo Relatório de Recibo de Pagamento Solução: Em programação
+1740-1820 POS3161230 RT 34167 *TI* Solicitante: Fernando Tela/Procedimento: Tela de CFOP para Direito Autoral Solicitação: Nova tela de CFOP para Direito Autoral Solução: Teste Inicial 
+
+* 29/11
+0830-1200 POS3161230 RT 34172 *PR* Solicitante: Fernando Tela/Procedimento: Relatório de Recibo de Pagamento Solicitação: Novo Relatório de Recibo de Pagamento Solução: Em programação
+1340-1440 POS3161230 RT 34165 *TI* Solicitante: Fernando Tela/Procedimento: Tela de Tipo de Negociação Solicitação: Nova tela de Tipo de Negociação Solução: Teste Inicial
+1440-1610 POS3161230 RT 34167 *TI* Solicitante: Fernando Tela/Procedimento: Tela de CFOP para Direito Autoral Solicitação: Nova tela de CFOP para Direito Autoral Solução: Teste Inicial 
+1610-1710 POS3161230 RT 34169 *TI* Solicitante: Fernando Tela/Procedimento: Tela de Adiantamento de Direito Autoral Solicitação: Nova tela de Adiantamento de Direito Autoral Solução: Teste Inicial
+1710-1800 POS3161230 RT 34165 *TI* Solicitante: Fernando Tela/Procedimento: Tela de Tipo de Negociação Solicitação: Nova tela de Tipo de Negociação Solução: Teste Inicial
+
+* 30/11
+0800-0920 POS3161230 RT 34170 *TI* Solicitante: Fernando Tela/Procedimento: Pedido Solicitação: Alteração na Tela de Pedido Solução: Teste Inicial  
+0920-0930 XCO0000103 Ginástica Laboral  
+0930-0940 POS3161230 RT 34170 *TI* Solicitante: Fernando Tela/Procedimento: Pedido Solicitação: Alteração na Tela de Pedido Solução: Teste Inicial  
+0940-1030 POS3161230 RT 34173 *TI* Solicitante: Fernando Tela/Procedimento: Relatório de Produtos Não Cobertos por Contrato Solicitação:  Novo Relatório de Produtos Não Cobertos por Contrato Solução: Teste Inicial
+1030-1100 POS3161230 RT 34411 *TI* Solicitante: Fernando Tela/Procedimento: Tela de Conta Corrente Solicitação: Alteração na tela de Conta Corrente Solução: Teste Inicial 
+1100-1200 POS1340101 RT 34636 *PR* Solicitante: Juliana Garippe Tela/Procedimento: Inativação do PEG Solicitação: Corrigir usuário passado na inativação do PEG Solução: Em programação 
+1400-1500 POS1340101 RT 34636 *PR* Solicitante: Juliana Garippe Tela/Procedimento: Inativação do PEG Solicitação: Corrigir usuário passado na inativação do PEG Solução: Em programação 
+1500-1600 POS3161230 RT 34169 *TI* Solicitante: Fernando Tela/Procedimento: Tela de Adiantamento de Direito Autoral Solicitação: Nova tela de Adiantamento de Direito Autoral Solução: Teste Inicial
+1600-1810 POS1340198 RT 34581 *PR* Solicitante: Sueli Zimmerman Tela/Procedimento: Relatórios de Estoque Solicitação:  Mover os relatórios de Estoque contidos no menu cadastro para Requisição Solução: Em programação 
+
+......
+ 
+ Validação A)
+ A01) Escolhe se um PEG, quando tenta sobrescrever o PEG anterior, sem limpar os parametro, o sistema apresenta o erro :"Field 'codColecao' cannot be modified."
+ A02) Sugestão: Usar LTRIM e RTRIM nas querys da procedure
+ A03)
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ ---------------------------
+Relatórios - distmps - CELTA - 9902.1786.270.0
+---------------------------
+
+---------------------------
+OK   
+---------------------------
+
+Boa Tarde,
+
+Na fatura do meu cartão de crédito (Open Visa), veio a cobrança de um seguro, e não percebi, na fatura de outubro veio a cobraça novamente.
+Gostaria de pedir o extorno das duas cobranças, haja visto que eu não solicitei esse seguro.
+Lançamentos:
+
+28/09/2012 SPR SEG PROT PERDA/ROUBO 4,90
+29/10/2012 SPR SEG PROT PERDA/ROUBO 4,90
+
+
+...Ignorar leitura para baixo...
+*TI* - Teste Inicial
+*PR* - Programação
+*SU* - Suporte
+*LI* - Liberação de Versão
+MODEL:
+-
+*PR* Solicitante: Tela/Procedimento: Solicitação: Solução: Em programação
+*TI* Solicitante: Tela/Procedimento: Solicitação: Solução: Teste Inicial
+*LI* Solicitante: Tela/Procedimento: Solicitação: Solução: Liberação de Versão
+*SU* Solicitante: Tela/Procedimento: Solicitação: Solução: Suporte
+
+
+SPE:
+-
+POS1340101 - CORRETIVA
+POS1340193 - LIBERAÇÃO DE VERSÃO - geração de versao, tirando warnings, baixando versao
+POS1340194 - SUPORTE
+POS1340196 - GERENCIAMENTO (reunião)
+POS1340198 - MELHORIAS / ALTERAÇÕES / NOVAS IMPLEMENTAÇÕES
+POS1340199 - TREINAMENTO
+POS3161260 - NOVAS TELAS
+
+
+Esses RTs especiais são:
+999101 ********** EM DESUSO ********** GERAÇÃO DE VERSÕES + ACOMPANHAMENTO DE BAIXA DE VERSÕES.
+999102 PORTS ENTRE ÁRVORES DO SVN
+999103 CRIAÇÃO DE ÁRVORE NO SVN
+999104 ATUALIZAÇÕES DE RTS
+999105 INSTALAÇÃO/UPGRADE DE SOFTWARE (DELPHI, ETC)
+999106   PROBLEMA COM EQUIPAMENTO/ACESSO
+999107    TECNICAS AVALIAÇÃO DE INFRAESTRUTURA - 3 CAMADAS, ETC.
+
+** Se precisar de alguma orientação adicional, depois conversamos.
+
+
+XCO:
+-
+XCO0000000 - ATIVIDADES GERAIS
+XCO0000010 - TREINAMENTO RECEBIDO
+XCO0000012 - MANUTENCAO DE EQUIPAMENTOS
+XCO0000014 - TREINAMENTO MINISTRADO
+XCO0000015 - REUNIOES INTERNAS
+XCO0000016 - SUPORTE NOVOS NEGOCIOS
+XCO0000017 - LANC. HORAS/SUPER PROJ.
+XCO0000019 - LEITURA INFORMATIVOS
+XCO0000029 - AVALIACAO DE DESEMPENHO
+XCO0000032 - ESTUDO DE SOFTWARE
+XCO0000050 - IMPRODUTIVO
+XCO0000051 - FERIAS
+XCO0000054 - ESTUDOS UNIVERSIDADE
+XCO0000057 - LICENCA
+
+inicialmente, foram criados os seguintes projetos:
+POS1340601 2009/001 - MARKETING
+POS1340602 2009/004 - DIAGRAMACAO ER 
+POS1340603 2009/005 - SISTEMA DE 9 ANOS
+POS3160701 2009/002 - UNIFICACAO LP-SE
+POS3160702  2009/003 - IMPORTACAO LST.ADO
+POS1340607 (-PRJ-) CARTÕES CORPORATIVOS
+XCO0000076 - 2:00 hrs da 4a. feira cinzas
+XCO0000082 - DISPENSA JUSTICA ELEITORAL
+XCO0000084 - ACERTO FINAL DE ANO - 4:00
+XCO0000103 - GINASTICA LABORAL
+XCO0000119 - AUDIENCIA TRABALHISTA
+
+* PARA QUEM TRABALHA NOS SISTEMAS DA EDITORA LP (Executável Editora.EXE):
+
+
+POS3160201  2009 - MANUTENCAO CORRETIVA
+POS3160293  2009 - GERACAO DE VERSOES
+POS3160294  2009 - SUPORTE AOS USUARIOS
+POS3160296  2009 - GERENCIA DO PROJETO
+POS3160298  2009 - MELHORIAS EXTRAS
+POS3160299  2009 - TREINAMENTO 
+

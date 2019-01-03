@@ -1,0 +1,151 @@
+* 01/02
+0800-1200 POS1340194 RT 35603 *SU* Solicitante: Sandra Ferlin Tela/Procedimento: relatorios Ca-310, 320, 330 Solicitação: Verificar no guardião acessos relatorios Ca-310, 320, 330 Solução: Suporte
+1400-1800 POS1340194 RT 35603 *SU* Solicitante: Sandra Ferlin Tela/Procedimento: relatorios Ca-310, 320, 330 Solicitação: Verificar no guardião acessos relatorios Ca-310, 320, 330 Solução: Suporte
+
+* 02/02
+...
+
+..
+
+1400-1800 POS1340194 RT 35603 *SU* Solicitante: Sandra Ferlin Tela/Procedimento: relatorios Ca-310, 320, 330 Solicitação: Verificar no guardião acessos relatorios Ca-310, 320, 330 Solução: Suporte
+* 31/01
+0800-0920 POS1340198 RT 35574 *SU* Solicitante: Ricardo Musiat Tela/Procedimento: Cadastro Cliente Solicitação:Desativar o cadastro duplicado (cód. 138185), e migrar as ocorrências/eventos que estão lançadas neste cadastro para o cadastro que ficará ativo (Cód. 654864). Solução: Suporte
+0920-0930 XCO0000103 Ginástica Laboral 
+0930-1100 POS1340198 RT 35574 *SU* Solicitante: Ricardo Musiat Tela/Procedimento: Cadastro Cliente Solicitação:Desativar o cadastro duplicado (cód. 138185), e migrar as ocorrências/eventos que estão lançadas neste cadastro para o cadastro que ficará ativo (Cód. 654864). Solução: Suporte
+1100-1200 POS1340198 RT 35574 *SU* Solicitante: Ricardo Musiat Tela/Procedimento: Cadastro Cliente Solicitação:Desativar o cadastro duplicado (cód. 138185), e migrar as ocorrências/eventos que estão lançadas neste cadastro para o cadastro que ficará ativo (Cód. 654864). Solução: Suporte
+1400-1500 POS1340198 RT 34045 *LI* Solicitante: Fernando Tela/Procedimento: Form principal SGE Solicitação: tela do SGE quando restaurada Solução: Liberação de Versão
+1500-1530 POS1340198 RT 34280 *LI* Solicitante: Cilene Tela/Procedimento: Consulta Faturamento Solicitação: Tratar mensagem de erro quando usuário não tem acesso à tela de faturamento  Solução: Liberação de Versão
+1530-1600 POS1340198 RT 34417 *LI* Solicitante: Juliana Garippe Tela/Procedimento:  cadastro de data de bimestre Solicitação: Remover validação do cadastro de data de bimestre Solução: Liberação de Versão
+1600-1630 POS1340101 RT 34636 *LI* Solicitante: Juliana Garippe Tela/Procedimento: Inativação do PEG Solicitação: Corrigir usuário passado na inativação do PEG Solução: Liberação de Versão
+1630-1730 POS1340198 RT 35154 *LI* Solicitante: Flávio Tela/Procedimento: Log_Pedido Solicitação: Adicionar campo DataDev na tabela LOG_Pedido Solução:  Liberação de Versão
+1730-1800 POS1340101 RT 35139 *LI* Solicitante: (sem valor)  Tela/Procedimento: FT140 Solicitação: Corrigir erro relatório FT140 Solução: Liberação de Versão
+
+...
+Para lançar
+
+...Ignorar leitura para baixo...
+
+declare @Terceiro int = 138185  -- Destivar
+--select * from terceiro where cod = @Terceiro
+--select * from Endereco where Terceiro = @Terceiro 
+--select * from TerJuridica where Cod = @Terceiro 
+--select * from FoneticaTerceiro4p where CodTerceiro = @Terceiro 
+--select * from Cliente where cod in (@Terceiro )
+
+--select * from TerceiroContato where terceiro = @Terceiro 
+--select * from RequisicaoCompl where Favorecido = @Terceiro 
+--select * from OcorrenciaTabela where Terceiro = @Terceiro 
+--select * from Ocorrencia  where Terceiro = @Terceiro
+--select * from SelecaoTerceiroEspecif where Terceiro in (@Terceiro)
+
+
+
+
+
+
+
+parei no  LOG_ModeloCheckListPortalSite
+convert(varchar(8),suser_sname())
+
+isnull(Usuario, convert(varchar(8),suser_sname()))
+
+A01) Para cliente Inativo, o sistema apresenta no campo 'Cópias para' mensagem de Código Incorreto, Sugestão: Apresentar Código ou Cliente Inativo	
+A02) Separar os Código Inativos por virgula, para evitar que o Dialogo de Erro fiquei muito grande no 'Heidth'
+A03) Sugestão: Se o final da String do 'Copias para' terminar com (,) virgula, remove-la antes de validar.
+A01) No campo funcionário não valida Funcionários inativos
+A02) Erro ao Clicar no Botão Notificar:  "ObterPermissoesClasse": Erro em execução de comando:
+
+
+ select 
+	p.Cod,  
+	t.Nome,
+	tf.Profissao,
+   (select pf.Descricao from Profissao pf where pf.cod = tf.Profissao) ProfissaoNome, 
+	p.FuncPrincipal,
+	(select pf1.Descricao from Profissao pf1 where pf1.cod = p.FuncPrincipal) FuncPrincipal,
+	t.SitCad
+from professor p 
+join TerFisica tf on tf.Cod = p.Cod
+join Terceiro t on t.Cod = p.Cod
+
+where 
+p.FuncPrincipal  is not null
+and p.FuncPrincipal <> tf.Profissao 
+order by p.cod
+
+
+*TI* - Teste Inicial
+*PR* - Programação
+*SU* - Suporte
+*LI* - Liberação de Versão
+MODEL:
+-
+*PR* Solicitante: Tela/Procedimento: Solicitação: Solução: Em programação
+*TI* Solicitante: Tela/Procedimento: Solicitação: Solução: Teste Inicial
+*LI* Solicitante: Tela/Procedimento: Solicitação: Solução: Liberação de Versão
+*SU* Solicitante: Tela/Procedimento: Solicitação: Solução: Suporte
+
+
+SPE:
+-
+POS1340101 - CORRETIVA
+POS1340193 - LIBERAÇÃO DE VERSÃO - geração de versao, tirando warnings, baixando versao
+POS1340194 - SUPORTE
+POS1340196 - GERENCIAMENTO (reunião)
+POS1340198 - MELHORIAS / ALTERAÇÕES / NOVAS IMPLEMENTAÇÕES
+POS1340199 - TREINAMENTO
+POS3161260 - NOVAS TELAS
+
+
+Esses RTs especiais são:
+999101 ********** EM DESUSO ********** GERAÇÃO DE VERSÕES + ACOMPANHAMENTO DE BAIXA DE VERSÕES.
+999102 PORTS ENTRE ÁRVORES DO SVN
+999103 CRIAÇÃO DE ÁRVORE NO SVN
+999104 ATUALIZAÇÕES DE RTS
+999105 INSTALAÇÃO/UPGRADE DE SOFTWARE (DELPHI, ETC)
+999106   PROBLEMA COM EQUIPAMENTO/ACESSO
+999107    TECNICAS AVALIAÇÃO DE INFRAESTRUTURA - 3 CAMADAS, ETC.
+
+** Se precisar de alguma orientação adicional, depois conversamos.
+
+
+XCO:
+-
+XCO0000000 - ATIVIDADES GERAIS
+XCO0000010 - TREINAMENTO RECEBIDO
+XCO0000012 - MANUTENCAO DE EQUIPAMENTOS
+XCO0000014 - TREINAMENTO MINISTRADO
+XCO0000015 - REUNIOES INTERNAS
+XCO0000016 - SUPORTE NOVOS NEGOCIOS
+XCO0000017 - LANC. HORAS/SUPER PROJ.
+XCO0000019 - LEITURA INFORMATIVOS
+XCO0000029 - AVALIACAO DE DESEMPENHO
+XCO0000032 - ESTUDO DE SOFTWARE
+XCO0000050 - IMPRODUTIVO
+XCO0000051 - FERIAS
+XCO0000054 - ESTUDOS UNIVERSIDADE
+XCO0000057 - LICENCA
+
+inicialmente, foram criados os seguintes projetos:
+POS1340601 2009/001 - MARKETING
+POS1340602 2009/004 - DIAGRAMACAO ER 
+POS1340603 2009/005 - SISTEMA DE 9 ANOS
+POS3160701 2009/002 - UNIFICACAO LP-SE
+POS3160702  2009/003 - IMPORTACAO LST.ADO
+POS1340607 (-PRJ-) CARTÕES CORPORATIVOS
+XCO0000076 - 2:00 hrs da 4a. feira cinzas
+XCO0000082 - DISPENSA JUSTICA ELEITORAL
+XCO0000084 - ACERTO FINAL DE ANO - 4:00
+XCO0000103 - GINASTICA LABORAL
+XCO0000119 - AUDIENCIA TRABALHISTA
+
+* PARA QUEM TRABALHA NOS SISTEMAS DA EDITORA LP (Executável Editora.EXE):
+
+
+POS3160201  2009 - MANUTENCAO CORRETIVA
+POS3160293  2009 - GERACAO DE VERSOES
+POS3160294  2009 - SUPORTE AOS USUARIOS
+POS3160296  2009 - GERENCIA DO PROJETO
+POS3160298  2009 - MELHORIAS EXTRAS
+POS3160299  2009 - TREINAMENTO 
+
