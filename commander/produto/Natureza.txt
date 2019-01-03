@@ -1,0 +1,10 @@
+POS1340101 - CORREÇÃO              
+POS1340193 - Atividades Técnicas / LIBERAÇÃO DE VERSÃO  /geração de versao, tirando warnings, baixando versao
+POS1340194 - SUPORTE
+POS1340194 - Atualização de Dados
+POS1340194 - TUNNING
+POS1340196 - GERENCIAMENTO (reunião)
+POS1340198 - MELHORIAS / ALTERAÇÕES / NOVAS IMPLEMENTAÇÕES / 
+POS1340198 - Alteração após implantação
+POS1340199 - TREINAMENTO
+POS3161260 - NOVAS TELAS
