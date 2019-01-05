@@ -21,3 +21,6 @@ div#messages {
     border-radius: 13px;
     padding: 6px 10px;
 }
+div#messages span {
+    float: right;
+}

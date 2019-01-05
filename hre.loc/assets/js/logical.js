@@ -13,11 +13,17 @@ function DisconnectingSocked(socket) {
   resetMensagem("client trying disconnect", 'silver');
   socket.disconnect();
 }
+function LimparMessages(msg, color) {
+  
+  
+  $("#messages").empty();
+  $("#messages").append("<span class='badge badge-light circle-badge text-right' onclick='LimparMessages()'>X</span>" );
+}
 
 function resetMensagem(msg, color) {
   ////console.log(getDataTime() + ' - '+ msg);  
   $("#messages").show();
-  $("#messages").empty();
+  //$("#messages").empty();
   $("#messages").append('<font color="'+color+'"><b>' + getDataTime() + " - " + msg + "</b></font><br>" );
 }
 
@@ -145,6 +151,7 @@ function routesClient(socket){
     //alert('parametros');
     socket.disconnect();
     socket.close();
+    window.location.href = "./#/ocorrencias/listar/";
   });
   $('#ocorrencia-nova').click(function(){
     //alert('parametros');
