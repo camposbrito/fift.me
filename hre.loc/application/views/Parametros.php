@@ -1,4 +1,3 @@
-<div id="messages" class=" alert alert-secondary" role="alert" style="display:none;"> </div>
 <div class="container">
     <div class="row" >
         <div class="col-xs-4 col-sm-4  col-md-4 col-lg-4 col-xl-4 offset-lg-0 text-center"  >
