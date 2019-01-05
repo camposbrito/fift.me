@@ -13,9 +13,7 @@ function DisconnectingSocked(socket) {
   resetMensagem("client trying disconnect", 'silver');
   socket.disconnect();
 }
-function LimparMessages(msg, color) {
-  
-  
+function LimparMessages(msg, color) { 
   $("#messages").empty();
   $("#messages").append("<span class='badge badge-light circle-badge text-right' onclick='LimparMessages()'>X</span>" );
 }
