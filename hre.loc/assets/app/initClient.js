@@ -83,19 +83,6 @@ function routesClient(socket){
     angular.element("#TurnoController").scope().setQuantidade(data);
     angular.element("#TurnoController").scope().$apply(); 
   });
-
-  //+---------------+
-  //|SALVAR PARAMETRO|
-  //+---------------+ 
-  $("#parametros-salvar").click(function() {
-    var Parametros = $("#parametros").serialize();
-    //console.debug("#salvar-parametros");
-    $.post("../parametros/salvar", Parametros);
-    socket.disconnect(true);
-    socket.close();
-    window.location.href = "../#/em_andamento/";
-  });
-  
   //+---------------+
   //|SALVAR OCORRENCIA|
   //+---------------+ 
@@ -114,7 +101,7 @@ function routesClient(socket){
     // socket.close();
     // window.location.href = "../#/em_andamento/";
   });
-  
+
   //+---------------+
   //|--- DISCONN ---|
   //+---------------+ 

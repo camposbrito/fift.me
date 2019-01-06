@@ -25,5 +25,15 @@ myApp.controller("ParametrosController", [
       .error(function(data, status) {
         $log.error(status);
     });
+    //+---------------+
+    //|SALVAR PARAMETRO|
+    //+---------------+ 
+    $scope.ParametrosSalvar = function() {
+      var Parametros = $("#parametros").serialize();
+      //console.debug("#salvar-parametros");
+      $.post("./parametros/salvar", Parametros);
+      window.location.href = "./#/em_andamento/";
+    };
+    
   }
 ]);
