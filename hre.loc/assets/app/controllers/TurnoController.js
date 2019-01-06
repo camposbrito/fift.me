@@ -16,18 +16,11 @@ myApp.controller("TurnoController", [
         $scope.turno.QtdPecas = parseInt($scope.turno.QtdPecas) + parseInt(sessionStorage.PecasPorCiclo);
     };
     $scope.getAtual = function() {
-      // console.debug("get Atual");
       $http
       .get("turno/getAtual")
         .success(function(data) {
-          //console.log(data);
-          
           $scope.turno = data; 
           LocalStorageService.set('Turno.id', data.id);          
-          //console.log('RODRIGO DE CAMPOS BRITO')
-          //console.log('save id - turno atual');     
-          //console.log(sessionStorage.TurnoAtual);
-          // //console.log($window.sessionStorage.TurnoAtual2);
         })
         .error(function(data, status) {
           $log.error(status);
@@ -41,11 +34,9 @@ myApp.controller("TurnoController", [
         .success(function(data) {
           $scope.Current = data;
           LocalStorageService.set("InProgress", data.progress);
-          // console.debug($scope.Current);
           if (data.progress == true) 
           {            
             $location.path('/dashboard/index');      
-            // alert('EmAndamento');
           }
            
         })
@@ -53,12 +44,10 @@ myApp.controller("TurnoController", [
           $log.error(status);
         });
     };
-    // $scope.GetOcorrencias = function() {      
-    //     $location.path('/ocorrencias/listar');                  
-    // }
-    // $scope.FinalizarTurno = function() {      
-    //   $location.path('/finaliza');                     
-    // }
+
+    $scope.FinalizarTurno = function() {      
+      $location.path('/finaliza');                     
+    }
   }
 ]);
 
