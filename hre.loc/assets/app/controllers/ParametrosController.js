@@ -32,7 +32,7 @@ myApp.controller("ParametrosController", [
       var Parametros = $("#parametros").serialize();
       //console.debug("#salvar-parametros");
       $.post("./parametros/salvar", Parametros);
-      window.location.href = "./#/em_andamento/";
+      window.location.href = "./#/dashboard/";
     };
     
   }

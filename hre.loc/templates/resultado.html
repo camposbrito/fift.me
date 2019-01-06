@@ -1,41 +1,40 @@
-    <header  ng-include="'./templates/header-resultado.html'">  </header>
-    <!-- <header  ng-include="'./templates/header-termino-turno.html'"></header> -->
-    <div class="container-fluid d-flex flex-column body-content justify-content-center">
-        <div class="row" id="ResultadoController" ng-controller="ResultadoController" >
-            <div class="col-lg-1"></div>
-            <div class="col-md-4 col-lg-3 col-xl-4 align-self-center"><span class="btn btn-warning btn-block btn-sm d-block"><br>{{turno.PecasProducao}}<br><br></span>
-                <h5 class="text-center">Produção</h5>
-                <span class="btn btn-danger btn-block btn-sm d-block"><br>{{turno.Refugos}}<br><br></span>
-                <h5 class="text-center">Refugos</h5>
-                <span class="btn btn-dark btn-block btn-sm d-block"><br>{{turno.Producao}}<br><br></span>
-                <h5 class="text-center">Peças boas</h5>
-            </div>
-            <div class="col-md-4 col-lg-8 col-xl-6">
-                <div class="table-responsive table-striped">
-                    <table class="table text-center">
-                        <thead>
-                            <tr>
-                                <th class="table-dark justify-content-center align-items-center align-content-center align-self-center" rowspan="1" colspan="4">CONTROLE DE PRODUÇÃO</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="table-active">Previsto</td>
-                                <td class="table-active">Realizado</td>
-                                <td class="table-active">Diferença</td>
-                                <td class="table-active">OEE</td>
-                            </tr>
-                            <tr>
-                                <td class="table-active">{{turno.QuantidadePrevistaTurno}}</td>
-                                <td class="table-active">{{turno.Producao}}</td>
-                                <td class="table-active">{{turno.Diferenca}}</td>
-                                <td class="table-active">{{turno.OEE}}</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+<header  ng-include="'./templates/header.html'">  </header>
+<div class="container-fluid d-flex flex-column body-content justify-content-center">
+    <div class="row" id="ResultadoController" ng-controller="ResultadoController" >
+        <div class="col-lg-1"></div>
+        <div class="col-md-4 col-lg-3 col-xl-4 align-self-center"><span class="btn btn-warning btn-block btn-sm d-block"><br>{{turno.PecasProducao}}<br><br></span>
+            <h5 class="text-center">Produção</h5>
+            <span class="btn btn-danger btn-block btn-sm d-block"><br>{{turno.Refugos}}<br><br></span>
+            <h5 class="text-center">Refugos</h5>
+            <span class="btn btn-dark btn-block btn-sm d-block"><br>{{turno.Producao}}<br><br></span>
+            <h5 class="text-center">Peças boas</h5>
+        </div>
+        <div class="col-md-4 col-lg-8 col-xl-6">
+            <div class="table-responsive table-striped">
+                <table class="table text-center">
+                    <thead>
+                        <tr>
+                            <th class="table-dark justify-content-center align-items-center align-content-center align-self-center" rowspan="1" colspan="4">CONTROLE DE PRODUÇÃO</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="table-active">Previsto</td>
+                            <td class="table-active">Realizado</td>
+                            <td class="table-active">Diferença</td>
+                            <td class="table-active">OEE</td>
+                        </tr>
+                        <tr>
+                            <td class="table-active">{{turno.QuantidadePrevistaTurno}}</td>
+                            <td class="table-active">{{turno.Producao}}</td>
+                            <td class="table-active">{{turno.Diferenca}}</td>
+                            <td class="table-active">{{turno.OEE}}</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
-    </div>
-    <footer ng-include="'./templates/footer.html'"></footer>
-    <div ng-include="'./templates/events.html'"></div>  
+    </div>    
+</div>   
+<footer ng-include="'./templates/footer.html'"></footer>
+<div ng-include="'./templates/events.html'"></div>  

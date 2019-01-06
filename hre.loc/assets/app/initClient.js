@@ -70,7 +70,7 @@ function routesClient(socket){
     $("body").removeClass("modal-open");
     $(".modal-backdrop").remove();
 
-    window.location.href = "./#/em_andamento/";
+    window.location.href = "./#/dashboard/";
     // socket.disconnect(true);
   });
   //+---------------+

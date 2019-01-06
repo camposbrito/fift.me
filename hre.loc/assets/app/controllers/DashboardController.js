@@ -13,8 +13,8 @@ myApp.controller("DashboardController", [
       $scope.ocorrencias_aberto_count  = data.Registros;
       LocalStorageService.set("ocorrencias_aberto_count", data.Registros);
     });
-    $scope.InProgress          = $.parseJSON(LocalStorageService.get("InProgress"))          ? true: false;   
-    if (($scope.InProgress == false))
+    $scope.InProgress = $.parseJSON(LocalStorageService.get("InProgress")) ? true: false;   
+    if (($scope.InProgress == false) && ($scope.currentPath != '/parametros'))
     {                  
       $location.path('/');           
     }
@@ -23,8 +23,8 @@ myApp.controller("DashboardController", [
     $scope.InMaintenance       = $.parseJSON(LocalStorageService.get("InMaintenance"))       ? true: false;
     $scope.InScheduledInterval = $.parseJSON(LocalStorageService.get("InScheduledInterval")) ? true: false;    
     if ($scope.InPreparation == true ||      
-      $scope.InMaintenance  == true ||     
-      $scope.InScheduledInterval  == true)
+        $scope.InMaintenance  == true ||     
+        $scope.InScheduledInterval  == true)
     {
       $location.path('/ocorrencia/bloqueio');
     }
