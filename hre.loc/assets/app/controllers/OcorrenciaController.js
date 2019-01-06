@@ -17,7 +17,6 @@ myApp.controller("OcorrenciaController", [
       $http
       .get("ocorrencia/GetOcorrenciaAberto?Turno_Id=" + $scope.Turno)
       .success(function(data) {    
-                 
         if (data.length > 0){
           ocorrencia = data;  
           TipoOcorrencia = ocorrencia.TipoOcorrencia;
@@ -46,6 +45,27 @@ myApp.controller("OcorrenciaController", [
         $log.error(status);
       });  
     }
+    
+    //+---------------+
+    //|SALVAR OCORRENCIA|
+    //+---------------+ 
+    $scope.OcorrenciaSalvar = function() {  
+      var Ocorrencia = $("#ocorrencia-form").serialize();
+      //console.debug("#salvar-parametros");
+      $.post("./ocorrencia/salvar", Ocorrencia)
+      .done(function() {
+        $scope.RoteamentoBloqueio();
+      })
+      .fail(function(status) {
+        $log.error(status);
+      });
+      // .success(function(data) {
+      //   $scope.RoteamentoBloqueio();
+      // })
+      // .error(function(data, status) {
+      //   $log.error(status);
+      // });
+    };
     $scope.IntervaloProgramado = function(){
       console.log('IntervaloProgramado');
 

@@ -53,6 +53,9 @@ var server     = require('http').createServer(),
             // console.info(data);
             console.info('DISCONN > ' + socket.id);            
             delete clients[socket.id];
+            for (var clientId in clients ) {
+                console.log('client: %s', clientId);
+            }
         });
     });
     server.listen(port);          

@@ -83,24 +83,6 @@ function routesClient(socket){
     angular.element("#TurnoController").scope().setQuantidade(data);
     angular.element("#TurnoController").scope().$apply(); 
   });
-  //+---------------+
-  //|SALVAR OCORRENCIA|
-  //+---------------+ 
-  $("#ocorrencia-salvar").click(function() {
-    var Ocorrencia = $("#ocorrencia-form").serialize();
-    //console.debug("#salvar-parametros");
-    $.post("./ocorrencia/salvar", Ocorrencia);
-    if(angular.element("#ocorrencia-form").length > 0 )
-    {
-      // angular.element("#ocorrencia-form").scope().IntervaloProgramado();
-      // angular.element("#ocorrencia-form").scope().MaquinaPreparacao();
-      angular.element("#ocorrencia-form").scope().RoteamentoBloqueio();
-      angular.element("#ocorrencia-form").scope().$apply(); 
-    }
-    // socket.disconnect(true);
-    // socket.close();
-    // window.location.href = "../#/em_andamento/";
-  });
 
   //+---------------+
   //|--- DISCONN ---|
