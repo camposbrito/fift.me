@@ -17,6 +17,7 @@ myApp.controller("OcorrenciaController", [
       $http
       .get("ocorrencia/GetOcorrenciaAberto?Turno_Id=" + $scope.Turno)
       .success(function(data) {    
+        console.log('RoteamentoBloqueio');         
         if (data.length > 0){
           ocorrencia = data;  
           TipoOcorrencia = ocorrencia.TipoOcorrencia;
@@ -92,7 +93,7 @@ myApp.controller("OcorrenciaController", [
     };
     $scope.LiberarMaquina = function(){
       $http({
-        url: 'ocorrencia/FinalizarTurno',
+        url: 'ocorrencia/LiberarMaquina',
         method: "POST",
         headers: {'Content-Type': 'application/json'},        
         data: JSON.stringify({ 'Turno' : $scope.Turno })

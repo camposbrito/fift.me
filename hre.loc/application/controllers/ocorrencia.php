@@ -18,11 +18,11 @@ class ocorrencia extends CI_Controller {
 		echo $res;
 		// redirect(base_url()); 
 	} 
-	public function FinalizarTurno() { 
+	public function LiberarMaquina() { 
 		$this->output->enable_profiler(true); 	
 		$postdata = file_get_contents("php://input");
 		$request = json_decode($postdata);
-		$res = $this->Ocorrencia_Model->FinalizarTurno($request->Turno);
+		$res = $this->Ocorrencia_Model->LiberarMaquina($request->Turno);
 		echo $res;
 		// redirect(base_url()); 
 	} 

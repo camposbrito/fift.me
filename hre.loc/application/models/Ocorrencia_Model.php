@@ -35,7 +35,7 @@ class Ocorrencia_Model extends CI_Model {
     $data['Descricao']                = '';    
     $this->db->insert('Ocorrencia', $data);
   }  
-  public function FinalizarTurno($Turno) {
+  public function LiberarMaquina($Turno) {
     // $Turno                            = $this->input->post('Turno');    
     $data['DataFin']                  = date('Y-m-d H:i:s', now());
     $this->db->where(array( 'Turno_id' => $Turno, 'DataFin' => null));        
