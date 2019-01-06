@@ -35,9 +35,9 @@ class parametros extends CI_Controller {
 		$this->load->view('includes/includes');
 		// $this->load->view('includes/menu');
 		$res['Parametros'] 		= $this->Parametros_Model->get()[0];
-		$res['Parametros'] 	->Equipamento 	= $this->Equipamento_Model->get($res['Parametros']->Equipamento_id)[0];
-		$res['Parametros'] 	->Produto 		= $this->Produto_Model->get($res['Parametros'] ->Produto_id)[0];
-		$res['Parametros'] 	->Operacao 		= $this->Operacao_Model->get($res['Parametros'] ->Operacao_id)[0];	
+		$res['Parametros']->Equipamento 	= $this->Equipamento_Model->get($res['Parametros']->Equipamento_id)[0];
+		$res['Parametros']->Produto 		= $this->Produto_Model->get($res['Parametros'] ->Produto_id)[0];
+		$res['Parametros']->Operacao 		= $this->Operacao_Model->get($res['Parametros'] ->Operacao_id)[0];	
 		$res['Equipamento'] 	= $this->Equipamento_Model->getAll();
 		$res['Produto'] 		= $this->Produto_Model->getAll();
 		$res['Operacao'] 		= $this->Operacao_Model->getAll();
