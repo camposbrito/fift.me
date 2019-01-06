@@ -23,7 +23,8 @@ class Ocorrencia_Model extends CI_Model {
     $this->db->where(array( 'Turno_id' => $Turno));
     $this->db->from('ocorrencia o');
     
-    return $this->db->get()->result()[0];
+    $res = $this->db->get()->result();
+    return $res;
     
   }
 
@@ -45,6 +46,14 @@ class Ocorrencia_Model extends CI_Model {
     $Turno = $_GET['Turno_Id']; 
     $this->db->select("*");
     $this->db->where(array( 'Turno_id' => $Turno, 'DataFin' => null));
+    $this->db->from('ocorrencia');
+    return $this->db->get()->result();
+  }
+
+  public function ocorrencias_ciclo_count() {
+    $Turno = $_GET['Turno_Id']; 
+    $this->db->select("COUNT(1) Registros");
+    $this->db->where(array( 'Turno_id' => $Turno, 'TipoOcorrencia_id' => null));
     $this->db->from('ocorrencia');
     return $this->db->get()->result();
   }

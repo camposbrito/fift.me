@@ -19,19 +19,19 @@
                 <div class="dropdown">
                     <button class="btn btn-primary btn-lg dropdown-toggle" id="menu-ocorrencia" type="button" data-toggle="dropdown">OCORRÊNCIA
                         <span class="caret"></span>&nbsp;
-                        <span class="badge badge-light circle-badge">4</span>&nbsp;
+                        <span ng-show="ocorrencias_aberto_count > 0" class="badge badge-light circle-badge">{{ocorrencias_aberto_count}}</span>&nbsp;
                     </button>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="menu-ocorrencia">
-                        <li role="presentation"><a role="menuitem" class="menuitem" name="ocorrencia-listar" id="ocorrencia-listar" tabindex="-1" ng-href="#">LISTAR</a></li>    
+                        <li role="presentation"><a role="menuitem" class="menuitem" name="ocorrencia-listar" id="ocorrencia-listar" tabindex="-1" ng-href="#/ocorrencias/listar/">LISTAR</a></li>    
                         <li role="presentation"><a role="menuitem" class="menuitem" name="ocorrencia-nova" id="ocorrencia-nova" tabindex="-1" ng-href="#/ocorrencia/novo">REGISTRAR</a></li>                         
                     </ul>
                 </div>
             </div>   
             <!-- ESPAÇAMENTO      -->
             <div class="col"><span></span></div>
-            <!-- <div class="col"><span>{{itemPerPage}}</span></div>
-            <div class="col"><span>{{LocalStorageService.get('Turno.id') }}</span></div>
-            <div class="col"><span>{{TurnoAtual}} - {{TurnoAtual2}}- {{TurnoAtual3}}- {{TurnoAtual4}}</span></div>
+            <!-- <div class="col"><span>{{itemPerPage}}</span></div-->
+            <div class="col"><span>{{currentPath}}</span></div>
+            <!--div class="col"><span>{{TurnoAtual}} - {{TurnoAtual2}}- {{TurnoAtual3}}- {{TurnoAtual4}}</span></div>
             <div class="col"><span>{{sessionStorage.TurnoAtual}} - {{window.sessionStorage.TurnoAtual2}} - {{window.sessionStorage.TurnoAtual3}} - {{window.sessionStorage.TurnoAtual4}}</span></div> -->
              <!-- MENU AJUDA -->
             <div class="col d-flex flex-column align-items-end">
@@ -70,7 +70,7 @@
             </div>                                      
         </div>
     </div>
-    <div class="container" style="position:relative;top:-113px;/*background:red;*/">
+    <div ng-show="currentPath != '/'" class="container" style="position:relative;top:-113px;/*background:red;*/">
         <div class="row">
                  
             <div class="col  col-xs-4 col-sm-4  col-md-4 col-lg-4 col-xl-4 offset-lg-0 text-center"  >

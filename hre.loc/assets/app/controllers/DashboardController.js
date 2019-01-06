@@ -5,25 +5,20 @@ myApp.controller("DashboardController", [
   "$http",
   "LocalStorageService",   
   function($scope, $location, $log, $http, LocalStorageService) {
-    console.log('DashboardController');
-    // //console.log('scope');
-    // //console.log($scope);
-    // //console.log('location');
-    // //console.log($location);
-    // //console.log('log');
-    // //console.log($log);
-    // //console.log('http');
-    // //console.log($http);
-    // //console.log('FIM:DashboardController');
+    $scope.Turno = LocalStorageService.get('Turno.id');
     $scope.currentPath = $location.path();
-         
+    $http
+    .get("ocorrencia/ocorrencias_ciclo_count?Turno_Id=" + $scope.Turno)
+    .success(function(data) {
+      $scope.ocorrencias_aberto_count  = data.Registros;
+      LocalStorageService.set("ocorrencias_aberto_count", data.Registros);
+    });
     $scope.InProgress          = $.parseJSON(LocalStorageService.get("InProgress"))          ? true: false;   
     if (($scope.InProgress == false))
     {                  
-      $location.path('/');   
-      // alert('InProgress');         
+      $location.path('/');           
     }
-    
+       
     $scope.InPreparation       = $.parseJSON(LocalStorageService.get("InPreparation"))       ? true: false;
     $scope.InMaintenance       = $.parseJSON(LocalStorageService.get("InMaintenance"))       ? true: false;
     $scope.InScheduledInterval = $.parseJSON(LocalStorageService.get("InScheduledInterval")) ? true: false;    
@@ -33,13 +28,10 @@ myApp.controller("DashboardController", [
     {
       $location.path('/ocorrencia/bloqueio');
     }
-    //console.log($scope.currentPath);
-    //console.log('>>>' +LocalStorageService.get('Turno.id')   );
     $scope.getOperador = function() {
       $http
         .get("sessao/getOperador")
         .success(function(data) {
-          // console.debug(data);
           $scope.Operador = data;
           LocalStorageService.set('operador', data.Descricao);
         })
@@ -47,24 +39,5 @@ myApp.controller("DashboardController", [
           $log.error(status);
         });
     };
-    
-    /*function() {
-      //console.log('in progress');
-      $http
-        .get("turno/EmAndamento")
-        .success(function(data) {                    
-          // console.debug($scope.Current);
-          LocalStorageService.set("InProgress", data.progress);
-          if (data.progress == false) 
-          {            
-            
-            $location.path('/');            
-          }
-           
-        })
-        .error(function(data, status) {
-          $log.error(status);
-        });
-    };*/
   }
 ]);

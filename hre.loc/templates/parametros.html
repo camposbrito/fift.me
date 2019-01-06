@@ -1,0 +1,72 @@
+<header ng-include="'./templates/header.html'"></header>
+  
+<div class="container-fluid d-flex flex-column body-content justify-content-center" ng-controller="ParametrosController" >
+    
+    <form name="parametros" id="parametros" action="<?= base_url() ?>parametros/save" method="post"> 
+        <button type="button" class="btn btn-primary" id="salvar-parametros" name="salvar-parametros">Salvar alterações</button>
+        <button type="reset" class="btn btn-primary">Calcelar Alterações</button>   
+        <input type="hidden" name="id" value="<?= $Parametros->id;?>"/> 
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-4" ng-controller="EquipamentoController" ng-init="getAll()">
+                    <div class="form-group">
+                        <label>Equipamento&nbsp;</label>
+                        <select name="Equipamento_id" class="form-control">
+                            <option ng-selected="parametros.Equipamento_id == equip.id" ng-repeat="equip in Equipamento" value="{{equip.id}}">{{equip.Descricao}} </option> 
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-5"  ng-controller="ProdutoController" ng-init="getAll()"> 
+                    <div class="form-group">
+                        <label>Produto</label>
+                        <select name="Produto_id" class="form-control">
+                            <option ng-selected="parametros.Produto_id == prod.id" ng-repeat="prod in Produto" value="{{prod.id}}">{{prod.Descricao}} </option> 
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-4"  ng-controller="OperacaoController" ng-init="getAll()"> 
+                    <div class="form-group">
+                        <label>Operação</label>
+                        <select name="Operacao_id" class="form-control">
+                            <option ng-selected="parametros.Operacao_id == ope.id" ng-repeat="ope in Operacao" value="{{ope.id}}">{{ope.Descricao}} </option> 
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label>Peçcas por Ciclo</label>
+                    <input name="PecasPorCiclo" type="text" class="form-control" value="{{parametros.PecasPorCiclo}}">
+                </div>
+            </div>
+            <div class="col-sm-4 col-5">
+                <div class="form-group">
+                    <label>Tempo Operação (segundos)</label>
+                    <input name="TempoMaximoCiclo" type="text" class="form-control" value="{{parametros.TempoMaximoCiclo}}">
+                </div>
+            </div>
+            <div class="col-sm-4 col-5">
+                <div class="form-group">
+                    <label>Tempo Carga e Descarga (segundos)</label>
+                    <input name="TempoCargaDescarga" type="text" class="form-control" value="{{parametros.TempoCargaDescarga}}">
+                </div>
+            </div>
+            <div class="col-sm-4 col-5">
+                <div class="form-group">
+                    <label>Margem de Tolerância (segundos)</label>
+                    <input name="MargemTolerancia" type="text" class="form-control" value="{{parametros.MargemTolerancia}}">
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label contenteditable="true" spellcheckker="false">Quantidade Prevista (hora)&nbsp;</label>
+                    <input name="QuantidadePrevistaTurno"  type="text" class="form-control" value="{{parametros.QuantidadePrevistaTurno}}">
+                </div>
+            </div>
+        </div>        
+    </form>
+</div>
+<footer ng-include="'./templates/footer.html'"></footer>
+<div ng-include="'./templates/events.html'"></div>  

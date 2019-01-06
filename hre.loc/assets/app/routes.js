@@ -21,7 +21,7 @@ myApp.config(function($routeProvider) {
     })
     .when("/parametros", {
       templateUrl: "templates/parametros.html",
-      controller: "parametrosController"
+      controller: "ParametrosController"
     })
     .when("/em_andamento", {
       templateUrl: "templates/dashboard.html",

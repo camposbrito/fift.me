@@ -29,7 +29,10 @@ class ocorrencia extends CI_Controller {
 	
 	public function getAll() { 
 		$res 					= $this->Ocorrencia_Model->getAll();
-		$res->TipoOcorrencia	= $this->tipo_ocorrencia_Model->getByOcorrencia($res->id);	
+		if (json_encode($res) != '[]' ){
+			$res = $res[0];			
+			$res->TipoOcorrencia	= $this->tipo_ocorrencia_Model->getByOcorrencia($res->id);	
+		}
 		echo json_encode($res);
 	} 	
 
@@ -44,7 +47,12 @@ class ocorrencia extends CI_Controller {
 		
 		echo json_encode($res);
 	} 
-	
+
+	public function ocorrencias_ciclo_count() { 
+		$res = $this->Ocorrencia_Model->ocorrencias_ciclo_count()[0];		
+		echo json_encode($res);
+	} 
+
 	public function Count() { 
 		$res 					= $this->Ocorrencia_Model->Count()[0];
 		echo json_encode($res);

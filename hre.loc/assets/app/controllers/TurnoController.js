@@ -7,6 +7,7 @@ myApp.controller("TurnoController", [
   "LocalStorageService",   
   function($scope, $location, $log, $http, LocalStorageService) {
     $scope.InProgress = false;
+    
     $scope.currentPath = $location.path();
     LocalStorageService.set('path', $location.path());
     $scope.setQuantidade = function(data) {
@@ -52,12 +53,12 @@ myApp.controller("TurnoController", [
           $log.error(status);
         });
     };
-    $scope.GetOcorrencias = function() {      
-        $location.path('/ocorrencias/listar');                  
-    }
-    $scope.FinalizarTurno = function() {      
-      $location.path('/finaliza');                     
-    }
+    // $scope.GetOcorrencias = function() {      
+    //     $location.path('/ocorrencias/listar');                  
+    // }
+    // $scope.FinalizarTurno = function() {      
+    //   $location.path('/finaliza');                     
+    // }
   }
 ]);
 
