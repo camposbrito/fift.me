@@ -23,10 +23,6 @@ myApp.config(function($routeProvider) {
       templateUrl: "templates/parametros.html",
       controller: "ParametrosController"
     })
-    .when("/em_andamento", {
-      templateUrl: "templates/dashboard.html",
-      controller: "DashboardController"
-    })
     .when("/finaliza", {
       templateUrl: "templates/terminoturno.html",
       controller: "TerminoController"
