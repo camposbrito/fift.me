@@ -27,7 +27,13 @@ class Ocorrencia_Model extends CI_Model {
     return $res;
     
   }
-
+  public function saveOcorrenciaCicloStart($Turno_id, $DataIni, $DataFin ) 
+  {
+    $data['Turno_id']                 = $Turno_id;
+    $data['DataIni']                  = $DataIni;
+    $data['DataFin']                  = $DataFin;
+    $this->db->insert('Ocorrencia', $data);
+  }
   public function save() {    
     $data['Turno_id']                 = $this->input->post('turno');
     $data['TipoOcorrencia_id']        = $this->input->post('TipoOcorrencia');
