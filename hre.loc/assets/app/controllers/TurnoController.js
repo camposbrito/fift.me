@@ -7,13 +7,22 @@ myApp.controller("TurnoController", [
   "LocalStorageService",   
   function($scope, $location, $log, $http, LocalStorageService) {
     $scope.InProgress = false;
-    
+    $scope.ocorrencias_aberto_count  = LocalStorageService.get("ocorrencias_aberto_count");
     $scope.currentPath = $location.path();
     LocalStorageService.set('path', $location.path());
     $scope.setQuantidade = function(data) {
       var obj = JSON.parse(data);
-      if (obj == "{start:  false}")
+      $scope.CriarOcorrencia = obj.CriarOcorrencia;
+      $scope.ContouPeca = obj.ContouPeca;
+      if (obj.ContouPeca){
         $scope.turno.QtdPecas = parseInt($scope.turno.QtdPecas) + parseInt(sessionStorage.PecasPorCiclo);
+      }
+      if (obj.CriarOcorrencia) {
+        var iOcorrencia = parseInt(LocalStorageService.get("ocorrencias_aberto_count"));
+        iOcorrencia = iOcorrencia + 1;
+        LocalStorageService.set("ocorrencias_aberto_count", iOcorrencia.toString());
+        $scope.ocorrencias_aberto_count  = iOcorrencia.toString();        
+      }
     };
     $scope.getAtual = function() {
       $http
@@ -27,8 +36,6 @@ myApp.controller("TurnoController", [
         });
     };
     $scope.EmAndamento = function() {
-      console.log('Em andamento');
-
       $http
         .get("turno/EmAndamento")
         .success(function(data) {

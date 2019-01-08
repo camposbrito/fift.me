@@ -10,7 +10,8 @@ class ciclostart extends CI_Controller {
 	
 	public function save()
 	{
-		$this->CicloStart_Model->save(); 
+		$res = $this->CicloStart_Model->save(); 
+		echo json_encode($res);
 	} 
 
 }

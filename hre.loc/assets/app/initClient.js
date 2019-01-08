@@ -79,9 +79,19 @@ function routesClient(socket){
   socket.on("SetCicloStart", function(data) {
     var socket_id = socket.id;
     var Dados = $.parseJSON(data);
-    $.post("./ciclostart/save", { Dados, socket_id });
-    angular.element("#TurnoController").scope().setQuantidade(data);
-    angular.element("#TurnoController").scope().$apply(); 
+    console.log(data);
+    $.post("./ciclostart/save", { Dados, socket_id })      
+    .done(function(res) {      
+      if ((angular.element("#TurnoController").length > 0))
+      {
+        angular.element("#TurnoController").scope().setQuantidade(res);
+        angular.element("#TurnoController").scope().$apply(); 
+      }
+    })
+    .fail(function(status) {
+      $log.error(status);
+    });
+
   });
 
   //+---------------+

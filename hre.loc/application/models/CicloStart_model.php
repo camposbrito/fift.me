@@ -27,6 +27,16 @@ class CicloStart_model extends CI_Model
   }
   public function save()
 	{
+    $ContouPeca =  false;
+    $CriarOcorrencia = false; 
+    $Tempo = 0;
+    $MargemTolerancia = 0;
+    $TempoMaximoCiclo = 0;
+    $TempoCargaDescarga = 0;
+    $DiferencaTempo = 0;
+    $TempoMinimoCiclo = 0;
+
+
     $Turno = $this->session->turno;   
     if (!isset($Turno))
     {
@@ -38,7 +48,7 @@ class CicloStart_model extends CI_Model
     {
       $data['DataIni'] = date("Y-m-d H:i:s");
       $data['Turno_id'] = $Turno;
-      $data[socket_id] = $this->input->post('socket_id');
+      $data['socket_id'] = $this->input->post('socket_id');
       $this->db->insert('ciclostart', $data);
     }
     else
@@ -51,35 +61,47 @@ class CicloStart_model extends CI_Model
 		    {
           $id = $row->id;  
           $data['DataIni'] = $row->DataIni;
-          echo $id;
+
           //atualizar data final
           $data['DataFin'] = date("Y-m-d H:i:s");
           $this->db->where(array('DataFin' => null, 'Turno_id' => $Turno, 'id' => $id))->update('ciclostart', $data);
           //Verificar se o tempo deu mais que 4s, caso positivo returns true
           $this->db->select('TIMESTAMPDIFF(SECOND,DataIni, DataFin) AS Tempo')->from('ciclostart')->where( array('Turno_id' => $Turno, 'id' => $id));
           $res = $this->db->get()->result();
-          $Tempo = $res[0]->Tempo;
-          $ContouPeca = $Tempo > 4;
-          echo 'Tempo: ' . $Tempo;
-          echo 'ContouPeca: ' . $ContouPeca;
+          $Tempo = intval($res[0]->Tempo);
+          //Recuperar os tempos da param geral 
+          $resParam =  $this->Parametros_Model->get()[0];
+          $TempoMaximoCiclo = intval($resParam->TempoMinimoCiclo);
+          $ContouPeca = $Tempo > $TempoMinimoCiclo;
+
           if ($ContouPeca)
           { 
-            //Recuperar os tempos da param geral para salvar ocorrencia ou nao
-            $resParam =  $this->Parametros_Model->get()[0];
-            $TempoMaximoCiclo = $resParam->TempoMaximoCiclo;
-            $TempoCargaDescarga = $resParam->TempoCargaDescarga;
-            $MargemTolerancia = $resParam->MargemTolerancia;
+            //Recuperar os tempos da param geral para salvar ocorrencia ou nao            
+            $TempoMaximoCiclo = intval($resParam->TempoMaximoCiclo);
+            $TempoCargaDescarga = intval($resParam->TempoCargaDescarga);
+            $MargemTolerancia = intval($resParam->MargemTolerancia);
             // Verificar se a diferença de tempo - (TempoMaximoCiclo - TempoCarga e Descarga) - Superior à Margem de Tolerancia.
             $DiferencaTempo = $Tempo - ($TempoMaximoCiclo + $TempoCargaDescarga);
             //Caso positivo, criar ocorrencia.
-            if ( $DiferencaTempo > $MargemTolerancia )
+            $CriarOcorrencia = $DiferencaTempo > $MargemTolerancia;
+            if ( $CriarOcorrencia )
             {
               $this->Ocorrencia_Model->saveOcorrenciaCicloStart($Turno, $data['DataIni'], $data['DataFin']);
             }
 
-          }           
+          }       
+ 
         }
       }
-    }   
+    } 
+    $Retorno['ContouPeca']         = $ContouPeca;
+    $Retorno['CriarOcorrencia']    = $CriarOcorrencia;   
+    $Retorno['Tempo']              = $Tempo;
+    $Retorno['MargemTolerancia']   = $MargemTolerancia;
+    $Retorno['TempoMaximoCiclo']   = $TempoMaximoCiclo;
+    $Retorno['TempoCargaDescarga'] = $TempoCargaDescarga;
+    $Retorno['DiferencaTempo']     = $DiferencaTempo;
+    $Retorno['TempoMinimoCiclo']   = $TempoMinimoCiclo;
+    return $Retorno;  
   }
 }
