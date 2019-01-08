@@ -18,7 +18,8 @@ class Parametros_Model extends CI_Model {
     $data['PecasPorCiclo']            = $this->input->post('PecasPorCiclo');
     $data['TempoMaximoCiclo']         = $this->input->post('TempoMaximoCiclo');
     $data['QuantidadePrevistaTurno']  = $this->input->post('QuantidadePrevistaTurno');
-    
+    $data['TempoCargaDescarga']       = $this->input->post('TempoCargaDescarga');
+    $data['MargemTolerancia']         = $this->input->post('MargemTolerancia');
     // return = 
     $this->db-> where(array('id' => $id))
              -> update('parametros', $data);
